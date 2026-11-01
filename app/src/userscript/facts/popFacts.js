@@ -94,6 +94,18 @@ export function plan(doc, chs, duration, prodPremiere) {
     }
     if (!placed) general.push(f);
   }
+  // keep scene-tied pop-ups MIN_GAP apart: slide a crowded one later inside its scene, else let it float as a general fact
+  out.sort(function (a, b) { return a.at - b.at; });
+  var kept = [];
+  for (var q = 0; q < out.length; q++) {
+    var o = out[q], prev = kept.length ? kept[kept.length - 1].at : -1e9;
+    if (o.at < prev + MIN_GAP) {
+      var moved = prev + MIN_GAP;
+      if (moved + 12 <= ends[o.scene]) o.at = moved; else { general.push(o.f); continue; }
+    }
+    kept.push(o);
+  }
+  out = kept;
   // spread the general facts through the free time, keeping MIN_GAP from everything already planned
   var start = Math.min(120, duration * 0.05), end = duration - 120;
   if (general.length && end > start) {
