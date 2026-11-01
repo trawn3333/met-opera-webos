@@ -28,6 +28,7 @@ import { autoRelogin, loginState, getStatusText, HOME_URL } from './relogin';
 import { toast } from './toast';
 import * as bar from './topBar';
 import * as cat from './cat/screen';
+import * as castSheet from './cast/castModal';
 import { navHooks, candidates } from './spatialNav';
 import * as pui from './playerUI';
 import { reportProblem, initPlaybackWatch, setReportStateProvider, buildSnapshot, serialize, sendReport } from './report';
@@ -301,6 +302,7 @@ function closeSearch(silent) {
   if (!silent) cat.focusCurrent();
 }
 function playPerf(id, info) {
+  if (castSheet.isOpen()) castSheet.close();
   dbg('info', 'play request ' + id + ' from ' + (info && info.from));
   eng.open(id, info);
 }
@@ -501,6 +503,8 @@ function handleKey(e) {
     }
   }
 
+  if (castSheet.isOpen()) { consume(e); castSheet.handleKey(k); return; }   // 1.3.2 title-page Cast sheet
+
   if (failureShown() && k === KEY.ENTER) { e.preventDefault(); window.location.replace(HOME_URL); return; }
 
   // Search mode keys (typing, grid, results) before generic BACK handling (BACKSPACE deletes there).
@@ -557,7 +561,7 @@ window.__mtv = {
   perfStats: getStats, toggleLog: toggleOverlay, recover: recoverState, findPlay: findPlay,
   restart: restartMetApp, env: envInfo, errors: getErrors, telemetry: tlmInfo,
   categories: cat, bar: bar, spaNav: spaNav, player: pui, report: reportProblem,
-  engine: eng, search: search, mode: function () { return mode; }, play: playPerf, openSearch: openSearch, metChrome: metChromeVisible,
+  engine: eng, search: search, castSheet: castSheet, mode: function () { return mode; }, play: playPerf, openSearch: openSearch, metChrome: metChromeVisible,
   snapshot: function (kind) { return serialize(buildSnapshot(kind || 'test')); }, sendReport: sendReport
 };
 

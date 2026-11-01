@@ -1,13 +1,16 @@
 // Remote-first playback controls: our own large overlay over OUR OWN <video> (player.js, 1.3.0).
 // Key model:
-//   hidden : OK = play/pause · LEFT/RIGHT = seek (hold to accelerate) · UP/DOWN/any = show controls
+//   hidden : OK = play/pause · LEFT/RIGHT = previous/next SCENE (Met scene markers, toast with the name)
+//            UP/DOWN = show controls, focus on the LAST USED button (remembered in localStorage)
 //            BACK = leave the player (handled by index.js)
-//   shown  : UP/DOWN move between the scrub bar and the button row · LEFT/RIGHT seek on the scrub
-//            bar or move along the buttons · OK activates · BACK hides (closes a popup first)
-//   media keys (play/pause/ff/rw/stop) work in both states. Auto-hides after 4 s without keys.
+//   shown  : UP/DOWN move between the scrub bar and the button row · on the scrub bar LEFT/RIGHT move in
+//            LARGE steps (5% of the running time, 2-5 min; faster when held) · OK activates · BACK hides
+//   media keys: play/pause/stop; FF/REW = next/previous scene. 1.3.2: no short (10/30 s) skips anywhere.
+//   Auto-hides after 4 s without keys.
 import { KEY } from './keys';
 import { getPlayer, isFullscreen, fmt, pictureMode, setPictureMode, MODE_LABEL, STREAM_LABEL, streamPref, setStreamPref, fitInfo,
-  chapters as engChapters, title as engTitle, subtitle as engSub, textTracks, setTextTrack, getVideoEl, close as closePlayer, thumbAt, playerRoot } from './player';
+  chapters as engChapters, title as engTitle, subtitle as engSub, textTracks, setTextTrack, getVideoEl, close as closePlayer, thumbAt, playerRoot, castInfo, setEngineHooks } from './player';
+import { castItems } from './cast/cast';
 import { tlm } from './tlm';
 import { toast } from './toast';
 import { lsGet, lsSet } from './util';
@@ -16,7 +19,7 @@ import { dbg } from './debugLog';
 var HIDE_MS = 4000;
 var root = null, els = {};
 var visible = false, hideTimer = null, tick = null;
-var zone = 'btn', sel = 3;            // focus: 'scrub' | 'btn' | 'menu'
+var zone = 'btn', sel = 2;            // focus: 'scrub' | 'btn' | 'menu'
 var menu = null;                      // { kind, items: [{label, sub, act}], sel }
 var pending = null, commitTimer = null, lastSeekKey = 0, seekRepeat = 0, seekStartT = 0;
 var hooks = { onExit: null, onReport: null };
@@ -28,12 +31,11 @@ function svg(d) { return '<svg viewBox="0 0 24 24" width="40" height="40" fill="
 var ICON = {
   exit: svg('<path d="M20 11H7.8l5.6-5.6L12 4l-8 8 8 8 1.4-1.4L7.8 13H20z"/>'),
   prev: svg('<path d="M6 6h2v12H6zm3.5 6L18 18V6z"/>'),
-  rw: svg('<path d="M12 5V1L7 6l5 5V7c3.3 0 6 2.7 6 6s-2.7 6-6 6-6-2.7-6-6H4c0 4.4 3.6 8 8 8s8-3.6 8-8-3.6-8-8-8z"/><text x="12" y="16.2" font-size="7" font-weight="700" text-anchor="middle" font-family="Arial">10</text>'),
   play: svg('<path d="M8 5v14l11-7z"/>'),
   pause: svg('<path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/>'),
-  ff: svg('<path d="M12 5V1l5 5-5 5V7c-3.3 0-6 2.7-6 6s2.7 6 6 6 6-2.7 6-6h2c0 4.4-3.6 8-8 8s-8-3.6-8-8 3.6-8 8-8z"/><text x="12" y="16.2" font-size="7" font-weight="700" text-anchor="middle" font-family="Arial">30</text>'),
   next: svg('<path d="M6 18l8.5-6L6 6v12zM16 6v12h2V6h-2z"/>'),
   chapters: svg('<path d="M3 13h2v-2H3v2zm0 4h2v-2H3v2zm0-8h2V7H3v2zm4 4h14v-2H7v2zm0 4h14v-2H7v2zM7 7v2h14V7H7z"/>'),
+  cast: svg('<path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z"/>'),
   cc: svg('<path d="M19 4H5c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm-8 7H9.5v-.5h-2v3h2V13H11v1c0 .55-.45 1-1 1H7c-.55 0-1-.45-1-1v-4c0-.55.45-1 1-1h3c.55 0 1 .45 1 1v1zm7 0h-1.5v-.5h-2v3h2V13H18v1c0 .55-.45 1-1 1h-3c-.55 0-1-.45-1-1v-4c0-.55.45-1 1-1h3c.55 0 1 .45 1 1v1z"/>'),
   audio: svg('<path d="M12 3v10.55c-.59-.34-1.27-.55-2-.55-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4V7h4V3h-6z"/>'),
   pic: svg('<path d="M21 3H3c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h18c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H3V5h18v14zM5 7h14v10H5z" fill-rule="evenodd"/>'),
@@ -42,17 +44,23 @@ var ICON = {
 var BTNS = [
   { id: 'exit', label: 'Back' },
   { id: 'prev', label: 'Prev scene' },
-  { id: 'rw', label: '\u221210 s' },
   { id: 'play', label: 'Play' },
-  { id: 'ff', label: '+30 s' },
   { id: 'next', label: 'Next scene' },
   { id: 'chapters', label: 'Scenes' },
+  { id: 'cast', label: 'Cast' },
   { id: 'cc', label: 'Subtitles' },
   { id: 'audio', label: 'Audio' },
   { id: 'pic', label: 'Picture & stream' },
   { id: 'report', label: 'Report problem' }
 ];
-var PLAY_IDX = 3;
+var PLAY_IDX = 2;
+function btnIdx(id) { for (var i = 0; i < BTNS.length; i++) if (BTNS[i].id === id) return i; return -1; }
+// 1.3.2: remember the last controls action (persisted). Back / Report are never remembered (OK by habit
+// would leave the player or send a report).
+var LAST_KEY = 'mtv.ctlLast';
+function rememberSel() { var id = BTNS[sel] && BTNS[sel].id; if (id && id !== 'exit' && id !== 'report') lsSet(LAST_KEY, id); }
+export function rememberedButton() { var id = lsGet(LAST_KEY, ''); var i = btnIdx(id); return i >= 0 ? BTNS[i].id : 'play'; }
+function startSel() { var i = btnIdx(lsGet(LAST_KEY, '')); return i >= 0 ? i : PLAY_IDX; }
 
 function esc(s) { return String(s === undefined || s === null ? '' : s).replace(/[&<>"]/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]; }); }
 
@@ -71,7 +79,7 @@ function ensure() {
         '<div class="mtv-po-times"><span class="mtv-po-cur"></span><span class="mtv-po-ch"></span><span class="mtv-po-dur"></span></div>' +
         '<div class="mtv-po-scrub"><div class="mtv-po-buf"></div><div class="mtv-po-prog"></div><div class="mtv-po-ticks"></div><div class="mtv-po-knob"></div><div class="mtv-po-tip"><img alt=""><span></span></div></div>' +
         '<div class="mtv-po-btns">' + b + '</div>' +
-        '<div class="mtv-po-hint">OK play/pause \u00b7 \u25C0 \u25B6 seek (hold = faster) \u00b7 \u25B2 \u25BC move \u00b7 BACK hide</div>' +
+        '<div class="mtv-po-hint">OK select \u00b7 \u25B2 bar: \u25C0 \u25B6 big jumps (hold = faster) \u00b7 controls hidden: \u25C0 \u25B6 previous / next scene \u00b7 BACK hide</div>' +
       '</div>' +
       '<div class="mtv-po-menu"></div>';
     els = {
@@ -141,6 +149,7 @@ function drawTicks(chs, d) {
 
 function title() { return engTitle(); }
 
+var castScene = -2;
 function update() {
   if (!root) return;
   var p = getPlayer();
@@ -171,6 +180,7 @@ function update() {
     if (bw && tw) els.tip.style.left = Math.max(tw / 2, Math.min(bw - tw / 2, bw * pct / 100)) + 'px';
   }
   drawTicks(chs, d);
+  if (menu && menu.kind === 'cast' && ci !== castScene) refreshCast(ci);
   var pb = els.btns[PLAY_IDX];
   if (pb.getAttribute('data-p') !== String(paused)) {
     pb.setAttribute('data-p', String(paused));
@@ -188,8 +198,10 @@ function paint() {
     for (var j = 0; j < menu.items.length; j++) {
       var it = menu.items[j];
       h += (it.head ? '<h4>' + esc(it.head) + '</h4>' : '') + '<div class="mtv-po-mi' + (j === menu.sel ? ' mtv-sel' : '') + (it.on ? ' mtv-on' : '') + '" data-m="' + j + '">' +
-        '<b>' + esc(it.label) + '</b>' + (it.sub ? '<span>' + esc(it.sub) + '</span>' : '') + '</div>';
+        '<b>' + esc(it.label) + (it.trouser ? ' <i class="mtv-trouser">trouser role</i>' : '') + '</b>' + (it.sub ? '<span>' + esc(it.sub) + '</span>' : '') +
+        (it.note ? '<em>' + esc(it.note) + '</em>' : '') + '</div>';
     }
+    els.menu.className = 'mtv-po-menu' + (menu.kind === 'cast' ? ' mtv-po-cast' : '');
     els.menu.innerHTML = h + '</div>';
     els.menu.style.display = 'block';
     var cur = els.menu.querySelector('.mtv-sel'), list = els.menu.querySelector('.mtv-po-mlist');
@@ -202,15 +214,45 @@ function seekStep(dir) {
   var p = getPlayer();
   if (!p) return;
   var now = Date.now();
-  seekRepeat = now - lastSeekKey < 350 ? seekRepeat + 1 : 0;
+  seekRepeat = now - lastSeekKey < 450 ? seekRepeat + 1 : 0;
   lastSeekKey = now;
-  var step = seekRepeat < 4 ? 10 : seekRepeat < 12 ? 30 : seekRepeat < 24 ? 60 : 180;
-  if (pending === null) { seekStartT = p.time(); pending = seekStartT; }
   var d = p.duration();
+  // Coarse only (1.3.2): 5% of the running time, kept between 2 and 5 minutes; x2 / x4 when held.
+  var base = d ? Math.max(120, Math.min(300, d * 0.05)) : 300;
+  var step = base * (seekRepeat < 4 ? 1 : seekRepeat < 10 ? 2 : 4);
+  if (pending === null) { seekStartT = p.time(); pending = seekStartT; }
   pending = Math.max(0, Math.min(d ? d - 2 : 1e9, pending + dir * step));
   update();
   clearTimeout(commitTimer);
-  commitTimer = setTimeout(commitSeek, 800);
+  commitTimer = setTimeout(commitSeek, 900);
+}
+export function seekStepSize() { var p = getPlayer(), d = p ? p.duration() : 0; return d ? Math.max(120, Math.min(300, d * 0.05)) : 300; }
+// Previous / next scene with a toast naming it (and who sings). Returns false when there are no scenes.
+export function sceneJump(dir, how) {
+  var p = getPlayer();
+  var chs = chapters();
+  if (!p) return false;
+  if (!chs.length) { toast('No scene list for this video', 2000); return false; }
+  var t = p.time(), ci = chapterAt(chs, t);
+  var to = dir > 0 ? ci + 1 : (ci >= 0 && t - chs[ci].t > 5 ? ci : ci - 1);
+  if (to < 0) to = 0;
+  if (to >= chs.length) { toast('This is the last scene', 1800); return true; }
+  jumpTo(chs[to].t, how);
+  var c = chs[to], who = '';
+  var cast = castInfo();
+  if (c.artists && c.artists.length) {
+    var names = [];
+    for (var i = 0; i < c.artists.length && names.length < 4; i++) {
+      var a = c.artists[i];
+      if (/orchestra|chorus/i.test(a) || (cast && cast.conductor === a)) continue;
+      var role = '';
+      if (cast) for (var j = 0; j < cast.roles.length; j++) if (cast.roles[j].singer === a && cast.roles[j].role) { role = cast.roles[j].role; break; }
+      names.push(role ? role + ' (' + a + ')' : a);
+    }
+    who = names.join(', ');
+  }
+  toast('<div class="mtv-scene-toast"><small>Scene ' + (to + 1) + ' of ' + chs.length + (c.act ? ' \u00b7 Act ' + esc(c.act) : '') + '</small><b>' + esc(c.title) + '</b>' + (who ? '<span>' + esc(who) + '</span>' : '') + '</div>', 3000, true);
+  return true;
 }
 function commitSeek() {
   clearTimeout(commitTimer);
@@ -233,22 +275,13 @@ function jumpTo(t, how) {
 // ---- buttons ----
 function activate() {
   var id = BTNS[sel].id;
+  rememberSel();
   var p = getPlayer();
   stats.buttons[id] = (stats.buttons[id] || 0) + 1;
   if (id === 'play') { togglePlay(); }
-  else if (id === 'rw') { if (p) jumpTo(p.time() - 10, 'rw'); }
-  else if (id === 'ff') { if (p) jumpTo(p.time() + 30, 'ff'); }
-  else if (id === 'prev' || id === 'next') {
-    var chs = chapters();
-    if (!chs.length || !p) { toast('No scene list for this video', 2000); return; }
-    var t = p.time(), ci = chapterAt(chs, t);
-    var to = id === 'next' ? ci + 1 : (ci >= 0 && t - chs[ci].t > 5 ? ci : ci - 1);
-    if (to < 0) to = 0;
-    if (to >= chs.length) { toast('Last scene', 1500); return; }
-    jumpTo(chs[to].t, id);
-    toast((chs[to].act ? 'Act ' + chs[to].act + ' \u00b7 ' : '') + chs[to].title, 2500);
-  }
+  else if (id === 'prev' || id === 'next') { sceneJump(id === 'next' ? 1 : -1, id); }
   else if (id === 'chapters') openChapters();
+  else if (id === 'cast') openCast();
   else if (id === 'cc') openCaptions();
   else if (id === 'audio') openAudio();
   else if (id === 'pic') openPicture();
@@ -290,6 +323,26 @@ function openChapters() {
     lastAct = c.act;
   }
   openMenu('chapters', 'Scenes', items, ci);
+}
+
+// ---- Cast (1.3.2): Met cast + roles, scene-aware from the cue point "artists" ----
+function castTitle(chs, ci) { return 'Cast' + (ci >= 0 ? '  \u00b7  ' + (chs[ci].act ? 'Act ' + chs[ci].act + ': ' : '') + chs[ci].title : ''); }
+function openCast() {
+  var cast = castInfo();
+  if (!cast || (!cast.roles.length && !cast.conductor)) { toast('The Met lists no cast for this video', 2200); return; }
+  var chs = chapters(), p = getPlayer(), ci = chapterAt(chs, p ? p.time() : 0);
+  castScene = ci;
+  openMenu('cast', castTitle(chs, ci), castItems(cast, ci >= 0 ? chs[ci] : null), 0);
+  tlm('cast', { action: 'open', roles: cast.roles.length, scene: ci, sceneArtists: ci >= 0 && chs[ci].artists ? chs[ci].artists.length : 0 });
+}
+function refreshCast(ci) {
+  var cast = castInfo(), chs = chapters();
+  castScene = ci;
+  if (!cast || !menu) return;
+  menu.title = castTitle(chs, ci);
+  menu.items = castItems(cast, ci >= 0 ? chs[ci] : null);
+  if (menu.sel >= menu.items.length) menu.sel = 0;
+  paint();
 }
 
 function trackList(kind) {
@@ -339,6 +392,7 @@ function menuActivate() {
   var it = menu.items[menu.sel];
   var kind = menu.kind;
   if (kind === 'chapters') { jumpTo(it.act, 'chapter-list'); closeMenu(); return; }
+  if (kind === 'cast') { closeMenu(); return; }
   if (kind === 'resume') { jumpTo(it.act, 'resume'); tlm('resume', { choice: it.act > 0 ? 'resume' : 'start-over' }); menu = null; hide(); return; }
   if (kind === 'pic') {
     if (it.act.pic) { setPictureMode(it.act.pic); toast('Picture: ' + MODE_LABEL[it.act.pic], 2000); }
@@ -387,6 +441,7 @@ function sendStats() {
 }
 
 export function initPlayerUI() {
+  setEngineHooks({ sceneJump: sceneJump });
   setInterval(function () {
     try { if (!isFullscreen() && visible) hide(); else update(); } catch (e2) { /* ignore */ }
   }, 1000);
@@ -400,16 +455,15 @@ export function handleKey(k) {
   if (k === KEY.PLAY) { if (p) p.play(); show(); return true; }
   if (k === KEY.PAUSE) { if (p) p.pause(); show(); return true; }
   if (k === KEY.PLAY_PAUSE) { togglePlay(); show(); return true; }
-  if (k === KEY.FF) { if (p) jumpTo(p.time() + 30, 'key-ff'); show('scrub'); return true; }
-  if (k === KEY.RW) { if (p) jumpTo(p.time() - 10, 'key-rw'); show('scrub'); return true; }
+  if (k === KEY.FF || k === KEY.RW) { sceneJump(k === KEY.FF ? 1 : -1, k === KEY.FF ? 'key-ff' : 'key-rw'); return true; }
   if (k === KEY.STOP) { exitPlayer(); return true; }
 
   if (!visible) {
     stats.keysHidden++;
     if (k === KEY.BACK || k === KEY.ESC || k === KEY.BACKSPACE) return false; // index.js: leave the player
     if (k === KEY.ENTER) { togglePlay(); update(); return true; }
-    if (k === KEY.LEFT || k === KEY.RIGHT) { show('scrub'); seekStep(k === KEY.RIGHT ? 1 : -1); return true; }
-    if (k === KEY.UP || k === KEY.DOWN) { sel = PLAY_IDX; show('btn'); return true; }
+    if (k === KEY.LEFT || k === KEY.RIGHT) { sceneJump(k === KEY.RIGHT ? 1 : -1, k === KEY.RIGHT ? 'hidden-right' : 'hidden-left'); return true; }
+    if (k === KEY.UP || k === KEY.DOWN) { sel = startSel(); show('btn'); return true; }
     show(); return true;
   }
 
@@ -433,8 +487,8 @@ export function handleKey(k) {
     return true;
   }
   // button row
-  if (k === KEY.LEFT) { sel = Math.max(0, sel - 1); paint(); return true; }
-  if (k === KEY.RIGHT) { sel = Math.min(BTNS.length - 1, sel + 1); paint(); return true; }
+  if (k === KEY.LEFT) { sel = Math.max(0, sel - 1); rememberSel(); paint(); return true; }
+  if (k === KEY.RIGHT) { sel = Math.min(BTNS.length - 1, sel + 1); rememberSel(); paint(); return true; }
   if (k === KEY.UP) { zone = 'scrub'; paint(); return true; }
   if (k === KEY.DOWN) { return true; }
   if (k === KEY.ENTER) { activate(); return true; }

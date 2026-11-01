@@ -3,6 +3,8 @@
 // only rows near the focus get their cards built, and only cards near the focus load images.
 // Views: 'browse' (home: hero + shuffled rows), 'home' (= Categories), 'cat', 'composers', 'title'.
 // Selecting a performance starts OUR player directly (hooks.play).
+import { fromCompact } from '../cast/cast';
+import { openCast } from '../cast/castModal';
 import { homeRows, category, composerRows, FORMATS } from './model';
 import { getTitle, getPerformances, refreshLists, listsStale, catalogStatus, imgUrl } from './catalog';
 import { info, composerShort, composerName, LANGS, ERAS, MOODS } from './catalogData';
@@ -233,6 +235,17 @@ function buildTitle(v) {
     add((f && f.dec ? 'Other ' : '') + FORMATS[x], lst);
   });
   if (!rows.length) rows.push({ type: 'msg', title: 'No performances available.', items: [] });
+  // 1.3.2: who sings what in each performance (Met cast data), opens the Cast sheet.
+  var withRoles = v.perfs.filter(function (p) { return p.roles && p.roles.length; });
+  if (withRoles.length) {
+    var castChips = withRoles.map(function (p) {
+      var c = fromCompact(v.name, p.roles, p.cond), tr = '';
+      for (var i = 0; i < c.roles.length; i++) if (c.roles[i].trouser) { tr = c.roles[i].role + ': ' + c.roles[i].singer + ' (trouser role)'; break; }
+      return { n: -1, act: 'cast', perf: p, label: 'Cast · ' + dateStr(p.d) + ' · ' + fmtLabel(p.f),
+        sub: tr || c.roles.slice(0, 2).map(function (r) { return (r.role ? r.role + ': ' : '') + r.singer; }).join(' · ') };
+    });
+    rows.push.apply(rows, chunk(castChips, CHIP_COLS, { type: 'chips', title: 'Cast & roles  (' + castChips.length + ')' }));
+  }
   v.rows = rows;
 }
 function pairLabel(pairs, k) { for (var i = 0; i < pairs.length; i++) if (pairs[i][0] === k) return pairs[i][1]; return k; }
@@ -473,6 +486,7 @@ function activate() {
   }
   if (row.type === 'chips') {
     if (it.act === 'refresh') { doRefresh(); return; }
+    if (it.act === 'cast') { tlm('cast', { action: 'title', title: view.name, roles: it.perf.roles.length }); openCast(view.name, it.perf, dateStr(it.perf.d) + ' \u00b7 ' + fmtLabel(it.perf.f) + (it.perf.cond ? ' \u00b7 conducted by ' + it.perf.cond : '')); return; }
     if (it.cat === 'categories') { tlm('categories', { action: 'open', from: 'browse' }); show({ kind: 'home' }, true); return; }
     if (it.cat === 'composers') { tlm('categories', { action: 'view', cat: 'composers' }); show({ kind: 'composers' }, true); return; }
     tlm('categories', { action: 'view', cat: it.cat });

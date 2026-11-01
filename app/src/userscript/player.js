@@ -13,6 +13,7 @@
 // object-fit). Progress is mirrored to the Met (/client/event update-video-position every 10 s, like the
 // site) so Continue Watching stays in sync. Fallbacks: next source -> fresh stream URLs -> error screen
 // with "Try again" / "Use the Met's player" (the old page player) / Back.
+import { castOf } from './cast/cast';
 import { toast } from './toast';
 import { lsGet, lsSet } from './util';
 import { tlm } from './tlm';
@@ -67,6 +68,8 @@ export function subtitle() {
   return bits.join(' \u00b7 ');
 }
 export function chapters() { return S && S.chs ? S.chs : []; }
+// 1.3.2: the performance's cast (Met data) for the Cast panel.
+export function castInfo() { return S && S.meta ? castOf(S.meta) : null; }
 
 // ---------- picture + stream settings ----------
 export function pictureMode() { var m = lsGet('mtv.picMode2', 'fit'); return MODES.indexOf(m) >= 0 ? m : 'fit'; }
@@ -494,7 +497,9 @@ function parseChapters(cps) {
     var act = '';
     var am = /^(Act [IVX\d]+|Prologue|Epilogue|Part [IVX\d]+)\s*[:\-\u2013]\s*(.+)$/i.exec(t);
     if (am) { act = am[1].replace(/^Act\s+/i, ''); t = am[2]; }
-    out.push({ t: st, title: t, act: act });
+    var ar = /(?:^|\|)artists=([^|]*)/.exec(c.metadata || '');
+    var artists = ar && ar[1] ? ar[1].split(/\s*,\s*/).filter(function (x) { return !!x; }) : [];
+    out.push({ t: st, title: t, act: act, artists: artists });
   }
   out.sort(function (a, b) { return a.t - b.t; });
   // carry the act forward for scenes without an "Act X:" prefix
@@ -660,8 +665,7 @@ export function mediaKey(action) {
   else if (action === 'pause') p.pause();
   else if (action === 'toggle') { if (p.paused()) p.play(); else p.pause(); }
   else if (action === 'stop') close('stop');
-  else if (action === 'ff') seekBy(30);
-  else if (action === 'rw') seekBy(-10);
+  else if (action === 'ff' || action === 'rw') { if (hooks.sceneJump) hooks.sceneJump(action === 'ff' ? 1 : -1, 'media-' + action); }   // 1.3.2: scenes, no small skips
   return true;
 }
 export function engineState() {

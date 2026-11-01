@@ -5,6 +5,7 @@
 // A small build-time snapshot (seed.json, made from those endpoints) makes the screen instant on first
 // open; the live lists refresh in the background (12 h) and per-title performance lists are fetched on
 // demand and cached in localStorage (3 days, at most 40 titles). We only read catalog metadata.
+import { compactRoles } from '../cast/cast';
 import SEED from './seed.json';
 import { info, kindOf } from './catalogData';
 import { MIDDLEWARE, lsGet, lsSet, lsDel } from '../util';
@@ -176,6 +177,7 @@ function compactPerf(p) {
     rt: p.runTime ? Math.round(p.runTime / 60000) : 0,
     cast: singers.replace(/^\s+|\s+$/g, '').slice(0, 90), cond: cond, comp: comp,
     img: imgCode(tile), ad: !!p.hasAudioDescription, cc: !!p.hasCaptions,
+    roles: compactRoles(p),     // 1.3.2: [[roleName, singer]] from the Met cast (principals the Met lists)
     path: p.mediaType === 'AUDIO_STREAM' ? '/radio/' + p.id : '/performance/detail/' + p.id
   };
 }
@@ -197,7 +199,7 @@ function clearTitleCache() {
 var inflight = {};
 export function getPerformances(name, cb) {
   var c = lsGet(OP_PREFIX + name, null);
-  if (c && c.p && Date.now() - c.t < OP_TTL) { cb(null, c.p, true); return; }
+  if (c && c.p && c.v === 2 && Date.now() - c.t < OP_TTL) { cb(null, c.p, true); return; }   // v2 (1.3.2) adds roles
   if (inflight[name]) { inflight[name].push(cb); return; }
   inflight[name] = [cb];
   xhrJSON('/filter/' + encodeURIComponent(name.toLowerCase()), function (err, d, ms) {
@@ -212,7 +214,7 @@ export function getPerformances(name, cb) {
         list.push(compactPerf(d[i]));
       }
       list.sort(function (a, b) { return a.d < b.d ? 1 : a.d > b.d ? -1 : 0; });
-      lsSet(OP_PREFIX + name, { t: Date.now(), p: list });
+      lsSet(OP_PREFIX + name, { t: Date.now(), v: 2, p: list });
       touchIndex(name);
       // Keep the title's aggregates in sync with what we just saw.
       var t = getTitle(name);
