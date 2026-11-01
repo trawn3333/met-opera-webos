@@ -1,0 +1,31 @@
+{
+ "title": "The Ghosts of Versailles",
+ "match": [
+  "The Ghosts of Versailles"
+ ],
+ "general": true,
+ "facts": [
+  {
+   "id": "gen-the-ghosts-of-versailles-1",
+   "type": "premiere",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "The Metropolitan Opera had commissioned the work from Corigliano in 1980 in celebration of its 100th anniversary, with the premiere scheduled for 1983.",
+   "attribution": "Wikipedia, “The Ghosts of Versailles”",
+   "source": "wikiintro-The_Ghosts_of_Versailles.txt",
+   "anchor": null,
+   "evidence": "The Metropolitan Opera had commissioned the work from Corigliano in 1980 in celebration of its 100th anniversary, with the premiere scheduled for 1983."
+  },
+  {
+   "id": "gen-the-ghosts-of-versailles-2",
+   "type": "history",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "The Ghosts of Versailles is an opera in two acts, with music by John Corigliano to an English libretto by William M.",
+   "attribution": "Wikipedia, “The Ghosts of Versailles”",
+   "source": "wikiintro-The_Ghosts_of_Versailles.txt",
+   "anchor": null,
+   "evidence": "The Ghosts of Versailles is an opera in two acts, with music by John Corigliano to an English libretto by William M."
+  }
+ ]
+}

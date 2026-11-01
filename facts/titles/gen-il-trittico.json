@@ -1,0 +1,20 @@
+{
+ "title": "Il Trittico",
+ "match": [
+  "Il Trittico"
+ ],
+ "general": true,
+ "facts": [
+  {
+   "id": "gen-il-trittico-1",
+   "type": "premiere",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "The work received its world premiere at the Metropolitan Opera on 14 December 1918.",
+   "attribution": "Wikipedia, “Il trittico”",
+   "source": "wikiintro-Il_Trittico.txt",
+   "anchor": null,
+   "evidence": "The work received its world premiere at the Metropolitan Opera on 14 December 1918."
+  }
+ ]
+}

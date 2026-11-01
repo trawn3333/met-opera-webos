@@ -1,0 +1,20 @@
+{
+ "title": "La Forza del Destino",
+ "match": [
+  "La Forza del Destino"
+ ],
+ "general": true,
+ "facts": [
+  {
+   "id": "gen-la-forza-del-destino-1",
+   "type": "premiere",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "It was first performed in the Bolshoi Kamenny Theatre of Saint Petersburg, Russia, on 29 October 1862 O.S. (N.S. 10 November).",
+   "attribution": "Wikipedia, “La forza del destino”",
+   "source": "wikiintro-La_Forza_del_Destino.txt",
+   "anchor": null,
+   "evidence": "It was first performed in the Bolshoi Kamenny Theatre of Saint Petersburg, Russia, on 29 October 1862 O.S. (N.S. 10 November)."
+  }
+ ]
+}

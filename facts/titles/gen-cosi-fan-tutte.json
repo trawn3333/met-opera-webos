@@ -1,0 +1,31 @@
+{
+ "title": "Così fan tutte",
+ "match": [
+  "Così fan tutte"
+ ],
+ "general": true,
+ "facts": [
+  {
+   "id": "gen-cosi-fan-tutte-1",
+   "type": "premiere",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "It was first performed on 26 January 1790 at the Burgtheater in Vienna, Austria.",
+   "attribution": "Wikipedia, “Così fan tutte”",
+   "source": "wikiintro-Cos_fan_tutte.txt",
+   "anchor": null,
+   "evidence": "It was first performed on 26 January 1790 at the Burgtheater in Vienna, Austria."
+  },
+  {
+   "id": "gen-cosi-fan-tutte-2",
+   "type": "history",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "The libretto was written by Lorenzo Da Ponte who also wrote Le nozze di Figaro and Don Giovanni.",
+   "attribution": "Wikipedia, “Così fan tutte”",
+   "source": "wikiintro-Cos_fan_tutte.txt",
+   "anchor": null,
+   "evidence": "The libretto was written by Lorenzo Da Ponte who also wrote Le nozze di Figaro and Don Giovanni."
+  }
+ ]
+}

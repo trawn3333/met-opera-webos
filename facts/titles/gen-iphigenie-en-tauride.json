@@ -1,0 +1,20 @@
+{
+ "title": "Iphigénie en Tauride",
+ "match": [
+  "Iphigénie en Tauride"
+ ],
+ "general": true,
+ "facts": [
+  {
+   "id": "gen-iphigenie-en-tauride-1",
+   "type": "history",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "The libretto was written by Nicolas-François Guillard.",
+   "attribution": "Wikipedia, “Iphigénie en Tauride”",
+   "source": "wikiintro-Iphig_nie_en_Tauride.txt",
+   "anchor": null,
+   "evidence": "The libretto was written by Nicolas-François Guillard."
+  }
+ ]
+}

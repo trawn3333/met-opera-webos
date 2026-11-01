@@ -1,0 +1,31 @@
+{
+ "title": "Das Rheingold",
+ "match": [
+  "Das Rheingold"
+ ],
+ "general": true,
+ "facts": [
+  {
+   "id": "gen-das-rheingold-1",
+   "type": "premiere",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "It premiered as a single opera at the National Theatre of Munich on 22 September 1869, and received its first performance as part of the Ring cycle at the Bayreuth Festspielhaus on 13 August 1876.",
+   "attribution": "Wikipedia, “Das Rheingold”",
+   "source": "wikiintro-Das_Rheingold.txt",
+   "anchor": null,
+   "evidence": "It premiered as a single opera at the National Theatre of Munich on 22 September 1869, and received its first performance as part of the Ring cycle at the Bayreuth Festspielhaus on 13 August 1876."
+  },
+  {
+   "id": "gen-das-rheingold-2",
+   "type": "history",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "Wagner wrote the Ring librettos in reverse order, so that Das Rheingold was the last of the texts to be written; it was, however, the first to be set to music.",
+   "attribution": "Wikipedia, “Das Rheingold”",
+   "source": "wikiintro-Das_Rheingold.txt",
+   "anchor": null,
+   "evidence": "Wagner wrote the Ring librettos in reverse order, so that Das Rheingold was the last of the texts to be written; it was, however, the first to be set to music."
+  }
+ ]
+}

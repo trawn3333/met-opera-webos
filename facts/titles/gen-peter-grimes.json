@@ -1,0 +1,31 @@
+{
+ "title": "Peter Grimes",
+ "match": [
+  "Peter Grimes"
+ ],
+ "general": true,
+ "facts": [
+  {
+   "id": "gen-peter-grimes-1",
+   "type": "premiere",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "It was first performed at Sadler's Wells in London on 7 June 1945, conducted by Reginald Goodall, and was a critical and popular success.",
+   "attribution": "Wikipedia, “Peter Grimes”",
+   "source": "wikiintro-Peter_Grimes_opera_.txt",
+   "anchor": null,
+   "evidence": "It was first performed at Sadler's Wells in London on 7 June 1945, conducted by Reginald Goodall, and was a critical and popular success."
+  },
+  {
+   "id": "gen-peter-grimes-2",
+   "type": "history",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "Peter Grimes, Op. 33, is an opera in three acts by Benjamin Britten, with a libretto by Montagu Slater based on the section \"Peter Grimes\", in George Crabbe's long narrative poem The Borough (1810).",
+   "attribution": "Wikipedia, “Peter Grimes”",
+   "source": "wikiintro-Peter_Grimes_opera_.txt",
+   "anchor": null,
+   "evidence": "Peter Grimes, Op. 33, is an opera in three acts by Benjamin Britten, with a libretto by Montagu Slater based on the section \"Peter Grimes\", in George Crabbe's long narrative poem The Borough (1810)."
+  }
+ ]
+}

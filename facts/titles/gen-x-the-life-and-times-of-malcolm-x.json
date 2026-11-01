@@ -1,0 +1,20 @@
+{
+ "title": "X: The Life and Times of Malcolm X",
+ "match": [
+  "X: The Life and Times of Malcolm X"
+ ],
+ "general": true,
+ "facts": [
+  {
+   "id": "gen-x-the-life-and-times-of-malcolm-x-1",
+   "type": "history",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "X: The Life and Times of Malcolm X is an opera with music by Anthony Davis and libretto by Thulani Davis, to a story by Christopher Davis.",
+   "attribution": "Wikipedia, “X: The Life and Times of Malcolm X”",
+   "source": "wikiintro-X_The_Life_and_Times_of_Malcolm_X.txt",
+   "anchor": null,
+   "evidence": "X: The Life and Times of Malcolm X is an opera with music by Anthony Davis and libretto by Thulani Davis, to a story by Christopher Davis."
+  }
+ ]
+}

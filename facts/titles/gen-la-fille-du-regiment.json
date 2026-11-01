@@ -1,0 +1,20 @@
+{
+ "title": "La Fille du Régiment",
+ "match": [
+  "La Fille du Régiment"
+ ],
+ "general": true,
+ "facts": [
+  {
+   "id": "gen-la-fille-du-regiment-1",
+   "type": "premiere",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "It was first performed on 11 February 1840 by the Paris Opéra-Comique at the Salle de la Bourse.",
+   "attribution": "Wikipedia, “La fille du régiment”",
+   "source": "wikiintro-La_Fille_du_R_giment.txt",
+   "anchor": null,
+   "evidence": "It was first performed on 11 February 1840 by the Paris Opéra-Comique at the Salle de la Bourse."
+  }
+ ]
+}

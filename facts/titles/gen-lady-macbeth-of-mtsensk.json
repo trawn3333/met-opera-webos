@@ -1,0 +1,31 @@
+{
+ "title": "Lady Macbeth of Mtsensk",
+ "match": [
+  "Lady Macbeth of Mtsensk"
+ ],
+ "general": true,
+ "facts": [
+  {
+   "id": "gen-lady-macbeth-of-mtsensk-1",
+   "type": "premiere",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "Dedicated by Shostakovich to his first wife, the physicist Nina Varzar, the opera was first performed on 22 January 1934 at the Leningrad Maly Operny Theatre, and received its Moscow premiere two days later.",
+   "attribution": "Wikipedia, “Lady Macbeth of Mtsensk (opera)”",
+   "source": "wikiintro-Lady_Macbeth_of_Mtsensk_opera_.txt",
+   "anchor": null,
+   "evidence": "Dedicated by Shostakovich to his first wife, the physicist Nina Varzar, the opera was first performed on 22 January 1934 at the Leningrad Maly Operny Theatre, and received its Moscow premiere two days later."
+  },
+  {
+   "id": "gen-lady-macbeth-of-mtsensk-2",
+   "type": "history",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "The libretto, jointly written by Alexander Preis and the composer, is based on the novella Lady Macbeth of the Mtsensk District by Nikolai Leskov.",
+   "attribution": "Wikipedia, “Lady Macbeth of Mtsensk (opera)”",
+   "source": "wikiintro-Lady_Macbeth_of_Mtsensk_opera_.txt",
+   "anchor": null,
+   "evidence": "The libretto, jointly written by Alexander Preis and the composer, is based on the novella Lady Macbeth of the Mtsensk District by Nikolai Leskov."
+  }
+ ]
+}

@@ -1,0 +1,160 @@
+{
+ "title": "Don Giovanni",
+ "match": [
+  "Don Giovanni"
+ ],
+ "facts": [
+  {
+   "id": "giovanni-01",
+   "type": "premiere",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "Don Giovanni premiered in Prague at the National Theatre (today’s Estates Theatre) on 29 October 1787.",
+   "attribution": "Wikipedia, “Don Giovanni”",
+   "source": "wiki-Don_Giovanni.txt",
+   "anchor": null,
+   "evidence": "now called the Estates Theatre, on 29 October 1787"
+  },
+  {
+   "id": "giovanni-02",
+   "type": "blooper",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "It was meant to open on 14 October 1787 for a visiting archduchess, but wasn’t ready, so Le Nozze di Figaro was played instead.",
+   "attribution": "Wikipedia, “Don Giovanni”",
+   "source": "wiki-Don_Giovanni.txt",
+   "anchor": "Composition_and_premiere",
+   "evidence": "it was not ready in time and Le nozze di Figaro was substituted"
+  },
+  {
+   "id": "giovanni-03",
+   "type": "history",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "Prague commissioned it after Mozart’s successful visit there in early 1787.",
+   "attribution": "Wikipedia, “Don Giovanni”",
+   "source": "wiki-Don_Giovanni.txt",
+   "anchor": "Composition_and_premiere",
+   "evidence": "The opera was commissioned after the success of Mozart's trip to Prague in January and February 1787."
+  },
+  {
+   "id": "giovanni-04",
+   "type": "music",
+   "sceneMatch": "Overture|Sinfonia",
+   "scope": "all",
+   "text": "The overture opens with a thundering D minor cadence and a mysterious passage, then turns into a light-hearted D major allegro.",
+   "attribution": "Wikipedia, “Don Giovanni”",
+   "source": "wiki-Don_Giovanni.txt",
+   "anchor": "Act_1",
+   "evidence": "The overture begins with a thundering D minor cadence, followed by a short misterioso sequence which leads into a light-hearted D major allegro."
+  },
+  {
+   "id": "giovanni-05",
+   "type": "music",
+   "sceneMatch": "Madamina|catalogo",
+   "scope": "all",
+   "text": "The Catalogue Aria counts the Don’s conquests: 640 in Italy, 231 in Germany, 100 in France, 91 in Turkey, and in Spain, 1,003.",
+   "attribution": "Wikipedia, “Don Giovanni”",
+   "source": "wiki-Don_Giovanni.txt",
+   "anchor": "Act_1",
+   "evidence": "his conquests include 640 women and girls in Italy, 231 in Germany, 100 in France, 91 in Turkey, but in Spain, 1,003"
+  },
+  {
+   "id": "giovanni-06",
+   "type": "history",
+   "sceneMatch": "Madamina|catalogo",
+   "scope": "all",
+   "text": "Thanks to this aria, German and other languages call fold-out brochures a “Leporello list”.",
+   "attribution": "Wikipedia, “Don Giovanni”",
+   "source": "wiki-Don_Giovanni.txt",
+   "anchor": "Cultural_influence",
+   "evidence": "provided the name \"Leporello list\" for pamphlets"
+  },
+  {
+   "id": "giovanni-07",
+   "type": "music",
+   "sceneMatch": "Là ci darem|La ci darem",
+   "scope": "all",
+   "text": "“Là ci darem la mano” (“There we will entwine our hands”): alone with Zerlina, the Don immediately turns on the charm.",
+   "attribution": "Wikipedia, “Don Giovanni”",
+   "source": "wiki-Don_Giovanni.txt",
+   "anchor": "Act_1",
+   "evidence": "Don Giovanni and Zerlina are soon alone and he immediately begins his seductive arts"
+  },
+  {
+   "id": "giovanni-08",
+   "type": "music",
+   "sceneMatch": "Fin ch.han dal vino",
+   "scope": "all",
+   "text": "The “Champagne Aria”: the Don orders a party with every girl Leporello can find.",
+   "attribution": "Wikipedia, “Don Giovanni”",
+   "source": "wiki-Don_Giovanni.txt",
+   "anchor": "Act_1",
+   "evidence": "tells Leporello to organise a party and invite every girl he can find"
+  },
+  {
+   "id": "giovanni-09",
+   "type": "composer",
+   "sceneMatch": "Dalla sua pace",
+   "scope": "all",
+   "text": "Mozart added “Dalla sua pace” for the 1788 Vienna production, written for the tenor Francesco Morella.",
+   "attribution": "Wikipedia, “Don Giovanni”",
+   "source": "wiki-Don_Giovanni.txt",
+   "anchor": "Revision_for_Vienna",
+   "evidence": "Don Ottavio's aria \"Dalla sua pace\" (K. 540a, composed on 24 April for the tenor Francesco Morella)"
+  },
+  {
+   "id": "giovanni-10",
+   "type": "composer",
+   "sceneMatch": "Mi tradì|In quali eccessi",
+   "scope": "all",
+   "text": "Elvira’s “Mi tradì quell’alma ingrata” was also a Vienna addition, composed on 30 April 1788 for Caterina Cavalieri.",
+   "attribution": "Wikipedia, “Don Giovanni”",
+   "source": "wiki-Don_Giovanni.txt",
+   "anchor": "Revision_for_Vienna",
+   "evidence": "composed on 30 April for the soprano Caterina Cavalieri"
+  },
+  {
+   "id": "giovanni-11",
+   "type": "staging",
+   "sceneMatch": "Don Giovanni, a cenar|cenar teco|Commendatore",
+   "scope": "all",
+   "text": "In Prague and Vienna one singer played both Masetto and the Commendatore. The demons’ chorus gave him just a little time to change costume.",
+   "attribution": "Wikipedia, “Don Giovanni”",
+   "source": "wiki-Don_Giovanni.txt",
+   "anchor": "Later_performance_traditions",
+   "evidence": [
+    "the same singer played both Masetto and the Commendatore roles in both the Prague and Vienna premieres",
+    "gives the singer time for a costume change before entering as Masetto for the sextet, though not much time"
+   ]
+  },
+  {
+   "id": "giovanni-12",
+   "type": "history",
+   "sceneMatch": "Questo è il fin|Questo e il fin|Ah, dov.è il perfido",
+   "scope": "all",
+   "text": "A memoirist claimed the final ensemble was heard only at the first Prague performance, then never again during the original run. Today it is almost always performed.",
+   "attribution": "Wikipedia, “Don Giovanni”",
+   "source": "wiki-Don_Giovanni.txt",
+   "anchor": "Later_performance_traditions",
+   "evidence": [
+    "the final ensemble was only presented at the first performance in Prague, then never heard again during the original run",
+    "the final ensemble is almost invariably performed in full today"
+   ]
+  },
+  {
+   "id": "giovanni-13",
+   "type": "critic",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "Kierkegaard argued that “among all classic works Don Giovanni stands highest.” Gounod called it “a work without blemish, of uninterrupted perfection”.",
+   "attribution": "Wikipedia, “Don Giovanni”",
+   "source": "wiki-Don_Giovanni.txt",
+   "anchor": "Cultural_influence",
+   "evidence": [
+    "among all classic works Don Giovanni stands highest.",
+    "a work without blemish, of uninterrupted perfection"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,31 @@
+{
+ "title": "La Cenerentola",
+ "match": [
+  "La Cenerentola"
+ ],
+ "general": true,
+ "facts": [
+  {
+   "id": "gen-la-cenerentola-1",
+   "type": "premiere",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "Rossini's opera was first performed in Rome's Teatro Valle on 25 January 1817.",
+   "attribution": "Wikipedia, “La Cenerentola”",
+   "source": "wikiintro-La_Cenerentola.txt",
+   "anchor": null,
+   "evidence": "Rossini's opera was first performed in Rome's Teatro Valle on 25 January 1817."
+  },
+  {
+   "id": "gen-la-cenerentola-2",
+   "type": "history",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "The supernatural elements that traditionally characterize the Cinderella story were removed from the libretto simply for ease of staging.",
+   "attribution": "Wikipedia, “La Cenerentola”",
+   "source": "wikiintro-La_Cenerentola.txt",
+   "anchor": null,
+   "evidence": "The supernatural elements that traditionally characterize the Cinderella story were removed from the libretto simply for ease of staging."
+  }
+ ]
+}

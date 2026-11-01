@@ -1,0 +1,20 @@
+{
+ "title": "Wozzeck",
+ "match": [
+  "Wozzeck"
+ ],
+ "general": true,
+ "facts": [
+  {
+   "id": "gen-wozzeck-1",
+   "type": "history",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "Based on Georg Büchner's play Woyzeck (1836), it depicts a soldier's tragic slide into madness and murder amid militarism and social oppression.",
+   "attribution": "Wikipedia, “Wozzeck”",
+   "source": "wikiintro-Wozzeck_opera_.txt",
+   "anchor": null,
+   "evidence": "Based on Georg Büchner's play Woyzeck (1836), it depicts a soldier's tragic slide into madness and murder amid militarism and social oppression."
+  }
+ ]
+}

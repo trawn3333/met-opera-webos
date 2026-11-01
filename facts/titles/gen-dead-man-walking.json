@@ -1,0 +1,31 @@
+{
+ "title": "Dead Man Walking",
+ "match": [
+  "Dead Man Walking"
+ ],
+ "general": true,
+ "facts": [
+  {
+   "id": "gen-dead-man-walking-1",
+   "type": "premiere",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "Based on the book of the same name by Sister Helen Prejean, C.S.J., the work premiered on October 7, 2000, at the War Memorial Opera House, produced by the San Francisco Opera.",
+   "attribution": "Wikipedia, “Dead Man Walking (opera)”",
+   "source": "wikiintro-Dead_Man_Walking_opera_.txt",
+   "anchor": null,
+   "evidence": "Based on the book of the same name by Sister Helen Prejean, C.S.J., the work premiered on October 7, 2000, at the War Memorial Opera House, produced by the San Francisco Opera."
+  },
+  {
+   "id": "gen-dead-man-walking-2",
+   "type": "history",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "Dead Man Walking is the first opera composed by American Jake Heggie, with a libretto by playwright Terrence McNally.",
+   "attribution": "Wikipedia, “Dead Man Walking (opera)”",
+   "source": "wikiintro-Dead_Man_Walking_opera_.txt",
+   "anchor": null,
+   "evidence": "Dead Man Walking is the first opera composed by American Jake Heggie, with a libretto by playwright Terrence McNally."
+  }
+ ]
+}

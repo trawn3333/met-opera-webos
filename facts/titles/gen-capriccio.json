@@ -1,0 +1,31 @@
+{
+ "title": "Capriccio",
+ "match": [
+  "Capriccio"
+ ],
+ "general": true,
+ "facts": [
+  {
+   "id": "gen-capriccio-1",
+   "type": "premiere",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "It received its premiere performance at the Nationaltheater München on 28 October 1942.",
+   "attribution": "Wikipedia, “Capriccio (opera)”",
+   "source": "wikiintro-Capriccio_opera_.txt",
+   "anchor": null,
+   "evidence": "It received its premiere performance at the Nationaltheater München on 28 October 1942."
+  },
+  {
+   "id": "gen-capriccio-2",
+   "type": "history",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "Strauss and Clemens Krauss wrote the German libretto, but its genesis came from Stefan Zweig in the 1930s, and Joseph Gregor further developed the idea several years later.",
+   "attribution": "Wikipedia, “Capriccio (opera)”",
+   "source": "wikiintro-Capriccio_opera_.txt",
+   "anchor": null,
+   "evidence": "Strauss and Clemens Krauss wrote the German libretto, but its genesis came from Stefan Zweig in the 1930s, and Joseph Gregor further developed the idea several years later."
+  }
+ ]
+}

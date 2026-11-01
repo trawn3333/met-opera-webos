@@ -1,0 +1,20 @@
+{
+ "title": "Cavalleria Rusticana",
+ "match": [
+  "Cavalleria Rusticana"
+ ],
+ "general": true,
+ "facts": [
+  {
+   "id": "gen-cavalleria-rusticana-1",
+   "type": "premiere",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "Considered one of the classic verismo operas, it premiered on 17 May 1890 at the Teatro Costanzi in Rome.",
+   "attribution": "Wikipedia, “Cavalleria rusticana”",
+   "source": "wikiintro-Cavalleria_Rusticana.txt",
+   "anchor": null,
+   "evidence": "Considered one of the classic verismo operas, it premiered on 17 May 1890 at the Teatro Costanzi in Rome."
+  }
+ ]
+}

@@ -1,0 +1,31 @@
+{
+ "title": "The First Emperor",
+ "match": [
+  "The First Emperor"
+ ],
+ "general": true,
+ "facts": [
+  {
+   "id": "gen-the-first-emperor-1",
+   "type": "premiere",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "The world premiere took place at the Metropolitan Opera on 21 December 2006, conducted by the composer, with Plácido Domingo in the title role.",
+   "attribution": "Wikipedia, “The First Emperor”",
+   "source": "wikiintro-The_First_Emperor.txt",
+   "anchor": null,
+   "evidence": "The world premiere took place at the Metropolitan Opera on 21 December 2006, conducted by the composer, with Plácido Domingo in the title role."
+  },
+  {
+   "id": "gen-the-first-emperor-2",
+   "type": "history",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "The First Emperor is an English‑language opera in two acts with music by Tan Dun, with a libretto by Tan Dun and novelist Ha Jin.",
+   "attribution": "Wikipedia, “The First Emperor”",
+   "source": "wikiintro-The_First_Emperor.txt",
+   "anchor": null,
+   "evidence": "The First Emperor is an English‑language opera in two acts with music by Tan Dun, with a libretto by Tan Dun and novelist Ha Jin."
+  }
+ ]
+}

@@ -1,0 +1,149 @@
+{
+ "title": "Eugene Onegin",
+ "match": [
+  "Eugene Onegin",
+  "Evgeny Onegin",
+  "Yevgeny Onegin"
+ ],
+ "facts": [
+  {
+   "id": "onegin-01",
+   "type": "premiere",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "Eugene Onegin premiered in Moscow on 29 March 1879, conducted by Nikolai Rubinstein.",
+   "attribution": "Wikipedia, “Eugene Onegin”",
+   "source": "wiki-Eugene_Onegin_opera_.txt",
+   "anchor": "Performance_history",
+   "evidence": "The premiere took place on 29 March (17 March O.S.) 1879 at the Maly Theatre, Moscow, conducted by Nikolai Rubinstein"
+  },
+  {
+   "id": "onegin-02",
+   "type": "composer",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "Worried about an opera without traditional scene changes, Tchaikovsky wanted maximum simplicity and sincerity, so he entrusted the premiere to Moscow Conservatory students.",
+   "attribution": "Wikipedia, “Eugene Onegin”",
+   "source": "wiki-Eugene_Onegin_opera_.txt",
+   "anchor": "Performance_history",
+   "evidence": [
+    "Tchaikovsky worried whether the public would accept his opera, which lacked traditional scene changes",
+    "he entrusted the first production to the students of the Moscow Conservatory"
+   ]
+  },
+  {
+   "id": "onegin-03",
+   "type": "history",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "Tchaikovsky didn’t call it an opera but “lyrical scenes”: selected highlights of Onegin’s life rather than a continuous story.",
+   "attribution": "Wikipedia, “Eugene Onegin”",
+   "source": "wiki-Eugene_Onegin_opera_.txt",
+   "anchor": "Composition_history",
+   "evidence": [
+    "calling the opera \"lyrical scenes.\"",
+    "there is no continuous story, just selected highlights of Onegin's life"
+   ]
+  },
+  {
+   "id": "onegin-04",
+   "type": "history",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "The idea came from the singer Yelizaveta Lavrovskaya in May 1877. After a sleepless night, Tchaikovsky embraced it.",
+   "attribution": "Wikipedia, “Eugene Onegin”",
+   "source": "wiki-Eugene_Onegin_opera_.txt",
+   "anchor": "Composition_history",
+   "evidence": [
+    "In May 1877, the opera singer Yelizaveta Lavrovskaya spoke to Tchaikovsky",
+    "Soon after a sleepless night, Tchaikovsky came to embrace the idea"
+   ]
+  },
+  {
+   "id": "onegin-05",
+   "type": "composer",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "Tchaikovsky thought Pushkin’s novel weak on plot; its strength was its characters, social commentary and beautiful verse.",
+   "attribution": "Wikipedia, “Eugene Onegin”",
+   "source": "wiki-Eugene_Onegin_opera_.txt",
+   "anchor": "Composition_history",
+   "evidence": [
+    "Tchaikovsky felt that the novel wasn't particularly strong in plot",
+    "The strength of the novel resided in its character development and social commentary"
+   ]
+  },
+  {
+   "id": "onegin-06",
+   "type": "music",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "The libretto keeps much of Pushkin’s own poetry from his novel in verse.",
+   "attribution": "Wikipedia, “Eugene Onegin”",
+   "source": "wiki-Eugene_Onegin_opera_.txt",
+   "anchor": null,
+   "evidence": "very closely follows certain passages in Alexander Pushkin's 1825–1832 novel in verse, retaining much of his poetry"
+  },
+  {
+   "id": "onegin-07",
+   "type": "music",
+   "sceneMatch": "Triquet|couplets",
+   "scope": "all",
+   "text": "Monsieur Triquet’s verses were written by Tchaikovsky’s friend Konstantin Shilovsky.",
+   "attribution": "Wikipedia, “Eugene Onegin”",
+   "source": "wiki-Eugene_Onegin_opera_.txt",
+   "anchor": null,
+   "evidence": "Tchaikovsky's friend Konstantin Shilovsky contributed M. Triquet's verses in Act 2, Scene 1"
+  },
+  {
+   "id": "onegin-08",
+   "type": "history",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "Gustav Mahler conducted the Hamburg premiere in 1892. Tchaikovsky called him “simply a genius burning with a desire to conduct”.",
+   "attribution": "Tchaikovsky (via Wikipedia)",
+   "source": "wiki-Eugene_Onegin_opera_.txt",
+   "anchor": "Performance_history",
+   "evidence": [
+    "The first performance in Hamburg, on 19 January 1892, was conducted by Gustav Mahler",
+    "simply a genius burning with a desire to conduct"
+   ]
+  },
+  {
+   "id": "onegin-09",
+   "type": "history",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "The Met gave the US premiere on 24 March 1920, but its first performance in Russian came only on 15 October 1977.",
+   "attribution": "Wikipedia, “Eugene Onegin”",
+   "source": "wiki-Eugene_Onegin_opera_.txt",
+   "anchor": "Performance_history",
+   "evidence": [
+    "The United States premiere was given on 24 March 1920 at the Metropolitan Opera",
+    "The first Russian performance by the Metropolitan Opera was on 15 October 1977."
+   ]
+  },
+  {
+   "id": "onegin-10",
+   "type": "music",
+   "sceneMatch": "Gremin|Love knows no age|Lyubvi",
+   "scope": "all",
+   "text": "Gremin’s aria “Love knows no age” is partly hummed by characters in Chekhov’s play Three Sisters.",
+   "attribution": "Wikipedia, “Eugene Onegin”",
+   "source": "wiki-Eugene_Onegin_opera_.txt",
+   "anchor": "Allusions",
+   "evidence": "is partially hummed by the characters of Vershinin and Masha in Anton Chekhov's play Three Sisters"
+  },
+  {
+   "id": "onegin-11",
+   "type": "history",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "The first performance outside Russia was in Prague in 1888, conducted by Tchaikovsky himself.",
+   "attribution": "Wikipedia, “Eugene Onegin”",
+   "source": "wiki-Eugene_Onegin_opera_.txt",
+   "anchor": "Performance_history",
+   "evidence": "The first performance outside Russia took place on 6 December 1888 in Prague, conducted by Tchaikovsky himself"
+  }
+ ]
+}

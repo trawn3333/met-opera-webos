@@ -1,0 +1,173 @@
+{
+ "title": "The Magic Flute",
+ "match": [
+  "The Magic Flute",
+  "Die Zauberflöte",
+  "Die Zauberflote"
+ ],
+ "facts": [
+  {
+   "id": "flute-01",
+   "type": "premiere",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "The Magic Flute premiered on 30 September 1791 in Vienna, just two months before Mozart’s death.",
+   "attribution": "Wikipedia, “The Magic Flute”",
+   "source": "wiki-The_Magic_Flute.txt",
+   "anchor": null,
+   "evidence": "The work premiered on 30 September 1791 at Schikaneder's theatre, the Freihaus-Theater auf der Wieden in Vienna, just two months before Mozart's death."
+  },
+  {
+   "id": "flute-02",
+   "type": "premiere",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "At the premiere Mozart conducted, the librettist Schikaneder played Papageno himself, and the Queen of the Night was sung by Mozart’s sister-in-law, Josepha Hofer.",
+   "attribution": "Wikipedia, “The Magic Flute”",
+   "source": "wiki-The_Magic_Flute.txt",
+   "anchor": "Premiere_and_reception",
+   "evidence": "Mozart conducted the orchestra and Schikaneder himself played Papageno, while the role of the Queen of the Night was sung by Mozart's sister-in-law Josepha Hofer."
+  },
+  {
+   "id": "flute-03",
+   "type": "composer",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "Mozart to his wife on 7 October 1791: “I have this moment returned from the opera, which was as full as ever … what always gives me the most pleasure is the silent approval!”",
+   "attribution": "Mozart, letter to Constanze (via Wikipedia)",
+   "source": "wiki-The_Magic_Flute.txt",
+   "anchor": "Premiere_and_reception",
+   "evidence": [
+    "I have this moment returned from the opera, which was as full as ever",
+    "But what always gives me the most pleasure is the silent approval!"
+   ]
+  },
+  {
+   "id": "flute-04",
+   "type": "composer",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "Mozart went to hear his new opera almost every night, taking along friends and relatives.",
+   "attribution": "Wikipedia, “The Magic Flute”",
+   "source": "wiki-The_Magic_Flute.txt",
+   "anchor": "Premiere_and_reception",
+   "evidence": "He went to hear his opera almost every night"
+  },
+  {
+   "id": "flute-05",
+   "type": "history",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "The opera reached its 100th performance in November 1792, but Mozart didn’t live to see it: he died on 5 December 1791.",
+   "attribution": "Wikipedia, “The Magic Flute”",
+   "source": "wiki-The_Magic_Flute.txt",
+   "anchor": "Premiere_and_reception",
+   "evidence": "The opera celebrated its 100th performance in November 1792, though Mozart did not have the pleasure of witnessing this milestone, as he had died on 5 December 1791."
+  },
+  {
+   "id": "flute-06",
+   "type": "music",
+   "sceneMatch": "Overture|Ouvert",
+   "scope": "all",
+   "text": "The overture was written after the rest of the opera. Its three solemn brass chords nod to Freemasonry, where the number three is highly significant.",
+   "attribution": "Wikipedia, “The Magic Flute”",
+   "source": "wiki-The_Magic_Flute.txt",
+   "anchor": "Overture",
+   "evidence": [
+    "The overture, composed after the other parts of the opera were complete, begins with a solemn three-chord sequence from the brass",
+    "The number three is highly significant in Freemasonry"
+   ]
+  },
+  {
+   "id": "flute-07",
+   "type": "history",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "Both Mozart and Schikaneder were Freemasons, and the opera is noted for its Masonic elements.",
+   "attribution": "Wikipedia, “The Magic Flute”",
+   "source": "wiki-The_Magic_Flute.txt",
+   "anchor": "Themes",
+   "evidence": [
+    "The Magic Flute is noted for its prominent Masonic elements",
+    "Schikaneder and Mozart were Freemasons"
+   ]
+  },
+  {
+   "id": "flute-08",
+   "type": "music",
+   "sceneMatch": "Der Vogelfänger|Vogelfanger|Papageno",
+   "scope": "all",
+   "text": "Papageno’s whistle is based on a motif borrowed from a concerto by Antonio Salieri.",
+   "attribution": "Wikipedia, “The Magic Flute”",
+   "source": "wiki-The_Magic_Flute.txt",
+   "anchor": "Composition",
+   "evidence": "Papageno's whistle is based on a motif borrowed from Salieri's Concerto for Clavicembalo in B♭ major."
+  },
+  {
+   "id": "flute-09",
+   "type": "music",
+   "sceneMatch": "Pa-?pa-?pa|Papagena",
+   "scope": "all",
+   "text": "The Papageno–Papagena duet, with its bird-like syllables, resembles a comic cavatina in Salieri’s Prima la musica e poi le parole.",
+   "attribution": "Wikipedia, “The Magic Flute”",
+   "source": "wiki-The_Magic_Flute.txt",
+   "anchor": "Composition",
+   "evidence": "the Papageno–Papagena duet is similar to the Cucuzze cavatina in Salieri's Prima la musica e poi le parole"
+  },
+  {
+   "id": "flute-10",
+   "type": "music",
+   "sceneMatch": "Das klinget|Glockenspiel|bells",
+   "scope": "all",
+   "text": "Mozart called for a “stromento d’acciaio” (instrument of steel) to play Papageno’s magic bells.",
+   "attribution": "Wikipedia, “The Magic Flute”",
+   "source": "wiki-The_Magic_Flute.txt",
+   "anchor": "Orchestration",
+   "evidence": "Mozart also called for a stromento d'acciaio (instrument of steel) to perform Papageno's magic bells."
+  },
+  {
+   "id": "flute-11",
+   "type": "music",
+   "sceneMatch": "Der, welcher wandert|Armed Men|armou?red men|Geharnischte",
+   "scope": "all",
+   "text": "The Armed Men’s chorale is set to a Baroque chorale prelude, inspired by Martin Luther’s hymn “Ach Gott, vom Himmel sieh darein”.",
+   "attribution": "Wikipedia, “The Magic Flute”",
+   "source": "wiki-The_Magic_Flute.txt",
+   "anchor": "Scene_7:_At_the_Mountains_of_Ordeal",
+   "evidence": "sung to a Baroque chorale prelude, inspired by Martin Luther's hymn \"Ach Gott, vom Himmel sieh darein\""
+  },
+  {
+   "id": "flute-12",
+   "type": "critic",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "Pauline Kael called it “a peerlessly silly masterpiece: sublimely lucid music arising out of a parodistic fairy tale.”",
+   "attribution": "Pauline Kael (via Wikipedia)",
+   "source": "wiki-The_Magic_Flute.txt",
+   "anchor": "Premiere_and_reception",
+   "evidence": "It's a peerlessly silly masterpiece: sublimely lucid music arising out of a parodistic fairy tale"
+  },
+  {
+   "id": "flute-13",
+   "type": "history",
+   "sceneMatch": "Der Hölle Rache|Der Holle Rache|O zittre nicht",
+   "scope": "all",
+   "text": "Some see the Queen of the Night as a portrait of Empress Maria Theresa, who banned Freemasonry from Austria.",
+   "attribution": "Wikipedia, “The Magic Flute”",
+   "source": "wiki-The_Magic_Flute.txt",
+   "anchor": "Themes",
+   "evidence": "by others to represent Roman Catholic Empress Maria Theresa, who banned Freemasonry from Austria"
+  },
+  {
+   "id": "flute-14",
+   "type": "history",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "Early productions were often of highly altered, sometimes even mutilated, versions of the opera.",
+   "attribution": "Wikipedia, “The Magic Flute”",
+   "source": "wiki-The_Magic_Flute.txt",
+   "anchor": "Premiere_and_reception",
+   "evidence": "the earlier performances were often of highly altered, sometimes even mutilated, versions of the opera"
+  }
+ ]
+}

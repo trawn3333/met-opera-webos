@@ -1,0 +1,31 @@
+{
+ "title": "I Vespri Siciliani",
+ "match": [
+  "I Vespri Siciliani"
+ ],
+ "general": true,
+ "facts": [
+  {
+   "id": "gen-i-vespri-siciliani-1",
+   "type": "premiere",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "After its June 1855 Paris premiere, an Italian libretto was quickly prepared using a new title because Verdi realized that it would have been impossible to place the story in Sicily.",
+   "attribution": "Wikipedia, “I vespri siciliani”",
+   "source": "wikiintro-I_Vespri_Siciliani.txt",
+   "anchor": null,
+   "evidence": "After its June 1855 Paris premiere, an Italian libretto was quickly prepared using a new title because Verdi realized that it would have been impossible to place the story in Sicily."
+  },
+  {
+   "id": "gen-i-vespri-siciliani-2",
+   "type": "history",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "The story is loosely based on a historical event, the Sicilian Vespers of 1282, using material drawn from the medieval Sicilian tract Lu rebellamentu di Sichilia.",
+   "attribution": "Wikipedia, “I vespri siciliani”",
+   "source": "wikiintro-I_Vespri_Siciliani.txt",
+   "anchor": null,
+   "evidence": "The story is loosely based on a historical event, the Sicilian Vespers of 1282, using material drawn from the medieval Sicilian tract Lu rebellamentu di Sichilia."
+  }
+ ]
+}

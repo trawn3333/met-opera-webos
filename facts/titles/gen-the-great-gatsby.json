@@ -1,0 +1,20 @@
+{
+ "title": "The Great Gatsby",
+ "match": [
+  "The Great Gatsby"
+ ],
+ "general": true,
+ "facts": [
+  {
+   "id": "gen-the-great-gatsby-1",
+   "type": "history",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "The libretto, also by Harbison, was adapted from the 1925 novel The Great Gatsby by F.",
+   "attribution": "Wikipedia, “The Great Gatsby (opera)”",
+   "source": "wikiintro-The_Great_Gatsby_opera_.txt",
+   "anchor": null,
+   "evidence": "The libretto, also by Harbison, was adapted from the 1925 novel The Great Gatsby by F."
+  }
+ ]
+}

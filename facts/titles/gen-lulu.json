@@ -1,0 +1,20 @@
+{
+ "title": "Lulu",
+ "match": [
+  "Lulu"
+ ],
+ "general": true,
+ "facts": [
+  {
+   "id": "gen-lulu-1",
+   "type": "premiere",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "Lulu (1929–35; premiered incomplete 1937, complete 1979) is an opera that Austrian composer Alban Berg created from Frank Wedekind's Erdgeist (Earth Spirit, 1895) and Die Büchse der Pandora (Pandora's Box, 1904).",
+   "attribution": "Wikipedia, “Lulu (opera)”",
+   "source": "wikiintro-Lulu_opera_.txt",
+   "anchor": null,
+   "evidence": "Lulu (1929–35; premiered incomplete 1937, complete 1979) is an opera that Austrian composer Alban Berg created from Frank Wedekind's Erdgeist (Earth Spirit, 1895) and Die Büchse der Pandora (Pandora's Box, 1904)."
+  }
+ ]
+}

@@ -1,0 +1,31 @@
+{
+ "title": "Luisa Miller",
+ "match": [
+  "Luisa Miller"
+ ],
+ "general": true,
+ "facts": [
+  {
+   "id": "gen-luisa-miller-1",
+   "type": "premiere",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "The first performance was given on 8 December 1849.",
+   "attribution": "Wikipedia, “Luisa Miller”",
+   "source": "wikiintro-Luisa_Miller.txt",
+   "anchor": null,
+   "evidence": "The first performance was given on 8 December 1849."
+  },
+  {
+   "id": "gen-luisa-miller-2",
+   "type": "history",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "Luisa Miller is an opera in three acts by Giuseppe Verdi to an Italian libretto by Salvadore Cammarano, based on the play Kabale und Liebe (Intrigue and Love) by the German dramatist Friedrich von Schiller.",
+   "attribution": "Wikipedia, “Luisa Miller”",
+   "source": "wikiintro-Luisa_Miller.txt",
+   "anchor": null,
+   "evidence": "Luisa Miller is an opera in three acts by Giuseppe Verdi to an Italian libretto by Salvadore Cammarano, based on the play Kabale und Liebe (Intrigue and Love) by the German dramatist Friedrich von Schiller."
+  }
+ ]
+}

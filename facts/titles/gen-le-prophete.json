@@ -1,0 +1,31 @@
+{
+ "title": "Le Prophète",
+ "match": [
+  "Le Prophète"
+ ],
+ "general": true,
+ "facts": [
+  {
+   "id": "gen-le-prophete-1",
+   "type": "premiere",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "Le prophète (The Prophet) is a grand opera in five acts by Giacomo Meyerbeer, which was premiered in Paris on 16 April 1849.",
+   "attribution": "Wikipedia, “Le prophète”",
+   "source": "wikiintro-Le_Proph_te.txt",
+   "anchor": null,
+   "evidence": "Le prophète (The Prophet) is a grand opera in five acts by Giacomo Meyerbeer, which was premiered in Paris on 16 April 1849."
+  },
+  {
+   "id": "gen-le-prophete-2",
+   "type": "history",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "The French-language libretto was by Eugène Scribe and Émile Deschamps, after passages from the Essay on the Manners and Spirit of Nations by Voltaire.",
+   "attribution": "Wikipedia, “Le prophète”",
+   "source": "wikiintro-Le_Proph_te.txt",
+   "anchor": null,
+   "evidence": "The French-language libretto was by Eugène Scribe and Émile Deschamps, after passages from the Essay on the Manners and Spirit of Nations by Voltaire."
+  }
+ ]
+}

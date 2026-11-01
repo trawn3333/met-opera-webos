@@ -1,0 +1,31 @@
+{
+ "title": "Die Meistersinger von Nürnberg",
+ "match": [
+  "Die Meistersinger von Nürnberg"
+ ],
+ "general": true,
+ "facts": [
+  {
+   "id": "gen-die-meistersinger-von-nurnberg-1",
+   "type": "premiere",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "With Hans von Bülow conducting, it was first performed on 21 June 1868 at the National Theater in Munich, today home of Bavarian State Opera.",
+   "attribution": "Wikipedia, “Die Meistersinger von Nürnberg”",
+   "source": "wikiintro-Die_Meistersinger_von_N_rnberg.txt",
+   "anchor": null,
+   "evidence": "With Hans von Bülow conducting, it was first performed on 21 June 1868 at the National Theater in Munich, today home of Bavarian State Opera."
+  },
+  {
+   "id": "gen-die-meistersinger-von-nurnberg-2",
+   "type": "history",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "One of the main characters, the cobbler-poet Hans Sachs, is based on a historical figure, Hans Sachs (1494–1576), the most famous of the master-singers.",
+   "attribution": "Wikipedia, “Die Meistersinger von Nürnberg”",
+   "source": "wikiintro-Die_Meistersinger_von_N_rnberg.txt",
+   "anchor": null,
+   "evidence": "One of the main characters, the cobbler-poet Hans Sachs, is based on a historical figure, Hans Sachs (1494–1576), the most famous of the master-singers."
+  }
+ ]
+}

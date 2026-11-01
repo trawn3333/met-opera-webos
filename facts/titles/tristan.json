@@ -1,0 +1,232 @@
+{
+ "title": "Tristan und Isolde",
+ "match": [
+  "Tristan und Isolde",
+  "Tristan and Isolde"
+ ],
+ "facts": [
+  {
+   "id": "tristan-01",
+   "type": "premiere",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "Tristan und Isolde premiered in Munich on 10 June 1865, conducted by Hans von Bülow.",
+   "attribution": "Wikipedia, “Tristan und Isolde”",
+   "source": "wiki-Tristan_und_Isolde.txt",
+   "anchor": null,
+   "evidence": "premiered at the Königliches Hoftheater und Nationaltheater in Munich on 10 June 1865, with Hans von Bülow conducting"
+  },
+  {
+   "id": "tristan-02",
+   "type": "blooper",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "The premiere, planned for 15 May 1865, was postponed because the Isolde, Malvina Schnorr von Carolsfeld, was hoarse. Her husband Ludwig sang Tristan.",
+   "attribution": "Wikipedia, “Tristan und Isolde”",
+   "source": "wiki-Tristan_und_Isolde.txt",
+   "anchor": "Premiere",
+   "evidence": [
+    "The planned premiere on 15 May 1865 had to be postponed until the Isolde, Malvina Schnorr von Carolsfeld, had recovered from hoarseness",
+    "with Malvina's husband Ludwig partnering her as Tristan"
+   ]
+  },
+  {
+   "id": "tristan-03",
+   "type": "history",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "The opera was inspired partly by Schopenhauer’s philosophy and by Wagner’s relationship with his muse, Mathilde Wesendonck.",
+   "attribution": "Wikipedia, “Tristan und Isolde”",
+   "source": "wiki-Tristan_und_Isolde.txt",
+   "anchor": null,
+   "evidence": "Tristan und Isolde was inspired in part by the philosophy of Arthur Schopenhauer, and by Wagner's relationship with his muse Mathilde Wesendonck."
+  },
+  {
+   "id": "tristan-04",
+   "type": "composer",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "Wagner to Liszt, 1854: “Never in my life having enjoyed the true happiness of love I shall erect a memorial to this loveliest of all dreams.”",
+   "attribution": "Wagner, letter to Franz Liszt (via Wikipedia)",
+   "source": "wiki-Tristan_und_Isolde.txt",
+   "anchor": "Composition_history",
+   "evidence": "Never in my life having enjoyed the true happiness of love I shall erect a memorial to this loveliest of all dreams"
+  },
+  {
+   "id": "tristan-05",
+   "type": "music",
+   "sceneMatch": "Prelude|Vorspiel|Einleitung",
+   "scope": "all",
+   "text": "The “Tristan chord” in the Prelude marks a defining moment in music history: chromaticism, tonal ambiguity and prolonged harmonic suspension.",
+   "attribution": "Wikipedia, “Tristan und Isolde”",
+   "source": "wiki-Tristan_und_Isolde.txt",
+   "anchor": null,
+   "evidence": [
+    "Its advanced harmony, immediately announced by the Tristan chord of its prelude, marks a defining moment in the evolution of music",
+    "prolonged harmonic suspension"
+   ]
+  },
+  {
+   "id": "tristan-06",
+   "type": "music",
+   "sceneMatch": "Prelude|Vorspiel|Einleitung",
+   "scope": "all",
+   "text": "The harmonic tension set up in the Prelude isn’t fully resolved until the very end of Act III.",
+   "attribution": "Wikipedia, “Tristan und Isolde”",
+   "source": "wiki-Tristan_und_Isolde.txt",
+   "anchor": "Significance_in_the_development_of_Western_music",
+   "evidence": "The cadences first introduced in the prelude are not resolved until the finale of act 3"
+  },
+  {
+   "id": "tristan-07",
+   "type": "critic",
+   "sceneMatch": "Prelude|Vorspiel|Einleitung",
+   "scope": "all",
+   "text": "Critic Eduard Hanslick, 1868: the Prelude reminded him of an old painting of a martyr whose intestines are slowly unwound on a reel.",
+   "attribution": "Eduard Hanslick (via Wikipedia)",
+   "source": "wiki-Tristan_und_Isolde.txt",
+   "anchor": "Reactions",
+   "evidence": "reminds one of the old Italian painting of a martyr [Erasmus of Formia] whose intestines are slowly unwound from his body on a reel"
+  },
+  {
+   "id": "tristan-08",
+   "type": "critic",
+   "sceneMatch": "Prelude|Vorspiel|Einleitung",
+   "scope": "all",
+   "text": "Emmanuel Chabrier reportedly wept at the opening: “I’ve been waiting for ten years of my life for that A on the ’cellos.”",
+   "attribution": "Vincent d’Indy, on Chabrier (via Wikipedia)",
+   "source": "wiki-Tristan_und_Isolde.txt",
+   "anchor": "Reactions",
+   "evidence": "I've been waiting for ten years of my life for that A on the 'cellos"
+  },
+  {
+   "id": "tristan-09",
+   "type": "critic",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "Clara Schumann called Tristan “the most repugnant thing I have ever seen or heard in all my life”.",
+   "attribution": "Clara Schumann (via Wikipedia)",
+   "source": "wiki-Tristan_und_Isolde.txt",
+   "anchor": "Reactions",
+   "evidence": "the most repugnant thing I have ever seen or heard in all my life"
+  },
+  {
+   "id": "tristan-10",
+   "type": "critic",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "Verdi said, shortly before his death, that he “stood in wonder and terror” before Tristan.",
+   "attribution": "Giuseppe Verdi (via Wikipedia)",
+   "source": "wiki-Tristan_und_Isolde.txt",
+   "anchor": "Reactions",
+   "evidence": "stood in wonder and terror"
+  },
+  {
+   "id": "tristan-11",
+   "type": "artist",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "Richard Strauss first said Wagner’s music “would kill a cat”. Later, after conducting his first Tristan: “It was the most wonderful day of my life.”",
+   "attribution": "Richard Strauss (via Wikipedia)",
+   "source": "wiki-Tristan_und_Isolde.txt",
+   "anchor": "Reactions",
+   "evidence": [
+    "would kill a cat and would turn rocks into scrambled eggs",
+    "I have conducted my first Tristan.",
+    "It was the most wonderful day of my life."
+   ]
+  },
+  {
+   "id": "tristan-12",
+   "type": "critic",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "Mark Twain at Bayreuth: “I know of some, and have heard of many, who could not sleep after it, but cried the night away.”",
+   "attribution": "Mark Twain (via Wikipedia)",
+   "source": "wiki-Tristan_und_Isolde.txt",
+   "anchor": "Reactions",
+   "evidence": "I know of some, and have heard of many, who could not sleep after it, but cried the night away."
+  },
+  {
+   "id": "tristan-13",
+   "type": "music",
+   "sceneMatch": "O sink hernieder|Liebesnacht|love duet",
+   "scope": "all",
+   "text": "At the climax of the love duet, the expected resolution is cut off by Kurwenal’s cry: “Rette Dich, Tristan!”",
+   "attribution": "Wikipedia, “Tristan und Isolde”",
+   "source": "wiki-Tristan_und_Isolde.txt",
+   "anchor": "Significance_in_the_development_of_Western_music",
+   "evidence": "where Tristan and Isolde gradually build up to a musical climax only to have the expected resolution interrupted by Kurwenal (\"Rette Dich, Tristan!\")"
+  },
+  {
+   "id": "tristan-14",
+   "type": "music",
+   "sceneMatch": "O sink hernieder|Liebesnacht|love duet",
+   "scope": "all",
+   "text": "Ravel parodied this love duet as a duet for two cats in L’enfant et les sortilèges.",
+   "attribution": "Wikipedia, “Tristan und Isolde”",
+   "source": "wiki-Tristan_und_Isolde.txt",
+   "anchor": "Reactions",
+   "evidence": "Maurice Ravel parodied the Love Duet in the Duo miaulé in his opera L'enfant et les sortilèges"
+  },
+  {
+   "id": "tristan-15",
+   "type": "music",
+   "sceneMatch": "Liebestod|Mild und leise",
+   "scope": "all",
+   "text": "Only after Isolde’s “Liebestod” does the music fully resolve; she sinks down, “as if transfigured”, onto Tristan’s body.",
+   "attribution": "Wikipedia, “Tristan und Isolde”",
+   "source": "wiki-Tristan_und_Isolde.txt",
+   "anchor": "Significance_in_the_development_of_Western_music",
+   "evidence": "Full resolution does not occur until the very end, after Isolde sings the passage commonly called the \"Liebestod\""
+  },
+  {
+   "id": "tristan-16",
+   "type": "music",
+   "sceneMatch": "Liebestod|Mild und leise",
+   "scope": "all",
+   "text": "Wagner himself called the Prelude the “Liebestod” and Isolde’s final aria the “Verklärung” (Transfiguration).",
+   "attribution": "Wikipedia, “Tristan und Isolde”",
+   "source": "wiki-Tristan_und_Isolde.txt",
+   "anchor": "Concert_extracts_and_arrangements",
+   "evidence": "Wagner called the prelude the \"Liebestod\" (Love-death) while Isolde's final aria \"Mild und leise\" he called the \"Verklärung\" (Transfiguration)."
+  },
+  {
+   "id": "tristan-17",
+   "type": "history",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "The first Tristan, Ludwig Schnorr von Carolsfeld, died suddenly in July 1865 after singing the role only four times.",
+   "attribution": "Wikipedia, “Tristan und Isolde”",
+   "source": "wiki-Tristan_und_Isolde.txt",
+   "anchor": "Premiere",
+   "evidence": [
+    "On 21 July 1865, having sung the role only four times, Ludwig died suddenly"
+   ]
+  },
+  {
+   "id": "tristan-18",
+   "type": "history",
+   "sceneMatch": "Act II|Zweiter Aufzug|O sink hernieder",
+   "scope": "all",
+   "text": "Two conductors, Felix Mottl (1911) and Joseph Keilberth (1968), died after collapsing while conducting Act II of Tristan.",
+   "attribution": "Wikipedia, “Tristan und Isolde”",
+   "source": "wiki-Tristan_und_Isolde.txt",
+   "anchor": "Premiere",
+   "evidence": [
+    "The stress of performing Tristan also claimed the lives of conductors Felix Mottl in 1911 and Joseph Keilberth in 1968. Both died after collapsing while conducting the second act."
+   ]
+  },
+  {
+   "id": "tristan-19",
+   "type": "history",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "The Met gave the first American performance on 1 December 1886, with Lilli Lehmann and Albert Niemann.",
+   "attribution": "Wikipedia, “Tristan und Isolde”",
+   "source": "wiki-Tristan_und_Isolde.txt",
+   "anchor": "Performance_history",
+   "evidence": "The first American performance was held at the Metropolitan Opera on 1 December 1886, with Albert Niemann and Lilli Lehmann"
+  }
+ ]
+}

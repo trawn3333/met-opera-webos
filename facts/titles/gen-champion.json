@@ -1,0 +1,20 @@
+{
+ "title": "Champion",
+ "match": [
+  "Champion"
+ ],
+ "general": true,
+ "facts": [
+  {
+   "id": "gen-champion-1",
+   "type": "history",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "Champion is an opera in two acts and ten scenes with music by Terence Blanchard and a libretto by Michael Cristofer.",
+   "attribution": "Wikipedia, “Champion (opera)”",
+   "source": "wikiintro-Champion_opera_.txt",
+   "anchor": null,
+   "evidence": "Champion is an opera in two acts and ten scenes with music by Terence Blanchard and a libretto by Michael Cristofer."
+  }
+ ]
+}

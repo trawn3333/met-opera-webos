@@ -1,0 +1,17 @@
+from mk import mk
+W="wiki-Lucia_di_Lammermoor.txt"
+MAD="Il dolce suono|Spargi d.amaro|mad scene|pazzia|Ardon gl.incensi"
+mk("lucia","Lucia di Lammermoor",["Lucia di Lammermoor"],W,[
+("premiere",None,"Lucia premiered on 26 September 1835 at the Teatro di San Carlo in Naples.","The opera premiered on 26 September 1835 at the Teatro di San Carlo in Naples.","19th_century"),
+("history",None,"The libretto is loosely based on Walter Scott\u2019s 1819 novel The Bride of Lammermoor, written when Scotland\u2019s history and folklore were all the rage.",["loosely based upon Walter Scott's 1819 historical novel The Bride of Lammermoor","there was also a widespread interest in the history and culture of Scotland"]),
+("history",None,"With Rossini retired and Bellini recently dead, Donizetti was left as \u201cthe sole reigning genius of Italian opera\u201d.",["Vincenzo Bellini had died shortly before the premiere of Lucia leaving Donizetti as \"the sole reigning genius of Italian opera\""]),
+("history",None,"Lucia was never absent from the Met\u2019s repertory for more than one season at a time from 1903 until 1972.","The opera was never absent from the repertory of the Metropolitan Opera for more than one season at a time from 1903 until 1972.","20th_century_and_beyond"),
+("history",None,"After World War II, Maria Callas and Joan Sutherland gave the opera new life.","a number of sopranos were instrumental in giving new life to the opera, including Maria Callas","20th_century_and_beyond"),
+("music",MAD,"Donizetti scored the mad scene for glass harmonica and soprano. A flute is more commonly used, mostly for practical reasons.",["The original scoring of this scene was for glass harmonica and soprano","an adaptation for flute and the soprano soloist has been more commonly performed since, mostly for practical reasons"],"The_\"mad_scene\""),
+("music",MAD,"The famous soprano-and-flute cadenza isn\u2019t Donizetti\u2019s: Mathilde Marchesi wrote it in 1888 for her student Nellie Melba, who rehearsed it for ten weeks.","composed in 1888 by Mathilde Marchesi for her student Nellie Melba's performance of the role, requiring ten weeks of rehearsal","The_\"mad_scene\""),
+("music",MAD,"Donizetti wrote the mad scene in F major, but it is often transposed down a tone into E-flat.","Donizetti originally wrote it in F major, but it is often transposed down a tone (two half-steps) into E-flat.","The_\"mad_scene\""),
+("artist",MAD,"The mad scene has long been a coloratura showpiece. It gave Joan Sutherland her breakthrough.","providing a breakthrough for Dame Joan Sutherland","The_\"mad_scene\""),
+("staging",MAD,"Glass harmonica players revived Donizetti\u2019s original scoring at La Scala in 2006, and it has since been heard in Lucia productions at the Met.",["resuscitated Gaetano Donizetti's vision in 2006 at the Opera La Scala in Milan","recently featured in Lucia di Lammermoor productions at the Metropolitan Opera"],"The_\"mad_scene\""),
+("music","Chi mi frena|sextet|Sestetto","The Act II sextet features prominently in Martin Scorsese\u2019s film The Departed.","The Act 2 sextet features prominently in Scorsese's film The Departed.","20th_century_and_beyond"),
+("history",None,"For Paris, Donizetti revised the score into a French version, Lucie de Lammermoor, first given in 1839.","for Paris, Donizetti revised the score for a French version which debuted on 6 August 1839","19th_century"),
+])

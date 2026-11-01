@@ -1,0 +1,20 @@
+{
+ "title": "La Donna del Lago",
+ "match": [
+  "La Donna del Lago"
+ ],
+ "general": true,
+ "facts": [
+  {
+   "id": "gen-la-donna-del-lago-1",
+   "type": "history",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "It was the first of the Italian operas to be based on Scott's romantic works, and marked the beginning of romanticism in Rossini's work.",
+   "attribution": "Wikipedia, “La donna del lago”",
+   "source": "wikiintro-La_Donna_del_Lago.txt",
+   "anchor": null,
+   "evidence": "It was the first of the Italian operas to be based on Scott's romantic works, and marked the beginning of romanticism in Rossini's work."
+  }
+ ]
+}

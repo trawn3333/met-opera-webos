@@ -1,0 +1,20 @@
+{
+ "title": "The Tempest",
+ "match": [
+  "The Tempest"
+ ],
+ "general": true,
+ "facts": [
+  {
+   "id": "gen-the-tempest-1",
+   "type": "history",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "The Tempest is an opera by English composer Thomas Adès with a libretto in English by Meredith Oakes based on the play The Tempest by William Shakespeare.",
+   "attribution": "Wikipedia, “The Tempest (opera)”",
+   "source": "wikiintro-The_Tempest_opera_.txt",
+   "anchor": null,
+   "evidence": "The Tempest is an opera by English composer Thomas Adès with a libretto in English by Meredith Oakes based on the play The Tempest by William Shakespeare."
+  }
+ ]
+}

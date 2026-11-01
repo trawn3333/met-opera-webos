@@ -1,0 +1,31 @@
+{
+ "title": "Medea",
+ "match": [
+  "Medea"
+ ],
+ "general": true,
+ "facts": [
+  {
+   "id": "gen-medea-1",
+   "type": "premiere",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "The opera was premiered on 13 March 1797 at the Théâtre Feydeau, Paris.",
+   "attribution": "Wikipedia, “Médée (Cherubini)”",
+   "source": "wikiintro-Medea_opera_.txt",
+   "anchor": null,
+   "evidence": "The opera was premiered on 13 March 1797 at the Théâtre Feydeau, Paris."
+  },
+  {
+   "id": "gen-medea-2",
+   "type": "history",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "The libretto by François-Benoît Hoffman (Nicolas Étienne Framéry) was based on Euripides' tragedy of Medea and Pierre Corneille's play Médée.",
+   "attribution": "Wikipedia, “Médée (Cherubini)”",
+   "source": "wikiintro-Medea_opera_.txt",
+   "anchor": null,
+   "evidence": "The libretto by François-Benoît Hoffman (Nicolas Étienne Framéry) was based on Euripides' tragedy of Medea and Pierre Corneille's play Médée."
+  }
+ ]
+}

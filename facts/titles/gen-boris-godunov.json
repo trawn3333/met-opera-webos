@@ -1,0 +1,31 @@
+{
+ "title": "Boris Godunov",
+ "match": [
+  "Boris Godunov"
+ ],
+ "general": true,
+ "facts": [
+  {
+   "id": "gen-boris-godunov-1",
+   "type": "premiere",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "The composer created two versions—the Original Version of 1869, which was rejected for production by the Imperial Theatres, and the Revised Version of 1872, which received its first performance in 1874 in Saint Petersburg.",
+   "attribution": "Wikipedia, “Boris Godunov (opera)”",
+   "source": "wikiintro-Boris_Godunov_opera_.txt",
+   "anchor": null,
+   "evidence": "The composer created two versions—the Original Version of 1869, which was rejected for production by the Imperial Theatres, and the Revised Version of 1872, which received its first performance in 1874 in Saint Petersburg."
+  },
+  {
+   "id": "gen-boris-godunov-2",
+   "type": "history",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "The Russian-language libretto was written by the composer, and is based on the 1825 drama Boris Godunov by Aleksandr Pushkin, and, in the Revised Version of 1872, on Nikolay Karamzin's History of the Russian State.",
+   "attribution": "Wikipedia, “Boris Godunov (opera)”",
+   "source": "wikiintro-Boris_Godunov_opera_.txt",
+   "anchor": null,
+   "evidence": "The Russian-language libretto was written by the composer, and is based on the 1825 drama Boris Godunov by Aleksandr Pushkin, and, in the Revised Version of 1872, on Nikolay Karamzin's History of the Russian State."
+  }
+ ]
+}

@@ -1,0 +1,20 @@
+{
+ "title": "Anna Bolena",
+ "match": [
+  "Anna Bolena"
+ ],
+ "general": true,
+ "facts": [
+  {
+   "id": "gen-anna-bolena-1",
+   "type": "history",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "Felice Romani wrote the Italian libretto after Ippolito Pindemonte's Enrico VIII ossia Anna Bolena and Alessandro Pepoli's Anna Bolena, both recounting the life of Anne Boleyn, the second wife of England's King Henry VIII.",
+   "attribution": "Wikipedia, “Anna Bolena”",
+   "source": "wikiintro-Anna_Bolena.txt",
+   "anchor": null,
+   "evidence": "Felice Romani wrote the Italian libretto after Ippolito Pindemonte's Enrico VIII ossia Anna Bolena and Alessandro Pepoli's Anna Bolena, both recounting the life of Anne Boleyn, the second wife of England's King Henry VIII."
+  }
+ ]
+}

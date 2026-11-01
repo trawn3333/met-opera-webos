@@ -1,0 +1,20 @@
+{
+ "title": "Werther",
+ "match": [
+  "Werther"
+ ],
+ "general": true,
+ "facts": [
+  {
+   "id": "gen-werther-1",
+   "type": "history",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "Werther is an opera (drame lyrique) in four acts by Jules Massenet to a French libretto by Édouard Blau, Paul Milliet and Georges Hartmann (who used the pseudonym Henri Grémont).",
+   "attribution": "Wikipedia, “Werther”",
+   "source": "wikiintro-Werther.txt",
+   "anchor": null,
+   "evidence": "Werther is an opera (drame lyrique) in four acts by Jules Massenet to a French libretto by Édouard Blau, Paul Milliet and Georges Hartmann (who used the pseudonym Henri Grémont)."
+  }
+ ]
+}

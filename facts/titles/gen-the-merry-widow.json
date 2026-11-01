@@ -1,0 +1,20 @@
+{
+ "title": "The Merry Widow",
+ "match": [
+  "The Merry Widow"
+ ],
+ "general": true,
+ "facts": [
+  {
+   "id": "gen-the-merry-widow-1",
+   "type": "premiere",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "The operetta has enjoyed extraordinary international success since its 1905 premiere in Vienna and continues to be frequently revived and recorded.",
+   "attribution": "Wikipedia, “The Merry Widow”",
+   "source": "wikiintro-The_Merry_Widow.txt",
+   "anchor": null,
+   "evidence": "The operetta has enjoyed extraordinary international success since its 1905 premiere in Vienna and continues to be frequently revived and recorded."
+  }
+ ]
+}

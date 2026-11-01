@@ -1,0 +1,20 @@
+{
+ "title": "The Queen of Spades",
+ "match": [
+  "The Queen of Spades"
+ ],
+ "general": true,
+ "facts": [
+  {
+   "id": "gen-the-queen-of-spades-1",
+   "type": "premiere",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "The premiere took place in 1890 at the Mariinsky Theatre in Saint Petersburg, Russia.",
+   "attribution": "Wikipedia, “The Queen of Spades (opera)”",
+   "source": "wikiintro-The_Queen_of_Spades_opera_.txt",
+   "anchor": null,
+   "evidence": "The premiere took place in 1890 at the Mariinsky Theatre in Saint Petersburg, Russia."
+  }
+ ]
+}

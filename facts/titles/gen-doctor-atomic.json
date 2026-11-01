@@ -1,0 +1,31 @@
+{
+ "title": "Doctor Atomic",
+ "match": [
+  "Doctor Atomic"
+ ],
+ "general": true,
+ "facts": [
+  {
+   "id": "gen-doctor-atomic-1",
+   "type": "premiere",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "It premiered at the San Francisco Opera on October 1, 2005.",
+   "attribution": "Wikipedia, “Doctor Atomic”",
+   "source": "wikiintro-Doctor_Atomic.txt",
+   "anchor": null,
+   "evidence": "It premiered at the San Francisco Opera on October 1, 2005."
+  },
+  {
+   "id": "gen-doctor-atomic-2",
+   "type": "history",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "Doctor Atomic is an opera by the contemporary American composer John Adams, with a libretto by Peter Sellars.",
+   "attribution": "Wikipedia, “Doctor Atomic”",
+   "source": "wikiintro-Doctor_Atomic.txt",
+   "anchor": null,
+   "evidence": "Doctor Atomic is an opera by the contemporary American composer John Adams, with a libretto by Peter Sellars."
+  }
+ ]
+}

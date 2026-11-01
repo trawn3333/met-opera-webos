@@ -1,0 +1,20 @@
+{
+ "title": "Two Boys",
+ "match": [
+  "Two Boys"
+ ],
+ "general": true,
+ "facts": [
+  {
+   "id": "gen-two-boys-1",
+   "type": "history",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "Two Boys is an opera in two acts by American composer Nico Muhly, with an English-language libretto by American playwright Craig Lucas.",
+   "attribution": "Wikipedia, “Two Boys”",
+   "source": "wikiintro-Two_Boys.txt",
+   "anchor": null,
+   "evidence": "Two Boys is an opera in two acts by American composer Nico Muhly, with an English-language libretto by American playwright Craig Lucas."
+  }
+ ]
+}

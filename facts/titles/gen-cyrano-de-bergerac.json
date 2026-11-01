@@ -1,0 +1,20 @@
+{
+ "title": "Cyrano de Bergerac",
+ "match": [
+  "Cyrano de Bergerac"
+ ],
+ "general": true,
+ "facts": [
+  {
+   "id": "gen-cyrano-de-bergerac-1",
+   "type": "history",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "Cyrano de Bergerac is a 1936 opera in four acts with music by Franco Alfano and a French libretto by Henri Caïn, based on Edmond Rostand's 1897 French drama Cyrano de Bergerac.",
+   "attribution": "Wikipedia, “Cyrano de Bergerac (Alfano)”",
+   "source": "wikiintro-Cyrano_de_Bergerac_opera_.txt",
+   "anchor": null,
+   "evidence": "Cyrano de Bergerac is a 1936 opera in four acts with music by Franco Alfano and a French libretto by Henri Caïn, based on Edmond Rostand's 1897 French drama Cyrano de Bergerac."
+  }
+ ]
+}

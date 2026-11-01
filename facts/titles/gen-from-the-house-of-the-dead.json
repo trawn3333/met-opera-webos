@@ -1,0 +1,31 @@
+{
+ "title": "From the House of the Dead",
+ "match": [
+  "From the House of the Dead"
+ ],
+ "general": true,
+ "facts": [
+  {
+   "id": "gen-from-the-house-of-the-dead-1",
+   "type": "premiere",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "It was the composer's last opera, premiered on 12 April 1930 at the National Theatre Brno, two years after his death.",
+   "attribution": "Wikipedia, “From the House of the Dead”",
+   "source": "wikiintro-From_the_House_of_the_Dead.txt",
+   "anchor": null,
+   "evidence": "It was the composer's last opera, premiered on 12 April 1930 at the National Theatre Brno, two years after his death."
+  },
+  {
+   "id": "gen-from-the-house-of-the-dead-2",
+   "type": "history",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "The libretto was translated and adapted by the composer from the 1862 novel by Fyodor Dostoevsky.",
+   "attribution": "Wikipedia, “From the House of the Dead”",
+   "source": "wikiintro-From_the_House_of_the_Dead.txt",
+   "anchor": null,
+   "evidence": "The libretto was translated and adapted by the composer from the 1862 novel by Fyodor Dostoevsky."
+  }
+ ]
+}

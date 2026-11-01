@@ -1,0 +1,31 @@
+{
+ "title": "Jenůfa",
+ "match": [
+  "Jenůfa"
+ ],
+ "general": true,
+ "facts": [
+  {
+   "id": "gen-jenufa-1",
+   "type": "premiere",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "It was first performed at the National Theatre, Brno on 21 January 1904.",
+   "attribution": "Wikipedia, “Jenůfa”",
+   "source": "wikiintro-Jen_fa.txt",
+   "anchor": null,
+   "evidence": "It was first performed at the National Theatre, Brno on 21 January 1904."
+  },
+  {
+   "id": "gen-jenufa-2",
+   "type": "history",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "Její pastorkyňa (Her Stepdaughter; commonly known as Jenůfa ()) is an opera in three acts by Leoš Janáček to a Czech libretto by the composer, based on the play Její pastorkyňa by Gabriela Preissová.",
+   "attribution": "Wikipedia, “Jenůfa”",
+   "source": "wikiintro-Jen_fa.txt",
+   "anchor": null,
+   "evidence": "Její pastorkyňa (Her Stepdaughter; commonly known as Jenůfa ()) is an opera in three acts by Leoš Janáček to a Czech libretto by the composer, based on the play Její pastorkyňa by Gabriela Preissová."
+  }
+ ]
+}

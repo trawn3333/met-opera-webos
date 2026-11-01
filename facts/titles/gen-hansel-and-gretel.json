@@ -1,0 +1,31 @@
+{
+ "title": "Hansel and Gretel",
+ "match": [
+  "Hansel and Gretel"
+ ],
+ "general": true,
+ "facts": [
+  {
+   "id": "gen-hansel-and-gretel-1",
+   "type": "premiere",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "The opera was first performed in the Hoftheater in Weimar on 23 December 1893, conducted by Richard Strauss.",
+   "attribution": "Wikipedia, “Hansel and Gretel (opera)”",
+   "source": "wikiintro-Hansel_and_Gretel_opera_.txt",
+   "anchor": null,
+   "evidence": "The opera was first performed in the Hoftheater in Weimar on 23 December 1893, conducted by Richard Strauss."
+  },
+  {
+   "id": "gen-hansel-and-gretel-2",
+   "type": "history",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "The libretto was written by Humperdinck's sister, Adelheid Wette, based on the Grimm brothers' fairy tale of the same name.",
+   "attribution": "Wikipedia, “Hansel and Gretel (opera)”",
+   "source": "wikiintro-Hansel_and_Gretel_opera_.txt",
+   "anchor": null,
+   "evidence": "The libretto was written by Humperdinck's sister, Adelheid Wette, based on the Grimm brothers' fairy tale of the same name."
+  }
+ ]
+}

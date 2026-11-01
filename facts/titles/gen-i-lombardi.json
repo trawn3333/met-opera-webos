@@ -1,0 +1,20 @@
+{
+ "title": "I Lombardi",
+ "match": [
+  "I Lombardi"
+ ],
+ "general": true,
+ "facts": [
+  {
+   "id": "gen-i-lombardi-1",
+   "type": "premiere",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "Its first performance was given at the Teatro alla Scala in Milan on 11 February 1843.",
+   "attribution": "Wikipedia, “I Lombardi alla prima crociata”",
+   "source": "wikiintro-I_Lombardi.txt",
+   "anchor": null,
+   "evidence": "Its first performance was given at the Teatro alla Scala in Milan on 11 February 1843."
+  }
+ ]
+}

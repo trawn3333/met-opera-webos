@@ -1,0 +1,20 @@
+{
+ "title": "Giulio Cesare",
+ "match": [
+  "Giulio Cesare"
+ ],
+ "general": true,
+ "facts": [
+  {
+   "id": "gen-giulio-cesare-1",
+   "type": "history",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "The libretto was written by Nicola Francesco Haym who used an earlier libretto by Giacomo Francesco Bussani, which had been set to music by Antonio Sartorio (1676).",
+   "attribution": "Wikipedia, “Giulio Cesare”",
+   "source": "wikiintro-Giulio_Cesare.txt",
+   "anchor": null,
+   "evidence": "The libretto was written by Nicola Francesco Haym who used an earlier libretto by Giacomo Francesco Bussani, which had been set to music by Antonio Sartorio (1676)."
+  }
+ ]
+}

@@ -1,0 +1,20 @@
+{
+ "title": "Rodelinda",
+ "match": [
+  "Rodelinda"
+ ],
+ "general": true,
+ "facts": [
+  {
+   "id": "gen-rodelinda-1",
+   "type": "history",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "The libretto is by Nicola Francesco Haym, based on an earlier libretto by Antonio Salvi.",
+   "attribution": "Wikipedia, “Rodelinda (opera)”",
+   "source": "wikiintro-Rodelinda_opera_.txt",
+   "anchor": null,
+   "evidence": "The libretto is by Nicola Francesco Haym, based on an earlier libretto by Antonio Salvi."
+  }
+ ]
+}

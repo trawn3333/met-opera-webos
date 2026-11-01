@@ -1,0 +1,155 @@
+{
+ "title": "Il Barbiere di Siviglia",
+ "match": [
+  "Il Barbiere di Siviglia",
+  "The Barber of Seville",
+  "Barbiere di Siviglia"
+ ],
+ "facts": [
+  {
+   "id": "barber-01",
+   "type": "premiere",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "The opera premiered in Rome on 20 February 1816 under a different title: Almaviva, o sia L’inutile precauzione.",
+   "attribution": "Wikipedia, “Il Barbiere di Siviglia”",
+   "source": "wiki-The_Barber_of_Seville.txt",
+   "anchor": null,
+   "evidence": "under the title Almaviva, o sia L'inutile precauzione) took place on 20 February 1816 at the Teatro Argentina, Rome"
+  },
+  {
+   "id": "barber-02",
+   "type": "blooper",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "The premiere was a disaster: the audience hissed and jeered throughout, and several on-stage accidents occurred.",
+   "attribution": "Wikipedia, “Il Barbiere di Siviglia”",
+   "source": "wiki-The_Barber_of_Seville.txt",
+   "anchor": "Performance_history",
+   "evidence": "was a disaster: the audience hissed and jeered throughout, and several on-stage accidents occurred"
+  },
+  {
+   "id": "barber-03",
+   "type": "premiere",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "Many in the first-night crowd were fans of Giovanni Paisiello, whose own Barber of Seville was popular. The second performance, however, was a success.",
+   "attribution": "Wikipedia, “Il Barbiere di Siviglia”",
+   "source": "wiki-The_Barber_of_Seville.txt",
+   "anchor": "Performance_history",
+   "evidence": [
+    "many of the audience were supporters of one of Rossini's rivals, the veteran Giovanni Paisiello",
+    "The second performance, however, was successful."
+   ]
+  },
+  {
+   "id": "barber-04",
+   "type": "music",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "Rossini composed the score in just under three weeks.",
+   "attribution": "Wikipedia, “Il Barbiere di Siviglia”",
+   "source": "wiki-The_Barber_of_Seville.txt",
+   "anchor": "Composition_history",
+   "evidence": "the music for Il barbiere di Siviglia was composed in just under three weeks"
+  },
+  {
+   "id": "barber-05",
+   "type": "music",
+   "sceneMatch": "Overture|Sinfonia",
+   "scope": "all",
+   "text": "The famous overture was recycled from two earlier Rossini operas, so it contains none of the Barber’s own tunes.",
+   "attribution": "Wikipedia, “Il Barbiere di Siviglia”",
+   "source": "wiki-The_Barber_of_Seville.txt",
+   "anchor": "Composition_history",
+   "evidence": "the famous overture was actually recycled from two earlier Rossini operas, Aureliano in Palmira and Elizabeth, Queen of England and thus contains none of the thematic material"
+  },
+  {
+   "id": "barber-06",
+   "type": "history",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "Mozart’s Marriage of Figaro, composed 30 years earlier, is based on the sequel play in Beaumarchais’s Figaro trilogy.",
+   "attribution": "Wikipedia, “Il Barbiere di Siviglia”",
+   "source": "wiki-The_Barber_of_Seville.txt",
+   "anchor": "Composition_history",
+   "evidence": "Mozart's opera The Marriage of Figaro, composed 30 years earlier in 1786, is based on the second part of the Beaumarchais trilogy"
+  },
+  {
+   "id": "barber-07",
+   "type": "history",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "In 1825 the Barber became the first opera ever performed in Italian in New York. The 17-year-old future Maria Malibran was in the cast.",
+   "attribution": "Wikipedia, “Il Barbiere di Siviglia”",
+   "source": "wiki-The_Barber_of_Seville.txt",
+   "anchor": "Performance_history",
+   "evidence": [
+    "became the first opera ever to be performed in Italian in New York",
+    "including the 17-year-old Maria-Felicia, later known as Maria Malibran"
+   ]
+  },
+  {
+   "id": "barber-08",
+   "type": "music",
+   "sceneMatch": "Una voce poco fa",
+   "scope": "all",
+   "text": "Rosina was written for a contralto. Critic Richard Osborne calls turning her into a soprano the most serious distortion of Rossini’s intentions.",
+   "attribution": "Richard Osborne, New Grove Dictionary of Opera (via Wikipedia)",
+   "source": "wiki-The_Barber_of_Seville.txt",
+   "anchor": "Performance_history",
+   "evidence": [
+    "The role of Rosina was originally written for a contralto",
+    "The most serious distortion has been the upward transposition of the role of Rosina"
+   ]
+  },
+  {
+   "id": "barber-09",
+   "type": "blooper",
+   "sceneMatch": "Una voce poco fa",
+   "scope": "all",
+   "text": "After Adelina Patti sang a very florid “Una voce poco fa”, Rossini reportedly asked: “Very nice, my dear, and who wrote the piece you have just performed?”",
+   "attribution": "Wikipedia, “Il Barbiere di Siviglia”",
+   "source": "wiki-The_Barber_of_Seville.txt",
+   "anchor": "Performance_history",
+   "evidence": "Very nice, my dear, and who wrote the piece you have just performed?"
+  },
+  {
+   "id": "barber-10",
+   "type": "staging",
+   "sceneMatch": "Contro un cor|lesson|lezione",
+   "scope": "all",
+   "text": "The Act II singing lesson often became “a show-stopping cabaret”: Nellie Melba accompanied herself on the piano, and Pauline Viardot inserted Alyabyev’s “Nightingale”.",
+   "attribution": "Wikipedia, “Il Barbiere di Siviglia”",
+   "source": "wiki-The_Barber_of_Seville.txt",
+   "anchor": "Performance_history",
+   "evidence": [
+    "The singing lesson in act 2 has often been turned into \"a show-stopping cabaret\"",
+    "Nellie Melba followed suit, accompanying herself on the piano in the final song",
+    "Pauline Viardot began the practice of inserting Alexander Alyabyev's \"Nightingale\""
+   ]
+  },
+  {
+   "id": "barber-11",
+   "type": "critic",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "The Barber is considered one of the greatest masterpieces of comedy in music, “the opera buffa of all ‘opere buffe’”.",
+   "attribution": "Wikipedia, “Il Barbiere di Siviglia”",
+   "source": "wiki-The_Barber_of_Seville.txt",
+   "anchor": null,
+   "evidence": "considered to be one of the greatest masterpieces of comedy within music, and has been described as the opera buffa of all \"opere buffe\""
+  },
+  {
+   "id": "barber-12",
+   "type": "history",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "Beaumarchais’s original play had a similar story: poorly received at first, then a favorite within a week.",
+   "attribution": "Wikipedia, “Il Barbiere di Siviglia”",
+   "source": "wiki-The_Barber_of_Seville.txt",
+   "anchor": "Performance_history",
+   "evidence": "poorly received at first, only to become a favorite within a week"
+  }
+ ]
+}

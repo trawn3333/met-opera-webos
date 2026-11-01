@@ -1,0 +1,159 @@
+{
+ "title": "Rigoletto",
+ "match": [
+  "Rigoletto"
+ ],
+ "facts": [
+  {
+   "id": "rigoletto-01",
+   "type": "premiere",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "Rigoletto had a triumphant premiere at La Fenice in Venice on 11 March 1851, after serious trouble with the Austrian censors.",
+   "attribution": "Wikipedia, “Rigoletto”",
+   "source": "wiki-Rigoletto.txt",
+   "anchor": null,
+   "evidence": "the opera had a triumphant premiere at La Fenice in Venice on 11 March 1851"
+  },
+  {
+   "id": "rigoletto-02",
+   "type": "history",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "The source, Victor Hugo’s play Le roi s’amuse, had been banned in France after its premiere and wasn’t staged again until 1882.",
+   "attribution": "Wikipedia, “Rigoletto”",
+   "source": "wiki-Rigoletto.txt",
+   "anchor": "Composition_history",
+   "evidence": "The play had been banned in France following its premiere nearly twenty years earlier (not to be staged again until 1882)"
+  },
+  {
+   "id": "rigoletto-03",
+   "type": "composer",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "Verdi told Piave to get permission at any cost: “Use four legs, run through the town and find me an influential person.”",
+   "attribution": "Verdi, letter to Piave (via Wikipedia)",
+   "source": "wiki-Rigoletto.txt",
+   "anchor": "Composition_history",
+   "evidence": "Use four legs, run through the town and find me an influential person"
+  },
+  {
+   "id": "rigoletto-04",
+   "type": "composer",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "Verdi on his hunchbacked jester: “There is a character that is one of the greatest creations that the theatre can boast of.”",
+   "attribution": "Verdi (via Wikipedia)",
+   "source": "wiki-Rigoletto.txt",
+   "anchor": "Composition_history",
+   "evidence": "there is a character that is one of the greatest creations that the theatre can boast of"
+  },
+  {
+   "id": "rigoletto-05",
+   "type": "history",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "The censor flatly refused “La Maledizione” (the working title). One rewrite turned the king into a duke and dropped both the hunchback and the curse; Verdi refused it.",
+   "attribution": "Wikipedia, “Rigoletto”",
+   "source": "wiki-Rigoletto.txt",
+   "anchor": "Composition_history",
+   "evidence": [
+    "the Austrian censor De Gorzkowski emphatically denied consent to the production of \"La Maledizione\"",
+    "in which the sovereign was a duke and both the hunchback and the curse disappeared",
+    "Verdi was completely against this proposed solution"
+   ]
+  },
+  {
+   "id": "rigoletto-06",
+   "type": "history",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "The jester was originally called Triboulet. The name Rigoletto came from a parody comedy, “Rigoletti, or The last of the jesters”.",
+   "attribution": "Wikipedia, “Rigoletto”",
+   "source": "wiki-Rigoletto.txt",
+   "anchor": "Composition_history",
+   "evidence": "renamed Rigoletto from a parody of a comedy"
+  },
+  {
+   "id": "rigoletto-07",
+   "type": "blooper",
+   "sceneMatch": "Della mia bella|Questa o quella|^Act I$",
+   "scope": "all",
+   "text": "At the premiere, Felice Varesi (Rigoletto) froze in panic. Verdi pushed him onstage, and he tumbled on clumsily; the audience thought it was a planned gag.",
+   "attribution": "Wikipedia, “Rigoletto”",
+   "source": "wiki-Rigoletto.txt",
+   "anchor": "19th-century_productions",
+   "evidence": [
+    "he had a panic attack when it was his turn to enter the stage",
+    "roughly pushed him on the stage, so he appeared with a clumsy tumble",
+    "The audience, thinking it was an intentional gag, was very amused."
+   ]
+  },
+  {
+   "id": "rigoletto-08",
+   "type": "composer",
+   "sceneMatch": "La donna è mobile|La donna e mobile",
+   "scope": "all",
+   "text": "Verdi kept “La donna è mobile” secret until a few hours before the premiere and forbade anyone to sing or whistle it outside the theatre.",
+   "attribution": "Wikipedia, “Rigoletto”",
+   "source": "wiki-Rigoletto.txt",
+   "anchor": "19th-century_productions",
+   "evidence": "forbidding them to sing, whistle or even think of the melody outside of the theatre"
+  },
+  {
+   "id": "rigoletto-09",
+   "type": "premiere",
+   "sceneMatch": "La donna è mobile|La donna e mobile",
+   "scope": "all",
+   "text": "The morning after the premiere, “La donna è mobile” was being sung in the streets.",
+   "attribution": "Wikipedia, “Rigoletto”",
+   "source": "wiki-Rigoletto.txt",
+   "anchor": "19th-century_productions",
+   "evidence": "which was sung in the streets the next morning"
+  },
+  {
+   "id": "rigoletto-10",
+   "type": "history",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "Because of censorship, Rigoletto sometimes played in Italy under other names, such as Viscardello, Lionello and Clara de Perth.",
+   "attribution": "Wikipedia, “Rigoletto”",
+   "source": "wiki-Rigoletto.txt",
+   "anchor": "19th-century_productions",
+   "evidence": "e.g. as Viscardello, Lionello, and Clara de Perth"
+  },
+  {
+   "id": "rigoletto-11",
+   "type": "music",
+   "sceneMatch": "Zitti, zitti",
+   "scope": "all",
+   "text": "“Zitti, zitti” (“Softly, softly”): blindfolded and tricked, Rigoletto holds the ladder while the courtiers abduct his own daughter.",
+   "attribution": "Wikipedia, “Rigoletto”",
+   "source": "wiki-Rigoletto.txt",
+   "anchor": "Act_1",
+   "evidence": "Blindfolded and deceived, he holds the ladder steady while they climb up to Gilda's room"
+  },
+  {
+   "id": "rigoletto-12",
+   "type": "music",
+   "sceneMatch": "Scorrendo uniti",
+   "scope": "all",
+   "text": "The courtiers gleefully tell the Duke they have captured “Rigoletto’s mistress”. It is really Gilda, his daughter.",
+   "attribution": "Wikipedia, “Rigoletto”",
+   "source": "wiki-Rigoletto.txt",
+   "anchor": "Act_2",
+   "evidence": "they have captured Rigoletto's mistress"
+  },
+  {
+   "id": "rigoletto-13",
+   "type": "history",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "Verdi finished the score on 5 February 1851, little more than a month before the premiere.",
+   "attribution": "Wikipedia, “Rigoletto”",
+   "source": "wiki-Rigoletto.txt",
+   "anchor": "Composition_history",
+   "evidence": "Verdi finally completed the composition on 5 February 1851, a little more than a month before the premiere."
+  }
+ ]
+}

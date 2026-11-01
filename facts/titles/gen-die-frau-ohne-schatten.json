@@ -1,0 +1,31 @@
+{
+ "title": "Die Frau ohne Schatten",
+ "match": [
+  "Die Frau ohne Schatten"
+ ],
+ "general": true,
+ "facts": [
+  {
+   "id": "gen-die-frau-ohne-schatten-1",
+   "type": "premiere",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "When it premiered at the Vienna State Opera on 10 October 1919, critics and audiences were unenthusiastic.",
+   "attribution": "Wikipedia, “Die Frau ohne Schatten”",
+   "source": "wikiintro-Die_Frau_ohne_Schatten.txt",
+   "anchor": null,
+   "evidence": "When it premiered at the Vienna State Opera on 10 October 1919, critics and audiences were unenthusiastic."
+  },
+  {
+   "id": "gen-die-frau-ohne-schatten-2",
+   "type": "history",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "Die Frau ohne Schatten (The Woman without a Shadow), Op. 65, is an opera in three acts by Richard Strauss with a libretto by his long-time collaborator, the poet Hugo von Hofmannsthal.",
+   "attribution": "Wikipedia, “Die Frau ohne Schatten”",
+   "source": "wikiintro-Die_Frau_ohne_Schatten.txt",
+   "anchor": null,
+   "evidence": "Die Frau ohne Schatten (The Woman without a Shadow), Op. 65, is an opera in three acts by Richard Strauss with a libretto by his long-time collaborator, the poet Hugo von Hofmannsthal."
+  }
+ ]
+}

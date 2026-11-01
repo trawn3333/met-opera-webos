@@ -13,6 +13,7 @@ import { getPlayer, isFullscreen, fmt, pictureMode, setPictureMode, MODE_LABEL, 
 import { castItems } from './cast/cast';
 import { productionFor, productionItems } from './cast/credits';
 import { tlm } from './tlm';
+import { popFactsOn, setPopFacts, startSession as factsStart, stopSession as factsStop, tick as factsTick, sessionInfo as factsInfo, dismiss as factsDismiss } from './facts/popFacts';
 import { toast } from './toast';
 import { lsGet, lsSet } from './util';
 import { dbg } from './debugLog';
@@ -40,7 +41,8 @@ var ICON = {
   cc: svg('<path d="M19 4H5c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm-8 7H9.5v-.5h-2v3h2V13H11v1c0 .55-.45 1-1 1H7c-.55 0-1-.45-1-1v-4c0-.55.45-1 1-1h3c.55 0 1 .45 1 1v1zm7 0h-1.5v-.5h-2v3h2V13H18v1c0 .55-.45 1-1 1h-3c-.55 0-1-.45-1-1v-4c0-.55.45-1 1-1h3c.55 0 1 .45 1 1v1z"/>'),
   audio: svg('<path d="M12 3v10.55c-.59-.34-1.27-.55-2-.55-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4V7h4V3h-6z"/>'),
   pic: svg('<path d="M21 3H3c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h18c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H3V5h18v14zM5 7h14v10H5z" fill-rule="evenodd"/>'),
-  report: svg('<path d="M1 21h22L12 2 1 21zm12-3h-2v-2h2v2zm0-4h-2v-4h2v4z"/>')
+  report: svg('<path d="M1 21h22L12 2 1 21zm12-3h-2v-2h2v2zm0-4h-2v-4h2v4z"/>'),
+  facts: svg('<path d="M20 2H4a2 2 0 0 0-2 2v18l4-4h14a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2zm-7 12h-2v-2h2v2zm1.6-5.4c-.5.7-1.1 1-1.4 1.5-.2.3-.2.6-.2 1.4h-2c0-1.1.2-1.8.6-2.3.5-.7 1.2-1 1.5-1.5.4-.6.1-1.7-1.1-1.7-.8 0-1.2.6-1.4 1.2l-1.8-.7C9.2 5.3 10.3 4.5 12 4.5c2.5 0 3.6 2.4 2.6 4.1z"/>')
 };
 var BTNS = [
   { id: 'exit', label: 'Back' },
@@ -49,6 +51,7 @@ var BTNS = [
   { id: 'next', label: 'Next scene' },
   { id: 'chapters', label: 'Scenes' },
   { id: 'cast', label: 'Cast' },
+  { id: 'facts', label: 'Pop-up facts' },
   { id: 'cc', label: 'Subtitles' },
   { id: 'audio', label: 'Audio' },
   { id: 'pic', label: 'Picture & stream' },
@@ -192,6 +195,7 @@ function update() {
 
 function paint() {
   if (!root) return;
+  factsLabel();
   els.scrub.classList.toggle('mtv-sel', zone === 'scrub' && !menu);
   for (var i = 0; i < els.btns.length; i++) els.btns[i].classList.toggle('mtv-sel', zone === 'btn' && !menu && i === sel);
   if (menu) {
@@ -283,6 +287,7 @@ function activate() {
   else if (id === 'prev' || id === 'next') { sceneJump(id === 'next' ? 1 : -1, id); }
   else if (id === 'chapters') openChapters();
   else if (id === 'cast') openCast();
+  else if (id === 'facts') { setPopFacts(!popFactsOn()); factsLabel(); toast('Pop-up facts: ' + (popFactsOn() ? 'on' : 'off'), 1800); }
   else if (id === 'cc') openCaptions();
   else if (id === 'audio') openAudio();
   else if (id === 'pic') openPicture();
@@ -442,10 +447,31 @@ function sendStats() {
   stats = { opened: 0, seeks: 0, seekSecs: 0, buttons: {}, keysHidden: 0 };
 }
 
+// ---- 1.4.0 pop-up facts ----
+function factsLabel() {
+  if (!root) return;
+  var i = btnIdx('facts');
+  if (i >= 0) els.btns[i].querySelector('span').textContent = 'Pop-up facts: ' + (popFactsOn() ? 'on' : 'off');
+}
+var factsFor = null;
+function factsStep() {
+  var c = current(), p = getPlayer();
+  if (!c || !p) { if (factsFor) { factsStop(); factsFor = null; } return; }
+  if (factsFor !== c.id) {
+    factsFor = c.id;
+    factsStart({ id: c.id, name: c.opera || c.name || title(), root: playerRoot() });
+  }
+  var prod = productionFor(c.id);
+  factsTick(p.time(), { chapters: chapters(), duration: p.duration(), prodPremiere: prod ? prod.premiere : '', paused: p.paused(), root: playerRoot() });
+}
+export function factsState() { return { on: popFactsOn(), session: factsInfo() }; }
+export function factsHide() { factsDismiss(true); }
+
 export function initPlayerUI() {
   setEngineHooks({ sceneJump: sceneJump });
   setInterval(function () {
     try { if (!isFullscreen() && visible) hide(); else update(); } catch (e2) { /* ignore */ }
+    try { factsStep(); } catch (e3) { dbg('warn', 'pop-up facts: ' + (e3 && e3.message)); }
   }, 1000);
   setInterval(sendStats, 5 * 60 * 1000);
 }

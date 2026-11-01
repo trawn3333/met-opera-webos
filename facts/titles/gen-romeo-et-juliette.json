@@ -1,0 +1,20 @@
+{
+ "title": "Roméo et Juliette",
+ "match": [
+  "Roméo et Juliette"
+ ],
+ "general": true,
+ "facts": [
+  {
+   "id": "gen-romeo-et-juliette-1",
+   "type": "premiere",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "It was first performed at the Théâtre Lyrique (Théâtre-Lyrique Impérial du Châtelet), Paris on 27 April 1867.",
+   "attribution": "Wikipedia, “Roméo et Juliette”",
+   "source": "wikiintro-Rom_o_et_Juliette_opera_.txt",
+   "anchor": null,
+   "evidence": "It was first performed at the Théâtre Lyrique (Théâtre-Lyrique Impérial du Châtelet), Paris on 27 April 1867."
+  }
+ ]
+}

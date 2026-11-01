@@ -1,0 +1,31 @@
+{
+ "title": "Elektra",
+ "match": [
+  "Elektra"
+ ],
+ "general": true,
+ "facts": [
+  {
+   "id": "gen-elektra-1",
+   "type": "premiere",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "It was finished in 1908, and first performed at the Königliches Opernhaus in Dresden on 25 January 1909 with Annie Krull in the leading role.",
+   "attribution": "Wikipedia, “Elektra (opera)”",
+   "source": "wikiintro-Elektra_opera_.txt",
+   "anchor": null,
+   "evidence": "It was finished in 1908, and first performed at the Königliches Opernhaus in Dresden on 25 January 1909 with Annie Krull in the leading role."
+  },
+  {
+   "id": "gen-elektra-2",
+   "type": "history",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "Elektra, Op. 58, is a one-act opera by Richard Strauss, to a German-language libretto by Hugo von Hofmannsthal, which he adapted from his 1903 drama Elektra.",
+   "attribution": "Wikipedia, “Elektra (opera)”",
+   "source": "wikiintro-Elektra_opera_.txt",
+   "anchor": null,
+   "evidence": "Elektra, Op. 58, is a one-act opera by Richard Strauss, to a German-language libretto by Hugo von Hofmannsthal, which he adapted from his 1903 drama Elektra."
+  }
+ ]
+}

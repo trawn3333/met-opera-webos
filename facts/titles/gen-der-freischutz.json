@@ -1,0 +1,31 @@
+{
+ "title": "Der Freischütz",
+ "match": [
+  "Der Freischütz"
+ ],
+ "general": true,
+ "facts": [
+  {
+   "id": "gen-der-freischutz-1",
+   "type": "premiere",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "It premiered on 18 June 1821 at the Schauspielhaus Berlin.",
+   "attribution": "Wikipedia, “Der Freischütz”",
+   "source": "wikiintro-Der_Freisch_tz.txt",
+   "anchor": null,
+   "evidence": "It premiered on 18 June 1821 at the Schauspielhaus Berlin."
+  },
+  {
+   "id": "gen-der-freischutz-2",
+   "type": "history",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "The opera's plot is mainly based on Apel's tale \"The Fatal Marksman\" from the Gespensterbuch though the hermit, Kaspar and Ännchen are new to Kind's libretto.",
+   "attribution": "Wikipedia, “Der Freischütz”",
+   "source": "wikiintro-Der_Freisch_tz.txt",
+   "anchor": null,
+   "evidence": "The opera's plot is mainly based on Apel's tale \"The Fatal Marksman\" from the Gespensterbuch though the hermit, Kaspar and Ännchen are new to Kind's libretto."
+  }
+ ]
+}

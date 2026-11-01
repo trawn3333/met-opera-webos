@@ -1,0 +1,20 @@
+{
+ "title": "Lohengrin",
+ "match": [
+  "Lohengrin"
+ ],
+ "general": true,
+ "facts": [
+  {
+   "id": "gen-lohengrin-1",
+   "type": "history",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "The story of the eponymous character is taken from medieval German romance, notably the Parzival of Wolfram von Eschenbach, and its sequel Lohengrin, itself inspired by the epic of Garin le Loherain.",
+   "attribution": "Wikipedia, “Lohengrin (opera)”",
+   "source": "wikiintro-Lohengrin_opera_.txt",
+   "anchor": null,
+   "evidence": "The story of the eponymous character is taken from medieval German romance, notably the Parzival of Wolfram von Eschenbach, and its sequel Lohengrin, itself inspired by the epic of Garin le Loherain."
+  }
+ ]
+}

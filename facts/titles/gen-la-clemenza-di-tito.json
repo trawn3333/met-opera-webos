@@ -1,0 +1,31 @@
+{
+ "title": "La Clemenza di Tito",
+ "match": [
+  "La Clemenza di Tito"
+ ],
+ "general": true,
+ "facts": [
+  {
+   "id": "gen-la-clemenza-di-tito-1",
+   "type": "premiere",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "La clemenza di Tito premiered on 6 September 1791 at the Estates Theatre in Prague.",
+   "attribution": "Wikipedia, “La clemenza di Tito”",
+   "source": "wikiintro-La_Clemenza_di_Tito.txt",
+   "anchor": null,
+   "evidence": "La clemenza di Tito premiered on 6 September 1791 at the Estates Theatre in Prague."
+  },
+  {
+   "id": "gen-la-clemenza-di-tito-2",
+   "type": "history",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "La clemenza di Tito (The Clemency of Titus), K. 621, is a two-act dramma per musica (now called opera seria) by Wolfgang Amadeus Mozart, composed to an existing Italian libretto by Pietro Metastasio as modified by Caterino Mazzolà.",
+   "attribution": "Wikipedia, “La clemenza di Tito”",
+   "source": "wikiintro-La_Clemenza_di_Tito.txt",
+   "anchor": null,
+   "evidence": "La clemenza di Tito (The Clemency of Titus), K. 621, is a two-act dramma per musica (now called opera seria) by Wolfgang Amadeus Mozart, composed to an existing Italian libretto by Pietro Metastasio as modified by Caterino Mazzolà."
+  }
+ ]
+}

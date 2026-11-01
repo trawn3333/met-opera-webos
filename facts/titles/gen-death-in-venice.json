@@ -1,0 +1,31 @@
+{
+ "title": "Death in Venice",
+ "match": [
+  "Death in Venice"
+ ],
+ "general": true,
+ "facts": [
+  {
+   "id": "gen-death-in-venice-1",
+   "type": "premiere",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "It was first performed at Snape Maltings, near Aldeburgh, England, on 16 June 1973.",
+   "attribution": "Wikipedia, “Death in Venice (opera)”",
+   "source": "wikiintro-Death_in_Venice_opera_.txt",
+   "anchor": null,
+   "evidence": "It was first performed at Snape Maltings, near Aldeburgh, England, on 16 June 1973."
+  },
+  {
+   "id": "gen-death-in-venice-2",
+   "type": "history",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "The opera is based on Death in Venice, a novella by Thomas Mann.",
+   "attribution": "Wikipedia, “Death in Venice (opera)”",
+   "source": "wikiintro-Death_in_Venice_opera_.txt",
+   "anchor": null,
+   "evidence": "The opera is based on Death in Venice, a novella by Thomas Mann."
+  }
+ ]
+}

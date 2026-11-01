@@ -1,0 +1,31 @@
+{
+ "title": "Samson et Dalila",
+ "match": [
+  "Samson et Dalila"
+ ],
+ "general": true,
+ "facts": [
+  {
+   "id": "gen-samson-et-dalila-1",
+   "type": "premiere",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "It was first performed in Weimar at the Grossherzogliches (Grand Ducal) Theater (now the Staatskapelle Weimar) on 2 December 1877 in a German translation.",
+   "attribution": "Wikipedia, “Samson and Delilah (opera)”",
+   "source": "wikiintro-Samson_et_Dalila.txt",
+   "anchor": null,
+   "evidence": "It was first performed in Weimar at the Grossherzogliches (Grand Ducal) Theater (now the Staatskapelle Weimar) on 2 December 1877 in a German translation."
+  },
+  {
+   "id": "gen-samson-et-dalila-2",
+   "type": "history",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "Samson and Delilah (French: Samson et Dalila), Op. 47, is a grand opera in three acts and four scenes by Camille Saint-Saëns to a French libretto by Ferdinand Lemaire.",
+   "attribution": "Wikipedia, “Samson and Delilah (opera)”",
+   "source": "wikiintro-Samson_et_Dalila.txt",
+   "anchor": null,
+   "evidence": "Samson and Delilah (French: Samson et Dalila), Op. 47, is a grand opera in three acts and four scenes by Camille Saint-Saëns to a French libretto by Ferdinand Lemaire."
+  }
+ ]
+}

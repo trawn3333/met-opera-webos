@@ -1,0 +1,31 @@
+{
+ "title": "Fedora",
+ "match": [
+  "Fedora"
+ ],
+ "general": true,
+ "facts": [
+  {
+   "id": "gen-fedora-1",
+   "type": "premiere",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "It was first performed at the Teatro Lirico in Milan on 17 November 1898 conducted by the composer; Gemma Bellincioni created the role of Fedora with Enrico Caruso as her lover, Loris Ipanov.",
+   "attribution": "Wikipedia, “Fedora (opera)”",
+   "source": "wikiintro-Fedora_opera_.txt",
+   "anchor": null,
+   "evidence": "It was first performed at the Teatro Lirico in Milan on 17 November 1898 conducted by the composer; Gemma Bellincioni created the role of Fedora with Enrico Caruso as her lover, Loris Ipanov."
+  },
+  {
+   "id": "gen-fedora-2",
+   "type": "history",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "Fedora is an opera in three acts by Umberto Giordano to an Italian libretto by Arturo Colautti, based on the 1882 play Fédora by Victorien Sardou.",
+   "attribution": "Wikipedia, “Fedora (opera)”",
+   "source": "wikiintro-Fedora_opera_.txt",
+   "anchor": null,
+   "evidence": "Fedora is an opera in three acts by Umberto Giordano to an Italian libretto by Arturo Colautti, based on the 1882 play Fédora by Victorien Sardou."
+  }
+ ]
+}

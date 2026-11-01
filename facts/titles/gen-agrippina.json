@@ -1,0 +1,31 @@
+{
+ "title": "Agrippina",
+ "match": [
+  "Agrippina"
+ ],
+ "general": true,
+ "facts": [
+  {
+   "id": "gen-agrippina-1",
+   "type": "premiere",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "It premiered in Venice at the Teatro San Giovanni Grisostomo on 26 December 1709.",
+   "attribution": "Wikipedia, “Agrippina (opera)”",
+   "source": "wikiintro-Agrippina_opera_.txt",
+   "anchor": null,
+   "evidence": "It premiered in Venice at the Teatro San Giovanni Grisostomo on 26 December 1709."
+  },
+  {
+   "id": "gen-agrippina-2",
+   "type": "history",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "Agrippina (HWV 6) is an opera seria in three acts by George Frideric Handel with a libretto by Cardinal Vincenzo Grimani.",
+   "attribution": "Wikipedia, “Agrippina (opera)”",
+   "source": "wikiintro-Agrippina_opera_.txt",
+   "anchor": null,
+   "evidence": "Agrippina (HWV 6) is an opera seria in three acts by George Frideric Handel with a libretto by Cardinal Vincenzo Grimani."
+  }
+ ]
+}

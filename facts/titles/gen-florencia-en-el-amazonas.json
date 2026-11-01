@@ -1,0 +1,31 @@
+{
+ "title": "Florencia en el Amazonas",
+ "match": [
+  "Florencia en el Amazonas"
+ ],
+ "general": true,
+ "facts": [
+  {
+   "id": "gen-florencia-en-el-amazonas-1",
+   "type": "premiere",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "Florencia was co-commissioned by Houston Grand Opera, Los Angeles Opera, and Seattle Opera and premiered in Houston on October 25, 1996.",
+   "attribution": "Wikipedia, “Florencia en el Amazonas”",
+   "source": "wikiintro-Florencia_en_el_Amazonas.txt",
+   "anchor": null,
+   "evidence": "Florencia was co-commissioned by Houston Grand Opera, Los Angeles Opera, and Seattle Opera and premiered in Houston on October 25, 1996."
+  },
+  {
+   "id": "gen-florencia-en-el-amazonas-2",
+   "type": "history",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "It contains elements of magical realism in the style of Gabriel García Márquez and uses a libretto by Marcela Fuentes-Berain, one of his pupils.",
+   "attribution": "Wikipedia, “Florencia en el Amazonas”",
+   "source": "wikiintro-Florencia_en_el_Amazonas.txt",
+   "anchor": null,
+   "evidence": "It contains elements of magical realism in the style of Gabriel García Márquez and uses a libretto by Marcela Fuentes-Berain, one of his pupils."
+  }
+ ]
+}

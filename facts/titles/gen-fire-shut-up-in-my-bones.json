@@ -1,0 +1,31 @@
+{
+ "title": "Fire Shut Up in My Bones",
+ "match": [
+  "Fire Shut Up in My Bones"
+ ],
+ "general": true,
+ "facts": [
+  {
+   "id": "gen-fire-shut-up-in-my-bones-1",
+   "type": "premiere",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "The opera was first performed at the Opera Theatre of Saint Louis in 2019, and is based on the 2014 memoir of the same name by Charles M.",
+   "attribution": "Wikipedia, “Fire Shut Up in My Bones”",
+   "source": "wikiintro-Fire_Shut_Up_in_My_Bones.txt",
+   "anchor": null,
+   "evidence": "The opera was first performed at the Opera Theatre of Saint Louis in 2019, and is based on the 2014 memoir of the same name by Charles M."
+  },
+  {
+   "id": "gen-fire-shut-up-in-my-bones-2",
+   "type": "history",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "Fire Shut Up in My Bones is an English-language opera in three acts, with music by Terence Blanchard and libretto by Kasi Lemmons.",
+   "attribution": "Wikipedia, “Fire Shut Up in My Bones”",
+   "source": "wikiintro-Fire_Shut_Up_in_My_Bones.txt",
+   "anchor": null,
+   "evidence": "Fire Shut Up in My Bones is an English-language opera in three acts, with music by Terence Blanchard and libretto by Kasi Lemmons."
+  }
+ ]
+}

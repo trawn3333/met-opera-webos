@@ -52,3 +52,6 @@ CREATE TABLE IF NOT EXISTS thumbs (
   size INTEGER NOT NULL,
   updated_at INTEGER NOT NULL
 );
+
+-- 1.4.0 pop-up facts (also created lazily by the Worker on first PUT /v1/facts/<slug>.json)
+CREATE TABLE IF NOT EXISTS facts (slug TEXT PRIMARY KEY, json TEXT NOT NULL, etag TEXT, size INTEGER, updated_at INTEGER);

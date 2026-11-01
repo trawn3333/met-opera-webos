@@ -1,0 +1,203 @@
+{
+ "title": "La Traviata",
+ "match": [
+  "La Traviata"
+ ],
+ "facts": [
+  {
+   "id": "traviata-01",
+   "type": "premiere",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "La Traviata premiered on 6 March 1853 at La Fenice in Venice.",
+   "attribution": "Wikipedia, “La Traviata”",
+   "source": "wiki-La_traviata.txt",
+   "anchor": null,
+   "evidence": "It was first performed on 6 March 1853 at La Fenice opera house in Venice."
+  },
+  {
+   "id": "traviata-02",
+   "type": "composer",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "The day after the premiere, Verdi wrote his most famous letter: “La traviata last night a failure. Was the fault mine or the singers’? Time will tell.”",
+   "attribution": "Verdi, letter to Emanuele Muzio, 1853 (via Wikipedia)",
+   "source": "wiki-La_traviata.txt",
+   "anchor": "Performance_history",
+   "evidence": "La traviata last night a failure. Was the fault mine or the singers'? Time will tell."
+  },
+  {
+   "id": "traviata-03",
+   "type": "premiere",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "The premiere audience jeered at times, some of it aimed at the casting of Fanny Salvini-Donatelli as Violetta.",
+   "attribution": "Wikipedia, “La Traviata”",
+   "source": "wiki-La_traviata.txt",
+   "anchor": "Performance_history",
+   "evidence": "The audience jeered at times during the premiere, directing some of their scorn at the casting of soprano Fanny Salvini-Donatelli"
+  },
+  {
+   "id": "traviata-04",
+   "type": "history",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "Revised and revived in 1854, it was a hit. Piave reported: “Then it was a fiasco; now it has created a furore. Draw your own conclusions!”",
+   "attribution": "Francesco Maria Piave (via Wikipedia)",
+   "source": "wiki-La_traviata.txt",
+   "anchor": "Performance_history",
+   "evidence": [
+    "it was a fiasco; now it has created a furore. Draw your own conclusions!"
+   ]
+  },
+  {
+   "id": "traviata-05",
+   "type": "history",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "Verdi wanted a contemporary setting, but La Fenice insisted on the past (“c. 1700”). Realistic modern-dress productions came only in the 1880s.",
+   "attribution": "Wikipedia, “La Traviata”",
+   "source": "wiki-La_traviata.txt",
+   "anchor": null,
+   "evidence": [
+    "the authorities at La Fenice insisted that it be set in the past, \"c. 1700\"",
+    "It was not until the 1880s"
+   ]
+  },
+  {
+   "id": "traviata-06",
+   "type": "history",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "The story comes from La Dame aux camélias by Alexandre Dumas fils, which Verdi saw in Paris with Giuseppina Strepponi in 1852.",
+   "attribution": "Wikipedia, “La Traviata”",
+   "source": "wiki-La_traviata.txt",
+   "anchor": null,
+   "evidence": [
+    "It is based on La Dame aux camélias (1852), a play by Alexandre Dumas fils",
+    "In February the couple attended a performance of Alexander Dumas fils'  The Lady of the Camellias."
+   ]
+  },
+  {
+   "id": "traviata-07",
+   "type": "history",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "By coincidence, an Italian translation of the Dumas play was running just down the street from La Fenice at the premiere.",
+   "attribution": "Wikipedia, “La Traviata”",
+   "source": "wiki-La_traviata.txt",
+   "anchor": "Performance_history",
+   "evidence": "an Italian translation of the play La Dame aux camélias was being presented just a short distance from La Fenice"
+  },
+  {
+   "id": "traviata-08",
+   "type": "composer",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "Verdi told Piave he wanted something new: “I don’t want any of those everyday subjects that one can find by the hundreds.”",
+   "attribution": "Verdi to Piave (via Wikipedia)",
+   "source": "wiki-La_traviata.txt",
+   "anchor": "Composing_for_Venice",
+   "evidence": "I don't want any of those everyday subjects that one can find by the hundreds."
+  },
+  {
+   "id": "traviata-09",
+   "type": "composer",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "Verdi arrived in Venice for rehearsals “filled with premonitions of disaster” and made his unhappiness clear to the singers.",
+   "attribution": "Wikipedia, “La Traviata”",
+   "source": "wiki-La_traviata.txt",
+   "anchor": "Composing_for_Venice",
+   "evidence": "Verdi was filled with premonitions of disaster upon his arrival in Venice on 21 February for rehearsals"
+  },
+  {
+   "id": "traviata-10",
+   "type": "music",
+   "sceneMatch": "Prelud|Preludio",
+   "scope": "all",
+   "text": "The prelude opens with very soft, very high strings portraying the frail heroine, then the main love theme on lower strings.",
+   "attribution": "Wikipedia, “La Traviata”",
+   "source": "wiki-La_traviata.txt",
+   "anchor": "Music",
+   "evidence": "The prelude to the opera begins with very soft, very high strings depicting the frail heroine"
+  },
+  {
+   "id": "traviata-11",
+   "type": "music",
+   "sceneMatch": "Libiamo",
+   "scope": "all",
+   "text": "Asked for a toast, Alfredo sings the brindisi “Libiamo ne’ lieti calici”, “Let’s drink from the joyful cups”.",
+   "attribution": "Wikipedia, “La Traviata”",
+   "source": "wiki-La_traviata.txt",
+   "anchor": "Act_1",
+   "evidence": "Libiamo ne' lieti calici"
+  },
+  {
+   "id": "traviata-12",
+   "type": "music",
+   "sceneMatch": "Libiamo|Che è ciò|Un dì, felice",
+   "scope": "all",
+   "text": "After the Brindisi, an offstage band plays waltzes. Waltz rhythms run through Act I to create a Parisian atmosphere.",
+   "attribution": "Wikipedia, “La Traviata”",
+   "source": "wiki-La_traviata.txt",
+   "anchor": "Music",
+   "evidence": "waltz rhythms pervade the first act of the opera, creating a Parisian atmosphere"
+  },
+  {
+   "id": "traviata-13",
+   "type": "music",
+   "sceneMatch": "Pura siccome|Dite alla giovine|Madamigella Valery",
+   "scope": "all",
+   "text": "The long Germont–Violetta duet is built in many sections, the music following each turn of the drama.",
+   "attribution": "Wikipedia, “La Traviata”",
+   "source": "wiki-La_traviata.txt",
+   "anchor": "Music",
+   "evidence": "is multi-sectioned with the music following the changing dramatic situation"
+  },
+  {
+   "id": "traviata-14",
+   "type": "music",
+   "sceneMatch": "Di Provenza",
+   "scope": "all",
+   "text": "“Di Provenza il mar, il suol”: Germont tries to comfort his son by reminding him of home in Provence.",
+   "attribution": "Wikipedia, “La Traviata”",
+   "source": "wiki-La_traviata.txt",
+   "anchor": "Act_2",
+   "evidence": "attempts to comfort his son, reminding him of his family in Provence"
+  },
+  {
+   "id": "traviata-15",
+   "type": "music",
+   "sceneMatch": "zingarelle|mattador|Di Madride",
+   "scope": "all",
+   "text": "At Flora’s party, guests dress up as gypsy girls and matadors from Madrid to entertain.",
+   "attribution": "Wikipedia, “La Traviata”",
+   "source": "wiki-La_traviata.txt",
+   "anchor": "Act_2",
+   "evidence": "Noi siamo zingarelle venute da lontano"
+  },
+  {
+   "id": "traviata-16",
+   "type": "critic",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "In New York, diarist George Templeton Strong shrugged at the scandal: the plot was no worse than Don Giovanni, which on stage was “little but rampant lechery”.",
+   "attribution": "George Templeton Strong, diary (via Wikipedia)",
+   "source": "wiki-La_traviata.txt",
+   "anchor": "Performance_history",
+   "evidence": "which as put on the stage is little but rampant lechery"
+  },
+  {
+   "id": "traviata-17",
+   "type": "history",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "La Traviata is among the most frequently performed of all operas.",
+   "attribution": "Wikipedia, “La Traviata”",
+   "source": "wiki-La_traviata.txt",
+   "anchor": null,
+   "evidence": "is among the most frequently performed of all operas"
+  }
+ ]
+}

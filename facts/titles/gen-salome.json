@@ -1,0 +1,20 @@
+{
+ "title": "Salome",
+ "match": [
+  "Salome"
+ ],
+ "general": true,
+ "facts": [
+  {
+   "id": "gen-salome-1",
+   "type": "history",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "He adapted the libretto from Hedwig Lachmann's German translation of the 1891 French play Salomé by Oscar Wilde.",
+   "attribution": "Wikipedia, “Salome (opera)”",
+   "source": "wikiintro-Salome_opera_.txt",
+   "anchor": null,
+   "evidence": "He adapted the libretto from Hedwig Lachmann's German translation of the 1891 French play Salomé by Oscar Wilde."
+  }
+ ]
+}

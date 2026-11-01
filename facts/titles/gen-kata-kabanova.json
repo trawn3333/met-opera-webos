@@ -1,0 +1,31 @@
+{
+ "title": "Káťa Kabanová",
+ "match": [
+  "Káťa Kabanová"
+ ],
+ "general": true,
+ "facts": [
+  {
+   "id": "gen-kata-kabanova-1",
+   "type": "premiere",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "The first performance was at the National Theatre Brno on 23 November 1921.",
+   "attribution": "Wikipedia, “Káťa Kabanová”",
+   "source": "wikiintro-K_a_Kabanov_.txt",
+   "anchor": null,
+   "evidence": "The first performance was at the National Theatre Brno on 23 November 1921."
+  },
+  {
+   "id": "gen-kata-kabanova-2",
+   "type": "history",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "The opera was also largely inspired by Janáček's love for Kamila Stösslová.",
+   "attribution": "Wikipedia, “Káťa Kabanová”",
+   "source": "wikiintro-K_a_Kabanov_.txt",
+   "anchor": null,
+   "evidence": "The opera was also largely inspired by Janáček's love for Kamila Stösslová."
+  }
+ ]
+}

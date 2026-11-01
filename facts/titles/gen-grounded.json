@@ -1,0 +1,31 @@
+{
+ "title": "Grounded",
+ "match": [
+  "Grounded"
+ ],
+ "general": true,
+ "facts": [
+  {
+   "id": "gen-grounded-1",
+   "type": "premiere",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "The opera premiered at the Kennedy Center in 2023 to mixed reviews.",
+   "attribution": "Wikipedia, “Grounded (opera)”",
+   "source": "wikiintro-Grounded_opera_.txt",
+   "anchor": null,
+   "evidence": "The opera premiered at the Kennedy Center in 2023 to mixed reviews."
+  },
+  {
+   "id": "gen-grounded-2",
+   "type": "history",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "Grounded is an English-language opera in two acts with music by Jeanine Tesori and libretto by George Brant.",
+   "attribution": "Wikipedia, “Grounded (opera)”",
+   "source": "wikiintro-Grounded_opera_.txt",
+   "anchor": null,
+   "evidence": "Grounded is an English-language opera in two acts with music by Jeanine Tesori and libretto by George Brant."
+  }
+ ]
+}

@@ -1,0 +1,20 @@
+{
+ "title": "Le Comte Ory",
+ "match": [
+  "Le Comte Ory"
+ ],
+ "general": true,
+ "facts": [
+  {
+   "id": "gen-le-comte-ory-1",
+   "type": "history",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "The French libretto was by Eugène Scribe and Charles-Gaspard Delestre-Poirson adapted from a comedy they had first written in 1817.",
+   "attribution": "Wikipedia, “Le comte Ory”",
+   "source": "wikiintro-Le_Comte_Ory.txt",
+   "anchor": null,
+   "evidence": "The French libretto was by Eugène Scribe and Charles-Gaspard Delestre-Poirson adapted from a comedy they had first written in 1817."
+  }
+ ]
+}

@@ -1,0 +1,20 @@
+{
+ "title": "Mefistofele",
+ "match": [
+  "Mefistofele"
+ ],
+ "general": true,
+ "facts": [
+  {
+   "id": "gen-mefistofele-1",
+   "type": "premiere",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "The opera was given its premiere on 5 March 1868 at La Scala, Milan, under the baton of the composer, despite his lack of experience and skill as a conductor.",
+   "attribution": "Wikipedia, “Mefistofele”",
+   "source": "wikiintro-Mefistofele.txt",
+   "anchor": null,
+   "evidence": "The opera was given its premiere on 5 March 1868 at La Scala, Milan, under the baton of the composer, despite his lack of experience and skill as a conductor."
+  }
+ ]
+}

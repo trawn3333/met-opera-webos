@@ -1,0 +1,31 @@
+{
+ "title": "Mourning Becomes Electra",
+ "match": [
+  "Mourning Becomes Electra"
+ ],
+ "general": true,
+ "facts": [
+  {
+   "id": "gen-mourning-becomes-electra-1",
+   "type": "premiere",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "It premiered at the Metropolitan Opera in New York City on March 17, 1967, with Zubin Mehta conducting.",
+   "attribution": "Wikipedia, “Mourning Becomes Electra (opera)”",
+   "source": "wikiintro-Mourning_Becomes_Electra_opera_.txt",
+   "anchor": null,
+   "evidence": "It premiered at the Metropolitan Opera in New York City on March 17, 1967, with Zubin Mehta conducting."
+  },
+  {
+   "id": "gen-mourning-becomes-electra-2",
+   "type": "history",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "The work uses an English language libretto by Henry W.",
+   "attribution": "Wikipedia, “Mourning Becomes Electra (opera)”",
+   "source": "wikiintro-Mourning_Becomes_Electra_opera_.txt",
+   "anchor": null,
+   "evidence": "The work uses an English language libretto by Henry W."
+  }
+ ]
+}

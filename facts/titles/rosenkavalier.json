@@ -1,0 +1,155 @@
+{
+ "title": "Der Rosenkavalier",
+ "match": [
+  "Der Rosenkavalier",
+  "Rosenkavalier"
+ ],
+ "facts": [
+  {
+   "id": "rosenkavalier-01",
+   "type": "premiere",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "Der Rosenkavalier premiered in Dresden on 26 January 1911 and was a triumph from the start; tickets reportedly sold out almost immediately.",
+   "attribution": "Wikipedia, “Der Rosenkavalier”",
+   "source": "wiki-Der_Rosenkavalier.txt",
+   "anchor": "Premiere",
+   "evidence": [
+    "Der Rosenkavalier premiered on 26 January 1911 in Dresden",
+    "From the start, Der Rosenkavalier was nothing short of a triumph: tickets to the premiere reportedly sold out almost immediately"
+   ]
+  },
+  {
+   "id": "rosenkavalier-02",
+   "type": "history",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "Until the premiere the working title was “Ochs auf Lerchenau”. “Ochs” means “ox”, which describes the Baron’s manners.",
+   "attribution": "Wikipedia, “Der Rosenkavalier”",
+   "source": "wiki-Der_Rosenkavalier.txt",
+   "anchor": null,
+   "evidence": [
+    "Until the premiere, the working title was Ochs auf Lerchenau",
+    "\"Ochs\" means \"ox\", which describes the Baron's manner"
+   ]
+  },
+  {
+   "id": "rosenkavalier-03",
+   "type": "music",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "Strauss filled the score with Viennese waltzes, an anachronism: the story is set in the 1740s, before the waltz was famous in Vienna.",
+   "attribution": "Wikipedia, “Der Rosenkavalier”",
+   "source": "wiki-Der_Rosenkavalier.txt",
+   "anchor": "Composition",
+   "evidence": [
+    "This is anachronistic because the story takes place in the 1740s, and the waltz only became famous in Vienna during the early 19th century."
+   ]
+  },
+  {
+   "id": "rosenkavalier-04",
+   "type": "critic",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "Some critics objected to the anachronistic waltzes, but the public embraced the opera unconditionally.",
+   "attribution": "Wikipedia, “Der Rosenkavalier”",
+   "source": "wiki-Der_Rosenkavalier.txt",
+   "anchor": "Premiere",
+   "evidence": "Though some critics took issue with Strauss's anachronistic use of waltz music, the public embraced the opera unconditionally."
+  },
+  {
+   "id": "rosenkavalier-05",
+   "type": "staging",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "Alfred Roller designed the original sets and costumes, and Strauss and Hofmannsthal had his designs published in a prompt book that all productions had to use.",
+   "attribution": "Wikipedia, “Der Rosenkavalier”",
+   "source": "wiki-Der_Rosenkavalier.txt",
+   "anchor": "Composition",
+   "evidence": [
+    "Strauss and Hofmannsthal commissioned Roller to design sets and costumes for Der Rosenkavalier",
+    "published in an illustrated prompt book that all productions would be obligated to use"
+   ]
+  },
+  {
+   "id": "rosenkavalier-06",
+   "type": "staging",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "Max Reinhardt was quietly brought in to help with rehearsals as a “shadow director”, though Georg Toller remained the only credited director.",
+   "attribution": "Wikipedia, “Der Rosenkavalier”",
+   "source": "wiki-Der_Rosenkavalier.txt",
+   "anchor": "Composition",
+   "evidence": "recruited Max Reinhardt to assist with rehearsals as a \"shadow director\""
+  },
+  {
+   "id": "rosenkavalier-07",
+   "type": "music",
+   "sceneMatch": "Hab mir.s gelobt|trio|Terzett",
+   "scope": "all",
+   "text": "The opera showcases the female voice: Sophie, Octavian and the Marschallin are all sung by women, who share a trio at the opera’s emotional climax.",
+   "attribution": "Wikipedia, “Der Rosenkavalier”",
+   "source": "wiki-Der_Rosenkavalier.txt",
+   "anchor": null,
+   "evidence": [
+    "Der Rosenkavalier is notable for showcasing the female voice",
+    "who share several duets as well as a trio at the opera's emotional climax"
+   ]
+  },
+  {
+   "id": "rosenkavalier-08",
+   "type": "artist",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "Some singers have performed two or even all three of the leading female roles over their careers.",
+   "attribution": "Wikipedia, “Der Rosenkavalier”",
+   "source": "wiki-Der_Rosenkavalier.txt",
+   "anchor": null,
+   "evidence": "Some singers have performed two or even all three of these roles over the course of their careers."
+  },
+  {
+   "id": "rosenkavalier-09",
+   "type": "history",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "The Met gave the opera’s US premiere on 9 December 1913, conducted by Alfred Hertz.",
+   "attribution": "Wikipedia, “Der Rosenkavalier”",
+   "source": "wiki-Der_Rosenkavalier.txt",
+   "anchor": "International_success",
+   "evidence": "The United States premiere took place at the Metropolitan Opera on the following 9 December in a production conducted by Alfred Hertz."
+  },
+  {
+   "id": "rosenkavalier-10",
+   "type": "history",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "Within two months of its premiere it was translated into Italian and performed at La Scala.",
+   "attribution": "Wikipedia, “Der Rosenkavalier”",
+   "source": "wiki-Der_Rosenkavalier.txt",
+   "anchor": "International_success",
+   "evidence": "Within two months of its premiere, the work was translated into Italian and performed at La Scala."
+  },
+  {
+   "id": "rosenkavalier-11",
+   "type": "staging",
+   "sceneMatch": "Die Zeit|Da geht er hin",
+   "scope": "all",
+   "text": "In the Marschallin’s reverie on the passing of time, a clock is heard chiming 13 times.",
+   "attribution": "Wikipedia, “Der Rosenkavalier”",
+   "source": "wiki-Der_Rosenkavalier.txt",
+   "anchor": null,
+   "evidence": "a clock is heard chiming 13 times"
+  },
+  {
+   "id": "rosenkavalier-12",
+   "type": "music",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "Strauss and Hofmannsthal mark social class through language: Octavian’s “Mariandl” and other non-noble characters speak an Austrian dialect.",
+   "attribution": "Wikipedia, “Der Rosenkavalier”",
+   "source": "wiki-Der_Rosenkavalier.txt",
+   "anchor": "Language",
+   "evidence": "The language used by Octavian as Mariandl, and by other non-noble characters, is an Austrian dialect"
+  }
+ ]
+}

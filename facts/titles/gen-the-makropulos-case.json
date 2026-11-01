@@ -1,0 +1,31 @@
+{
+ "title": "The Makropulos Case",
+ "match": [
+  "The Makropulos Case"
+ ],
+ "general": true,
+ "facts": [
+  {
+   "id": "gen-the-makropulos-case-1",
+   "type": "premiere",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "The opera received its world premiere at the National Theatre in Brno on 18 December 1926, conducted by František Neumann.",
+   "attribution": "Wikipedia, “The Makropulos Affair (opera)”",
+   "source": "wikiintro-The_Makropulos_Case_opera_.txt",
+   "anchor": null,
+   "evidence": "The opera received its world premiere at the National Theatre in Brno on 18 December 1926, conducted by František Neumann."
+  },
+  {
+   "id": "gen-the-makropulos-case-2",
+   "type": "history",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "The Makropulos Affair (also The Makropoulos Case, The Makropulos Secret, or in Czech: Věc Makropulos, lit. 'The Makropulos Thing') is a Czech opera in 3 acts, with music and libretto by Leoš Janáček.",
+   "attribution": "Wikipedia, “The Makropulos Affair (opera)”",
+   "source": "wikiintro-The_Makropulos_Case_opera_.txt",
+   "anchor": null,
+   "evidence": "The Makropulos Affair (also The Makropoulos Case, The Makropulos Secret, or in Czech: Věc Makropulos, lit. 'The Makropulos Thing') is a Czech opera in 3 acts, with music and libretto by Leoš Janáček."
+  }
+ ]
+}

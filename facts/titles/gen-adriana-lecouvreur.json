@@ -1,0 +1,20 @@
+{
+ "title": "Adriana Lecouvreur",
+ "match": [
+  "Adriana Lecouvreur"
+ ],
+ "general": true,
+ "facts": [
+  {
+   "id": "gen-adriana-lecouvreur-1",
+   "type": "premiere",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "It was first performed on 6 November 1902 at the Teatro Lirico in Milan.",
+   "attribution": "Wikipedia, “Adriana Lecouvreur”",
+   "source": "wikiintro-Adriana_Lecouvreur.txt",
+   "anchor": null,
+   "evidence": "It was first performed on 6 November 1902 at the Teatro Lirico in Milan."
+  }
+ ]
+}

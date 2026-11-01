@@ -1,0 +1,31 @@
+{
+ "title": "Rise and Fall of the City of Mahagonny",
+ "match": [
+  "Rise and Fall of the City of Mahagonny"
+ ],
+ "general": true,
+ "facts": [
+  {
+   "id": "gen-rise-and-fall-of-the-city-of-mahagonny-1",
+   "type": "premiere",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "It was first performed on 9 March 1930 at the Neues Theater in Leipzig.",
+   "attribution": "Wikipedia, “Rise and Fall of the City of Mahagonny”",
+   "source": "wikiintro-Rise_and_Fall_of_the_City_of_Mahagonny.txt",
+   "anchor": null,
+   "evidence": "It was first performed on 9 March 1930 at the Neues Theater in Leipzig."
+  },
+  {
+   "id": "gen-rise-and-fall-of-the-city-of-mahagonny-2",
+   "type": "history",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "Rise and Fall of the City of Mahagonny (German: Aufstieg und Fall der Stadt Mahagonny) is a political-satirical opera composed by Kurt Weill to a German libretto by Bertolt Brecht and Elisabeth Hauptmann.",
+   "attribution": "Wikipedia, “Rise and Fall of the City of Mahagonny”",
+   "source": "wikiintro-Rise_and_Fall_of_the_City_of_Mahagonny.txt",
+   "anchor": null,
+   "evidence": "Rise and Fall of the City of Mahagonny (German: Aufstieg und Fall der Stadt Mahagonny) is a political-satirical opera composed by Kurt Weill to a German libretto by Bertolt Brecht and Elisabeth Hauptmann."
+  }
+ ]
+}

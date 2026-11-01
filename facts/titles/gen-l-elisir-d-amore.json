@@ -1,0 +1,31 @@
+{
+ "title": "L'Elisir d'Amore",
+ "match": [
+  "L'Elisir d'Amore"
+ ],
+ "general": true,
+ "facts": [
+  {
+   "id": "gen-l-elisir-d-amore-1",
+   "type": "premiere",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "The opera premiered on 12 May 1832 at the Teatro della Canobbiana in Milan and has remained continually in the international opera repertory.",
+   "attribution": "Wikipedia, “L'elisir d'amore”",
+   "source": "wikiintro-L_Elisir_d_Amore.txt",
+   "anchor": null,
+   "evidence": "The opera premiered on 12 May 1832 at the Teatro della Canobbiana in Milan and has remained continually in the international opera repertory."
+  },
+  {
+   "id": "gen-l-elisir-d-amore-2",
+   "type": "history",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "Felice Romani wrote the Italian libretto, after Eugène Scribe's libretto for Daniel Auber's Le philtre (1831).",
+   "attribution": "Wikipedia, “L'elisir d'amore”",
+   "source": "wikiintro-L_Elisir_d_Amore.txt",
+   "anchor": null,
+   "evidence": "Felice Romani wrote the Italian libretto, after Eugène Scribe's libretto for Daniel Auber's Le philtre (1831)."
+  }
+ ]
+}

@@ -1,0 +1,20 @@
+{
+ "title": "Simon Boccanegra",
+ "match": [
+  "Simon Boccanegra"
+ ],
+ "general": true,
+ "facts": [
+  {
+   "id": "gen-simon-boccanegra-1",
+   "type": "premiere",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "Simon Boccanegra was first performed at Teatro La Fenice in Venice on 12 March 1857.",
+   "attribution": "Wikipedia, “Simon Boccanegra”",
+   "source": "wikiintro-Simon_Boccanegra_opera_.txt",
+   "anchor": null,
+   "evidence": "Simon Boccanegra was first performed at Teatro La Fenice in Venice on 12 March 1857."
+  }
+ ]
+}

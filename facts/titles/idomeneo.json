@@ -1,0 +1,315 @@
+{
+ "title": "Idomeneo",
+ "match": [
+  "Idomeneo"
+ ],
+ "facts": [
+  {
+   "id": "ido-commission",
+   "type": "history",
+   "sceneMatch": "Opening Credits|Overture",
+   "scope": "all",
+   "text": "Idomeneo was a commission: in 1780 the Elector of Bavaria, Karl Theodor, asked Mozart and librettist Varesco for an opera for the Munich court carnival.",
+   "attribution": "Wikipedia, “Idomeneo”",
+   "source": "wiki-Idomeneo.txt",
+   "evidence": "Mozart and Varesco were commissioned in 1780 by Karl Theodor, Elector of Bavaria for a court carnival."
+  },
+  {
+   "id": "ido-overture-chords",
+   "type": "music",
+   "sceneMatch": "^Overture$",
+   "scope": "all",
+   "text": "Listen to the end of the overture: its soft final chords are not a real ending but lead straight into G minor, the key of Ilia’s opening scene.",
+   "attribution": "Wikipedia, “Idomeneo” (Overture)",
+   "source": "wiki-Idomeneo.txt",
+   "anchor": "Overture",
+   "evidence": "turn out not to be a resolution of the overture in the tonic but chords in the dominant of G minor"
+  },
+  {
+   "id": "ido-premiere",
+   "type": "premiere",
+   "sceneMatch": "Quando avran fine",
+   "scope": "all",
+   "text": "The opera premiered on 29 January 1781 at the Cuvilliés Theatre in Munich, conducted by Christian Cannabich.",
+   "attribution": "Wikipedia, “Idomeneo” (Performance history)",
+   "source": "wiki-Idomeneo.txt",
+   "anchor": "Performance_history",
+   "evidence": [
+    "It was first performed at the Cuvilliés Theatre of the Munich Residenz on 29 January 1781, under the musical direction of Christian Cannabich."
+   ]
+  },
+  {
+   "id": "ido-press-ignored-mozart",
+   "type": "premiere",
+   "sceneMatch": "Padre, germani",
+   "scope": "all",
+   "text": "The Munich press notice of the premiere didn’t mention Mozart by name. It raved about the sets instead, especially the view of the port and Neptune’s temple.",
+   "attribution": "Munich press notice, 1781 (quoted in Wikipedia)",
+   "source": "wiki-Idomeneo.txt",
+   "anchor": "Performance_history",
+   "evidence": [
+    "a notice in the Munich press did not mention Mozart by name",
+    "the view of the port and Neptune's temple were outstanding"
+   ]
+  },
+  {
+   "id": "ido-castrato-tenor",
+   "type": "history",
+   "sceneMatch": "Non ho colpa",
+   "scope": "all",
+   "text": "Idamante was written for a castrato. For a 1786 concert performance in Vienna, Mozart rewrote the part for a tenor.",
+   "attribution": "Wikipedia, “Idomeneo” (Performance history)",
+   "source": "wiki-Idomeneo.txt",
+   "anchor": "Performance_history",
+   "evidence": [
+    "A concert performance was given in 1786 at the Palais Auersperg in Vienna.",
+    "changed Idamante from a castrato to a tenor"
+   ]
+  },
+  {
+   "id": "ido-vowels",
+   "type": "composer",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "Mozart fought with his librettist, the court chaplain Varesco, making big cuts and even changing words whose vowels the singers disliked, like the many i’s in “rinvigorir”.",
+   "attribution": "Wikipedia, “Idomeneo” (Performance history)",
+   "source": "wiki-Idomeneo.txt",
+   "anchor": "Performance_history",
+   "evidence": "Mozart fought with the librettist, the court chaplain Varesco, making large cuts and changes, even down to specific words and vowels disliked by the singers"
+  },
+  {
+   "id": "ido-electra-furies",
+   "type": "music",
+   "sceneMatch": "Tutte nel cor",
+   "scope": "all",
+   "text": "Elettra’s “Tutte nel cor vi sento”: jealous of Ilia, she feels the furies of the underworld rising up in her heart.",
+   "attribution": "Wikipedia, “Idomeneo” (Synopsis)",
+   "source": "wiki-Idomeneo.txt",
+   "anchor": "Act_1",
+   "evidence": "feels the furies of the underworld rise up in her heart"
+  },
+  {
+   "id": "ido-gluck-shipwreck",
+   "type": "music",
+   "sceneMatch": "Pieta! Numi|Pietà! Numi",
+   "scope": "all",
+   "text": "This shipwreck scene closely follows the structure of a similar storm scene in Gluck’s Iphigénie en Tauride.",
+   "attribution": "Wikipedia, “Idomeneo” (Composition)",
+   "source": "wiki-Idomeneo.txt",
+   "anchor": "Composition",
+   "evidence": "the shipwreck scene towards the end of act 1 is almost identical to the structure and dramatic working-out of a similar scene in Gluck's Iphigénie en Tauride"
+  },
+  {
+   "id": "ido-vow",
+   "type": "music",
+   "sceneMatch": "Eccoci salvi|Vedrommi intorno",
+   "scope": "all",
+   "text": "Saved from the storm, Idomeneo remembers his vow to Neptune: to sacrifice the first living creature he meets on land. It will be his own son.",
+   "attribution": "Wikipedia, “Idomeneo” (Synopsis)",
+   "source": "wiki-Idomeneo.txt",
+   "anchor": "Act_1",
+   "evidence": "to sacrifice, if he should arrive safely on land, the first living creature he should meet"
+  },
+  {
+   "id": "ido-raaff",
+   "type": "artist",
+   "sceneMatch": "Fuor del mar",
+   "scope": "all",
+   "text": "Mozart wrote the title role for the tenor Anton Raaff, who sang it at the 1781 premiere. It was Raaff’s last stage role.",
+   "attribution": "Wikipedia, “Anton Raaff”",
+   "source": "wiki-Anton_Raaff.txt",
+   "evidence": [
+    "Raaff sang the title role in the premiere of Mozart's 1781 opera Idomeneo; this was his last stage role."
+   ]
+  },
+  {
+   "id": "ido-raaff-voice",
+   "type": "critic",
+   "sceneMatch": "Vedrommi intorno",
+   "scope": "all",
+   "text": "The critic Schubart thought Anton Raaff, the first Idomeneo, had the most beautiful male voice of all time.",
+   "attribution": "C. F. D. Schubart (via Wikipedia, “Anton Raaff”)",
+   "source": "wiki-Anton_Raaff.txt",
+   "evidence": "In the opinion of Schubart, his was the most beautiful male voice of all time"
+  },
+  {
+   "id": "ido-intermezzo",
+   "type": "music",
+   "sceneMatch": "Marcia|Nettuno s'onori",
+   "scope": "all",
+   "text": "In this intermezzo between Acts I and II, Cretan troops come off Idomeneo’s ship, their wives meet them, and everyone praises Neptune.",
+   "attribution": "Wikipedia, “Idomeneo” (Synopsis)",
+   "source": "wiki-Idomeneo.txt",
+   "anchor": "Act_1",
+   "evidence": "In an intermezzo between acts 1 and 2, Cretan troops disembarking from Idomeneo's ship are met by their wives, and all praise Neptune."
+  },
+  {
+   "id": "ido-storm-piccolo",
+   "type": "music",
+   "sceneMatch": "Qual nuovo terrore|Corriamo, fuggiamo",
+   "scope": "all",
+   "text": "Mozart saves the piccolo for this one place in the opera: the storm in Act II.",
+   "attribution": "Wikipedia, “Idomeneo” (Instrumentation)",
+   "source": "wiki-Idomeneo.txt",
+   "anchor": "Instrumentation",
+   "evidence": "piccolo (only in the storm of act 2)"
+  },
+  {
+   "id": "ido-zeffiretti",
+   "type": "music",
+   "sceneMatch": "Zeffiretti",
+   "scope": "all",
+   "text": "“Zeffiretti lusinghieri”: alone in the royal garden, Ilia asks the breezes to carry her love to Idamante.",
+   "attribution": "Wikipedia, “Idomeneo” (Synopsis)",
+   "source": "wiki-Idomeneo.txt",
+   "anchor": "Act_3",
+   "evidence": "Ilia asks the breezes to carry her love to Idamante"
+  },
+  {
+   "id": "ido-trombones",
+   "type": "music",
+   "sceneMatch": "Ha vinto Amore",
+   "scope": "all",
+   "text": "The three trombones play only here, to accompany the offstage Voice of Neptune.",
+   "attribution": "Wikipedia, “Idomeneo” (Instrumentation)",
+   "source": "wiki-Idomeneo.txt",
+   "anchor": "Instrumentation",
+   "evidence": "3 trombones (only accompanying the off-stage voice of Neptune in act 3)"
+  },
+  {
+   "id": "ido-key-circle",
+   "type": "music",
+   "sceneMatch": "Scenda Amor",
+   "scope": "all",
+   "text": "Idomeneo was the first opera in which Mozart ended in the key of the overture, and he did so in all his later operas.",
+   "attribution": "Wikipedia, “Idomeneo” (Performance history)",
+   "source": "wiki-Idomeneo.txt",
+   "anchor": "Performance_history",
+   "evidence": "ended the work in the key of the overture"
+  },
+  {
+   "id": "ido-three-perfs",
+   "type": "premiere",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "Despite all that work, Idomeneo was performed only three times in Munich.",
+   "attribution": "Wikipedia, “Idomeneo” (Performance history)",
+   "source": "wiki-Idomeneo.txt",
+   "anchor": "Performance_history",
+   "evidence": "Idomeneo was performed three times in Munich."
+  },
+  {
+   "id": "ido-ballet",
+   "type": "composer",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "Mozart also wrote about 15 minutes of ballet music (K. 367) for Idomeneo, which the Munich management requested. He reported on it in a letter to his father on 30 December 1780.",
+   "attribution": "Wikipedia, “Idomeneo” (Ballet music)",
+   "source": "wiki-Idomeneo.txt",
+   "anchor": "Ballet_music,_K._367",
+   "evidence": [
+    "he reported in a letter to his father of 30 December 1780",
+    "It is in several parts and lasts around fifteen minutes."
+   ]
+  },
+  {
+   "id": "ido-gluck-plan",
+   "type": "composer",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "Later in 1781 Mozart considered making the opera more like Gluck, with a bass Idomeneo and a tenor Idamante, but he never did.",
+   "attribution": "Wikipedia, “Idomeneo” (Performance history)",
+   "source": "wiki-Idomeneo.txt",
+   "anchor": "Performance_history",
+   "evidence": "this would have meant a bass Idomeneo and a tenor Idamante"
+  },
+  {
+   "id": "ido-strauss",
+   "type": "history",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "For the 150th anniversary in 1931, Richard Strauss made his own version for Vienna, replacing about a third of Mozart’s score with his own music.",
+   "attribution": "Wikipedia, “Idomeneo” (Richard Strauss version)",
+   "source": "wiki-Idomeneo.txt",
+   "anchor": "Richard_Strauss_version",
+   "evidence": [
+    "the Vienna State Opera presented a distinctively interventionist version of the score by Richard Strauss",
+    "Strauss replaced about 1/3 of Mozart's score with some of his own music"
+   ]
+  },
+  {
+   "id": "ido-us-premiere",
+   "type": "history",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "The first US performance came only in 1947, at Tanglewood, produced by Boris Goldovsky.",
+   "attribution": "Wikipedia, “Idomeneo” (Performance history)",
+   "source": "wiki-Idomeneo.txt",
+   "anchor": "Performance_history",
+   "evidence": "The first performance in the United States was produced by Boris Goldovsky at the Berkshire Music Festival at Tanglewood during the summer of 1947."
+  },
+  {
+   "id": "ido-berlin-2006",
+   "type": "history",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "In 2006 the Deutsche Oper Berlin cancelled a revival of Hans Neuenfels’s Idomeneo, citing an “incalculable security risk” over its added final scene.",
+   "attribution": "Wikipedia, “2006 Idomeneo controversy”",
+   "source": "wiki-2006_Idomeneo_controversy.txt",
+   "evidence": [
+    "the Deutsche Oper Berlin announced the cancellation of four performances",
+    "incalculable security risk"
+   ]
+  },
+  {
+   "id": "ido-met-first",
+   "type": "history",
+   "sceneMatch": "Introduction by|Godiam la pace",
+   "scope": "production:1982-10-14",
+   "text": "This Jean-Pierre Ponnelle staging was the Met’s first production of Idomeneo. It opened on October 14, 1982, with Luciano Pavarotti in the title role.",
+   "attribution": "Met Opera Archives, performance record CID 270240",
+   "source": "met-archive-0377675.txt",
+   "evidence": [
+    "Metropolitan Opera Premiere, New Production",
+    "Thu, October 14, 1982",
+    "Idomeneo Luciano Pavarotti",
+    "Production Jean-Pierre Ponnelle"
+   ]
+  },
+  {
+   "id": "ido-met-piranesi",
+   "type": "staging",
+   "sceneMatch": "Siam soli|Placido",
+   "scope": "production:1982-10-14",
+   "text": "Ponnelle framed the stage with classical Roman columns and a broad flight of steps, in front of changing backdrops of ruins inspired by Piranesi.",
+   "attribution": "F. Warren O’Reilly, Washington Times, 1982 (Met Opera Archives)",
+   "source": "met-archive-0377675.txt",
+   "evidence": [
+    "Ponnelle's use of classical Roman columns framing the stage, a broad flight of steps between",
+    "all clearly derived from Piranesi"
+   ]
+  },
+  {
+   "id": "ido-met-showstopper",
+   "type": "critic",
+   "sceneMatch": "D'Oreste|D'Ajace",
+   "scope": "production:1982-10-14",
+   "text": "At the Met premiere, a critic wrote that Hildegard Behrens as Elettra “literally stopped the show” with this last-act aria.",
+   "attribution": "F. Warren O’Reilly, Washington Times, 1982 (Met Opera Archives)",
+   "source": "met-archive-0377675.txt",
+   "evidence": "Hildegard Behrens as Elettra, thrwarted in her efforts to win Idamante from Ilia, literally stopped the show with her brilliant last act aria"
+  },
+  {
+   "id": "ido-met-storms",
+   "type": "critic",
+   "sceneMatch": "Qual nuovo terrore",
+   "scope": "production:1982-10-14",
+   "text": "The 1982 Washington Times review praised the opera’s two storm sequences, which it called perhaps the first realistic musical tempests in any opera.",
+   "attribution": "F. Warren O’Reilly, Washington Times, 1982 (Met Opera Archives)",
+   "source": "met-archive-0377675.txt",
+   "evidence": [
+    "two magnificent sequences of storm music, thought bo be the first such realistic musical tempests in any opera"
+   ]
+  }
+ ]
+}

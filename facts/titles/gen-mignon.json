@@ -1,0 +1,20 @@
+{
+ "title": "Mignon",
+ "match": [
+  "Mignon"
+ ],
+ "general": true,
+ "facts": [
+  {
+   "id": "gen-mignon-1",
+   "type": "history",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "The original French libretto was by Jules Barbier and Michel Carré, based on Goethe's 1795-96 novel Wilhelm Meisters Lehrjahre.",
+   "attribution": "Wikipedia, “Mignon”",
+   "source": "wikiintro-Mignon.txt",
+   "anchor": null,
+   "evidence": "The original French libretto was by Jules Barbier and Michel Carré, based on Goethe's 1795-96 novel Wilhelm Meisters Lehrjahre."
+  }
+ ]
+}

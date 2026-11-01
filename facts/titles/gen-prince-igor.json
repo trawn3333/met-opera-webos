@@ -1,0 +1,20 @@
+{
+ "title": "Prince Igor",
+ "match": [
+  "Prince Igor"
+ ],
+ "general": true,
+ "facts": [
+  {
+   "id": "gen-prince-igor-1",
+   "type": "history",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "The composer adapted the libretto from the early Russian epic The Lay of Igor's Host, which recounts the campaign of the 12th-century prince Igor Svyatoslavich against the invading Cuman (\"Polovtsian\") tribes in 1185.",
+   "attribution": "Wikipedia, “Prince Igor”",
+   "source": "wikiintro-Prince_Igor_opera_.txt",
+   "anchor": null,
+   "evidence": "The composer adapted the libretto from the early Russian epic The Lay of Igor's Host, which recounts the campaign of the 12th-century prince Igor Svyatoslavich against the invading Cuman (\"Polovtsian\") tribes in 1185."
+  }
+ ]
+}

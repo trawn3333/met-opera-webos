@@ -1,0 +1,20 @@
+{
+ "title": "The Nose",
+ "match": [
+  "The Nose"
+ ],
+ "general": true,
+ "facts": [
+  {
+   "id": "gen-the-nose-1",
+   "type": "history",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "The Nose, Op. 15, (Russian: Нос, romanized: Nos) is Dmitri Shostakovich's first opera, a satirical work completed in 1928 based on Nikolai Gogol's 1836 story of the same name.",
+   "attribution": "Wikipedia, “The Nose (opera)”",
+   "source": "wikiintro-The_Nose_opera_.txt",
+   "anchor": null,
+   "evidence": "The Nose, Op. 15, (Russian: Нос, romanized: Nos) is Dmitri Shostakovich's first opera, a satirical work completed in 1928 based on Nikolai Gogol's 1836 story of the same name."
+  }
+ ]
+}

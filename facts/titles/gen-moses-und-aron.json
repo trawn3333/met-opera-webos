@@ -1,0 +1,20 @@
+{
+ "title": "Moses und Aron",
+ "match": [
+  "Moses und Aron"
+ ],
+ "general": true,
+ "facts": [
+  {
+   "id": "gen-moses-und-aron-1",
+   "type": "history",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "Moses und Aron (English: Moses and Aaron) is a 1932 opera by Arnold Schoenberg, who wrote his own libretto, in German, based on selected incidents from the Book of Exodus (chapters 3-32).",
+   "attribution": "Wikipedia, “Moses und Aron”",
+   "source": "wikiintro-Moses_und_Aron.txt",
+   "anchor": null,
+   "evidence": "Moses und Aron (English: Moses and Aaron) is a 1932 opera by Arnold Schoenberg, who wrote his own libretto, in German, based on selected incidents from the Book of Exodus (chapters 3-32)."
+  }
+ ]
+}

@@ -1,0 +1,20 @@
+{
+ "title": "Roberto Devereux",
+ "match": [
+  "Roberto Devereux"
+ ],
+ "general": true,
+ "facts": [
+  {
+   "id": "gen-roberto-devereux-1",
+   "type": "history",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "The opera is loosely based on the life of the English military commander Robert Devereux, 2nd Earl of Essex, an influential member of the court of Queen Elizabeth I.",
+   "attribution": "Wikipedia, “Roberto Devereux”",
+   "source": "wikiintro-Roberto_Devereux.txt",
+   "anchor": null,
+   "evidence": "The opera is loosely based on the life of the English military commander Robert Devereux, 2nd Earl of Essex, an influential member of the court of Queen Elizabeth I."
+  }
+ ]
+}

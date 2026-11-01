@@ -1,0 +1,31 @@
+{
+ "title": "Gianni Schicchi",
+ "match": [
+  "Gianni Schicchi"
+ ],
+ "general": true,
+ "facts": [
+  {
+   "id": "gen-gianni-schicchi-1",
+   "type": "premiere",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "When Il trittico premiered at New York's Metropolitan Opera in December 1918, Gianni Schicchi became an immediate hit, while the other two operas were received with less enthusiasm.",
+   "attribution": "Wikipedia, “Gianni Schicchi”",
+   "source": "wikiintro-Gianni_Schicchi.txt",
+   "anchor": null,
+   "evidence": "When Il trittico premiered at New York's Metropolitan Opera in December 1918, Gianni Schicchi became an immediate hit, while the other two operas were received with less enthusiasm."
+  },
+  {
+   "id": "gen-gianni-schicchi-2",
+   "type": "history",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "The libretto is based on an incident mentioned in Dante's Divine Comedy.",
+   "attribution": "Wikipedia, “Gianni Schicchi”",
+   "source": "wikiintro-Gianni_Schicchi.txt",
+   "anchor": null,
+   "evidence": "The libretto is based on an incident mentioned in Dante's Divine Comedy."
+  }
+ ]
+}

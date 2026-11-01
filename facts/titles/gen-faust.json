@@ -1,0 +1,20 @@
+{
+ "title": "Faust",
+ "match": [
+  "Faust"
+ ],
+ "general": true,
+ "facts": [
+  {
+   "id": "gen-faust-1",
+   "type": "history",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "Faust is a grand opera in five acts by Charles Gounod to a French libretto by Jules Barbier and Michel Carré from Carré's play Faust et Marguerite, in turn loosely based on Johann Wolfgang von Goethe's Faust, Part One.",
+   "attribution": "Wikipedia, “Faust (opera)”",
+   "source": "wikiintro-Faust_opera_.txt",
+   "anchor": null,
+   "evidence": "Faust is a grand opera in five acts by Charles Gounod to a French libretto by Jules Barbier and Michel Carré from Carré's play Faust et Marguerite, in turn loosely based on Johann Wolfgang von Goethe's Faust, Part One."
+  }
+ ]
+}

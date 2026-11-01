@@ -1,0 +1,20 @@
+{
+ "title": "Andrea Chénier",
+ "match": [
+  "Andrea Chénier"
+ ],
+ "general": true,
+ "facts": [
+  {
+   "id": "gen-andrea-chenier-1",
+   "type": "history",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "The character Carlo Gérard is partly based on Jean-Lambert Tallien, a leading figure in the Revolution.",
+   "attribution": "Wikipedia, “Andrea Chénier”",
+   "source": "wikiintro-Andrea_Ch_nier.txt",
+   "anchor": null,
+   "evidence": "The character Carlo Gérard is partly based on Jean-Lambert Tallien, a leading figure in the Revolution."
+  }
+ ]
+}

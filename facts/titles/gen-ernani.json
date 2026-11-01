@@ -1,0 +1,31 @@
+{
+ "title": "Ernani",
+ "match": [
+  "Ernani"
+ ],
+ "general": true,
+ "facts": [
+  {
+   "id": "gen-ernani-1",
+   "type": "premiere",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "Ernani was first performed on 9 March 1844, and it was \"immensely popular, and was revived countless times during its early years\".",
+   "attribution": "Wikipedia, “Ernani”",
+   "source": "wikiintro-Ernani.txt",
+   "anchor": null,
+   "evidence": "Ernani was first performed on 9 March 1844, and it was \"immensely popular, and was revived countless times during its early years\"."
+  },
+  {
+   "id": "gen-ernani-2",
+   "type": "history",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "Ernani is an operatic dramma lirico in four acts by Giuseppe Verdi to an Italian libretto by Francesco Maria Piave, based on the 1830 play Hernani by Victor Hugo.",
+   "attribution": "Wikipedia, “Ernani”",
+   "source": "wikiintro-Ernani.txt",
+   "anchor": null,
+   "evidence": "Ernani is an operatic dramma lirico in four acts by Giuseppe Verdi to an Italian libretto by Francesco Maria Piave, based on the 1830 play Hernani by Victor Hugo."
+  }
+ ]
+}

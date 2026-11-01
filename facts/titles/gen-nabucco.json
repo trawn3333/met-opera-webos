@@ -1,0 +1,31 @@
+{
+ "title": "Nabucco",
+ "match": [
+  "Nabucco"
+ ],
+ "general": true,
+ "facts": [
+  {
+   "id": "gen-nabucco-1",
+   "type": "premiere",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "Under its original name of Nabucodonosor, the opera was first performed at La Scala in Milan on the 9th of March 1842.",
+   "attribution": "Wikipedia, “Nabucco”",
+   "source": "wikiintro-Nabucco.txt",
+   "anchor": null,
+   "evidence": "Under its original name of Nabucodonosor, the opera was first performed at La Scala in Milan on the 9th of March 1842."
+  },
+  {
+   "id": "gen-nabucco-2",
+   "type": "history",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "\"Nebuchadnezzar\") is an Italian-language opera in four acts composed in 1841 by Giuseppe Verdi to an Italian libretto by Temistocle Solera.",
+   "attribution": "Wikipedia, “Nabucco”",
+   "source": "wikiintro-Nabucco.txt",
+   "anchor": null,
+   "evidence": "\"Nebuchadnezzar\") is an Italian-language opera in four acts composed in 1841 by Giuseppe Verdi to an Italian libretto by Temistocle Solera."
+  }
+ ]
+}

@@ -1,0 +1,31 @@
+{
+ "title": "Stiffelio",
+ "match": [
+  "Stiffelio"
+ ],
+ "general": true,
+ "facts": [
+  {
+   "id": "gen-stiffelio-1",
+   "type": "premiere",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "This became the Teatro Grande (now the Teatro Comunale Giuseppe Verdi) in  Trieste and, in spite of difficulties with the censors which resulted in cuts and changes, the opera  – Verdi's 16th – was first performed on 16 November 1850.",
+   "attribution": "Wikipedia, “Stiffelio”",
+   "source": "wikiintro-Stiffelio.txt",
+   "anchor": null,
+   "evidence": "This became the Teatro Grande (now the Teatro Comunale Giuseppe Verdi) in  Trieste and, in spite of difficulties with the censors which resulted in cuts and changes, the opera  – Verdi's 16th – was first performed on 16 November 1850."
+  },
+  {
+   "id": "gen-stiffelio-2",
+   "type": "history",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "Stiffelio is an opera in three acts by Giuseppe Verdi, from an Italian libretto by Francesco Maria Piave.",
+   "attribution": "Wikipedia, “Stiffelio”",
+   "source": "wikiintro-Stiffelio.txt",
+   "anchor": null,
+   "evidence": "Stiffelio is an opera in three acts by Giuseppe Verdi, from an Italian libretto by Francesco Maria Piave."
+  }
+ ]
+}

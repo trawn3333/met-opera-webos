@@ -1,0 +1,20 @@
+{
+ "title": "La Sonnambula",
+ "match": [
+  "La Sonnambula"
+ ],
+ "general": true,
+ "facts": [
+  {
+   "id": "gen-la-sonnambula-1",
+   "type": "premiere",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "The ballet had premiered in Paris in September 1827 at the height of a fashion for stage works incorporating somnambulism.",
+   "attribution": "Wikipedia, “La sonnambula”",
+   "source": "wikiintro-La_Sonnambula.txt",
+   "anchor": null,
+   "evidence": "The ballet had premiered in Paris in September 1827 at the height of a fashion for stage works incorporating somnambulism."
+  }
+ ]
+}

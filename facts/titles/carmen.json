@@ -1,0 +1,202 @@
+{
+ "title": "Carmen",
+ "match": [
+  "Carmen"
+ ],
+ "facts": [
+  {
+   "id": "carmen-01",
+   "type": "premiere",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "Carmen premiered at the Opéra-Comique in Paris on 3 March 1875, and its broken conventions shocked its first audiences.",
+   "attribution": "Wikipedia, “Carmen”",
+   "source": "wiki-Carmen.txt",
+   "anchor": null,
+   "evidence": "The opera was first performed by the Opéra-Comique in Paris on 3 March 1875, where its breaking of conventions shocked and scandalised its first audiences."
+  },
+  {
+   "id": "carmen-02",
+   "type": "premiere",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "Bizet died suddenly of heart disease the day after the 33rd performance, at 36. He never knew Carmen would conquer the world.",
+   "attribution": "Wikipedia, “Carmen”",
+   "source": "wiki-Carmen.txt",
+   "anchor": null,
+   "evidence": [
+    "the day after the opera's 33rd performance, Bizet died suddenly of heart disease, at the age of 36",
+    "unaware that the work would achieve international acclaim"
+   ]
+  },
+  {
+   "id": "carmen-03",
+   "type": "music",
+   "sceneMatch": "Habanera|L.amour est un oiseau",
+   "scope": "all",
+   "text": "The Habanera is based on “El arreglito” by Sebastián Yradier. Bizet thought it was a folk tune; when he found out, he credited Yradier in the score.",
+   "attribution": "Wikipedia, “Carmen”",
+   "source": "wiki-Carmen.txt",
+   "anchor": null,
+   "evidence": [
+    "Carmen's habanera is based on an idiomatic song, \"El arreglito\", by the Spanish composer Sebastián Yradier",
+    "when he learned its recent origin he added a note to the vocal score, crediting Yradier"
+   ]
+  },
+  {
+   "id": "carmen-04",
+   "type": "composer",
+   "sceneMatch": "Habanera|L.amour est un oiseau",
+   "scope": "all",
+   "text": "Bizet also rewrote the words of Carmen’s Habanera himself.",
+   "attribution": "Wikipedia, “Carmen”",
+   "source": "wiki-Carmen.txt",
+   "anchor": "Writing_history",
+   "evidence": "he provided new words for Carmen's \"Habanera\""
+  },
+  {
+   "id": "carmen-05",
+   "type": "composer",
+   "sceneMatch": "Votre toast|Toreador|Toréador",
+   "scope": "all",
+   "text": "Bizet was reportedly contemptuous of the Toreador Song: “Well, they asked for ordure, and they’ve got it.”",
+   "attribution": "Wikipedia, “Carmen”",
+   "source": "wiki-Carmen.txt",
+   "anchor": "Characterisation",
+   "evidence": "Well, they asked for ordure, and they've got it"
+  },
+  {
+   "id": "carmen-06",
+   "type": "music",
+   "sceneMatch": "Parle-moi de ma mère|Parle-moi",
+   "scope": "all",
+   "text": "Micaëla brings Don José a letter and a kiss from his mother. The librettists added her to soften the story for the family theatre.",
+   "attribution": "Wikipedia, “Carmen”",
+   "source": "wiki-Carmen.txt",
+   "anchor": null,
+   "evidence": [
+    "Micaëla returns and gives José a letter and a kiss from his mother",
+    "offset by Micaëla, described by Halévy as \"a very innocent, very chaste young girl\""
+   ]
+  },
+  {
+   "id": "carmen-07",
+   "type": "history",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "The Opéra-Comique’s co-director, de Leuven, opposed staging such a risqué story in what he considered a family theatre.",
+   "attribution": "Wikipedia, “Carmen”",
+   "source": "wiki-Carmen.txt",
+   "anchor": "Writing_history",
+   "evidence": "De Leuven had vociferously opposed the entire notion of presenting so risqué a story in what he considered a family theatre"
+  },
+  {
+   "id": "carmen-08",
+   "type": "premiere",
+   "sceneMatch": "^Act III$|Melons|Mêlons",
+   "scope": "all",
+   "text": "At the premiere, the only applause in Act III was for Micaëla’s aria, as the audience grew more and more uneasy.",
+   "attribution": "Wikipedia, “Carmen”",
+   "source": "wiki-Carmen.txt",
+   "anchor": "Premiere_and_initial_run",
+   "evidence": "In act 3 only Micaëla's aria earned applause as the audience became increasingly disconcerted."
+  },
+  {
+   "id": "carmen-09",
+   "type": "critic",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "The next day’s reviews ranged from disappointment to outrage. One critic called Galli-Marié’s Carmen “the very incarnation of vice”.",
+   "attribution": "Wikipedia, “Carmen”",
+   "source": "wiki-Carmen.txt",
+   "anchor": "Premiere_and_initial_run",
+   "evidence": [
+    "The general tone of the next day's press reviews ranged from disappointment to outrage.",
+    "the very incarnation of vice"
+   ]
+  },
+  {
+   "id": "carmen-10",
+   "type": "composer",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "After the premiere Bizet reportedly said: “Don’t you see that all these bourgeois have not understood a wretched word of the work I have written for them?”",
+   "attribution": "Bizet, as reported by Benjamin Godard (via Wikipedia)",
+   "source": "wiki-Carmen.txt",
+   "anchor": "Premiere_and_initial_run",
+   "evidence": "Don't you see that all these bourgeois have not understood a wretched word of the work I have written for them?"
+  },
+  {
+   "id": "carmen-11",
+   "type": "composer",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "Tchaikovsky wrote to his patron Nadezhda von Meck: “Carmen is a masterpiece in every sense of the word.”",
+   "attribution": "Tchaikovsky, letter to Nadezhda von Meck (via Wikipedia)",
+   "source": "wiki-Carmen.txt",
+   "anchor": "Premiere_and_initial_run",
+   "evidence": "Carmen is a masterpiece in every sense of the word"
+  },
+  {
+   "id": "carmen-12",
+   "type": "composer",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "Brahms reportedly saw Carmen twenty times and said he would have “gone to the ends of the earth to embrace Bizet”.",
+   "attribution": "Wikipedia, “Carmen”",
+   "source": "wiki-Carmen.txt",
+   "anchor": "Early_revivals",
+   "evidence": [
+    "It also won praise from both Wagner and Brahms.",
+    "The latter reportedly saw the opera twenty times, and said he would have \"gone to the ends of the earth to embrace Bizet\"."
+   ]
+  },
+  {
+   "id": "carmen-13",
+   "type": "history",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "Carmen first played at the Metropolitan Opera on 9 January 1884, to mixed reviews.",
+   "attribution": "Wikipedia, “Carmen”",
+   "source": "wiki-Carmen.txt",
+   "anchor": "Worldwide_success",
+   "evidence": "On 9 January 1884, Carmen was given its first New York Metropolitan Opera performance, to a mixed critical reception."
+  },
+  {
+   "id": "carmen-14",
+   "type": "blooper",
+   "sceneMatch": "La fleur|Flower",
+   "scope": "all",
+   "text": "Enrico Caruso sang José on the Met tour in San Francisco on 17 April 1906. Two hours later the great earthquake hit, and the singers fled the Palace Hotel.",
+   "attribution": "Wikipedia, “Carmen”",
+   "source": "wiki-Carmen.txt",
+   "anchor": "Worldwide_success",
+   "evidence": [
+    "On 17 April 1906, on tour with the Met, he sang the role at the Grand Opera House in San Francisco.",
+    "Two hours later he was awakened by the first violent shocks of the 1906 San Francisco earthquake"
+   ]
+  },
+  {
+   "id": "carmen-15",
+   "type": "history",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "Bizet was still revising Carmen when he died, and later changes (like Guiraud’s recitatives) mean there is still no definitive edition.",
+   "attribution": "Wikipedia, “Carmen”",
+   "source": "wiki-Carmen.txt",
+   "anchor": null,
+   "evidence": "there is still no definitive edition of the opera"
+  },
+  {
+   "id": "carmen-16",
+   "type": "music",
+   "sceneMatch": "Vivat|^Act IV$|Les voici",
+   "scope": "all",
+   "text": "Before the last scene, a chorus and procession announce the toreador Escamillo: “Vivat, vivat le Toréro!”",
+   "attribution": "Wikipedia, “Carmen”",
+   "source": "wiki-Carmen.txt",
+   "anchor": "Act_2",
+   "evidence": "a chorus and procession announces the arrival of the toreador Escamillo"
+  }
+ ]
+}

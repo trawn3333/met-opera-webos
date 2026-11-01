@@ -1,0 +1,20 @@
+{
+ "title": "The Gershwins' Porgy and Bess",
+ "match": [
+  "The Gershwins' Porgy and Bess"
+ ],
+ "general": true,
+ "facts": [
+  {
+   "id": "gen-the-gershwins-porgy-and-bess-1",
+   "type": "history",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "Porgy and Bess (2006), first studio cast recording directly based on the original 1935 production of George Gershwin's opera Porgy and Bess.",
+   "attribution": "Wikipedia, “The Gershwins' Porgy and Bess”",
+   "source": "wikiintro-The_Gershwins_Porgy_and_Bess.txt",
+   "anchor": null,
+   "evidence": "Porgy and Bess (2006), first studio cast recording directly based on the original 1935 production of George Gershwin's opera Porgy and Bess."
+  }
+ ]
+}

@@ -1,0 +1,20 @@
+{
+ "title": "Marnie",
+ "match": [
+  "Marnie"
+ ],
+ "general": true,
+ "facts": [
+  {
+   "id": "gen-marnie-1",
+   "type": "history",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "Marnie is an opera by Nico Muhly to a libretto by Nicholas Wright based on the 1961 novel by Winston Graham.",
+   "attribution": "Wikipedia, “Marnie (opera)”",
+   "source": "wikiintro-Marnie_opera_.txt",
+   "anchor": null,
+   "evidence": "Marnie is an opera by Nico Muhly to a libretto by Nicholas Wright based on the 1961 novel by Winston Graham."
+  }
+ ]
+}

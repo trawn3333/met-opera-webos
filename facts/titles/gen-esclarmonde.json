@@ -1,0 +1,20 @@
+{
+ "title": "Esclarmonde",
+ "match": [
+  "Esclarmonde"
+ ],
+ "general": true,
+ "facts": [
+  {
+   "id": "gen-esclarmonde-1",
+   "type": "premiere",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "It was first performed at the Exposition Universelle on 15 May 1889 by the Opéra-Comique at the Théâtre Lyrique on the Place du Châtelet in Paris.",
+   "attribution": "Wikipedia, “Esclarmonde”",
+   "source": "wikiintro-Esclarmonde.txt",
+   "anchor": null,
+   "evidence": "It was first performed at the Exposition Universelle on 15 May 1889 by the Opéra-Comique at the Théâtre Lyrique on the Place du Châtelet in Paris."
+  }
+ ]
+}

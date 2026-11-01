@@ -1,0 +1,31 @@
+{
+ "title": "Ainadamar",
+ "match": [
+  "Ainadamar"
+ ],
+ "general": true,
+ "facts": [
+  {
+   "id": "gen-ainadamar-1",
+   "type": "premiere",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "The opera was first performed at Tanglewood on 10 August 2003, substantially revised for a performance in Los Angeles on 29 February 2004 and adjusted further for its premiere at Santa Fe Opera on 30 July 2005, after which it was recorded.",
+   "attribution": "Wikipedia, “Ainadamar”",
+   "source": "wikiintro-Ainadamar.txt",
+   "anchor": null,
+   "evidence": "The opera was first performed at Tanglewood on 10 August 2003, substantially revised for a performance in Los Angeles on 29 February 2004 and adjusted further for its premiere at Santa Fe Opera on 30 July 2005, after which it was recorded."
+  },
+  {
+   "id": "gen-ainadamar-2",
+   "type": "history",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "Ainadamar (from the Arabic عين الدمع 'Fountain of  Tears') is an \"opera in three images\" by Argentinian composer Osvaldo Golijov to a libretto by American playwright David Henry Hwang translated from English into Spanish by Golijov.",
+   "attribution": "Wikipedia, “Ainadamar”",
+   "source": "wikiintro-Ainadamar.txt",
+   "anchor": null,
+   "evidence": "Ainadamar (from the Arabic عين الدمع 'Fountain of  Tears') is an \"opera in three images\" by Argentinian composer Osvaldo Golijov to a libretto by American playwright David Henry Hwang translated from English into Spanish by Golijov."
+  }
+ ]
+}

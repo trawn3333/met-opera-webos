@@ -1,0 +1,31 @@
+{
+ "title": "Falstaff",
+ "match": [
+  "Falstaff"
+ ],
+ "general": true,
+ "facts": [
+  {
+   "id": "gen-falstaff-1",
+   "type": "premiere",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "The work premiered on 9 February 1893 at La Scala, Milan.",
+   "attribution": "Wikipedia, “Falstaff (opera)”",
+   "source": "wikiintro-Falstaff_opera_.txt",
+   "anchor": null,
+   "evidence": "The work premiered on 9 February 1893 at La Scala, Milan."
+  },
+  {
+   "id": "gen-falstaff-2",
+   "type": "history",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "The Italian-language libretto was adapted by Arrigo Boito from the play The Merry Wives of Windsor and scenes from Henry IV, Part 1 and Part 2, by William Shakespeare.",
+   "attribution": "Wikipedia, “Falstaff (opera)”",
+   "source": "wikiintro-Falstaff_opera_.txt",
+   "anchor": null,
+   "evidence": "The Italian-language libretto was adapted by Arrigo Boito from the play The Merry Wives of Windsor and scenes from Henry IV, Part 1 and Part 2, by William Shakespeare."
+  }
+ ]
+}

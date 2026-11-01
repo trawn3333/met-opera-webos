@@ -1,0 +1,31 @@
+{
+ "title": "Manon",
+ "match": [
+  "Manon"
+ ],
+ "general": true,
+ "facts": [
+  {
+   "id": "gen-manon-1",
+   "type": "premiere",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "It was first performed at the Opéra-Comique in Paris on 19 January 1884, with sets designed by Eugène Carpezat (act 1), Auguste Alfred Rubé and Philippe Chaperon (acts 2 and 3), and Jean-Baptiste Lavastre (act 4).",
+   "attribution": "Wikipedia, “Manon”",
+   "source": "wikiintro-Manon_opera_.txt",
+   "anchor": null,
+   "evidence": "It was first performed at the Opéra-Comique in Paris on 19 January 1884, with sets designed by Eugène Carpezat (act 1), Auguste Alfred Rubé and Philippe Chaperon (acts 2 and 3), and Jean-Baptiste Lavastre (act 4)."
+  },
+  {
+   "id": "gen-manon-2",
+   "type": "history",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "In 1893 an opera by Giacomo Puccini entitled Manon Lescaut, and based on the same novel was premiered and has also become popular.",
+   "attribution": "Wikipedia, “Manon”",
+   "source": "wikiintro-Manon_opera_.txt",
+   "anchor": null,
+   "evidence": "In 1893 an opera by Giacomo Puccini entitled Manon Lescaut, and based on the same novel was premiered and has also become popular."
+  }
+ ]
+}

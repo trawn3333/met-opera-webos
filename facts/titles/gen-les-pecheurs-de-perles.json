@@ -1,0 +1,31 @@
+{
+ "title": "Les Pêcheurs de Perles",
+ "match": [
+  "Les Pêcheurs de Perles"
+ ],
+ "general": true,
+ "facts": [
+  {
+   "id": "gen-les-pecheurs-de-perles-1",
+   "type": "premiere",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "It was premiered on 30 September 1863 at the Théâtre Lyrique in Paris, and was given 18 performances in its initial run.",
+   "attribution": "Wikipedia, “Les pêcheurs de perles”",
+   "source": "wikiintro-Les_P_cheurs_de_Perles.txt",
+   "anchor": null,
+   "evidence": "It was premiered on 30 September 1863 at the Théâtre Lyrique in Paris, and was given 18 performances in its initial run."
+  },
+  {
+   "id": "gen-les-pecheurs-de-perles-2",
+   "type": "history",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "Because the autograph score was lost, post-1886 productions were based on amended versions of the score that contained significant departures from the original.",
+   "attribution": "Wikipedia, “Les pêcheurs de perles”",
+   "source": "wikiintro-Les_P_cheurs_de_Perles.txt",
+   "anchor": null,
+   "evidence": "Because the autograph score was lost, post-1886 productions were based on amended versions of the score that contained significant departures from the original."
+  }
+ ]
+}

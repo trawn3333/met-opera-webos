@@ -1,0 +1,31 @@
+{
+ "title": "Die Entführung aus dem Serail",
+ "match": [
+  "Die Entführung aus dem Serail"
+ ],
+ "general": true,
+ "facts": [
+  {
+   "id": "gen-die-entfuhrung-aus-dem-serail-1",
+   "type": "premiere",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "The work premiered on 16 July 1782 at the Vienna Burgtheater, with the composer conducting.",
+   "attribution": "Wikipedia, “Die Entführung aus dem Serail”",
+   "source": "wikiintro-Die_Entf_hrung_aus_dem_Serail.txt",
+   "anchor": null,
+   "evidence": "The work premiered on 16 July 1782 at the Vienna Burgtheater, with the composer conducting."
+  },
+  {
+   "id": "gen-die-entfuhrung-aus-dem-serail-2",
+   "type": "history",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "The German libretto is by Gottlieb Stephanie, based on Christoph Friedrich Bretzner's Belmont und Constanze, oder Die Entführung aus dem Serail.",
+   "attribution": "Wikipedia, “Die Entführung aus dem Serail”",
+   "source": "wikiintro-Die_Entf_hrung_aus_dem_Serail.txt",
+   "anchor": null,
+   "evidence": "The German libretto is by Gottlieb Stephanie, based on Christoph Friedrich Bretzner's Belmont und Constanze, oder Die Entführung aus dem Serail."
+  }
+ ]
+}

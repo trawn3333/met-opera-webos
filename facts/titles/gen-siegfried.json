@@ -1,0 +1,20 @@
+{
+ "title": "Siegfried",
+ "match": [
+  "Siegfried"
+ ],
+ "general": true,
+ "facts": [
+  {
+   "id": "gen-siegfried-1",
+   "type": "premiere",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "It premiered at the Bayreuth Festspielhaus on 16 August 1876, as part of the first complete performance of The Ring cycle.",
+   "attribution": "Wikipedia, “Siegfried (opera)”",
+   "source": "wikiintro-Siegfried_opera_.txt",
+   "anchor": null,
+   "evidence": "It premiered at the Bayreuth Festspielhaus on 16 August 1876, as part of the first complete performance of The Ring cycle."
+  }
+ ]
+}

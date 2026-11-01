@@ -1,0 +1,163 @@
+{
+ "title": "Madama Butterfly",
+ "match": [
+  "Madama Butterfly"
+ ],
+ "facts": [
+  {
+   "id": "butterfly-01",
+   "type": "premiere",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "Madama Butterfly premiered at La Scala on 17 February 1904 in a two-act version, and was withdrawn after a disastrous first night.",
+   "attribution": "Wikipedia, “Madama Butterfly”",
+   "source": "wiki-Madama_Butterfly.txt",
+   "anchor": null,
+   "evidence": [
+    "had its premiere on 17 February 1904 at La Scala in Milan",
+    "was withdrawn after a disastrous premiere"
+   ]
+  },
+  {
+   "id": "butterfly-02",
+   "type": "blooper",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "At the 1904 premiere, audience plants were given nightingale whistles for the sunrise. The audience took it as a cue to make animal noises of their own.",
+   "attribution": "Wikipedia, “Madama Butterfly”",
+   "source": "wiki-Madama_Butterfly.txt",
+   "anchor": "Reception",
+   "evidence": [
+    "give audience plants nightingale whistles to deepen the sense of sunrise in the final scene",
+    "The audience took the noise as a cue to make their own animal noises."
+   ]
+  },
+  {
+   "id": "butterfly-03",
+   "type": "premiere",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "The premiere was called “one of the most terrible flops in the history of Italian opera”. One problem: no intermission in the very long second act.",
+   "attribution": "Wikipedia, “Madama Butterfly”",
+   "source": "wiki-Madama_Butterfly.txt",
+   "anchor": "Reception",
+   "evidence": [
+    "one of the most terrible flops in the history of Italian opera",
+    "the lack of an intermission during the second act"
+   ]
+  },
+  {
+   "id": "butterfly-04",
+   "type": "composer",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "Puccini’s sister Ramelde wrote that night: “The second act I didn’t hear at all, and before the opera was over, we ran out of the theater.”",
+   "attribution": "Ramelde Puccini, letter to her husband, 1904 (via Wikipedia)",
+   "source": "wiki-Madama_Butterfly.txt",
+   "anchor": "Reception",
+   "evidence": "The second act I didn't hear at all, and before the opera was over, we ran out of the theater."
+  },
+  {
+   "id": "butterfly-05",
+   "type": "history",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "Puccini rewrote it, splitting the long second act in two. The new version was a great success in Brescia on 28 May 1904.",
+   "attribution": "Wikipedia, “Madama Butterfly”",
+   "source": "wiki-Madama_Butterfly.txt",
+   "anchor": null,
+   "evidence": [
+    "splitting the second act in two",
+    "This second version (SC 74.B) was performed on 28 May 1904 in Brescia, where it was a great success"
+   ]
+  },
+  {
+   "id": "butterfly-06",
+   "type": "music",
+   "sceneMatch": "Humming|Coro a bocca chiusa|bocca chiusa",
+   "scope": "all",
+   "text": "The Humming Chorus became the bridge between Puccini’s new Acts II and III.",
+   "attribution": "Wikipedia, “Madama Butterfly”",
+   "source": "wiki-Madama_Butterfly.txt",
+   "anchor": null,
+   "evidence": "with the Humming Chorus as a bridge to what became Act III"
+  },
+  {
+   "id": "butterfly-07",
+   "type": "history",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "There are five versions of Butterfly. Puccini’s final 1907 revision, the “Standard Version”, is the one usually performed.",
+   "attribution": "Wikipedia, “Madama Butterfly”",
+   "source": "wiki-Madama_Butterfly.txt",
+   "anchor": "Versions",
+   "evidence": "which has become known as the \"Standard Version\" and is the one that is most often performed today"
+  },
+  {
+   "id": "butterfly-08",
+   "type": "history",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "Butterfly reached the Metropolitan Opera on 11 February 1907, in Puccini’s third version.",
+   "attribution": "Wikipedia, “Madama Butterfly”",
+   "source": "wiki-Madama_Butterfly.txt",
+   "anchor": "Versions",
+   "evidence": "which was performed at the Metropolitan Opera in New York on 11 February 1907"
+  },
+  {
+   "id": "butterfly-09",
+   "type": "history",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "The first US performances, in 1906, were in English, by Henry Savage’s touring company.",
+   "attribution": "Wikipedia, “Madama Butterfly”",
+   "source": "wiki-Madama_Butterfly.txt",
+   "anchor": "Performance_history",
+   "evidence": "the first US performance was presented in English on 15 October 1906, in Washington, D.C."
+  },
+  {
+   "id": "butterfly-10",
+   "type": "music",
+   "sceneMatch": "Bimba dagli occhi|Vogliatemi bene",
+   "scope": "all",
+   "text": "From the long love duet that closes Act I: “Bimba dagli occhi pieni di malia”, “Sweetheart, with eyes full of enchantment”.",
+   "attribution": "Wikipedia, “Madama Butterfly”",
+   "source": "wiki-Madama_Butterfly.txt",
+   "anchor": "Act_1",
+   "evidence": "Bimba dagli occhi pieni di malia (\"Sweetheart, with eyes full of enchantment\")"
+  },
+  {
+   "id": "butterfly-11",
+   "type": "music",
+   "sceneMatch": "Ora a noi|Sharpless|lettera",
+   "scope": "all",
+   "text": "Sharpless brings a letter from Pinkerton asking him to break the news that he isn’t coming back to Japan.",
+   "attribution": "Wikipedia, “Madama Butterfly”",
+   "source": "wiki-Madama_Butterfly.txt",
+   "anchor": "Act_2",
+   "evidence": "Pinkerton is not coming back to Japan"
+  },
+  {
+   "id": "butterfly-12",
+   "type": "music",
+   "sceneMatch": "Il cannone|Scuoti quella fronda",
+   "scope": "all",
+   "text": "“Il cannone del porto!”, the cannon at the harbor, leads into the famous Flower Duet.",
+   "attribution": "Wikipedia, “Madama Butterfly”",
+   "source": "wiki-Madama_Butterfly.txt",
+   "anchor": "Act_2",
+   "evidence": "Il cannone del porto! (\"The cannon at the harbor!\", often known as The Flower Duet)."
+  },
+  {
+   "id": "butterfly-13",
+   "type": "history",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "The musical Miss Saigon (1989) was inspired by Madama Butterfly.",
+   "attribution": "Wikipedia, “Madama Butterfly”",
+   "source": "wiki-Madama_Butterfly.txt",
+   "anchor": "Adaptations",
+   "evidence": "Miss Saigon, a musical by Claude-Michel Schönberg and Alain Boublil, is inspired by the opera"
+  }
+ ]
+}

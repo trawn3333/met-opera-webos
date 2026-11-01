@@ -1,0 +1,31 @@
+{
+ "title": "Fidelio",
+ "match": [
+  "Fidelio"
+ ],
+ "general": true,
+ "facts": [
+  {
+   "id": "gen-fidelio-1",
+   "type": "premiere",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "The opera premiered at Vienna's Theater an der Wien on 20 November 1805.",
+   "attribution": "Wikipedia, “Fidelio”",
+   "source": "wikiintro-Fidelio_opera_.txt",
+   "anchor": null,
+   "evidence": "The opera premiered at Vienna's Theater an der Wien on 20 November 1805."
+  },
+  {
+   "id": "gen-fidelio-2",
+   "type": "history",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "The libretto was originally prepared by Joseph Sonnleithner from the French of Jean-Nicolas Bouilly.",
+   "attribution": "Wikipedia, “Fidelio”",
+   "source": "wikiintro-Fidelio_opera_.txt",
+   "anchor": null,
+   "evidence": "The libretto was originally prepared by Joseph Sonnleithner from the French of Jean-Nicolas Bouilly."
+  }
+ ]
+}

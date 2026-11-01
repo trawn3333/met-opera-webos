@@ -1,0 +1,31 @@
+{
+ "title": "A Midsummer Night's Dream",
+ "match": [
+  "A Midsummer Night's Dream"
+ ],
+ "general": true,
+ "facts": [
+  {
+   "id": "gen-a-midsummer-night-s-dream-1",
+   "type": "premiere",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "It was premiered on 11 June 1960 at the Aldeburgh Festival, conducted by the composer and with set and costume designs by Carl Toms.",
+   "attribution": "Wikipedia, “A Midsummer Night's Dream (opera)”",
+   "source": "wikiintro-A_Midsummer_Night_s_Dream_opera_.txt",
+   "anchor": null,
+   "evidence": "It was premiered on 11 June 1960 at the Aldeburgh Festival, conducted by the composer and with set and costume designs by Carl Toms."
+  },
+  {
+   "id": "gen-a-midsummer-night-s-dream-2",
+   "type": "history",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "A Midsummer Night's Dream, Op. 64, is an opera with music by Benjamin Britten and set to a libretto adapted by the composer and Peter Pears from William Shakespeare's play, A Midsummer Night's Dream.",
+   "attribution": "Wikipedia, “A Midsummer Night's Dream (opera)”",
+   "source": "wikiintro-A_Midsummer_Night_s_Dream_opera_.txt",
+   "anchor": null,
+   "evidence": "A Midsummer Night's Dream, Op. 64, is an opera with music by Benjamin Britten and set to a libretto adapted by the composer and Peter Pears from William Shakespeare's play, A Midsummer Night's Dream."
+  }
+ ]
+}

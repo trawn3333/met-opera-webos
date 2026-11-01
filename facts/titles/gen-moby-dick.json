@@ -1,0 +1,31 @@
+{
+ "title": "Moby-Dick",
+ "match": [
+  "Moby-Dick"
+ ],
+ "general": true,
+ "facts": [
+  {
+   "id": "gen-moby-dick-1",
+   "type": "premiere",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "The opera received its premiere at Dallas Opera in Dallas, Texas, on 30 April 2010.",
+   "attribution": "Wikipedia, “Moby-Dick (opera)”",
+   "source": "wikiintro-Moby_Dick_opera_.txt",
+   "anchor": null,
+   "evidence": "The opera received its premiere at Dallas Opera in Dallas, Texas, on 30 April 2010."
+  },
+  {
+   "id": "gen-moby-dick-2",
+   "type": "history",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "Moby-Dick is an American opera in two acts, with music by Jake Heggie and libretto by Gene Scheer, adapted from Herman Melville's 1851 novel Moby-Dick.",
+   "attribution": "Wikipedia, “Moby-Dick (opera)”",
+   "source": "wikiintro-Moby_Dick_opera_.txt",
+   "anchor": null,
+   "evidence": "Moby-Dick is an American opera in two acts, with music by Jake Heggie and libretto by Gene Scheer, adapted from Herman Melville's 1851 novel Moby-Dick."
+  }
+ ]
+}

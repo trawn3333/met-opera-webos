@@ -1,0 +1,20 @@
+{
+ "title": "Akhnaten",
+ "match": [
+  "Akhnaten"
+ ],
+ "general": true,
+ "facts": [
+  {
+   "id": "gen-akhnaten-1",
+   "type": "history",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "Akhnaten is an opera in three acts based on the life and religious convictions of the Egyptian pharaoh Akhenaten (Amenhotep IV), written by the American composer Philip Glass in 1983.",
+   "attribution": "Wikipedia, “Akhnaten (opera)”",
+   "source": "wikiintro-Akhnaten_opera_.txt",
+   "anchor": null,
+   "evidence": "Akhnaten is an opera in three acts based on the life and religious convictions of the Egyptian pharaoh Akhenaten (Amenhotep IV), written by the American composer Philip Glass in 1983."
+  }
+ ]
+}

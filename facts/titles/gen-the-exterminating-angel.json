@@ -1,0 +1,31 @@
+{
+ "title": "The Exterminating Angel",
+ "match": [
+  "The Exterminating Angel"
+ ],
+ "general": true,
+ "facts": [
+  {
+   "id": "gen-the-exterminating-angel-1",
+   "type": "premiere",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "The opera received its world premiere on 28 July 2016, at the Haus für Mozart, Salzburg.",
+   "attribution": "Wikipedia, “The Exterminating Angel (opera)”",
+   "source": "wikiintro-The_Exterminating_Angel_opera_.txt",
+   "anchor": null,
+   "evidence": "The opera received its world premiere on 28 July 2016, at the Haus für Mozart, Salzburg."
+  },
+  {
+   "id": "gen-the-exterminating-angel-2",
+   "type": "history",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "The Exterminating Angel is an English-language opera in three acts, with music by Thomas Adès, and libretto by Tom Cairns in collaboration with Adès.",
+   "attribution": "Wikipedia, “The Exterminating Angel (opera)”",
+   "source": "wikiintro-The_Exterminating_Angel_opera_.txt",
+   "anchor": null,
+   "evidence": "The Exterminating Angel is an English-language opera in three acts, with music by Thomas Adès, and libretto by Tom Cairns in collaboration with Adès."
+  }
+ ]
+}

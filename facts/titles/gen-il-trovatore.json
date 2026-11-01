@@ -1,0 +1,31 @@
+{
+ "title": "Il Trovatore",
+ "match": [
+  "Il Trovatore"
+ ],
+ "general": true,
+ "facts": [
+  {
+   "id": "gen-il-trovatore-1",
+   "type": "premiere",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "For Verdi, the three years were filled with musical activity; work on this opera did not proceed while the composer wrote and premiered Rigoletto in Venice in March 1851.",
+   "attribution": "Wikipedia, “Il trovatore”",
+   "source": "wikiintro-Il_Trovatore.txt",
+   "anchor": null,
+   "evidence": "For Verdi, the three years were filled with musical activity; work on this opera did not proceed while the composer wrote and premiered Rigoletto in Venice in March 1851."
+  },
+  {
+   "id": "gen-il-trovatore-2",
+   "type": "history",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "Il trovatore ('The Troubadour') is an opera in four acts by Giuseppe Verdi to an Italian libretto largely written by Salvadore Cammarano, based on the Spanish play El trovador (1836) by Antonio García Gutiérrez.",
+   "attribution": "Wikipedia, “Il trovatore”",
+   "source": "wikiintro-Il_Trovatore.txt",
+   "anchor": null,
+   "evidence": "Il trovatore ('The Troubadour') is an opera in four acts by Giuseppe Verdi to an Italian libretto largely written by Salvadore Cammarano, based on the Spanish play El trovador (1836) by Antonio García Gutiérrez."
+  }
+ ]
+}

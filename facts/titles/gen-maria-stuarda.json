@@ -1,0 +1,20 @@
+{
+ "title": "Maria Stuarda",
+ "match": [
+  "Maria Stuarda"
+ ],
+ "general": true,
+ "facts": [
+  {
+   "id": "gen-maria-stuarda-1",
+   "type": "history",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "Maria Stuarda (Mary Stuart) is a tragic opera (tragedia lirica), in two acts, by Gaetano Donizetti, to a libretto by Giuseppe Bardari, based on Andrea Maffei's translation of Friedrich Schiller's 1800 play Maria Stuart.",
+   "attribution": "Wikipedia, “Maria Stuarda”",
+   "source": "wikiintro-Maria_Stuarda.txt",
+   "anchor": null,
+   "evidence": "Maria Stuarda (Mary Stuart) is a tragic opera (tragedia lirica), in two acts, by Gaetano Donizetti, to a libretto by Giuseppe Bardari, based on Andrea Maffei's translation of Friedrich Schiller's 1800 play Maria Stuart."
+  }
+ ]
+}

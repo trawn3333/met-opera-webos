@@ -1,0 +1,205 @@
+{
+ "title": "La Bohème",
+ "match": [
+  "La Bohème",
+  "La Boheme"
+ ],
+ "facts": [
+  {
+   "id": "boheme-01",
+   "type": "premiere",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "La Bohème premiered on 1 February 1896 at the Teatro Regio in Turin, conducted by the 28-year-old Arturo Toscanini.",
+   "attribution": "Wikipedia, “La Bohème”",
+   "source": "wiki-La_boh_me.txt",
+   "anchor": null,
+   "evidence": "conducted by the 28-year-old Arturo Toscanini"
+  },
+  {
+   "id": "boheme-02",
+   "type": "premiere",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "The first-night audience was subdued, and the critics were divided.",
+   "attribution": "Wikipedia, “La Bohème”",
+   "source": "wiki-La_boh_me.txt",
+   "anchor": "Initial_success",
+   "evidence": "The initial response of the audience at the first performance was subdued and critical responses were polarized."
+  },
+  {
+   "id": "boheme-03",
+   "type": "history",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "Toscanini conducted it again on radio in 1946, 50 years after the premiere. It is the only recording of a Puccini opera by its original conductor.",
+   "attribution": "Wikipedia, “La Bohème”",
+   "source": "wiki-La_boh_me.txt",
+   "anchor": null,
+   "evidence": [
+    "In 1946, 50 years after the opera's premiere, Toscanini conducted a commemorative performance",
+    "It is the only recording ever made of a Puccini opera by its original conductor."
+   ]
+  },
+  {
+   "id": "boheme-04",
+   "type": "composer",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "Ruggero Leoncavallo claimed he had offered Puccini a finished Bohème libretto. Puccini said he hadn't known and wouldn't abandon his own opera, so Leoncavallo wrote a rival Bohème.",
+   "attribution": "Wikipedia, “La Bohème”",
+   "source": "wiki-La_boh_me.txt",
+   "anchor": "Origin_of_the_story",
+   "evidence": [
+    "who said that he had offered Puccini a completed libretto",
+    "he felt that he could not oblige him by abandoning the opera"
+   ]
+  },
+  {
+   "id": "boheme-05",
+   "type": "history",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "Leoncavallo’s rival version swapped the voices: his Marcello is a tenor and his Rodolfo a baritone.",
+   "attribution": "Wikipedia, “La Bohème”",
+   "source": "wiki-La_boh_me.txt",
+   "anchor": "Origin_of_the_story",
+   "evidence": "Leoncavallo completed his own version in which Marcello was sung by a tenor and Rodolfo by a baritone."
+  },
+  {
+   "id": "boheme-06",
+   "type": "music",
+   "sceneMatch": "Che gelida manina",
+   "scope": "all",
+   "text": "“Che gelida manina” was recorded by nearly 500 tenors in at least seven languages between 1900 and 1980.",
+   "attribution": "Wikipedia, “La Bohème”",
+   "source": "wiki-La_boh_me.txt",
+   "anchor": "Recording_history",
+   "evidence": "This aria has been recorded by nearly 500 tenors in at least seven different languages between 1900 and 1980."
+  },
+  {
+   "id": "boheme-07",
+   "type": "artist",
+   "sceneMatch": "Che gelida manina",
+   "scope": "all",
+   "text": "Enrico Caruso, closely associated with Rodolfo, recorded this aria in 1906.",
+   "attribution": "Wikipedia, “La Bohème”",
+   "source": "wiki-La_boh_me.txt",
+   "anchor": "Recording_history",
+   "evidence": "Enrico Caruso, who was closely associated with the role of Rodolfo, recorded the famous aria \"Che gelida manina\" in 1906."
+  },
+  {
+   "id": "boheme-08",
+   "type": "music",
+   "sceneMatch": "O soave fanciulla",
+   "scope": "all",
+   "text": "Rodolfo turns to see Mimì bathed in moonlight, and their voices join in “O soave fanciulla”.",
+   "attribution": "Wikipedia, “La Bohème”",
+   "source": "wiki-La_boh_me.txt",
+   "anchor": "Act_1",
+   "evidence": "He answers and turns to see Mimì bathed in moonlight (duet, Rodolfo and Mimì: O soave fanciulla"
+  },
+  {
+   "id": "boheme-09",
+   "type": "music",
+   "sceneMatch": "Aranci, datteri|Act II",
+   "scope": "all",
+   "text": "Act II opens at the Café Momus with a big crowd, children included, and street sellers calling out their wares.",
+   "attribution": "Wikipedia, “La Bohème”",
+   "source": "wiki-La_boh_me.txt",
+   "anchor": "Act_2",
+   "evidence": "A great crowd, including children, has gathered with street sellers announcing their wares"
+  },
+  {
+   "id": "boheme-10",
+   "type": "music",
+   "sceneMatch": "Addio dolce svegliare|Dunque.*vero",
+   "scope": "all",
+   "text": "In this quartet, Mimì and Rodolfo part tenderly while Marcello and Musetta quarrel fiercely about her flirting.",
+   "attribution": "Wikipedia, “La Bohème”",
+   "source": "wiki-La_boh_me.txt",
+   "anchor": "Act_3",
+   "evidence": "the couple quarrel fiercely about Musetta's flirtatiousness"
+  },
+  {
+   "id": "boheme-11",
+   "type": "music",
+   "sceneMatch": "O Mimì, tu più|O Mimi, tu piu",
+   "scope": "all",
+   "text": "“O Mimì, tu più non torni”: Rodolfo and Marcello, both alone again, are nostalgic for their lost loves.",
+   "attribution": "Wikipedia, “La Bohème”",
+   "source": "wiki-La_boh_me.txt",
+   "anchor": "Act_4",
+   "evidence": "The men both express their nostalgia (duet: O Mimì, tu più non torni"
+  },
+  {
+   "id": "boheme-12",
+   "type": "history",
+   "sceneMatch": "Sono andati",
+   "scope": "all",
+   "text": "When news of Puccini’s death reached Rome in 1924, a Bohème performance was stopped and the orchestra played Chopin’s Funeral March.",
+   "attribution": "Wikipedia, “La Bohème”",
+   "source": "wiki-La_boh_me.txt",
+   "anchor": null,
+   "evidence": [
+    "the news of his death reached Rome during a performance of La bohème",
+    "The opera was immediately stopped, and the orchestra played Chopin's Funeral March for the stunned audience."
+   ]
+  },
+  {
+   "id": "boheme-13",
+   "type": "history",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "The Met first staged La Bohème on 26 December 1900, with Nellie Melba as Mimì.",
+   "attribution": "Wikipedia, “La Bohème”",
+   "source": "wiki-La_boh_me.txt",
+   "anchor": null,
+   "evidence": "The Metropolitan Opera staged the work for the first time on 26 December 1900 with Nellie Melba as Mimì"
+  },
+  {
+   "id": "boheme-14",
+   "type": "history",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "La Bohème was the last opera performed in the Met’s original 1883 building, on 16 April 1966.",
+   "attribution": "Wikipedia, “La Bohème”",
+   "source": "wiki-La_boh_me.txt",
+   "anchor": null,
+   "evidence": "La bohème was the last opera performed at New York's Metropolitan Opera's original 1883 building on 16 April 1966"
+  },
+  {
+   "id": "boheme-15",
+   "type": "critic",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "Benjamin Britten wrote in 1951 that after four or five performances he never wanted to hear Bohème again.",
+   "attribution": "Wikipedia, “La Bohème”",
+   "source": "wiki-La_boh_me.txt",
+   "anchor": "Critical_reception",
+   "evidence": "fter four or five performances I never wanted to hear Bohème again"
+  },
+  {
+   "id": "boheme-16",
+   "type": "history",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "The musical Rent, winner of the Pulitzer Prize for Drama, is based on La Bohème.",
+   "attribution": "Wikipedia, “La Bohème”",
+   "source": "wiki-La_boh_me.txt",
+   "anchor": null,
+   "evidence": "The musical Rent by Jonathan Larson, which won both the Pulitzer Prize for Drama"
+  },
+  {
+   "id": "boheme-17",
+   "type": "history",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "Moonstruck (1987) used the 1959 Bohème recording with Renata Tebaldi and Carlo Bergonzi on its soundtrack.",
+   "attribution": "Wikipedia, “La Bohème”",
+   "source": "wiki-La_boh_me.txt",
+   "anchor": "Recording_history",
+   "evidence": "was included in the soundtrack of the 1987 movie Moonstruck"
+  }
+ ]
+}

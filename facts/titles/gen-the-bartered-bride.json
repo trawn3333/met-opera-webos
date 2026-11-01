@@ -1,0 +1,31 @@
+{
+ "title": "The Bartered Bride",
+ "match": [
+  "The Bartered Bride"
+ ],
+ "general": true,
+ "facts": [
+  {
+   "id": "gen-the-bartered-bride-1",
+   "type": "premiere",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "It was composed during the period 1863 to 1866, and first performed at the Provisional Theatre, Prague, on 30 May 1866 in a two-act format with spoken dialogue.",
+   "attribution": "Wikipedia, “The Bartered Bride”",
+   "source": "wikiintro-The_Bartered_Bride.txt",
+   "anchor": null,
+   "evidence": "It was composed during the period 1863 to 1866, and first performed at the Provisional Theatre, Prague, on 30 May 1866 in a two-act format with spoken dialogue."
+  },
+  {
+   "id": "gen-the-bartered-bride-2",
+   "type": "history",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "The Bartered Bride (Czech: Prodaná nevěsta, The Sold Bride) is a comic opera in three acts by the Czech composer Bedřich Smetana, to a libretto by Karel Sabina.",
+   "attribution": "Wikipedia, “The Bartered Bride”",
+   "source": "wikiintro-The_Bartered_Bride.txt",
+   "anchor": null,
+   "evidence": "The Bartered Bride (Czech: Prodaná nevěsta, The Sold Bride) is a comic opera in three acts by the Czech composer Bedřich Smetana, to a libretto by Karel Sabina."
+  }
+ ]
+}

@@ -1,0 +1,31 @@
+{
+ "title": "Pelléas et Mélisande",
+ "match": [
+  "Pelléas et Mélisande"
+ ],
+ "general": true,
+ "facts": [
+  {
+   "id": "gen-pelleas-et-melisande-1",
+   "type": "premiere",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "It premiered at the Salle Favart in Paris by the Opéra-Comique on 30 April 1902; Jean Périer was Pelléas and Mary Garden was Mélisande, conducted by André Messager, who was instrumental in getting the Opéra-Comique to stage the work.",
+   "attribution": "Wikipedia, “Pelléas et Mélisande (opera)”",
+   "source": "wikiintro-Pell_as_et_M_lisande_opera_.txt",
+   "anchor": null,
+   "evidence": "It premiered at the Salle Favart in Paris by the Opéra-Comique on 30 April 1902; Jean Périer was Pelléas and Mary Garden was Mélisande, conducted by André Messager, who was instrumental in getting the Opéra-Comique to stage the work."
+  },
+  {
+   "id": "gen-pelleas-et-melisande-2",
+   "type": "history",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "The French libretto was adapted from Maurice Maeterlinck's symbolist play of the same name.",
+   "attribution": "Wikipedia, “Pelléas et Mélisande (opera)”",
+   "source": "wikiintro-Pell_as_et_M_lisande_opera_.txt",
+   "anchor": null,
+   "evidence": "The French libretto was adapted from Maurice Maeterlinck's symbolist play of the same name."
+  }
+ ]
+}

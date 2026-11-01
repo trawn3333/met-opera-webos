@@ -1,0 +1,31 @@
+{
+ "title": "Orfeo ed Euridice",
+ "match": [
+  "Orfeo ed Euridice"
+ ],
+ "general": true,
+ "facts": [
+  {
+   "id": "gen-orfeo-ed-euridice-1",
+   "type": "premiere",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "The piece was first performed at the Burgtheater in Vienna on 5 October 1762, in the presence of Empress Maria Theresa.",
+   "attribution": "Wikipedia, “Orfeo ed Euridice”",
+   "source": "wikiintro-Orfeo_ed_Euridice.txt",
+   "anchor": null,
+   "evidence": "The piece was first performed at the Burgtheater in Vienna on 5 October 1762, in the presence of Empress Maria Theresa."
+  },
+  {
+   "id": "gen-orfeo-ed-euridice-2",
+   "type": "history",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "Though originally set to an Italian libretto, Orfeo ed Euridice owes much to the genre of French opera, particularly in its use of accompanied recitative and a general absence of vocal virtuosity.",
+   "attribution": "Wikipedia, “Orfeo ed Euridice”",
+   "source": "wikiintro-Orfeo_ed_Euridice.txt",
+   "anchor": null,
+   "evidence": "Though originally set to an Italian libretto, Orfeo ed Euridice owes much to the genre of French opera, particularly in its use of accompanied recitative and a general absence of vocal virtuosity."
+  }
+ ]
+}

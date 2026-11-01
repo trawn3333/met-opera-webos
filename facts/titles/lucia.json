@@ -1,0 +1,151 @@
+{
+ "title": "Lucia di Lammermoor",
+ "match": [
+  "Lucia di Lammermoor"
+ ],
+ "facts": [
+  {
+   "id": "lucia-01",
+   "type": "premiere",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "Lucia premiered on 26 September 1835 at the Teatro di San Carlo in Naples.",
+   "attribution": "Wikipedia, “Lucia di Lammermoor”",
+   "source": "wiki-Lucia_di_Lammermoor.txt",
+   "anchor": "19th_century",
+   "evidence": "The opera premiered on 26 September 1835 at the Teatro di San Carlo in Naples."
+  },
+  {
+   "id": "lucia-02",
+   "type": "history",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "The libretto is loosely based on Walter Scott’s 1819 novel The Bride of Lammermoor, written when Scotland’s history and folklore were all the rage.",
+   "attribution": "Wikipedia, “Lucia di Lammermoor”",
+   "source": "wiki-Lucia_di_Lammermoor.txt",
+   "anchor": null,
+   "evidence": [
+    "loosely based upon Walter Scott's 1819 historical novel The Bride of Lammermoor",
+    "there was also a widespread interest in the history and culture of Scotland"
+   ]
+  },
+  {
+   "id": "lucia-03",
+   "type": "history",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "With Rossini retired and Bellini recently dead, Donizetti was left as “the sole reigning genius of Italian opera”.",
+   "attribution": "Wikipedia, “Lucia di Lammermoor”",
+   "source": "wiki-Lucia_di_Lammermoor.txt",
+   "anchor": null,
+   "evidence": [
+    "Vincenzo Bellini had died shortly before the premiere of Lucia leaving Donizetti as \"the sole reigning genius of Italian opera\""
+   ]
+  },
+  {
+   "id": "lucia-04",
+   "type": "history",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "Lucia was never absent from the Met’s repertory for more than one season at a time from 1903 until 1972.",
+   "attribution": "Wikipedia, “Lucia di Lammermoor”",
+   "source": "wiki-Lucia_di_Lammermoor.txt",
+   "anchor": "20th_century_and_beyond",
+   "evidence": "The opera was never absent from the repertory of the Metropolitan Opera for more than one season at a time from 1903 until 1972."
+  },
+  {
+   "id": "lucia-05",
+   "type": "history",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "After World War II, Maria Callas and Joan Sutherland gave the opera new life.",
+   "attribution": "Wikipedia, “Lucia di Lammermoor”",
+   "source": "wiki-Lucia_di_Lammermoor.txt",
+   "anchor": "20th_century_and_beyond",
+   "evidence": "a number of sopranos were instrumental in giving new life to the opera, including Maria Callas"
+  },
+  {
+   "id": "lucia-06",
+   "type": "music",
+   "sceneMatch": "Il dolce suono|Spargi d.amaro|mad scene|pazzia|Ardon gl.incensi",
+   "scope": "all",
+   "text": "Donizetti scored the mad scene for glass harmonica and soprano. A flute is more commonly used, mostly for practical reasons.",
+   "attribution": "Wikipedia, “Lucia di Lammermoor”",
+   "source": "wiki-Lucia_di_Lammermoor.txt",
+   "anchor": "The_\"mad_scene\"",
+   "evidence": [
+    "The original scoring of this scene was for glass harmonica and soprano",
+    "an adaptation for flute and the soprano soloist has been more commonly performed since, mostly for practical reasons"
+   ]
+  },
+  {
+   "id": "lucia-07",
+   "type": "music",
+   "sceneMatch": "Il dolce suono|Spargi d.amaro|mad scene|pazzia|Ardon gl.incensi",
+   "scope": "all",
+   "text": "The famous soprano-and-flute cadenza isn’t Donizetti’s: Mathilde Marchesi wrote it in 1888 for her student Nellie Melba, who rehearsed it for ten weeks.",
+   "attribution": "Wikipedia, “Lucia di Lammermoor”",
+   "source": "wiki-Lucia_di_Lammermoor.txt",
+   "anchor": "The_\"mad_scene\"",
+   "evidence": "composed in 1888 by Mathilde Marchesi for her student Nellie Melba's performance of the role, requiring ten weeks of rehearsal"
+  },
+  {
+   "id": "lucia-08",
+   "type": "music",
+   "sceneMatch": "Il dolce suono|Spargi d.amaro|mad scene|pazzia|Ardon gl.incensi",
+   "scope": "all",
+   "text": "Donizetti wrote the mad scene in F major, but it is often transposed down a tone into E-flat.",
+   "attribution": "Wikipedia, “Lucia di Lammermoor”",
+   "source": "wiki-Lucia_di_Lammermoor.txt",
+   "anchor": "The_\"mad_scene\"",
+   "evidence": "Donizetti originally wrote it in F major, but it is often transposed down a tone (two half-steps) into E-flat."
+  },
+  {
+   "id": "lucia-09",
+   "type": "artist",
+   "sceneMatch": "Il dolce suono|Spargi d.amaro|mad scene|pazzia|Ardon gl.incensi",
+   "scope": "all",
+   "text": "The mad scene has long been a coloratura showpiece. It gave Joan Sutherland her breakthrough.",
+   "attribution": "Wikipedia, “Lucia di Lammermoor”",
+   "source": "wiki-Lucia_di_Lammermoor.txt",
+   "anchor": "The_\"mad_scene\"",
+   "evidence": "providing a breakthrough for Dame Joan Sutherland"
+  },
+  {
+   "id": "lucia-10",
+   "type": "staging",
+   "sceneMatch": "Il dolce suono|Spargi d.amaro|mad scene|pazzia|Ardon gl.incensi",
+   "scope": "all",
+   "text": "Glass harmonica players revived Donizetti’s original scoring at La Scala in 2006, and it has since been heard in Lucia productions at the Met.",
+   "attribution": "Wikipedia, “Lucia di Lammermoor”",
+   "source": "wiki-Lucia_di_Lammermoor.txt",
+   "anchor": "The_\"mad_scene\"",
+   "evidence": [
+    "resuscitated Gaetano Donizetti's vision in 2006 at the Opera La Scala in Milan",
+    "recently featured in Lucia di Lammermoor productions at the Metropolitan Opera"
+   ]
+  },
+  {
+   "id": "lucia-11",
+   "type": "music",
+   "sceneMatch": "Chi mi frena|sextet|Sestetto",
+   "scope": "all",
+   "text": "The Act II sextet features prominently in Martin Scorsese’s film The Departed.",
+   "attribution": "Wikipedia, “Lucia di Lammermoor”",
+   "source": "wiki-Lucia_di_Lammermoor.txt",
+   "anchor": "20th_century_and_beyond",
+   "evidence": "The Act 2 sextet features prominently in Scorsese's film The Departed."
+  },
+  {
+   "id": "lucia-12",
+   "type": "history",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "For Paris, Donizetti revised the score into a French version, Lucie de Lammermoor, first given in 1839.",
+   "attribution": "Wikipedia, “Lucia di Lammermoor”",
+   "source": "wiki-Lucia_di_Lammermoor.txt",
+   "anchor": "19th_century",
+   "evidence": "for Paris, Donizetti revised the score for a French version which debuted on 6 August 1839"
+  }
+ ]
+}

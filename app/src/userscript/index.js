@@ -31,6 +31,7 @@ import * as cat from './cat/screen';
 import * as castSheet from './cast/castModal';
 import { navHooks, candidates } from './spatialNav';
 import * as pui from './playerUI';
+import * as popFactsMod from './facts/popFacts';
 import { reportProblem, initPlaybackWatch, setReportStateProvider, buildSnapshot, serialize, sendReport } from './report';
 import { startRecovery, restartMetApp, recoverState, recoverHooks, failureShown, appAlive } from './recover';
 
@@ -557,6 +558,7 @@ function handleKey(e) {
 
 // Exposed for on-box testing / inspector use.
 window.__mtv = {
+  facts: popFactsMod,
   version: VERSION, navigate: navigate, focusFirst: focusFirst, isPerformancePage: isPerformancePage,
   perfStats: getStats, toggleLog: toggleOverlay, recover: recoverState, findPlay: findPlay,
   restart: restartMetApp, env: envInfo, errors: getErrors, telemetry: tlmInfo,

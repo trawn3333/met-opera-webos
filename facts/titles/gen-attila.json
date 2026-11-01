@@ -1,0 +1,31 @@
+{
+ "title": "Attila",
+ "match": [
+  "Attila"
+ ],
+ "general": true,
+ "facts": [
+  {
+   "id": "gen-attila-1",
+   "type": "premiere",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "The opera received its first performance at La Fenice in Venice on 17 March 1846.",
+   "attribution": "Wikipedia, “Attila (opera)”",
+   "source": "wikiintro-Attila_opera_.txt",
+   "anchor": null,
+   "evidence": "The opera received its first performance at La Fenice in Venice on 17 March 1846."
+  },
+  {
+   "id": "gen-attila-2",
+   "type": "history",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "Attila is an opera in a prologue and three acts by Giuseppe Verdi to an Italian libretto by Temistocle Solera, based on the 1809 play Attila, König der Hunnen (Attila, King of the Huns) by Zacharias Werner.",
+   "attribution": "Wikipedia, “Attila (opera)”",
+   "source": "wikiintro-Attila_opera_.txt",
+   "anchor": null,
+   "evidence": "Attila is an opera in a prologue and three acts by Giuseppe Verdi to an Italian libretto by Temistocle Solera, based on the 1809 play Attila, König der Hunnen (Attila, King of the Huns) by Zacharias Werner."
+  }
+ ]
+}

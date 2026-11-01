@@ -1,0 +1,31 @@
+{
+ "title": "Un Ballo in Maschera",
+ "match": [
+  "Un Ballo in Maschera"
+ ],
+ "general": true,
+ "facts": [
+  {
+   "id": "gen-un-ballo-in-maschera-1",
+   "type": "premiere",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "It was to take over two years between the commission from Naples, planned for a production there, and its premiere performance at the Teatro Apollo in Rome on 17 February 1859.",
+   "attribution": "Wikipedia, “Un ballo in maschera”",
+   "source": "wikiintro-Un_Ballo_in_Maschera.txt",
+   "anchor": null,
+   "evidence": "It was to take over two years between the commission from Naples, planned for a production there, and its premiere performance at the Teatro Apollo in Rome on 17 February 1859."
+  },
+  {
+   "id": "gen-un-ballo-in-maschera-2",
+   "type": "history",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "The text, by Antonio Somma, was based on Eugène Scribe's libretto for Daniel Auber's 1833 five act opera, Gustave III, ou Le bal masqué.",
+   "attribution": "Wikipedia, “Un ballo in maschera”",
+   "source": "wikiintro-Un_Ballo_in_Maschera.txt",
+   "anchor": null,
+   "evidence": "The text, by Antonio Somma, was based on Eugène Scribe's libretto for Daniel Auber's 1833 five act opera, Gustave III, ou Le bal masqué."
+  }
+ ]
+}

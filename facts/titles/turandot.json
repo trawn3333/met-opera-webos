@@ -1,0 +1,167 @@
+{
+ "title": "Turandot",
+ "match": [
+  "Turandot"
+ ],
+ "facts": [
+  {
+   "id": "turandot-01",
+   "type": "premiere",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "Turandot premiered at La Scala on 25 April 1926, about a year and a half after Puccini’s death; Franco Alfano completed the music.",
+   "attribution": "Wikipedia, “Turandot”",
+   "source": "wiki-Turandot.txt",
+   "anchor": null,
+   "evidence": "The music was completed by Franco Alfano  and premiered on 25 April 1926, almost a year and a half after Puccini's death."
+  },
+  {
+   "id": "turandot-02",
+   "type": "composer",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "Diagnosed with throat cancer, Puccini begged Toscanini before leaving for treatment: “Don’t let my Turandot die.”",
+   "attribution": "Puccini (via Wikipedia)",
+   "source": "wiki-Turandot.txt",
+   "anchor": "Composition_history",
+   "evidence": [
+    "he was diagnosed with throat cancer",
+    "he visited Arturo Toscanini and begged him, \"Don't let my Turandot die.\""
+   ]
+  },
+  {
+   "id": "turandot-03",
+   "type": "history",
+   "sceneMatch": "Tu che di gel|Liù|Liu",
+   "scope": "all",
+   "text": "Liù’s death and funeral procession were the last music Puccini composed and orchestrated. He left 36 pages of sketches for the ending.",
+   "attribution": "Wikipedia, “Turandot”",
+   "source": "wiki-Turandot.txt",
+   "anchor": "Composition_history",
+   "evidence": [
+    "Puccini had composed and fully orchestrated act three up until Liù's death and funeral cortege",
+    "He left behind 36 pages of sketches on 23 sheets for the end of Turandot"
+   ]
+  },
+  {
+   "id": "turandot-04",
+   "type": "premiere",
+   "sceneMatch": "Tu che di gel|Liù|Liu",
+   "scope": "all",
+   "text": "At the premiere Toscanini stopped here and told the audience: “Here the opera ends, because at this point the maestro died.” The curtain came down.",
+   "attribution": "Wikipedia, “Turandot”",
+   "source": "wiki-Turandot.txt",
+   "anchor": "Performance_history",
+   "evidence": [
+    "Toscanini turned to the audience and announced",
+    "Here the opera ends, because at this point the maestro died",
+    "The curtain was then lowered."
+   ]
+  },
+  {
+   "id": "turandot-05",
+   "type": "history",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "Toscanini and Ricordi criticized Alfano’s first ending so severely that he had to write a second, strictly censored version, which Toscanini then cut by about three minutes.",
+   "attribution": "Wikipedia, “Turandot”",
+   "source": "wiki-Turandot.txt",
+   "anchor": "Completion_of_the_score_after_Puccini's_death",
+   "evidence": [
+    "After the severe criticisms by Ricordi and the conductor Arturo Toscanini, he was forced to write a second, strictly censored version",
+    "about three minutes were cut for performance by Toscanini"
+   ]
+  },
+  {
+   "id": "turandot-06",
+   "type": "artist",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "Rosa Raisa, the first Turandot, said neither Puccini nor Toscanini ever pronounced the final “t” of the name.",
+   "attribution": "Wikipedia, “Turandot”",
+   "source": "wiki-Turandot.txt",
+   "anchor": "Origin_and_pronunciation_of_the_name",
+   "evidence": "Soprano Rosa Raisa, who created the title role, said that neither Puccini nor Arturo Toscanini, who conducted the first performances, ever pronounced the final t."
+  },
+  {
+   "id": "turandot-07",
+   "type": "history",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "It was Schiller’s version of the tale that inspired Puccini to write the opera.",
+   "attribution": "Wikipedia, “Turandot”",
+   "source": "wiki-Turandot.txt",
+   "anchor": "Composition_history",
+   "evidence": "It was Schiller's version that inspired Puccini to write the opera."
+  },
+  {
+   "id": "turandot-08",
+   "type": "music",
+   "sceneMatch": "Nessun dorma",
+   "scope": "all",
+   "text": "Pavarotti took “Nessun dorma” far beyond the opera world with his performance for the 1990 World Cup; his single reached number 2 in the UK.",
+   "attribution": "Wikipedia, “Turandot”",
+   "source": "wiki-Turandot.txt",
+   "anchor": "Performance_history",
+   "evidence": [
+    "Luciano Pavarotti popularised the piece beyond the opera world in the 1990s with his performance of it for the 1990 World Cup",
+    "with Pavarotti's reaching number 2 in the UK"
+   ]
+  },
+  {
+   "id": "turandot-09",
+   "type": "music",
+   "sceneMatch": "Nessun dorma",
+   "scope": "all",
+   "text": "The Three Tenors sang “Nessun dorma” at three more World Cup finals: 1994, 1998 and 2002.",
+   "attribution": "Wikipedia, “Turandot”",
+   "source": "wiki-Turandot.txt",
+   "anchor": "Performance_history",
+   "evidence": "The Three Tenors performed the aria at three subsequent World Cup Finals, in 1994 in Los Angeles, 1998 in Paris, and 2002 in Yokohama."
+  },
+  {
+   "id": "turandot-10",
+   "type": "history",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "For many years China forbade performances of Turandot, saying it portrayed the country unfavourably.",
+   "attribution": "Wikipedia, “Turandot”",
+   "source": "wiki-Turandot.txt",
+   "anchor": "Performance_history",
+   "evidence": "the government of the People's Republic of China forbade performance of Turandot because they said it portrayed China and the Chinese unfavourably"
+  },
+  {
+   "id": "turandot-11",
+   "type": "critic",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "Critic Joseph Kerman: “Puccini, however, did not find it; his music does nothing to rationalise the legend or illuminate the characters.”",
+   "attribution": "Joseph Kerman (via Wikipedia)",
+   "source": "wiki-Turandot.txt",
+   "anchor": "Critical_response",
+   "evidence": "Puccini, however, did not find it; his music does nothing to rationalise the legend or illuminate the characters."
+  },
+  {
+   "id": "turandot-12",
+   "type": "music",
+   "sceneMatch": "Del primo pianto",
+   "scope": "all",
+   "text": "“Del primo pianto” was sung at the premiere but cut from the first complete recording. It was later restored to most performances.",
+   "attribution": "Wikipedia, “Turandot”",
+   "source": "wiki-Turandot.txt",
+   "anchor": "Alfano's_and_other_versions",
+   "evidence": "Turandot's aria \"Del primo pianto\" was performed at the premiere but cut from the first complete recording; it was eventually restored to most performances"
+  },
+  {
+   "id": "turandot-13",
+   "type": "history",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "Luciano Berio wrote a new completion in 2002, with the cooperation of the publisher, Ricordi.",
+   "attribution": "Wikipedia, “Turandot”",
+   "source": "wiki-Turandot.txt",
+   "anchor": "Critical_response",
+   "evidence": "A later attempt at completing the opera was made, with the co-operation of the publishers, Ricordi, in 2002 by Luciano Berio."
+  }
+ ]
+}

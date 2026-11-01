@@ -43,7 +43,7 @@ export function isFullscreen() { return !!S; }               // "in playback mod
 export function isPlaying() { return !!S; }
 export function isPerformancePage() { return /^\/(performance\/detail|broadcast|radio)\//.test(window.location.pathname); }
 export function getVideoEl() { return vEl; }
-export function current() { return S ? { id: S.id, name: S.meta ? S.meta.name : S.info.title, audio: S.audio, src: S.srcKind || '', phase: S.phase } : null; }
+export function current() { return S ? { id: S.id, name: S.meta ? S.meta.name : S.info.title, opera: (S.meta && S.meta.opera) || '', audio: S.audio, src: S.srcKind || '', phase: S.phase } : null; }
 export function getPlayer() {
   var v = vEl;
   if (!S || !v) return null;

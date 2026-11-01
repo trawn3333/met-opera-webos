@@ -1,0 +1,31 @@
+{
+ "title": "The Hours",
+ "match": [
+  "The Hours"
+ ],
+ "general": true,
+ "facts": [
+  {
+   "id": "gen-the-hours-1",
+   "type": "premiere",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "The opera was first performed on 18 March 2022 in a concert presentation at the Kimmel Center in Philadelphia and received its stage premiere on 22 November 2022 at the Metropolitan Opera House in New York City.",
+   "attribution": "Wikipedia, “The Hours (opera)”",
+   "source": "wikiintro-The_Hours_opera_.txt",
+   "anchor": null,
+   "evidence": "The opera was first performed on 18 March 2022 in a concert presentation at the Kimmel Center in Philadelphia and received its stage premiere on 22 November 2022 at the Metropolitan Opera House in New York City."
+  },
+  {
+   "id": "gen-the-hours-2",
+   "type": "history",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "The Hours is a 2022 opera in two acts with music by Kevin Puts and an English-language libretto by Greg Pierce, based on Michael Cunningham's 1998 novel and its 2002 film adaptation, both with the same title.",
+   "attribution": "Wikipedia, “The Hours (opera)”",
+   "source": "wikiintro-The_Hours_opera_.txt",
+   "anchor": null,
+   "evidence": "The Hours is a 2022 opera in two acts with music by Kevin Puts and an English-language libretto by Greg Pierce, based on Michael Cunningham's 1998 novel and its 2002 film adaptation, both with the same title."
+  }
+ ]
+}

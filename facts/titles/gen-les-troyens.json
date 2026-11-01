@@ -1,0 +1,20 @@
+{
+ "title": "Les Troyens",
+ "match": [
+  "Les Troyens"
+ ],
+ "general": true,
+ "facts": [
+  {
+   "id": "gen-les-troyens-1",
+   "type": "history",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "The libretto was written by Berlioz himself from Virgil's epic poem the Aeneid; the score was composed between 1856 and 1858.",
+   "attribution": "Wikipedia, “Les Troyens”",
+   "source": "wikiintro-Les_Troyens.txt",
+   "anchor": null,
+   "evidence": "The libretto was written by Berlioz himself from Virgil's epic poem the Aeneid; the score was composed between 1856 and 1858."
+  }
+ ]
+}

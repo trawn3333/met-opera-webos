@@ -1,0 +1,20 @@
+{
+ "title": "Thaïs",
+ "match": [
+  "Thaïs"
+ ],
+ "general": true,
+ "facts": [
+  {
+   "id": "gen-thais-1",
+   "type": "premiere",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "It was first performed at the Opéra Garnier in Paris on 16 March 1894, starring the American soprano Sibyl Sanderson, for whom Massenet had written the title role.",
+   "attribution": "Wikipedia, “Thaïs (opera)”",
+   "source": "wikiintro-Tha_s_opera_.txt",
+   "anchor": null,
+   "evidence": "It was first performed at the Opéra Garnier in Paris on 16 March 1894, starring the American soprano Sibyl Sanderson, for whom Massenet had written the title role."
+  }
+ ]
+}

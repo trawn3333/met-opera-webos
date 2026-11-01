@@ -1,0 +1,20 @@
+{
+ "title": "The Enchanted Island",
+ "match": [
+  "The Enchanted Island"
+ ],
+ "general": true,
+ "facts": [
+  {
+   "id": "gen-the-enchanted-island-1",
+   "type": "premiere",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "It was created by Julian Crouch and Phelim McDermott and was premiered by the Metropolitan Opera on 31 December 2011.",
+   "attribution": "Wikipedia, “The Enchanted Island (2011 opera)”",
+   "source": "wikiintro-The_Enchanted_Island_opera_.txt",
+   "anchor": null,
+   "evidence": "It was created by Julian Crouch and Phelim McDermott and was premiered by the Metropolitan Opera on 31 December 2011."
+  }
+ ]
+}

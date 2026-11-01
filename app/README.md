@@ -91,7 +91,13 @@ Useful extras:
 3. Later, if the Met session expires (the observed cookie lifetime is about 24 h), the app signs back in by itself on launch.
 4. Tip: keep the TV's **QuickStart+** ON. With it off, webOS can drop recently written cookies at power-off.
 
-## What changed in 1.3.3
+## What changed in 1.4.0
+
+- **Pop-up facts**: small rounded speech bubbles with a bounce-in, an icon per type (composer, artists, premiere, critics, history, staging, bloopers, music) and auto-dismiss after 10 s. Facts tied to a Met scene marker pop ~20 s into that scene; general facts are spread through the evening (at least 75 s apart). They sit top-right, above the subtitles (lower while the controls are up), and never take focus.
+- **Pop-up facts** toggle in the playback controls, on by default, remembered (`mtv.popFacts`).
+- 19 curated titles (278 facts, all sourced and verified) plus short general facts for other titles; production-specific facts only show for performances of that production (e.g. Ponnelle's 1982 Idomeneo). Data in `/facts` (see `facts/README.md`).
+
+
 
 - **Production credits** in the Cast panel (player) and the title-page Cast sheet: Production / director, set, costume and lighting designers, choreographer and the production's Met premiere, **as listed in the Met Opera Archives** (archives.metopera.org). Nothing is invented: when the archive lists no credit (e.g. Ponnelle's Idomeneo lists only "Production" and lighting), it is left out; unmatched performances show no Production section.
 - Data: `tools/archive-crawl.js` matches every on-demand performance to the archive by date + title (polite: one request every 1.6 s or more, every response cached on disk), then links it to the latest *New Production* of that title on or before the performance date and reads that premiere's credits. Productions that premiered before Sept 1966 are only linked within 10 seasons (older archive records rarely mark new productions). `tools/build-credits.js` writes the bundled `src/userscript/cast/creditsData.js` (about 65 KB, 303 productions).

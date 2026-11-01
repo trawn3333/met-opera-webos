@@ -31,6 +31,13 @@ Nothing deployment-specific or secret is in the repository. Copy `.env.example` 
 Messages name the variable and how to fix it; values are never printed. `.env`, `.env.*` (except `.env.example`),
 `.dev.vars`, `telemetry/.secrets`, generated deploy files, cookie jars and raw research dumps are git-ignored.
 
+## Pop-up facts
+
+Since 1.4.0 the player can show small speech-bubble facts during playback, timed to the Met's scene markers. They are on
+by default; turn them off with **Pop-up facts** in the playback controls (remembered). They never take focus and sit
+above the subtitles. Every fact is sourced and verified against its source text; see [`facts/README.md`](facts/README.md)
+for the data, the build/deploy scripts and how they're served (D1 behind the existing Worker, free tier).
+
 ## Telemetry & privacy
 
 If the build includes telemetry, the app sends anonymous diagnostics to your own Worker: app errors, warnings and

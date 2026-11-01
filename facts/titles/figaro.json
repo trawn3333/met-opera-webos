@@ -1,0 +1,207 @@
+{
+ "title": "Le Nozze di Figaro",
+ "match": [
+  "Le Nozze di Figaro",
+  "The Marriage of Figaro",
+  "Nozze di Figaro"
+ ],
+ "facts": [
+  {
+   "id": "figaro-01",
+   "type": "premiere",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "Le nozze di Figaro premiered at the Burgtheater in Vienna on 1 May 1786.",
+   "attribution": "Wikipedia, “Le Nozze di Figaro”",
+   "source": "wiki-The_Marriage_of_Figaro.txt",
+   "anchor": null,
+   "evidence": "It premiered at the Burgtheater in Vienna on 1 May 1786."
+  },
+  {
+   "id": "figaro-02",
+   "type": "history",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "Beaumarchais’s play was at first banned in Vienna for its frank treatment of class conflict; Da Ponte won the emperor’s approval for an opera version.",
+   "attribution": "Wikipedia, “Le Nozze di Figaro”",
+   "source": "wiki-The_Marriage_of_Figaro.txt",
+   "anchor": "Composition_history",
+   "evidence": [
+    "with its frank treatment of class conflict, was at first banned in Vienna",
+    "Lorenzo Da Ponte managed to get official approval from the emperor for an operatic version"
+   ]
+  },
+  {
+   "id": "figaro-03",
+   "type": "history",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "It was Mozart who picked Beaumarchais’s play. Da Ponte turned it into a libretto in six weeks, removing all of the political references.",
+   "attribution": "Wikipedia, “Le Nozze di Figaro”",
+   "source": "wiki-The_Marriage_of_Figaro.txt",
+   "anchor": "Composition_history",
+   "evidence": "It was Mozart who originally selected Beaumarchais's play and brought it to Da Ponte, who turned it into a libretto in six weeks, rewriting it in poetic Italian and removing all of the original's political references"
+  },
+  {
+   "id": "figaro-04",
+   "type": "history",
+   "sceneMatch": "Aprite un po|Tutto è disposto|Tutto e disposto",
+   "scope": "all",
+   "text": "Da Ponte swapped Figaro’s angry speech against inherited nobility for an equally angry aria against unfaithful wives.",
+   "attribution": "Wikipedia, “Le Nozze di Figaro”",
+   "source": "wiki-The_Marriage_of_Figaro.txt",
+   "anchor": "Composition_history",
+   "evidence": "Da Ponte replaced Figaro's climactic speech against inherited nobility with an equally angry aria against unfaithful wives"
+  },
+  {
+   "id": "figaro-05",
+   "type": "music",
+   "sceneMatch": "Aprite un po",
+   "scope": "all",
+   "text": "Mozart uses two horns playing together here to represent cuckoldry. Verdi later borrowed the same trick in Falstaff.",
+   "attribution": "Wikipedia, “Le Nozze di Figaro”",
+   "source": "wiki-The_Marriage_of_Figaro.txt",
+   "anchor": "Critical_discussion",
+   "evidence": [
+    "Mozart uses the sound of two horns playing together to represent cuckoldry in the act 4 aria \"Aprite un po' quegli occhi\"",
+    "Verdi later used the same device in Ford's aria in Falstaff."
+   ]
+  },
+  {
+   "id": "figaro-06",
+   "type": "premiere",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "The first-night audience demanded encores of five numbers; on 8 May, seven.",
+   "attribution": "Wikipedia, “Le Nozze di Figaro”",
+   "source": "wiki-The_Marriage_of_Figaro.txt",
+   "anchor": "Performance_history",
+   "evidence": "The applause of the audience on the first night resulted in five numbers being encored, seven on 8 May."
+  },
+  {
+   "id": "figaro-07",
+   "type": "history",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "Worried about the running time, Emperor Joseph II ordered posters announcing that no piece for more than a single voice was to be repeated.",
+   "attribution": "Wikipedia, “Le Nozze di Figaro”",
+   "source": "wiki-The_Marriage_of_Figaro.txt",
+   "anchor": "Performance_history",
+   "evidence": [
+    "Emperor Joseph, in charge of the Burgtheater, was concerned by the length of the performance",
+    "no piece for more than a single voice is to be repeated"
+   ]
+  },
+  {
+   "id": "figaro-08",
+   "type": "critic",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "A 1786 Vienna review: Mozart’s music was admired by connoisseurs, but “obstreperous louts in the uppermost storey” tried to drown out the singers.",
+   "attribution": "Wiener Realzeitung, 11 July 1786 (via Wikipedia)",
+   "source": "wiki-The_Marriage_of_Figaro.txt",
+   "anchor": "Performance_history",
+   "evidence": [
+    "Mozart's music was generally admired by connoisseurs already at the first performance",
+    "obstreperous louts in the uppermost storey exerted their hired lungs with all their might to deafen singers and audience alike"
+   ]
+  },
+  {
+   "id": "figaro-09",
+   "type": "premiere",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "In Prague the opera caused a sensation; a local paper wrote that “no piece … has ever caused such a sensation.” That success led to the commission of Don Giovanni.",
+   "attribution": "Prager Oberpostamtszeitung (via Wikipedia)",
+   "source": "wiki-The_Marriage_of_Figaro.txt",
+   "anchor": "Other_early_performances",
+   "evidence": [
+    "no piece (for everyone here asserts) has ever caused such a sensation",
+    "The success of the Prague production led to the commissioning of the next Mozart/Da Ponte opera, Don Giovanni"
+   ]
+  },
+  {
+   "id": "figaro-10",
+   "type": "music",
+   "sceneMatch": "Finale|Esci omai|Esci ormai|Susanna, or via",
+   "scope": "all",
+   "text": "The Act II finale runs about 20 minutes, one of the longest uninterrupted pieces of music Mozart ever wrote.",
+   "attribution": "Wikipedia, “Le Nozze di Figaro”",
+   "source": "wiki-The_Marriage_of_Figaro.txt",
+   "anchor": "Critical_discussion",
+   "evidence": "The finale of act 2, lasting 20 minutes, is one of the longest uninterrupted pieces of music Mozart ever wrote."
+  },
+  {
+   "id": "figaro-11",
+   "type": "critic",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "Brahms: “In my opinion, each number in Figaro is a miracle … nothing like it was ever done again, not even by Beethoven.”",
+   "attribution": "Johannes Brahms (via Wikipedia)",
+   "source": "wiki-The_Marriage_of_Figaro.txt",
+   "anchor": "Critical_discussion",
+   "evidence": [
+    "In my opinion, each number in Figaro is a miracle",
+    "nothing like it was ever done again, not even by Beethoven"
+   ]
+  },
+  {
+   "id": "figaro-12",
+   "type": "music",
+   "sceneMatch": "Non più andrai|Non piu andrai",
+   "scope": "all",
+   "text": "Mozart liked this tune enough to quote “Non più andrai” in the second act of Don Giovanni.",
+   "attribution": "Wikipedia, “Le Nozze di Figaro”",
+   "source": "wiki-The_Marriage_of_Figaro.txt",
+   "anchor": "Other_uses_of_the_melodies",
+   "evidence": "Mozart also quotes Figaro's aria \"Non più andrai\" in the second act of his opera Don Giovanni."
+  },
+  {
+   "id": "figaro-13",
+   "type": "music",
+   "sceneMatch": "Porgi,? amor",
+   "scope": "all",
+   "text": "“Porgi, amor” reuses the motif that opens Mozart’s early bassoon concerto.",
+   "attribution": "Wikipedia, “Le Nozze di Figaro”",
+   "source": "wiki-The_Marriage_of_Figaro.txt",
+   "anchor": "Other_uses_of_the_melodies",
+   "evidence": "Mozart also reused the motif that begins his early bassoon concerto in another aria sung by the countess, \"Porgi, amor\"."
+  },
+  {
+   "id": "figaro-14",
+   "type": "music",
+   "sceneMatch": "Cosa sento|Così fan tutte|Cosi fan tutte",
+   "scope": "all",
+   "text": "Basilio’s phrase “Così fan tutte le belle” in this trio later turned up in the overture to Mozart’s Così fan tutte.",
+   "attribution": "Wikipedia, “Le Nozze di Figaro”",
+   "source": "wiki-The_Marriage_of_Figaro.txt",
+   "anchor": "Other_uses_of_the_melodies",
+   "evidence": "A musical phrase from the act 1 trio of The Marriage of Figaro (where Basilio sings Così fan tutte le belle) was later reused by Mozart in the overture to his opera Così fan tutte."
+  },
+  {
+   "id": "figaro-15",
+   "type": "music",
+   "sceneMatch": "Se vuol ballare",
+   "scope": "all",
+   "text": "Beethoven wrote a set of variations for violin and piano on Figaro’s “Se vuol ballare”.",
+   "attribution": "Wikipedia, “Le Nozze di Figaro”",
+   "source": "wiki-The_Marriage_of_Figaro.txt",
+   "anchor": "Other_uses_of_the_melodies",
+   "evidence": "Beethoven wrote Variations on 'Se vuol ballare', WoO 40, for violin and piano on Figaro's cavatina."
+  },
+  {
+   "id": "figaro-16",
+   "type": "history",
+   "sceneMatch": "Deh vieni|Venite,? inginocchiatevi",
+   "scope": "all",
+   "text": "For a 1789 revival Mozart wrote two replacement arias for Susanna. The Met used them in 1998, with Cecilia Bartoli as Susanna.",
+   "attribution": "Wikipedia, “Le Nozze di Figaro”",
+   "source": "wiki-The_Marriage_of_Figaro.txt",
+   "anchor": "Frequently_omitted_numbers",
+   "evidence": [
+    "Mozart wrote two replacement arias for Susanna when the role was taken over by Adriana Ferrarese in the 1789 revival",
+    "A notable exception was a series of performances at the Metropolitan Opera in 1998 with Cecilia Bartoli as Susanna."
+   ]
+  }
+ ]
+}

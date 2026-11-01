@@ -1,0 +1,217 @@
+{
+ "title": "Tosca",
+ "match": [
+  "Tosca"
+ ],
+ "facts": [
+  {
+   "id": "tosca-01",
+   "type": "premiere",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "Tosca premiered at the Teatro Costanzi in Rome on 14 January 1900, a day late, because of fears of unrest.",
+   "attribution": "Wikipedia, “Tosca”",
+   "source": "wiki-Tosca.txt",
+   "anchor": null,
+   "evidence": [
+    "It premiered at the Teatro Costanzi in Rome on 14 January 1900.",
+    "its first performance was delayed for a day for fear of disturbances"
+   ]
+  },
+  {
+   "id": "tosca-02",
+   "type": "premiere",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "Police had warnings of an anarchist bomb at the premiere. The conductor, Mugnone, was told to strike up the royal march in an emergency.",
+   "attribution": "Wikipedia, “Tosca”",
+   "source": "wiki-Tosca.txt",
+   "anchor": "Premiere",
+   "evidence": "Police received warnings of an anarchist bombing of the theatre, and instructed Mugnone"
+  },
+  {
+   "id": "tosca-03",
+   "type": "premiere",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "The critics were lukewarm, but the public loved it: the premiere was followed by twenty performances, all to packed houses.",
+   "attribution": "Wikipedia, “Tosca”",
+   "source": "wiki-Tosca.txt",
+   "anchor": "Premiere",
+   "evidence": [
+    "Much of the critical and press reaction was lukewarm",
+    "the premiere was followed by twenty performances, all given to packed houses"
+   ]
+  },
+  {
+   "id": "tosca-04",
+   "type": "composer",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "Puccini begged his publisher in 1889 to get Sardou’s permission: “I see in this Tosca the opera I need, with no overblown proportions, no elaborate spectacle.”",
+   "attribution": "Puccini, letter to Giulio Ricordi, 7 May 1889 (via Wikipedia)",
+   "source": "wiki-Tosca.txt",
+   "anchor": "Background",
+   "evidence": "I see in this Tosca the opera I need, with no overblown proportions, no elaborate spectacle"
+  },
+  {
+   "id": "tosca-05",
+   "type": "artist",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "The young Enrico Caruso hoped to create Cavaradossi but was passed over for the more experienced Emilio De Marchi.",
+   "attribution": "Wikipedia, “Tosca”",
+   "source": "wiki-Tosca.txt",
+   "anchor": "Premiere",
+   "evidence": "The young Enrico Caruso had hoped to create the role of Cavaradossi, but was passed over in favour of the more experienced Emilio De Marchi."
+  },
+  {
+   "id": "tosca-06",
+   "type": "music",
+   "sceneMatch": "^Act I$|Ah! Finalmente|Angelotti",
+   "scope": "all",
+   "text": "There is no prelude: the opening chords are Scarpia’s motif, and Angelotti bursts straight in.",
+   "attribution": "Wikipedia, “Tosca”",
+   "source": "wiki-Tosca.txt",
+   "anchor": "Act_1",
+   "evidence": "The opera begins without any prelude; the opening chords of the Scarpia motif lead immediately to the agitated appearance of Angelotti"
+  },
+  {
+   "id": "tosca-07",
+   "type": "music",
+   "sceneMatch": "Te Deum|Tre sbirri",
+   "scope": "all",
+   "text": "As the Te Deum procession fills the church, Scarpia joins the prayer: “Tosca, you make me forget even God!”",
+   "attribution": "Wikipedia, “Tosca”",
+   "source": "wiki-Tosca.txt",
+   "anchor": "Act_1",
+   "evidence": "Tosca, you make me forget even God!"
+  },
+  {
+   "id": "tosca-08",
+   "type": "artist",
+   "sceneMatch": "Vissi d.arte",
+   "scope": "all",
+   "text": "Maria Jeritza, said to be Puccini’s favorite Tosca, once fell while escaping Scarpia and sang “Vissi d’arte” lying on the floor. It was such a success that she kept doing it.",
+   "attribution": "Wikipedia, “Tosca”",
+   "source": "wiki-Tosca.txt",
+   "anchor": "Subsequent_productions",
+   "evidence": [
+    "was said to be Puccini's favorite Tosca",
+    "Jeritza was the first to deliver \"Vissi d'arte\" from a prone position, having fallen to the stage while eluding the grasp of Scarpia.",
+    "Jeritza sang the aria while on the floor thereafter"
+   ]
+  },
+  {
+   "id": "tosca-09",
+   "type": "music",
+   "sceneMatch": "Io de. sospiri|^Act III$",
+   "scope": "all",
+   "text": "For the Roman dawn, Puccini went to Castel Sant’Angelo to hear the matins bells, and had bells cast by four different foundries.",
+   "attribution": "Wikipedia, “Tosca”",
+   "source": "wiki-Tosca.txt",
+   "anchor": null,
+   "evidence": [
+    "went to the Castel Sant'Angelo to measure the sound of matins bells there",
+    "Puccini had bells for the Roman dawn cast to order by four different foundries."
+   ]
+  },
+  {
+   "id": "tosca-10",
+   "type": "critic",
+   "sceneMatch": "Io de. sospiri|^Act III$",
+   "scope": "all",
+   "text": "Librettist Illica grumbled after the premiere that all the fuss and money spent on the bells “passes completely unnoticed”.",
+   "attribution": "Luigi Illica, letter to Ricordi (via Wikipedia)",
+   "source": "wiki-Tosca.txt",
+   "anchor": null,
+   "evidence": "the great fuss and the large amount of money for the bells have constituted an additional folly, because it passes completely unnoticed"
+  },
+  {
+   "id": "tosca-11",
+   "type": "history",
+   "sceneMatch": "Io de. sospiri",
+   "scope": "all",
+   "text": "The shepherd boy’s song is in Roman dialect. Puccini asked for a “good romanesco poet”, and folklorist Giggi Zanazzo wrote the verse.",
+   "attribution": "Wikipedia, “Tosca”",
+   "source": "wiki-Tosca.txt",
+   "anchor": "Adaptation_and_writing",
+   "evidence": [
+    "The composer asked a friend to have a \"good romanesco poet\" write some words",
+    "Luigi \"Giggi\" Zanazzo wrote the verse"
+   ]
+  },
+  {
+   "id": "tosca-12",
+   "type": "history",
+   "sceneMatch": "O dolci mani",
+   "scope": "all",
+   "text": "Ricordi noticed that part of “O dolci mani” was borrowed from music Puccini had cut from his early opera Edgar, and demanded changes. There wasn’t time.",
+   "attribution": "Wikipedia, “Tosca”",
+   "source": "wiki-Tosca.txt",
+   "anchor": "Adaptation_and_writing",
+   "evidence": [
+    "some of the music for Cavaradossi's act 3 aria, \"O dolci mani\" was borrowed from music Puccini had cut from his early opera, Edgar",
+    "time was too short before the scheduled January 1900 premiere to make any further changes"
+   ]
+  },
+  {
+   "id": "tosca-13",
+   "type": "critic",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "In the 1950s musicologist Joseph Kerman called Tosca a “shabby little shocker”. Conductor Thomas Beecham replied that anything Kerman says about Puccini “can safely be ignored”.",
+   "attribution": "Wikipedia, “Tosca”",
+   "source": "wiki-Tosca.txt",
+   "anchor": "Critical_reception",
+   "evidence": [
+    "described Tosca as a \"shabby little shocker.\"",
+    "can safely be ignored"
+   ]
+  },
+  {
+   "id": "tosca-14",
+   "type": "history",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "The Met premiere was on 4 February 1901, only a year after the world premiere.",
+   "attribution": "Wikipedia, “Tosca”",
+   "source": "wiki-Tosca.txt",
+   "anchor": null,
+   "evidence": "The premiere at the Metropolitan Opera was on 4 February 1901"
+  },
+  {
+   "id": "tosca-15",
+   "type": "artist",
+   "sceneMatch": "E lucevan",
+   "scope": "all",
+   "text": "Luciano Pavarotti’s last stage performance was as Cavaradossi at the Met, on 13 March 2004.",
+   "attribution": "Wikipedia, “Tosca”",
+   "source": "wiki-Tosca.txt",
+   "anchor": "Subsequent_productions",
+   "evidence": "Pavarotti's last stage performance was as Cavaradossi at the Met, on 13 March 2004."
+  },
+  {
+   "id": "tosca-16",
+   "type": "history",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "Sardou’s play La Tosca, written for Sarah Bernhardt, had more than 3,000 performances in France alone.",
+   "attribution": "Wikipedia, “Tosca”",
+   "source": "wiki-Tosca.txt",
+   "anchor": "Background",
+   "evidence": "with more than 3,000 performances in France alone"
+  },
+  {
+   "id": "tosca-17",
+   "type": "composer",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "By cutting several numbers, Puccini left “three strong characters trapped in an airless, violent, tightly wound melodrama”, as his biographer put it.",
+   "attribution": "Mary Jane Phillips-Matz, Puccini biography (via Wikipedia)",
+   "source": "wiki-Tosca.txt",
+   "anchor": "Adaptation_and_writing",
+   "evidence": "leaving three strong characters trapped in an airless, violent, tightly wound melodrama"
+  }
+ ]
+}

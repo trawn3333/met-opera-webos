@@ -1,0 +1,20 @@
+{
+ "title": "I Puritani",
+ "match": [
+  "I Puritani"
+ ],
+ "general": true,
+ "facts": [
+  {
+   "id": "gen-i-puritani-1",
+   "type": "history",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "The music was set to a libretto by Count Carlo Pepoli, an Italian émigré poet whom Bellini had met at a salon run by the exile Princess Belgiojoso, which became a meeting place for many Italian revolutionaries.",
+   "attribution": "Wikipedia, “I puritani”",
+   "source": "wikiintro-I_Puritani.txt",
+   "anchor": null,
+   "evidence": "The music was set to a libretto by Count Carlo Pepoli, an Italian émigré poet whom Bellini had met at a salon run by the exile Princess Belgiojoso, which became a meeting place for many Italian revolutionaries."
+  }
+ ]
+}

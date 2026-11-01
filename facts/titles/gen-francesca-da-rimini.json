@@ -1,0 +1,31 @@
+{
+ "title": "Francesca da Rimini",
+ "match": [
+  "Francesca da Rimini"
+ ],
+ "general": true,
+ "facts": [
+  {
+   "id": "gen-francesca-da-rimini-1",
+   "type": "premiere",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "It was premiered at the Teatro Regio in Turin on 19 February 1914 and is still staged occasionally.",
+   "attribution": "Wikipedia, “Francesca da Rimini (Zandonai)”",
+   "source": "wikiintro-Francesca_da_Rimini_opera_.txt",
+   "anchor": null,
+   "evidence": "It was premiered at the Teatro Regio in Turin on 19 February 1914 and is still staged occasionally."
+  },
+  {
+   "id": "gen-francesca-da-rimini-2",
+   "type": "history",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "Francesca da Rimini, Op. 4, is an opera in four acts, composed by Riccardo Zandonai, with a libretto by Tito Ricordi II, after D'Annunzio's play Francesca da Rimini.",
+   "attribution": "Wikipedia, “Francesca da Rimini (Zandonai)”",
+   "source": "wikiintro-Francesca_da_Rimini_opera_.txt",
+   "anchor": null,
+   "evidence": "Francesca da Rimini, Op. 4, is an opera in four acts, composed by Riccardo Zandonai, with a libretto by Tito Ricordi II, after D'Annunzio's play Francesca da Rimini."
+  }
+ ]
+}

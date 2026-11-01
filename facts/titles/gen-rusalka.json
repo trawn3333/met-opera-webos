@@ -1,0 +1,20 @@
+{
+ "title": "Rusalka",
+ "match": [
+  "Rusalka"
+ ],
+ "general": true,
+ "facts": [
+  {
+   "id": "gen-rusalka-1",
+   "type": "history",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "Jaroslav Kvapil wrote the libretto on Karel Jaromír Erben's and Božena Němcová's fairy tales.",
+   "attribution": "Wikipedia, “Rusalka (opera)”",
+   "source": "wikiintro-Rusalka_opera_.txt",
+   "anchor": null,
+   "evidence": "Jaroslav Kvapil wrote the libretto on Karel Jaromír Erben's and Božena Němcová's fairy tales."
+  }
+ ]
+}

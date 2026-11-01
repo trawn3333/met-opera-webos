@@ -1,0 +1,31 @@
+{
+ "title": "Les Contes d'Hoffmann",
+ "match": [
+  "Les Contes d'Hoffmann"
+ ],
+ "general": true,
+ "facts": [
+  {
+   "id": "gen-les-contes-d-hoffmann-1",
+   "type": "premiere",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "It was Offenbach's final work; he died in October 1880, four months before the premiere.",
+   "attribution": "Wikipedia, “The Tales of Hoffmann”",
+   "source": "wikiintro-Les_Contes_d_Hoffmann.txt",
+   "anchor": null,
+   "evidence": "It was Offenbach's final work; he died in October 1880, four months before the premiere."
+  },
+  {
+   "id": "gen-les-contes-d-hoffmann-2",
+   "type": "history",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "The French libretto was written by Jules Barbier, based on three short stories by E.",
+   "attribution": "Wikipedia, “The Tales of Hoffmann”",
+   "source": "wikiintro-Les_Contes_d_Hoffmann.txt",
+   "anchor": null,
+   "evidence": "The French libretto was written by Jules Barbier, based on three short stories by E."
+  }
+ ]
+}

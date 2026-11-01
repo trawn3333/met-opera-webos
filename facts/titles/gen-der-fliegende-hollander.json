@@ -1,0 +1,31 @@
+{
+ "title": "Der Fliegende Holländer",
+ "match": [
+  "Der Fliegende Holländer"
+ ],
+ "general": true,
+ "facts": [
+  {
+   "id": "gen-der-fliegende-hollander-1",
+   "type": "premiere",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "Wagner conducted the premiere at the Königliches Hoftheater Dresden in 1843.",
+   "attribution": "Wikipedia, “Der fliegende Holländer”",
+   "source": "wikiintro-Der_Fliegende_Holl_nder.txt",
+   "anchor": null,
+   "evidence": "Wagner conducted the premiere at the Königliches Hoftheater Dresden in 1843."
+  },
+  {
+   "id": "gen-der-fliegende-hollander-2",
+   "type": "history",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "Der fliegende Holländer (The Flying Dutchman), WWV 63, is a German-language opera, with libretto and music by Richard Wagner.",
+   "attribution": "Wikipedia, “Der fliegende Holländer”",
+   "source": "wikiintro-Der_Fliegende_Holl_nder.txt",
+   "anchor": null,
+   "evidence": "Der fliegende Holländer (The Flying Dutchman), WWV 63, is a German-language opera, with libretto and music by Richard Wagner."
+  }
+ ]
+}

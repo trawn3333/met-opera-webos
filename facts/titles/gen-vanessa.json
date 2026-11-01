@@ -1,0 +1,31 @@
+{
+ "title": "Vanessa",
+ "match": [
+  "Vanessa"
+ ],
+ "general": true,
+ "facts": [
+  {
+   "id": "gen-vanessa-1",
+   "type": "premiere",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "It was composed in 1956–1957 and was first performed at the Metropolitan Opera in New York City on January 15, 1958 under the baton of Dimitri Mitropoulos in a production designed by Cecil Beaton and directed by Menotti.",
+   "attribution": "Wikipedia, “Vanessa (opera)”",
+   "source": "wikiintro-Vanessa_opera_.txt",
+   "anchor": null,
+   "evidence": "It was composed in 1956–1957 and was first performed at the Metropolitan Opera in New York City on January 15, 1958 under the baton of Dimitri Mitropoulos in a production designed by Cecil Beaton and directed by Menotti."
+  },
+  {
+   "id": "gen-vanessa-2",
+   "type": "history",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "Vanessa is an American opera in three (originally four) acts by Samuel Barber, opus 32, with an original English libretto by Gian Carlo Menotti.",
+   "attribution": "Wikipedia, “Vanessa (opera)”",
+   "source": "wikiintro-Vanessa_opera_.txt",
+   "anchor": null,
+   "evidence": "Vanessa is an American opera in three (originally four) acts by Samuel Barber, opus 32, with an original English libretto by Gian Carlo Menotti."
+  }
+ ]
+}

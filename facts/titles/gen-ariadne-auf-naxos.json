@@ -1,0 +1,20 @@
+{
+ "title": "Ariadne auf Naxos",
+ "match": [
+  "Ariadne auf Naxos"
+ ],
+ "general": true,
+ "facts": [
+  {
+   "id": "gen-ariadne-auf-naxos-1",
+   "type": "history",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "Ariadne auf Naxos (Ariadne on Naxos), Op. 60, is a 1912 opera by Richard Strauss with a German libretto by Hugo von Hofmannsthal.",
+   "attribution": "Wikipedia, “Ariadne auf Naxos”",
+   "source": "wikiintro-Ariadne_auf_Naxos.txt",
+   "anchor": null,
+   "evidence": "Ariadne auf Naxos (Ariadne on Naxos), Op. 60, is a 1912 opera by Richard Strauss with a German libretto by Hugo von Hofmannsthal."
+  }
+ ]
+}

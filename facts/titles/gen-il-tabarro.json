@@ -1,0 +1,31 @@
+{
+ "title": "Il Tabarro",
+ "match": [
+  "Il Tabarro"
+ ],
+ "general": true,
+ "facts": [
+  {
+   "id": "gen-il-tabarro-1",
+   "type": "premiere",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "The first performance was given on 14 December 1918 at the Metropolitan Opera in New York City.",
+   "attribution": "Wikipedia, “Il tabarro”",
+   "source": "wikiintro-Il_Tabarro.txt",
+   "anchor": null,
+   "evidence": "The first performance was given on 14 December 1918 at the Metropolitan Opera in New York City."
+  },
+  {
+   "id": "gen-il-tabarro-2",
+   "type": "history",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "Il tabarro (The Cloak) is an opera in one act by Giacomo Puccini to an Italian libretto by Giuseppe Adami, based on Didier Gold's play La houppelande.",
+   "attribution": "Wikipedia, “Il tabarro”",
+   "source": "wikiintro-Il_Tabarro.txt",
+   "anchor": null,
+   "evidence": "Il tabarro (The Cloak) is an opera in one act by Giacomo Puccini to an Italian libretto by Giuseppe Adami, based on Didier Gold's play La houppelande."
+  }
+ ]
+}

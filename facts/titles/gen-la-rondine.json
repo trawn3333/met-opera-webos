@@ -1,0 +1,31 @@
+{
+ "title": "La Rondine",
+ "match": [
+  "La Rondine"
+ ],
+ "general": true,
+ "facts": [
+  {
+   "id": "gen-la-rondine-1",
+   "type": "premiere",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "It was first performed at the Grand Théâtre de Monte Carlo (or the Théâtre du Casino) in Monte Carlo on 27 March 1917.",
+   "attribution": "Wikipedia, “La rondine”",
+   "source": "wikiintro-La_Rondine.txt",
+   "anchor": null,
+   "evidence": "It was first performed at the Grand Théâtre de Monte Carlo (or the Théâtre du Casino) in Monte Carlo on 27 March 1917."
+  },
+  {
+   "id": "gen-la-rondine-2",
+   "type": "history",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "La rondine (The Swallow) is an opera in three acts by Giacomo Puccini to an Italian libretto by Giuseppe Adami, based on a libretto by Alfred Maria Willner and Heinz Reichert.",
+   "attribution": "Wikipedia, “La rondine”",
+   "source": "wikiintro-La_Rondine.txt",
+   "anchor": null,
+   "evidence": "La rondine (The Swallow) is an opera in three acts by Giacomo Puccini to an Italian libretto by Giuseppe Adami, based on a libretto by Alfred Maria Willner and Heinz Reichert."
+  }
+ ]
+}

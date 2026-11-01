@@ -1,0 +1,31 @@
+{
+ "title": "Erwartung",
+ "match": [
+  "Erwartung"
+ ],
+ "general": true,
+ "facts": [
+  {
+   "id": "gen-erwartung-1",
+   "type": "premiere",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "Composed in 1909, it was not premiered until 6 June 1924 in Prague, conducted by Alexander Zemlinsky with Marie Gutheil-Schoder as the soprano.",
+   "attribution": "Wikipedia, “Erwartung”",
+   "source": "wikiintro-Erwartung.txt",
+   "anchor": null,
+   "evidence": "Composed in 1909, it was not premiered until 6 June 1924 in Prague, conducted by Alexander Zemlinsky with Marie Gutheil-Schoder as the soprano."
+  },
+  {
+   "id": "gen-erwartung-2",
+   "type": "history",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "Erwartung (Expectation), Op. 17, is a one-act monodrama in four scenes by Arnold Schönberg to a libretto by Marie Pappenheim.",
+   "attribution": "Wikipedia, “Erwartung”",
+   "source": "wikiintro-Erwartung.txt",
+   "anchor": null,
+   "evidence": "Erwartung (Expectation), Op. 17, is a one-act monodrama in four scenes by Arnold Schönberg to a libretto by Marie Pappenheim."
+  }
+ ]
+}

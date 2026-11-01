@@ -1,0 +1,31 @@
+{
+ "title": "Don Carlo",
+ "match": [
+  "Don Carlo"
+ ],
+ "general": true,
+ "facts": [
+  {
+   "id": "gen-don-carlo-1",
+   "type": "premiere",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "It was commissioned and produced by the Théâtre Impérial de l'Opéra (Paris Opera) and given its premiere at the Salle Le Peletier on 11 March 1867.",
+   "attribution": "Wikipedia, “Don Carlos”",
+   "source": "wikiintro-Don_Carlo.txt",
+   "anchor": null,
+   "evidence": "It was commissioned and produced by the Théâtre Impérial de l'Opéra (Paris Opera) and given its premiere at the Salle Le Peletier on 11 March 1867."
+  },
+  {
+   "id": "gen-don-carlo-2",
+   "type": "history",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "The opera's story is based on conflicts in the life of Carlos, Prince of Asturias (1545–1568).",
+   "attribution": "Wikipedia, “Don Carlos”",
+   "source": "wikiintro-Don_Carlo.txt",
+   "anchor": null,
+   "evidence": "The opera's story is based on conflicts in the life of Carlos, Prince of Asturias (1545–1568)."
+  }
+ ]
+}

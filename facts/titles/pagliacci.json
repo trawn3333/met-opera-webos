@@ -1,0 +1,144 @@
+{
+ "title": "Pagliacci",
+ "match": [
+  "Pagliacci"
+ ],
+ "facts": [
+  {
+   "id": "pagliacci-01",
+   "type": "premiere",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "Pagliacci premiered in Milan on 21 May 1892, conducted by Arturo Toscanini.",
+   "attribution": "Wikipedia, “Pagliacci”",
+   "source": "wiki-Pagliacci.txt",
+   "anchor": null,
+   "evidence": "Pagliacci premiered at the Teatro Dal Verme in Milan on 21 May 1892, conducted by Arturo Toscanini"
+  },
+  {
+   "id": "pagliacci-02",
+   "type": "premiere",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "Critics were mixed at first, but the public loved Pagliacci instantly, and still does.",
+   "attribution": "Wikipedia, “Pagliacci”",
+   "source": "wiki-Pagliacci.txt",
+   "anchor": "Performance_history",
+   "evidence": "Pagliacci received mixed critical reviews after its world premiere, but was instantly successful with the public and has remained so ever since."
+  },
+  {
+   "id": "pagliacci-03",
+   "type": "history",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "Leoncavallo, then little known, wrote Pagliacci after seeing the success of Mascagni’s Cavalleria rusticana.",
+   "attribution": "Wikipedia, “Pagliacci”",
+   "source": "wiki-Pagliacci.txt",
+   "anchor": "Origin_and_disputes",
+   "evidence": [
+    "Leoncavallo was a little-known composer when Pietro Mascagni's Cavalleria rusticana premiered",
+    "After seeing Mascagni's success, Leoncavallo decided to write an opera in response"
+   ]
+  },
+  {
+   "id": "pagliacci-04",
+   "type": "history",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "Leoncavallo said the story came from his childhood: the 1865 murder of a family servant, a case his father, a judge, investigated.",
+   "attribution": "Wikipedia, “Pagliacci”",
+   "source": "wiki-Pagliacci.txt",
+   "anchor": "Origin_and_disputes",
+   "evidence": [
+    "Leoncavallo claimed that he based the story of Pagliacci on an incident from his childhood: the 1865 murder of a Leoncavallo family servant",
+    "Leoncavallo's father, a judge, presided as magistrate over the criminal investigation"
+   ]
+  },
+  {
+   "id": "pagliacci-05",
+   "type": "history",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "The French author Catulle Mendès sued Leoncavallo for plagiarism; he later dropped the suit.",
+   "attribution": "Wikipedia, “Pagliacci”",
+   "source": "wiki-Pagliacci.txt",
+   "anchor": "Origin_and_disputes",
+   "evidence": [
+    "The French author Catulle Mendès sued Leoncavallo for plagiarism",
+    "ropped his lawsuit"
+   ]
+  },
+  {
+   "id": "pagliacci-06",
+   "type": "music",
+   "sceneMatch": "Prolog|Si può|Si puo",
+   "scope": "all",
+   "text": "The Prologue was an afterthought: Leoncavallo wrote it to tempt the star baritone Victor Maurel into singing Tonio.",
+   "attribution": "Wikipedia, “Pagliacci”",
+   "source": "wiki-Pagliacci.txt",
+   "anchor": "Composition",
+   "evidence": [
+    "The opening Prologue was written for Maurel \"as an afterthought\"",
+    "as an inducement to a clever, but rather egotistical baritone to sing the part of Tonio"
+   ]
+  },
+  {
+   "id": "pagliacci-07",
+   "type": "music",
+   "sceneMatch": "Prolog|Si può|Si puo",
+   "scope": "all",
+   "text": "Baritones often add a high A-flat and G near the end of the Prologue, though they aren’t in the original score.",
+   "attribution": "Wikipedia, “Pagliacci”",
+   "source": "wiki-Pagliacci.txt",
+   "anchor": "Composition",
+   "evidence": "Towards the end of the prologue, singers often interpolate a high A♭ and a high G, although these do not appear in the original full score."
+  },
+  {
+   "id": "pagliacci-08",
+   "type": "staging",
+   "sceneMatch": "commedia|finita|Final|No, Pagliaccio",
+   "scope": "all",
+   "text": "In Leoncavallo’s manuscript, Tonio (not Canio) sings the last line, “La commedia è finita!” Canio took it over around 1895.",
+   "attribution": "Wikipedia, “Pagliacci”",
+   "source": "wiki-Pagliacci.txt",
+   "anchor": "Assignment_of_the_final_line",
+   "evidence": [
+    "In the original manuscript, Tonio sang the opera's final line, \"La Commedia è finita!\"",
+    "The appropriation of this final line by Canio dates back to 1895."
+   ]
+  },
+  {
+   "id": "pagliacci-09",
+   "type": "history",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "In 1907 Pagliacci became the first opera recorded complete, under Leoncavallo’s personal supervision.",
+   "attribution": "Wikipedia, “Pagliacci”",
+   "source": "wiki-Pagliacci.txt",
+   "anchor": "Recordings_and_other_media",
+   "evidence": "In 1907, Pagliacci was the first opera to be recorded in its entirety, with the Puerto Rican tenor Antonio Paoli as Canio and under Leoncavallo's personal supervision."
+  },
+  {
+   "id": "pagliacci-10",
+   "type": "history",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "The Met first paired Pagliacci with Cavalleria rusticana in a double bill on 22 December 1893.",
+   "attribution": "Wikipedia, “Pagliacci”",
+   "source": "wiki-Pagliacci.txt",
+   "anchor": "Performance_history",
+   "evidence": "this time followed by Cavalleria rusticana on 22 December 1893"
+  },
+  {
+   "id": "pagliacci-11",
+   "type": "artist",
+   "sceneMatch": "Vesti la giubba|Recitar",
+   "scope": "all",
+   "text": "Jean de Reszke sang Canio at the 1902 Paris Opera premiere, his last public performance.",
+   "attribution": "Wikipedia, “Pagliacci”",
+   "source": "wiki-Pagliacci.txt",
+   "anchor": "Performance_history",
+   "evidence": "with legendary tenor Jean de Reszke as Canio in what would be his last public performance"
+  }
+ ]
+}

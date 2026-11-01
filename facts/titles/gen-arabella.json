@@ -1,0 +1,20 @@
+{
+ "title": "Arabella",
+ "match": [
+  "Arabella"
+ ],
+ "general": true,
+ "facts": [
+  {
+   "id": "gen-arabella-1",
+   "type": "history",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "Arabella, Op. 79, is a lyric comedy, or opera, in three acts by Richard Strauss to a German libretto by Hugo von Hofmannsthal, their sixth and last operatic collaboration.",
+   "attribution": "Wikipedia, “Arabella”",
+   "source": "wikiintro-Arabella_opera_.txt",
+   "anchor": null,
+   "evidence": "Arabella, Op. 79, is a lyric comedy, or opera, in three acts by Richard Strauss to a German libretto by Hugo von Hofmannsthal, their sixth and last operatic collaboration."
+  }
+ ]
+}

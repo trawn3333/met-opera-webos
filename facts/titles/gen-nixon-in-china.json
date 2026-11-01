@@ -1,0 +1,31 @@
+{
+ "title": "Nixon in China",
+ "match": [
+  "Nixon in China"
+ ],
+ "general": true,
+ "facts": [
+  {
+   "id": "gen-nixon-in-china-1",
+   "type": "premiere",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "The work premiered at the Houston Grand Opera on October 22, 1987, in a production by Peter Sellars with choreography by Mark Morris.",
+   "attribution": "Wikipedia, “Nixon in China”",
+   "source": "wikiintro-Nixon_in_China_opera_.txt",
+   "anchor": null,
+   "evidence": "The work premiered at the Houston Grand Opera on October 22, 1987, in a production by Peter Sellars with choreography by Mark Morris."
+  },
+  {
+   "id": "gen-nixon-in-china-2",
+   "type": "history",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "Nixon in China is an opera in three acts by John Adams with a libretto by Alice Goodman.",
+   "attribution": "Wikipedia, “Nixon in China”",
+   "source": "wikiintro-Nixon_in_China_opera_.txt",
+   "anchor": null,
+   "evidence": "Nixon in China is an opera in three acts by John Adams with a libretto by Alice Goodman."
+  }
+ ]
+}

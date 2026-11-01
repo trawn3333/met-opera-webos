@@ -1,0 +1,31 @@
+{
+ "title": "Susannah",
+ "match": [
+  "Susannah"
+ ],
+ "general": true,
+ "facts": [
+  {
+   "id": "gen-susannah-1",
+   "type": "premiere",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "It received its Metropolitan Opera premiere in 1999, with Renée Fleming singing the title role, Jerry Hadley singing Sam and Samuel Ramey singing Blitch.",
+   "attribution": "Wikipedia, “Susannah”",
+   "source": "wikiintro-Susannah_opera_.txt",
+   "anchor": null,
+   "evidence": "It received its Metropolitan Opera premiere in 1999, with Renée Fleming singing the title role, Jerry Hadley singing Sam and Samuel Ramey singing Blitch."
+  },
+  {
+   "id": "gen-susannah-2",
+   "type": "history",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "Susannah is an opera in two acts by the American composer Carlisle Floyd, who wrote the libretto and music while a member of the piano faculty at Florida State University.",
+   "attribution": "Wikipedia, “Susannah”",
+   "source": "wikiintro-Susannah_opera_.txt",
+   "anchor": null,
+   "evidence": "Susannah is an opera in two acts by the American composer Carlisle Floyd, who wrote the libretto and music while a member of the piano faculty at Florida State University."
+  }
+ ]
+}

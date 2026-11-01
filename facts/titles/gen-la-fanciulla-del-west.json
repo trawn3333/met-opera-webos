@@ -1,0 +1,31 @@
+{
+ "title": "La Fanciulla del West",
+ "match": [
+  "La Fanciulla del West"
+ ],
+ "general": true,
+ "facts": [
+  {
+   "id": "gen-la-fanciulla-del-west-1",
+   "type": "premiere",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "In 1910, its highly publicised first performance at the Metropolitan Opera in New York City was immensely popular with audiences.",
+   "attribution": "Wikipedia, “La fanciulla del West”",
+   "source": "wikiintro-La_Fanciulla_del_West.txt",
+   "anchor": null,
+   "evidence": "In 1910, its highly publicised first performance at the Metropolitan Opera in New York City was immensely popular with audiences."
+  },
+  {
+   "id": "gen-la-fanciulla-del-west-2",
+   "type": "history",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "Fanciulla followed Madama Butterfly, which was also based on a Belasco play.",
+   "attribution": "Wikipedia, “La fanciulla del West”",
+   "source": "wikiintro-La_Fanciulla_del_West.txt",
+   "anchor": null,
+   "evidence": "Fanciulla followed Madama Butterfly, which was also based on a Belasco play."
+  }
+ ]
+}

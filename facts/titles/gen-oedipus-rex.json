@@ -1,0 +1,20 @@
+{
+ "title": "Oedipus Rex",
+ "match": [
+  "Oedipus Rex"
+ ],
+ "general": true,
+ "facts": [
+  {
+   "id": "gen-oedipus-rex-1",
+   "type": "history",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "The libretto, based on Sophocles's tragedy, was written by Jean Cocteau in French and then translated by Abbé Jean Daniélou into Latin; the narration, however, is performed in the language of the audience.",
+   "attribution": "Wikipedia, “Oedipus rex (opera)”",
+   "source": "wikiintro-Oedipus_Rex_opera_.txt",
+   "anchor": null,
+   "evidence": "The libretto, based on Sophocles's tragedy, was written by Jean Cocteau in French and then translated by Abbé Jean Daniélou into Latin; the narration, however, is performed in the language of the audience."
+  }
+ ]
+}

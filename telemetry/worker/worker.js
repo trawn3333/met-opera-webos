@@ -342,6 +342,35 @@ async function putThumb(request, env, ctx, slug) {
   return json({ ok: true, slug, size: b.length, etag });
 }
 
+// ---- Pop-up facts (1.4.0): small per-title JSON documents, source of truth = facts/titles/*.json in the repo ----
+// D1 table `facts` (created on first PUT); public GET edge-cached via the Cache API (1 day), PUT with the READ_TOKEN bearer.
+const FACT_RE = /^\/v1\/facts\/([a-z0-9-]{1,80})\.json$/;
+const FACTS_DDL = 'CREATE TABLE IF NOT EXISTS facts (slug TEXT PRIMARY KEY, json TEXT NOT NULL, etag TEXT, size INTEGER, updated_at INTEGER)';
+async function getFacts(request, env, ctx, slug) {
+  const cache = caches.default;
+  const key = new Request(new URL(request.url).origin + '/v1/facts/' + slug + '.json', { method: 'GET' });
+  const hit = await cache.match(key);
+  if (hit) return hit;
+  let row = null;
+  try { row = await env.DB.prepare('SELECT json, etag FROM facts WHERE slug = ?').bind(slug).first(); } catch (e) { row = null; }
+  if (!row) return new Response('{"ok":false,"error":"not found"}', { status: 404, headers: { 'Content-Type': 'application/json', 'Cache-Control': 'public, max-age=600', ...CORS } });
+  const res = new Response(row.json, { headers: { 'Content-Type': 'application/json; charset=utf-8', 'Cache-Control': 'public, max-age=86400', ETag: '"' + row.etag + '"', ...CORS } });
+  ctx.waitUntil(cache.put(key, res.clone()));
+  return res;
+}
+async function putFacts(request, env, ctx, slug) {
+  const text = await request.text();
+  if (text.length < 2 || text.length > 200000) return json({ ok: false, error: 'expected JSON up to 200 KB' }, 400);
+  try { JSON.parse(text); } catch (e) { return json({ ok: false, error: 'bad JSON' }, 400); }
+  const d = await crypto.subtle.digest('SHA-1', new TextEncoder().encode(text));
+  const etag = [...new Uint8Array(d)].slice(0, 10).map((x) => x.toString(16).padStart(2, '0')).join('');
+  await env.DB.prepare(FACTS_DDL).run();
+  await env.DB.prepare('INSERT INTO facts (slug, json, etag, size, updated_at) VALUES (?, ?, ?, ?, ?) ON CONFLICT(slug) DO UPDATE SET json = excluded.json, etag = excluded.etag, size = excluded.size, updated_at = excluded.updated_at')
+    .bind(slug, text, etag, text.length, Date.now()).run();
+  ctx.waitUntil(caches.default.delete(new Request(new URL(request.url).origin + '/v1/facts/' + slug + '.json')));
+  return json({ ok: true, slug, size: text.length, etag });
+}
+
 export default {
   async fetch(request, env, ctx) {
     const url = new URL(request.url);
@@ -359,6 +388,12 @@ export default {
       if (tm && request.method === 'PUT') {
         if (!authRead(request, env)) return json({ ok: false, error: 'unauthorized' }, 401, { 'WWW-Authenticate': 'Bearer' });
         return await putThumb(request, env, ctx, tm[1]);
+      }
+      const fm = FACT_RE.exec(url.pathname);
+      if (fm && (request.method === 'GET' || request.method === 'HEAD')) return await getFacts(request, env, ctx, fm[1]);
+      if (fm && request.method === 'PUT') {
+        if (!authRead(request, env)) return json({ ok: false, error: 'unauthorized' }, 401, { 'WWW-Authenticate': 'Bearer' });
+        return await putFacts(request, env, ctx, fm[1]);
       }
       if (url.pathname === '/v1/thumbs' && request.method === 'GET') {
         if (!authRead(request, env)) return json({ ok: false, error: 'unauthorized' }, 401, { 'WWW-Authenticate': 'Bearer' });

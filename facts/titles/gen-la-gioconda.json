@@ -1,0 +1,20 @@
+{
+ "title": "La Gioconda",
+ "match": [
+  "La Gioconda"
+ ],
+ "general": true,
+ "facts": [
+  {
+   "id": "gen-la-gioconda-1",
+   "type": "premiere",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "First performed in 1876, La Gioconda was a major success for Ponchielli, as well as the most successful new Italian opera between Verdi's Aida (1871) and Otello (1887).",
+   "attribution": "Wikipedia, “La Gioconda (opera)”",
+   "source": "wikiintro-La_Gioconda_opera_.txt",
+   "anchor": null,
+   "evidence": "First performed in 1876, La Gioconda was a major success for Ponchielli, as well as the most successful new Italian opera between Verdi's Aida (1871) and Otello (1887)."
+  }
+ ]
+}

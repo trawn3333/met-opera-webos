@@ -1,0 +1,155 @@
+{
+ "title": "Otello",
+ "match": [
+  "Otello"
+ ],
+ "facts": [
+  {
+   "id": "otello-01",
+   "type": "premiere",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "Otello premiered at La Scala, Milan, on 5 February 1887 and was a resounding success.",
+   "attribution": "Wikipedia, “Otello”",
+   "source": "wiki-Otello.txt",
+   "anchor": null,
+   "evidence": "When it finally premiered in Milan on 5 February 1887, it proved to be a resounding success"
+  },
+  {
+   "id": "otello-02",
+   "type": "premiere",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "The first-night audience called Verdi back for 20 curtain calls at the end of the opera.",
+   "attribution": "Wikipedia, “Otello”",
+   "source": "wiki-Otello.txt",
+   "anchor": "Premiere",
+   "evidence": "The audience's enthusiasm for Verdi was shown by the 20 curtain calls that he took at the end of the opera."
+  },
+  {
+   "id": "otello-03",
+   "type": "history",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "After Aida (1871) Verdi retired from opera. It took his publisher Ricordi about ten years to coax him into even looking at Boito’s libretto.",
+   "attribution": "Wikipedia, “Otello”",
+   "source": "wiki-Otello.txt",
+   "anchor": null,
+   "evidence": [
+    "The composer was reluctant to write anything new after the success of Aida in 1871, and he retreated into retirement.",
+    "It took his Milan publisher Giulio Ricordi the next ten years"
+   ]
+  },
+  {
+   "id": "otello-04",
+   "type": "history",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "For three Christmases in a row Ricordi sent Verdi a cake topped with a chocolate figure of the Moor. The secret project was nicknamed “chocolate”.",
+   "attribution": "Wikipedia, “Otello”",
+   "source": "wiki-Otello.txt",
+   "anchor": "From_libretto_to_first_performance:_1879_to_1887",
+   "evidence": [
+    "send a cake to Verdi with the figure of the Moor—in chocolate—on the top",
+    "the name given to the project for many years, \"chocolate\""
+   ]
+  },
+  {
+   "id": "otello-05",
+   "type": "composer",
+   "sceneMatch": "Credo",
+   "scope": "all",
+   "text": "Boito proposed Iago’s “a sort of evil Credo”. Verdi’s verdict: “Most beautiful this Credo; most powerful and wholly Shakespearian.”",
+   "attribution": "Verdi, letter to Boito (via Wikipedia)",
+   "source": "wiki-Otello.txt",
+   "anchor": "From_libretto_to_first_performance:_1879_to_1887",
+   "evidence": [
+    "he immediately proposes \"a sort of evil Credo",
+    "Most beautiful this Credo; most powerful and wholly Shakespearian"
+   ]
+  },
+  {
+   "id": "otello-06",
+   "type": "music",
+   "sceneMatch": "Esultate",
+   "scope": "all",
+   "text": "With “Esultate!” Verdi “hit upon the precise form of one of the most famous entrances in all opera.”",
+   "attribution": "Wikipedia, “Otello”",
+   "source": "wiki-Otello.txt",
+   "anchor": "From_libretto_to_first_performance:_1879_to_1887",
+   "evidence": "hit upon the precise form of one of the most famous entrances in all opera\" – Otello's \"Esultate\""
+  },
+  {
+   "id": "otello-07",
+   "type": "history",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "Preparations for the premiere were held in absolute secrecy, and Verdi kept the right to cancel it up to the last minute.",
+   "attribution": "Wikipedia, “Otello”",
+   "source": "wiki-Otello.txt",
+   "anchor": "Premiere",
+   "evidence": "preparations for the initial performance were conducted in absolute secrecy and Verdi reserved the right to cancel the premiere up to the last minute"
+  },
+  {
+   "id": "otello-08",
+   "type": "history",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "Verdi only settled on the title in a letter to Boito: “I would find it hypocritical not to call it Otello.”",
+   "attribution": "Verdi (via Wikipedia)",
+   "source": "wiki-Otello.txt",
+   "anchor": "From_libretto_to_first_performance:_1879_to_1887",
+   "evidence": "I would find it hypocritical not to call it Otello."
+  },
+  {
+   "id": "otello-09",
+   "type": "history",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "Enrico Caruso was studying Otello when he died in 1921, ending the Met’s plans to stage it for its star tenor.",
+   "attribution": "Wikipedia, “Otello”",
+   "source": "wiki-Otello.txt",
+   "anchor": "Roles,_their_demands,_and_the_singers_who_met_them",
+   "evidence": "Enrico Caruso was studying Otello when he died unexpectedly in 1921, thus thwarting the New York Metropolitan Opera company's plans"
+  },
+  {
+   "id": "otello-10",
+   "type": "artist",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "Plácido Domingo: when he decided to sing Otello, “many people told me that I was crazy” because his voice was nothing like Mario Del Monaco’s.",
+   "attribution": "Plácido Domingo, My First Forty Years (via Wikipedia)",
+   "source": "wiki-Otello.txt",
+   "anchor": "Roles,_their_demands,_and_the_singers_who_met_them",
+   "evidence": [
+    "When I decided to sing Otello, many people told me that I was crazy",
+    "Mario Del Monaco, they said, had had the proper kind of voice for the role"
+   ]
+  },
+  {
+   "id": "otello-11",
+   "type": "artist",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "Even the first Otello, Francesco Tamagno, didn’t fully satisfy Verdi: a letter to his publisher says Tamagno “left a great deal to be desired”.",
+   "attribution": "Wikipedia, “Otello”",
+   "source": "wiki-Otello.txt",
+   "anchor": "Roles,_their_demands,_and_the_singers_who_met_them",
+   "evidence": "the composer makes it quite clear that Tamagno left a great deal to be desired"
+  },
+  {
+   "id": "otello-12",
+   "type": "history",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "For years white singers wore dark makeup as Otello. The Met stopped the practice in 2015.",
+   "attribution": "Wikipedia, “Otello”",
+   "source": "wiki-Otello.txt",
+   "anchor": "Blackface_controversy",
+   "evidence": [
+    "For many years it was common for white singers to wear dark makeup when playing Otello.",
+    "The Metropolitan Opera stopped the practice in 2015."
+   ]
+  }
+ ]
+}

@@ -1,0 +1,20 @@
+{
+ "title": "Tannhäuser",
+ "match": [
+  "Tannhäuser"
+ ],
+ "general": true,
+ "facts": [
+  {
+   "id": "gen-tannhauser-1",
+   "type": "history",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "It is based on two German legends: Tannhäuser, the mythologized medieval German Minnesänger and poet, and the tale of the Wartburg Song Contest.",
+   "attribution": "Wikipedia, “Tannhäuser (opera)”",
+   "source": "wikiintro-Tannh_user_opera_.txt",
+   "anchor": null,
+   "evidence": "It is based on two German legends: Tannhäuser, the mythologized medieval German Minnesänger and poet, and the tale of the Wartburg Song Contest."
+  }
+ ]
+}
