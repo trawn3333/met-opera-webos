@@ -13,7 +13,7 @@
   "Conductor": "James Levine"
  },
  "castSource": "https://archives.metopera.org/MetOperaSearch/record.jsp?dockey=0386164",
- "note": "Candidates for rating: set rating to \"good\" / \"bad\" (+ optional comment). Not wired into the app.",
+ "note": "Rated by Matt (rating good/bad). `attribution` is a small second line under the bubble (UI renders it smaller). Not wired into the app.",
  "candidates": [
   {
    "n": 1,
@@ -21,6 +21,7 @@
    "text": "Today’s matinee is the Met’s 73rd Idomeneo. The very first, in 1982, opened this same Ponnelle production.",
    "scene": "Opening Credits",
    "sceneMatch": "^Opening\\ Credits$",
+   "attribution": null,
    "category": "Met history",
    "tone": "informative",
    "sourceUrl": "https://archives.metopera.org/MetOperaSearch/record.jsp?dockey=0386164",
@@ -43,7 +44,9 @@
      ]
     }
    ],
-   "rating": null
+   "rating": "good",
+   "ratingNote": null,
+   "ratedBy": "Matt"
   },
   {
    "n": 2,
@@ -51,6 +54,7 @@
    "text": "Your host, Eric Owens, isn’t just hosting: he’s also the offstage Voice of Neptune in Act III.",
    "scene": "Introduction by Eric Owens",
    "sceneMatch": "^Introduction\\ by\\ Eric\\ Owens$",
+   "attribution": null,
    "category": "singers",
    "tone": "playful",
    "sourceUrl": "https://archives.metopera.org/MetOperaSearch/record.jsp?dockey=0386164",
@@ -63,7 +67,9 @@
      ]
     }
    ],
-   "rating": null
+   "rating": "good",
+   "ratingNote": null,
+   "ratedBy": "Matt"
   },
   {
    "n": 3,
@@ -71,6 +77,7 @@
    "text": "James Levine led the Met’s first Idomeneo in 1982 and leads today’s, No. 73. His Met total: 2,577 performances.",
    "scene": "Overture",
    "sceneMatch": "^Overture$",
+   "attribution": null,
    "category": "conductor",
    "tone": "informative",
    "sourceUrl": "https://archives.metopera.org/MetOperaSearch/record.jsp?dockey=0377675",
@@ -99,7 +106,9 @@
      ]
     }
    ],
-   "rating": null
+   "rating": "good",
+   "ratingNote": null,
+   "ratedBy": "Matt"
   },
   {
    "n": 4,
@@ -107,6 +116,7 @@
    "text": "The overture’s soft final chords were a setup: they lead straight into G minor, the key of Ilia’s scene.",
    "scene": "Act I: Quando avran fine omai",
    "sceneMatch": "^Act\\ I:\\ Quando\\ avran\\ fine\\ omai$",
+   "attribution": null,
    "category": "the music right now",
    "tone": "informative",
    "sourceUrl": "https://en.wikipedia.org/wiki/Idomeneo#Overture",
@@ -119,7 +129,9 @@
      ]
     }
    ],
-   "rating": null
+   "rating": "good",
+   "ratingNote": null,
+   "ratedBy": "Matt"
   },
   {
    "n": 5,
@@ -127,6 +139,7 @@
    "text": "Nadine Sierra, our Ilia, was 28 at this matinee. 2017 was also her Richard Tucker Award year.",
    "scene": "Act I: Padre, germani, addio!",
    "sceneMatch": "^Act\\ I:\\ Padre,\\ germani,\\ addio!$",
+   "attribution": null,
    "category": "singers",
    "tone": "informative",
    "sourceUrl": "https://en.wikipedia.org/wiki/Nadine_Sierra",
@@ -141,7 +154,9 @@
      ]
     }
    ],
-   "rating": null
+   "rating": "good",
+   "ratingNote": null,
+   "ratedBy": "Matt"
   },
   {
    "n": 6,
@@ -149,6 +164,7 @@
    "text": "Mozart wrote Idamante for a castrato. Alice Coote, known for trouser roles, also sang him in San Francisco in 2008.",
    "scene": "Act I: Non ho colpa",
    "sceneMatch": "^Act\\ I:\\ Non\\ ho\\ colpa$",
+   "attribution": null,
    "category": "singers",
    "tone": "informative",
    "sourceUrl": "https://en.wikipedia.org/wiki/Idomeneo#Performance_history",
@@ -169,7 +185,9 @@
      ]
     }
    ],
-   "rating": null
+   "rating": "good",
+   "ratingNote": null,
+   "ratedBy": "Matt"
   },
   {
    "n": 7,
@@ -177,6 +195,7 @@
    "text": "The Met’s first Idomeneo, in 1982, starred Pavarotti, Cotrubas, von Stade and Behrens. It played 13 times that season.",
    "scene": "Act I: Godiam la pace",
    "sceneMatch": "^Act\\ I:\\ Godiam\\ la\\ pace$",
+   "attribution": null,
    "category": "Met history",
    "tone": "informative",
    "sourceUrl": "https://archives.metopera.org/MetOperaSearch/record.jsp?dockey=0377675",
@@ -193,7 +212,9 @@
      ]
     }
    ],
-   "rating": null
+   "rating": "bad",
+   "ratingNote": "Bare 1982 cast list: name-dropping without a hook or link to the screen.",
+   "ratedBy": "Matt"
   },
   {
    "n": 8,
@@ -201,6 +222,7 @@
    "text": "Elettra, jealous of Ilia: “I can feel you all in my heart, furies of the dark hell.”",
    "scene": "Act I: Tutte nel cor vi sento",
    "sceneMatch": "^Act\\ I:\\ Tutte\\ nel\\ cor\\ vi\\ sento$",
+   "attribution": "Varesco’s libretto (English translation)",
    "category": "the music right now",
    "tone": "playful",
    "sourceUrl": "https://en.wikipedia.org/wiki/Idomeneo#List_of_arias",
@@ -214,7 +236,9 @@
      ]
     }
    ],
-   "rating": null
+   "rating": "good",
+   "ratingNote": null,
+   "ratedBy": "Matt"
   },
   {
    "n": 9,
@@ -222,6 +246,7 @@
    "text": "His deal with Neptune: sacrifice the first living creature he meets on shore. On an inhabited island. Bold.",
    "scene": "Act I: Eccoci salvi alfin",
    "sceneMatch": "^Act\\ I:\\ Eccoci\\ salvi\\ alfin$",
+   "attribution": null,
    "category": "plot",
    "tone": "edgier",
    "sourceUrl": "https://en.wikipedia.org/wiki/Idomeneo#Act_1",
@@ -234,7 +259,9 @@
      ]
     }
    ],
-   "rating": null
+   "rating": "bad",
+   "ratingNote": "Sarcasm at the plot’s logic (\"Bold.\") misses; gentle wry ones (17, 18) land.",
+   "ratedBy": "Matt"
   },
   {
    "n": 10,
@@ -242,6 +269,7 @@
    "text": "Matthew Polenzani made his Met debut in 1997, in Boris Godunov, and has since sung over 300 performances here.",
    "scene": "Act I: Vedrommi intorno",
    "sceneMatch": "^Act\\ I:\\ Vedrommi\\ intorno$",
+   "attribution": null,
    "category": "singers",
    "tone": "informative",
    "sourceUrl": "https://en.wikipedia.org/wiki/Matthew_Polenzani",
@@ -255,7 +283,9 @@
      ]
     }
    ],
-   "rating": null
+   "rating": "good",
+   "ratingNote": null,
+   "ratedBy": "Matt"
   },
   {
    "n": 11,
@@ -263,6 +293,7 @@
    "text": "Ponnelle filmed La Cenerentola with Frederica von Stade in 1981. A year later she was his first Met Idamante.",
    "scene": "Act I: Il padre adorato",
    "sceneMatch": "^Act\\ I:\\ Il\\ padre\\ adorato$",
+   "attribution": null,
    "category": "production",
    "tone": "informative",
    "sourceUrl": "https://en.wikipedia.org/wiki/Jean-Pierre_Ponnelle",
@@ -283,7 +314,9 @@
      ]
     }
    ],
-   "rating": null
+   "rating": "good",
+   "ratingNote": null,
+   "ratedBy": "Matt"
   },
   {
    "n": 12,
@@ -291,6 +324,7 @@
    "text": "Mozart was 24 when he wrote Idomeneo, his third opera seria, for the Munich court carnival.",
    "scene": "Act I: Intermezzo: Marcia",
    "sceneMatch": "^Act\\ I:\\ Intermezzo:\\ Marcia$",
+   "attribution": null,
    "category": "Mozart",
    "tone": "informative",
    "sourceUrl": "https://archives.metopera.org/MetOperaSearch/record.jsp?dockey=0377675",
@@ -310,7 +344,9 @@
      ]
     }
    ],
-   "rating": null
+   "rating": "good",
+   "ratingNote": null,
+   "ratedBy": "Matt"
   },
   {
    "n": 13,
@@ -318,6 +354,7 @@
    "text": "Ponnelle’s frame: classical Roman columns, a broad flight of steps, and shifting backdrops of Piranesi-style ruins.",
    "scene": "Act II: Siam soli.  Odimi, Arbace",
    "sceneMatch": "^Act\\ II:\\ Siam\\ soli\\.\\ \\ Odimi,\\ Arbace$",
+   "attribution": null,
    "category": "production",
    "tone": "informative",
    "sourceUrl": "https://archives.metopera.org/MetOperaSearch/record.jsp?dockey=0377675",
@@ -330,7 +367,9 @@
      ]
     }
    ],
-   "rating": null
+   "rating": "good",
+   "ratingNote": null,
+   "ratedBy": "Matt"
   },
   {
    "n": 14,
@@ -338,6 +377,7 @@
    "text": "Arbace today: British baritone Alan Opie, who shared Grammys for recordings of Peter Grimes and Die Meistersinger.",
    "scene": "Act II: Se il tuo duol",
    "sceneMatch": "^Act\\ II:\\ Se\\ il\\ tuo\\ duol$",
+   "attribution": null,
    "category": "singers",
    "tone": "informative",
    "sourceUrl": "https://en.wikipedia.org/wiki/Alan_Opie",
@@ -351,7 +391,9 @@
      ]
     }
    ],
-   "rating": null
+   "rating": "good",
+   "ratingNote": null,
+   "ratedBy": "Matt"
   },
   {
    "n": 15,
@@ -359,6 +401,7 @@
    "text": "Mozart wrote this role for Anton Raaff, a 66-year-old star who had sung with Farinelli. It was his last.",
    "scene": "Act II: Fuor del mar",
    "sceneMatch": "^Act\\ II:\\ Fuor\\ del\\ mar$",
+   "attribution": null,
    "category": "Mozart",
    "tone": "playful",
    "sourceUrl": "https://en.wikipedia.org/wiki/Anton_Raaff",
@@ -380,7 +423,9 @@
      ]
     }
    ],
-   "rating": null
+   "rating": "good",
+   "ratingNote": null,
+   "ratedBy": "Matt"
   },
   {
    "n": 16,
@@ -388,6 +433,7 @@
    "text": "For her 2012 Met debut as Queen Elizabeth I, Elza van den Heever shaved her head for the HD close-ups.",
    "scene": "Act II: Idol mio, se ritroso",
    "sceneMatch": "^Act\\ II:\\ Idol\\ mio,\\ se\\ ritroso$",
+   "attribution": null,
    "category": "singers",
    "tone": "playful",
    "sourceUrl": "https://en.wikipedia.org/wiki/Elza_van_den_Heever",
@@ -402,7 +448,9 @@
      ]
     }
    ],
-   "rating": null
+   "rating": "good",
+   "ratingNote": null,
+   "ratedBy": "Matt"
   },
   {
    "n": 17,
@@ -410,6 +458,7 @@
    "text": "Munich’s 1781 review raved about the port and Neptune’s temple scenery, and never mentioned Mozart by name.",
    "scene": "Act II: Odo da lunge armonioso suono ... Sidonie sponde!",
    "sceneMatch": "^Act\\ II:\\ Odo\\ da\\ lunge\\ armonioso\\ suono\\ \\.\\.\\.\\ Sidonie\\ sponde!$",
+   "attribution": "Munich press notice of the premiere, 1781",
    "category": "Mozart",
    "tone": "edgier",
    "sourceUrl": "https://en.wikipedia.org/wiki/Idomeneo#Performance_history",
@@ -423,7 +472,9 @@
      ]
     }
    ],
-   "rating": null
+   "rating": "good",
+   "ratingNote": null,
+   "ratedBy": "Matt"
   },
   {
    "n": 18,
@@ -431,6 +482,7 @@
    "text": "Bon voyage from Sidon, the Cretan port they’re sailing from. Small detail: it’s a fictional city.",
    "scene": "Act II: Placido è il mar — Vattene, Idamante",
    "sceneMatch": "^Act\\ II:\\ Placido\\ è\\ il\\ mar\\ —\\ Vattene,\\ Idamante$",
+   "attribution": null,
    "category": "plot",
    "tone": "edgier",
    "sourceUrl": "https://en.wikipedia.org/wiki/Idomeneo#Act_2",
@@ -443,7 +495,9 @@
      ]
     }
    ],
-   "rating": null
+   "rating": "good",
+   "ratingNote": null,
+   "ratedBy": "Matt"
   },
   {
    "n": 19,
@@ -451,6 +505,7 @@
    "text": "Hear the piccolo? Mozart saves it for this storm. A 1982 critic called these perhaps opera’s first realistic tempests.",
    "scene": "Act II: Qual nuovo terrore!",
    "sceneMatch": "^Act\\ II:\\ Qual\\ nuovo\\ terrore!$",
+   "attribution": "Critic: F. Warren O’Reilly, Washington Times, on the 1982 Met premiere",
    "category": "the music right now",
    "tone": "informative",
    "sourceUrl": "https://en.wikipedia.org/wiki/Idomeneo#Instrumentation",
@@ -470,7 +525,9 @@
      ]
     }
    ],
-   "rating": null
+   "rating": "good",
+   "ratingNote": null,
+   "ratedBy": "Matt"
   },
   {
    "n": 20,
@@ -478,6 +535,7 @@
    "text": "Before he sang, Eric Owens played oboe, taking lessons from Laura Ahlbeck, an oboist in the Met Orchestra.",
    "scene": "Introduction to Act III by Eric Owens",
    "sceneMatch": "^Introduction\\ to\\ Act\\ III\\ by\\ Eric\\ Owens$",
+   "attribution": null,
    "category": "singers",
    "tone": "playful",
    "sourceUrl": "https://en.wikipedia.org/wiki/Eric_Owens_(bass-baritone)",
@@ -490,7 +548,9 @@
      ]
     }
    ],
-   "rating": null
+   "rating": "good",
+   "ratingNote": null,
+   "ratedBy": "Matt"
   },
   {
    "n": 21,
@@ -498,6 +558,7 @@
    "text": "“Zeffiretti lusinghieri” means “Zephyrs caressing”: alone in the garden, Ilia asks the breezes to carry her love to Idamante.",
    "scene": "Act III: Zeffiretti lusinghieri...Ei stesso vien",
    "sceneMatch": "^Act\\ III:\\ Zeffiretti\\ lusinghieri\\.\\.\\.Ei\\ stesso\\ vien$",
+   "attribution": "Varesco’s libretto (English translation)",
    "category": "the music right now",
    "tone": "informative",
    "sourceUrl": "https://en.wikipedia.org/wiki/Idomeneo#Act_3",
@@ -511,7 +572,9 @@
      ]
     }
    ],
-   "rating": null
+   "rating": "good",
+   "ratingNote": null,
+   "ratedBy": "Matt"
   },
   {
    "n": 22,
@@ -519,6 +582,7 @@
    "text": "Those three trombones play only here, for the Voice of Neptune. When a god speaks, Mozart brings brass.",
    "scene": "Act III: Ha vinto Amore",
    "sceneMatch": "^Act\\ III:\\ Ha\\ vinto\\ Amore$",
+   "attribution": null,
    "category": "the music right now",
    "tone": "informative",
    "sourceUrl": "https://en.wikipedia.org/wiki/Idomeneo#Instrumentation",
@@ -531,14 +595,17 @@
      ]
     }
    ],
-   "rating": null
+   "rating": "good",
+   "ratingNote": null,
+   "ratedBy": "Matt"
   },
   {
    "n": 23,
    "kicker": "Diva moment",
-   "text": "At the 1982 Met premiere, a critic wrote that Hildegard Behrens “literally stopped the show” with this aria.",
+   "text": "At this staging’s 1982 Met premiere, Hildegard Behrens “literally stopped the show” with this aria, ending in collapse.",
    "scene": "Act III: D'Oreste, d'Ajace",
    "sceneMatch": "^Act\\ III:\\ D'Oreste,\\ d'Ajace$",
+   "attribution": "F. Warren O’Reilly, Washington Times, reviewing the Met premiere of this Ponnelle staging, Oct 14, 1982",
    "category": "Met history",
    "tone": "informative",
    "sourceUrl": "https://archives.metopera.org/MetOperaSearch/record.jsp?dockey=0377675",
@@ -547,12 +614,16 @@
      "url": "https://archives.metopera.org/MetOperaSearch/record.jsp?dockey=0377675",
      "file": "met-archive-0377675.txt",
      "evidence": [
+      "Review of F. Warren O'Reilly in the Washington Times",
+      "Thu, October 14, 1982",
       "Hildegard Behrens as Elettra",
-      "literally stopped the show with her brilliant last act aria"
+      "literally stopped the show with her brilliant last act aria that ended with her collapse"
      ]
     }
    ],
-   "rating": null
+   "rating": "good",
+   "ratingNote": "Rated good, but a quote needs who/where/when: rewritten with an attribution line (was: “At the 1982 Met premiere, a critic wrote that Hildegard Behrens “literally stopped the show” with this aria.”).",
+   "ratedBy": "Matt"
   },
   {
    "n": 24,
@@ -560,6 +631,7 @@
    "text": "Idomeneo ends in the overture’s key, a first for Mozart. He did the same in every opera after.",
    "scene": "Act III: Scenda Amor, scenda Imeneo",
    "sceneMatch": "^Act\\ III:\\ Scenda\\ Amor,\\ scenda\\ Imeneo$",
+   "attribution": null,
    "category": "Mozart",
    "tone": "informative",
    "sourceUrl": "https://en.wikipedia.org/wiki/Idomeneo#Performance_history",
@@ -572,7 +644,9 @@
      ]
     }
    ],
-   "rating": null
+   "rating": "good",
+   "ratingNote": null,
+   "ratedBy": "Matt"
   }
  ]
 }

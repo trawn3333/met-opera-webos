@@ -24,3 +24,11 @@
 5. **Tie it to the scene** (`sceneMatch`) whenever the fact is about what's on stage.
 6. **Kickers** (the small label) set the tone: Did you know? · Fun fact · Ouch. · Plot hole alert · Plot twist · Critics: not fans · Critics: big fans · Burn. · Diva moment · Villain moment · Listen for it · Blooper · Legend has it · Remix · Borrowed! · Box office · Translation · Set piece · Director's cut · Behind the music · Meanwhile, in YEAR…. Suggested icons are in `mk_snark.py` (`ICONS`), each with a Material Symbols name and an emoji fallback.
 7. **Mark legends as legends.** Apocryphal stories (like the bouncing Tosca) carry `legend: true`, the kicker "Legend has it", and wording like "reportedly" or "legend".
+
+## What Matt's ratings taught us (Idomeneo, Met HD 2017-03-25; 22 good / 2 bad)
+
+* **It's for opera fans.** Never suggest the opera or the show is boring, long or tedious, and never mock the art form. Aim for wry, affectionate and in the know: delight in the work.
+* **Gentle wryness lands; sarcasm about the plot's logic doesn't.** #9 ("…On an inhabited island. Bold.") missed. #17 (the Munich review praised the scenery and never named Mozart) and #18 (Sidon is a fictional city) landed. Smile *with* the opera, not *at* it.
+* **Name-dropping needs a hook.** #7, a bare 1982 cast list, missed. A name has to come with a story, or a link to what's on screen right now (e.g. #11: Ponnelle filmed Cenerentola with von Stade, then made her his first Met Idamante).
+* **Be specific to this production and performance.** Draw on the Ponnelle staging, the Met's own history with the opera (the archive's performance count), tonight's singers and conductor, and the music under way at this moment.
+* **Quotes need who, where and when.** A quote without its details doesn't land (feedback on #23). Every bubble that quotes a critic, a letter or a review names the speaker, the publication and the date, either in the text or in the **`attribution`** line. That is a small second line under the bubble, rendered smaller by the UI. Translations of the libretto get "Varesco's libretto (English translation)".

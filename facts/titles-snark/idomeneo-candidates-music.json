@@ -1,0 +1,375 @@
+{
+ "title": "Idomeneo",
+ "topic": "the music",
+ "performance": "Met Live in HD, Sat March 25, 2017 matinee (Ponnelle production; cond. James Levine)",
+ "note": "Music candidates for rating. Mozart letters: Lady Wallace translation (Project Gutenberg #5307; it misdates the January 1781 letters as 1780) and the Mozarteum DME English translation. `attribution` = small second line.",
+ "candidates": [
+  {
+   "n": "M1",
+   "kicker": "The band",
+   "text": "Premiere conductor Christian Cannabich directed the famed Mannheim orchestra, whose crescendos reportedly made ladies faint.",
+   "attribution": "Mozart, 8 Nov 1780: “Do come soon to hear it, and to admire the orchestra.”",
+   "scene": "Overture",
+   "sceneMatch": "^Overture$",
+   "category": "orchestration",
+   "tone": "informative",
+   "sourceUrl": "https://en.wikipedia.org/wiki/Idomeneo#Performance_history",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Idomeneo#Performance_history",
+     "file": "wiki-Idomeneo.txt",
+     "evidence": [
+      "under the musical direction of Christian Cannabich"
+     ]
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Christian_Cannabich",
+     "file": "wiki-Christian_Cannabich.txt",
+     "evidence": [
+      "In 1774 Cannabich became director of the Mannheim court orchestra",
+      "Ladies reportedly fainted when the Mannheimers unleashed their roaring crescendo"
+     ]
+    },
+    {
+     "url": "https://www.gutenberg.org/files/5307/5307-h/5307-h.htm",
+     "file": "gutenberg-mozart-letters-5307.txt",
+     "evidence": [
+      "Do come soon to hear it, and to admire the orchestra.",
+      "Munich, Nov. 8, 1780."
+     ]
+    }
+   ],
+   "rating": null
+  },
+  {
+   "n": "M2",
+   "kicker": "Listen for it",
+   "text": "Recitative comes two ways here: “secco”, with just harpsichord and cello, and orchestral “accompagnato”, which Mozart handles masterfully.",
+   "attribution": null,
+   "scene": "Act I: Quando avran fine omai",
+   "sceneMatch": "^Act\\ I:\\ Quando\\ avran\\ fine\\ omai$",
+   "category": "form",
+   "tone": "informative",
+   "sourceUrl": "https://en.wikipedia.org/wiki/Idomeneo",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Idomeneo",
+     "file": "wiki-Idomeneo.txt",
+     "evidence": [
+      "the secco and stromentato recitatives",
+      "Basso continuo (harpsichord and violoncello)",
+      "he demonstrated a mastery of orchestral color, accompanied recitatives, and melodic line"
+     ]
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Recitative",
+     "file": "wiki-Recitative.txt",
+     "evidence": [
+      "recitativo secco (\"dry\", accompanied only by continuo, typically cello and harpsichord)",
+      "recitativo accompagnato (which uses an orchestra to accompany the singer)"
+     ]
+    }
+   ],
+   "rating": null
+  },
+  {
+   "n": "M3",
+   "kicker": "Echoes of Gluck",
+   "text": "Shipwreck! Mozart builds this scene almost exactly like the storm scene in Gluck’s Iphigénie en Tauride.",
+   "attribution": null,
+   "scene": "Act I: Pietà! Numi, pietà!",
+   "sceneMatch": "^Act\\ I:\\ Pietà!\\ Numi,\\ pietà!$",
+   "category": "Gluck & the French tradition",
+   "tone": "informative",
+   "sourceUrl": "https://en.wikipedia.org/wiki/Idomeneo#Composition",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Idomeneo#Composition",
+     "file": "wiki-Idomeneo.txt",
+     "evidence": [
+      "the shipwreck scene towards the end of act 1 is almost identical to the structure and dramatic working-out of a similar scene in Gluck's Iphigénie en Tauride"
+     ]
+    }
+   ],
+   "rating": null
+  },
+  {
+   "n": "M4",
+   "kicker": "French accent",
+   "text": "Marches, choruses, dances: their style is “very French”. Mozart even wrote the opera’s ballet himself, “all by the same master.”",
+   "attribution": "“Very French”: Wikipedia, Idomeneo · “All by the same master”: Mozart to his father Leopold, Munich, 30 Dec 1780",
+   "scene": "Act I: Intermezzo: Marcia",
+   "sceneMatch": "^Act\\ I:\\ Intermezzo:\\ Marcia$",
+   "category": "Gluck & the French tradition",
+   "tone": "playful",
+   "sourceUrl": "https://en.wikipedia.org/wiki/Idomeneo#Composition",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Idomeneo#Composition",
+     "file": "wiki-Idomeneo.txt",
+     "evidence": [
+      "The style of the choruses, marches, and ballets is very French"
+     ]
+    },
+    {
+     "url": "https://www.gutenberg.org/files/5307/5307-h/5307-h.htm",
+     "file": "gutenberg-mozart-letters-5307.txt",
+     "evidence": [
+      "Munich, Dec. 30. 1780.",
+      "I have the honor to write that music also, but I am glad of it, for now the music will be all by the same master"
+     ]
+    }
+   ],
+   "rating": null
+  },
+  {
+   "n": "M5",
+   "kicker": "Listen for it",
+   "text": "Four solo winds join Ilia: flute, oboe, horn, bassoon. Her first singer, Dorothea Wendling, was a flautist’s wife.",
+   "attribution": "Mozart to his father Leopold, Munich, 8 Nov 1780, planning this aria “in concert with four wind instruments”",
+   "scene": "Act II: Se il padre perdei",
+   "sceneMatch": "^Act\\ II:\\ Se\\ il\\ padre\\ perdei$",
+   "category": "orchestration",
+   "tone": "informative",
+   "sourceUrl": "https://www.gutenberg.org/files/5307/5307-h/5307-h.htm",
+   "sources": [
+    {
+     "url": "https://www.gutenberg.org/files/5307/5307-h/5307-h.htm",
+     "file": "gutenberg-mozart-letters-5307.txt",
+     "evidence": [
+      "Munich, Nov. 8, 1780.",
+      "\"Se il padre perdei, in te lo ritrovo\"",
+      "an aria andantino here in concert with four wind instruments, viz. flute, hautboy, horn, and bassoon"
+     ]
+    },
+    {
+     "url": "https://dme.mozarteum.at/DME/objs/raradocs/transcr/pdf_eng/0538_WAM_LM_1780.pdf",
+     "file": "dme-0538.txt",
+     "evidence": [
+      "“Ilia” was sung by Dorothea (I) Wendling, née Spurni, wife of the traverse flautist Johann Baptist"
+     ]
+    }
+   ],
+   "rating": null
+  },
+  {
+   "n": "M6",
+   "kicker": "Behind the music",
+   "text": "Raaff, the first Idomeneo, loved this aria “as a young passionate lover”: he sang it at bedtime and on waking.",
+   "attribution": "Mozart to his father Leopold, Munich, 1 Dec 1780",
+   "scene": "Act II: Fuor del mar",
+   "sceneMatch": "^Act\\ II:\\ Fuor\\ del\\ mar$",
+   "category": "letters",
+   "tone": "playful",
+   "sourceUrl": "https://www.gutenberg.org/files/5307/5307-h/5307-h.htm",
+   "sources": [
+    {
+     "url": "https://www.gutenberg.org/files/5307/5307-h/5307-h.htm",
+     "file": "gutenberg-mozart-letters-5307.txt",
+     "evidence": [
+      "Munich, Dec. 1, 1780.",
+      "Yesterday morning Herr Raaff came to me again to hear the aria in the second act. The man is as much enamored of his aria as a young passionate lover ever was of his fair one. He sings it the last thing before he goes to sleep, and the first thing in the morning when he awakes."
+     ]
+    }
+   ],
+   "rating": null
+  },
+  {
+   "n": "M7",
+   "kicker": "Diva moment",
+   "text": "Elettra’s first singer, Elisabeth Wendling, sang her two arias through half a dozen times and was “very satisfied.”",
+   "attribution": "Mozart to his father Leopold, Munich, 15 Nov 1780 (Mozarteum translation)",
+   "scene": "Act II: Idol mio, se ritroso",
+   "sceneMatch": "^Act\\ II:\\ Idol\\ mio,\\ se\\ ritroso$",
+   "category": "Elettra's arias",
+   "tone": "playful",
+   "sourceUrl": "https://dme.mozarteum.at/DME/objs/raradocs/transcr/pdf_eng/0538_WAM_LM_1780.pdf",
+   "sources": [
+    {
+     "url": "https://dme.mozarteum.at/DME/objs/raradocs/transcr/pdf_eng/0538_WAM_LM_1780.pdf",
+     "file": "dme-0538.txt",
+     "evidence": [
+      "Lisel Wendling11 has also already sung her two arias12 through half a dozen times [30] – she is very satisfied.",
+      "Elisabeth Augusta Wendling (I) [“Lisl”]",
+      "Elettra’s arias Nos. 4 and 13: “Tutte nel cor vi sento” and “Idol mio, se ritroso”."
+     ]
+    }
+   ],
+   "rating": null
+  },
+  {
+   "n": "M8",
+   "kicker": "Listen for it",
+   "text": "Hear the piccolo? It plays only here, in the Act II storm, as Neptune’s sea serpent appears.",
+   "attribution": null,
+   "scene": "Act II: Qual nuovo terrore!",
+   "sceneMatch": "^Act\\ II:\\ Qual\\ nuovo\\ terrore!$",
+   "category": "orchestration",
+   "tone": "informative",
+   "sourceUrl": "https://en.wikipedia.org/wiki/Idomeneo#Instrumentation",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Idomeneo#Instrumentation",
+     "file": "wiki-Idomeneo.txt",
+     "evidence": [
+      "piccolo (only in the storm of act 2)"
+     ]
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Idomeneo#Act_2",
+     "file": "wiki-Idomeneo.txt",
+     "evidence": [
+      "a storm breaks out, and a sea serpent appears"
+     ]
+    }
+   ],
+   "rating": null
+  },
+  {
+   "n": "M9",
+   "kicker": "Mozart’s call",
+   "text": "Once planned as an aria. Mozart chose orchestral recitative: the storm was “not likely to subside during Raaff’s aria!”",
+   "attribution": "Mozart to his father Leopold, Munich, 15 Nov 1780",
+   "scene": "Act II: Eccoti in me, barbaro Nume, il reo!",
+   "sceneMatch": "^Act\\ II:\\ Eccoti\\ in\\ me,\\ barbaro\\ Nume,\\ il\\ reo!$",
+   "category": "form",
+   "tone": "playful",
+   "sourceUrl": "https://www.gutenberg.org/files/5307/5307-h/5307-h.htm",
+   "sources": [
+    {
+     "url": "https://www.gutenberg.org/files/5307/5307-h/5307-h.htm",
+     "file": "gutenberg-mozart-letters-5307.txt",
+     "evidence": [
+      "Munich, Nov. 15, 1780.",
+      "In the last scene also of the second act, Idomeneo has an aria, or rather a kind of cavatina, to sing between the choruses. For this it would be better to substitute a mere recitative, well supported by the instruments",
+      "there is a thunderstorm which is not likely to subside during Raaff's aria!"
+     ]
+    },
+    {
+     "url": "https://dme.mozarteum.at/DME/objs/raradocs/transcr/pdf_eng/0538_WAM_LM_1780.pdf",
+     "file": "dme-0538.txt",
+     "evidence": [
+      "The aria was indeed replaced by a recitative"
+     ]
+    }
+   ],
+   "rating": null
+  },
+  {
+   "n": "M10",
+   "kicker": "Mozart’s favorite",
+   "text": "Mozart on this quartet: “there is no single thing in my opera with which I am so pleased.”",
+   "attribution": "Mozart to his father Leopold, Munich, 27 Dec 1780",
+   "scene": "Act III: Andrò ramingo e solo",
+   "sceneMatch": "^Act\\ III:\\ Andrò\\ ramingo\\ e\\ solo$",
+   "category": "form",
+   "tone": "informative",
+   "sourceUrl": "https://www.gutenberg.org/files/5307/5307-h/5307-h.htm",
+   "sources": [
+    {
+     "url": "https://www.gutenberg.org/files/5307/5307-h/5307-h.htm",
+     "file": "gutenberg-mozart-letters-5307.txt",
+     "evidence": [
+      "Munich, Dec 27, 1780.",
+      "there is no single thing in my opera with which I am so pleased as with this quartet"
+     ]
+    }
+   ],
+   "rating": null
+  },
+  {
+   "n": "M11",
+   "kicker": "Behind the music",
+   "text": "Mozart added this march so the king can enter with his whole suite. Scored simply, to be played mezza voce.",
+   "attribution": "Mozart to his father Leopold, Munich, 3 Jan 1781",
+   "scene": "Act III: Marcia",
+   "sceneMatch": "^Act\\ III:\\ Marcia$",
+   "category": "marches",
+   "tone": "informative",
+   "sourceUrl": "https://www.gutenberg.org/files/5307/5307-h/5307-h.htm",
+   "sources": [
+    {
+     "url": "https://www.gutenberg.org/files/5307/5307-h/5307-h.htm",
+     "file": "gutenberg-mozart-letters-5307.txt",
+     "evidence": [
+      "he must come accompanied by his whole suite. A march must necessarily be introduced here, so I have composed a very simple one for two violins, tenor, bass, and two hautboys, to be played a mezza voce, and during this time the King appears"
+     ]
+    }
+   ],
+   "rating": null
+  },
+  {
+   "n": "M12",
+   "kicker": "Listen for it",
+   "text": "Mozart’s plan for Neptune: just three trombones and two horns, placed with the voice, while the orchestra falls silent.",
+   "attribution": "Mozart to his father Leopold, Munich, 3 Jan 1781",
+   "scene": "Act III: Ha vinto Amore",
+   "sceneMatch": "^Act\\ III:\\ Ha\\ vinto\\ Amore$",
+   "category": "orchestration",
+   "tone": "informative",
+   "sourceUrl": "https://www.gutenberg.org/files/5307/5307-h/5307-h.htm",
+   "sources": [
+    {
+     "url": "https://www.gutenberg.org/files/5307/5307-h/5307-h.htm",
+     "file": "gutenberg-mozart-letters-5307.txt",
+     "evidence": [
+      "The accompaniment of the underground music consists merely of five instruments, namely, three trombones and two French horns, which are placed on the spot whence the voice proceeds. The whole orchestra is silent at this part."
+     ]
+    }
+   ],
+   "rating": null
+  },
+  {
+   "n": "M13",
+   "kicker": "Mozart’s edit",
+   "text": "Neptune’s verdict, tightened: Mozart shortened the oracle during rehearsals so it would “make a good effect.”",
+   "attribution": "Mozart to his father Leopold, Munich, 5 Dec 1780 and 18 Jan 1781",
+   "scene": "Act III: Oh ciel pietoso!",
+   "sceneMatch": "^Act\\ III:\\ Oh\\ ciel\\ pietoso!$",
+   "category": "letters",
+   "tone": "informative",
+   "sourceUrl": "https://www.gutenberg.org/files/5307/5307-h/5307-h.htm",
+   "sources": [
+    {
+     "url": "https://www.gutenberg.org/files/5307/5307-h/5307-h.htm",
+     "file": "gutenberg-mozart-letters-5307.txt",
+     "evidence": [
+      "Munich, Dec. 5, 1780.",
+      "the oracle's subterranean speech too long to make a good effect",
+      "The rehearsal of the third act went off admirably.",
+      "The prediction of the oracle is still far too long, so I have shortened it"
+     ]
+    }
+   ],
+   "rating": null
+  },
+  {
+   "n": "M14",
+   "kicker": "Full circle",
+   "text": "Home to D major, the overture’s key. Mozart first closed an opera this way here, then in every one after.",
+   "attribution": null,
+   "scene": "Act III: Scenda Amor, scenda Imeneo",
+   "sceneMatch": "^Act\\ III:\\ Scenda\\ Amor,\\ scenda\\ Imeneo$",
+   "category": "keys & harmony",
+   "tone": "informative",
+   "sourceUrl": "https://en.wikipedia.org/wiki/Idomeneo#Overture",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Idomeneo#Overture",
+     "file": "wiki-Idomeneo.txt",
+     "evidence": [
+      "The overture, in D major and common time"
+     ]
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Idomeneo#Performance_history",
+     "file": "wiki-Idomeneo.txt",
+     "evidence": [
+      "for the first time and continuing this for all his subsequent operas, ended the work in the key of the overture"
+     ]
+    }
+   ],
+   "rating": null
+  }
+ ]
+}

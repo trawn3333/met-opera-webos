@@ -2,7 +2,7 @@
 // every scene is a real Met scene-marker title of the 2017-03-25 HD (idomeneo-2017-scenes.json), texts are <= 20 words.
 const fs = require('fs'), path = require('path');
 const norm = (s) => String(s).normalize('NFC').replace(/[\u2018\u2019\u02bc]/g, "'").replace(/[\u201c\u201d]/g, '"').replace(/[\u2013\u2014]/g, '-').replace(/\s+/g, ' ').trim().toLowerCase();
-const doc = JSON.parse(fs.readFileSync(path.join(__dirname, 'idomeneo-candidates.json'), 'utf8'));
+const doc = JSON.parse(fs.readFileSync(path.join(__dirname, process.argv[2] || 'idomeneo-candidates.json'), 'utf8'));
 const scenes = JSON.parse(fs.readFileSync(path.join(__dirname, 'idomeneo-2017-scenes.json'), 'utf8')).scenes.map((s) => s.title);
 let bad = 0;
 for (const c of doc.candidates) {

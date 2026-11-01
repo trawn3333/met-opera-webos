@@ -81,22 +81,35 @@ C = [
   'Those three trombones play only here, for the Voice of Neptune. When a god speaks, Mozart brings brass.',
   [src(W_IDO, '3 trombones (only accompanying the off-stage voice of Neptune in act 3)', anchor='Instrumentation')]),
  ("Act III: D'Oreste, d'Ajace", 'Met history', 'informative', 'Diva moment',
-  'At the 1982 Met premiere, a critic wrote that Hildegard Behrens \u201cliterally stopped the show\u201d with this aria.',
-  [src(A1982, 'Hildegard Behrens as Elettra', 'literally stopped the show with her brilliant last act aria')]),
- ('Act III: Scenda Amor, scenda Imeneo', 'Mozart', 'informative', 'Full circle',
+  'At this staging\u2019s 1982 Met premiere, Hildegard Behrens \u201cliterally stopped the show\u201d with this aria, ending in collapse.',
+  [src(A1982, 'Review of F. Warren O\'Reilly in the Washington Times', 'Thu, October 14, 1982', 'Hildegard Behrens as Elettra', 'literally stopped the show with her brilliant last act aria that ended with her collapse')]),
+  ('Act III: Scenda Amor, scenda Imeneo', 'Mozart', 'informative', 'Full circle',
   'Idomeneo ends in the overture\u2019s key, a first for Mozart. He did the same in every opera after.',
   [src(W_IDO, 'for the first time and continuing this for all his subsequent operas, ended the work in the key of the overture', anchor='Performance_history')]),
 ]
+ATTR = {
+  8: 'Varesco\u2019s libretto (English translation)',
+  17: 'Munich press notice of the premiere, 1781',
+  19: 'Critic: F. Warren O\u2019Reilly, Washington Times, on the 1982 Met premiere',
+  21: 'Varesco\u2019s libretto (English translation)',
+  23: 'F. Warren O\u2019Reilly, Washington Times, reviewing the Met premiere of this Ponnelle staging, Oct 14, 1982',
+}
+RATING = {n: 'good' for n in range(1, 25)}
+RATING[7] = 'bad'; RATING[9] = 'bad'
+COMMENT = {7: 'Bare 1982 cast list: name-dropping without a hook or link to the screen.',
+           9: 'Sarcasm at the plot\u2019s logic ("Bold.") misses; gentle wry ones (17, 18) land.',
+           23: 'Rated good, but a quote needs who/where/when: rewritten with an attribution line (was: \u201cAt the 1982 Met premiere, a critic wrote that Hildegard Behrens \u201cliterally stopped the show\u201d with this aria.\u201d).'}
 out = []
 for i, (scene, cat, tone, kicker, text, sources) in enumerate(C, 1):
   out.append({'n': i, 'kicker': kicker, 'text': text, 'scene': scene,
               'sceneMatch': None if scene == 'general' else '^' + re.escape(scene) + '$',
-              'category': cat, 'tone': tone, 'sourceUrl': sources[0]['url'], 'sources': sources, 'rating': None})
+              'attribution': ATTR.get(i), 'category': cat, 'tone': tone, 'sourceUrl': sources[0]['url'], 'sources': sources,
+              'rating': RATING[i], 'ratingNote': COMMENT.get(i), 'ratedBy': 'Matt'})
 doc = {'title': 'Idomeneo', 'performance': 'Met Live in HD, Sat March 25, 2017 matinee (Idomeneo performance No. 73)',
        'production': 'Jean-Pierre Ponnelle (Met premiere 14 Oct 1982); Lighting Designer Gil Wechsler',
        'cast': {'Idomeneo': 'Matthew Polenzani', 'Ilia': 'Nadine Sierra', 'Idamante': 'Alice Coote', 'Elettra': 'Elza van den Heever',
                 'Arbace': 'Alan Opie', 'High Priest': 'Noah Baetge', 'Voice of Neptune': 'Eric Owens', 'Conductor': 'James Levine'},
-       'castSource': A2017[0], 'note': 'Candidates for rating: set rating to "good" / "bad" (+ optional comment). Not wired into the app.',
+       'castSource': A2017[0], 'note': 'Rated by Matt (rating good/bad). `attribution` is a small second line under the bubble (UI renders it smaller). Not wired into the app.',
        'candidates': out}
 json.dump(doc, open(os.path.join(HERE, 'idomeneo-candidates.json'), 'w'), ensure_ascii=False, indent=1)
 print(len(out), 'candidates')
