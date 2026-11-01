@@ -502,3 +502,14 @@ function doRefresh() {
 }
 
 export function debugState() { return view ? { kind: view.kind, r: view.r, c: view.c, rows: view.rows.length, stack: stack.length, title: view.head && view.head.title } : null; }
+// Test/inspector helper: [row index, first column] of cards whose image is a generated thumbnail (code 'T...'), per row.
+export function genThumbRows(suffix) {
+  var out = [];
+  if (!view) return out;
+  for (var i = 0; i < view.rows.length; i++) {
+    var its = view.rows[i].items || [], cols = [];
+    for (var c = 0; c < Math.min(its.length, ROW_CAP); c++) { var im = its[c] && (its[c].img || (its[c].t && its[c].t.img)); if (typeof im === 'string' && im.charAt(0) === 'T' && (!suffix || im.slice(-suffix.length) === suffix)) cols.push(c); }
+    if (cols.length) out.push([i, cols]);
+  }
+  return out;
+}

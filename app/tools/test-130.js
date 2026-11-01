@@ -9,6 +9,7 @@ const { metLogin, metSignedIn } = require('./met-session');
 const OUT = process.argv[2] || '/workspace/met/preview';
 const SCRIPT = fs.readFileSync(path.join(__dirname, '../dist/webOSUserScripts/userScript.js'), 'utf8');
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
+const VER = require('../package.json').version;
 const results = [];
 const check = (n, ok, info) => { results.push({ n, ok: !!ok }); console.log((ok ? 'PASS ' : 'FAIL ') + n + (info !== undefined ? '  ' + JSON.stringify(info).slice(0, 500) : '')); };
 const enc = (s) => Buffer.from(unescape(encodeURIComponent(s)), 'binary').toString('base64').split('').reverse().join('');
@@ -40,7 +41,7 @@ const SHOTS = process.env.SHOTS !== '0';
     try { localStorage.setItem('mtv.tlm.device', 'e2e-test-130'); localStorage.setItem('mtv.panelSeen', 'true'); localStorage.setItem('mtv.hintShown', '1'); localStorage.removeItem('mtv.autoReports'); } catch (e) { /* */ }
   }, U, P ? enc(P) : null);
   const leavePlay = async () => { for (let i = 0; i < 4; i++) { await key(461, 700); if (await p.evaluate(() => window.__mtv.mode()) !== 'play') return i + 1; } return -1; };
-  const shot = async (n) => { if (!SHOTS) return; await sleep(700); const f = path.join(OUT, 'v1.3.0_' + n + '.png'); await p.screenshot({ path: f }); console.log('shot', f); };
+  const shot = async (n) => { if (!SHOTS) return; await sleep(700); const f = path.join(OUT, 'v' + VER + '_' + n + '.png'); await p.screenshot({ path: f }); console.log('shot', f); };
   const key = async (k, wait = 250) => { await p.evaluate((kc) => { ['keydown', 'keyup'].forEach((ty) => { const e = document.createEvent('Event'); e.initEvent(ty, true, true); Object.defineProperty(e, 'keyCode', { get: () => kc }); (document.activeElement || document.body).dispatchEvent(e); }); }, k); await sleep(wait); };
   const st = () => p.evaluate(() => ({ mode: window.__mtv.mode(), cls: document.documentElement.className, cat: window.__mtv.categories.debugState(), search: window.__mtv.search.debugState(),
     eng: window.__mtv.engine.engineState(), active: (document.activeElement && (document.activeElement.className || document.activeElement.tagName) + '').slice(0, 60), metChrome: window.__mtv.metChrome() }));
@@ -59,7 +60,7 @@ const SHOTS = process.env.SHOTS !== '0';
   check('mode browse + app takeover', s.mode === 'browse' && /mtv-app/.test(s.cls), s.cls);
   check('no Met chrome visible in browse', s.metChrome === 0, s.metChrome);
   const ver = await p.evaluate(() => (document.querySelector('.mtv-bar-ver') || {}).textContent);
-  check('version shown in the top bar', ver === 'v1.3.0', ver);
+  check('version shown in the top bar', ver === 'v' + VER, ver);
   const home1 = await p.evaluate(() => ({ hero: [].map.call(document.querySelectorAll('.mtv-hcard'), (x) => x.textContent), rows: [].map.call(document.querySelectorAll('.mtv-cat .mtv-crow h2'), (x) => x.firstChild.textContent) }));
   check('hero has items incl. what the Met features', home1.hero.length >= 3, home1.hero);
   check('category rows under the hero (Hidden gems among first 4)', home1.rows.length >= 8 && home1.rows.slice(0, 5).some((x) => /Hidden gems/.test(x)), home1.rows);
@@ -78,6 +79,29 @@ const SHOTS = process.env.SHOTS !== '0';
   check('second visit is shuffled differently', JSON.stringify(home2.rows) !== JSON.stringify(home1.rows), home2.rows);
   await shot('2-browse-second-visit-shuffled');
 
+  // ---- 1.3.1: AI stage artwork thumbnails (served by the Worker/D1 thumbnail routes) ----
+  const AI = Object.values(JSON.parse(fs.readFileSync('/workspace/met/thumbs/manifest.json', 'utf8'))).filter((v) => v.how === 'ai').map((v) => 'https://YOUR-WORKER.YOUR-SUBDOMAIN.workers.dev/v1/thumbs/' + v.file);
+  if (AI.length) {
+    const loaded = await p.evaluate((urls) => Promise.all(urls.map((u) => new Promise((res) => { const i = new Image(); i.onload = () => res(i.naturalWidth + 'x' + i.naturalHeight); i.onerror = () => res('ERR'); i.src = u; }))), AI);
+    check('all AI artwork thumbnails load from the Worker (960x540)', loaded.every((x) => x === '960x540'), { n: AI.length, bad: AI.filter((u, i) => loaded[i] !== '960x540').slice(0, 5) });
+    let found = null;
+    for (let v = 0; v < 12 && !found; v++) {
+      const rowsAi = await p.evaluate(() => window.__mtv.categories.genThumbRows('-ai'));
+      found = rowsAi.find((x) => x[0] >= 1 && x[0] <= 6);
+      if (!found) { await p.evaluate(() => document.querySelector('.mtv-bar-item[data-act="home"]').focus()); await key(13, 900); }
+    }
+    check('browse rows show AI artwork cards', !!found, found);
+    if (found) {
+      await p.evaluate(() => window.__mtv.categories.focusCurrent());
+      for (let i = 0; i < found[0]; i++) await key(40, 250);
+      for (let i = 0; i < Math.max(0, found[1][0] - 1); i++) await key(39, 200);
+      await sleep(1500);
+      const imgs = await p.evaluate((r) => [].map.call(document.querySelectorAll('.mtv-cat .mtv-crow')[r].querySelectorAll('img'), (i) => ({ ai: /-ai\.jpg/.test(i.src), ok: i.complete && i.naturalWidth > 0 })).filter((x) => x.ai), found[0]);
+      check('AI artwork cards render in the focused browse row', imgs.length > 0 && imgs.every((x) => x.ok), imgs);
+      if (SHOTS) { await sleep(500); await p.screenshot({ path: path.join(OUT, 'v' + VER + '_browse-with-ai-art.png') }); console.log('shot browse-with-ai-art'); }
+      await p.evaluate(() => document.querySelector('.mtv-bar-item[data-act="home"]').focus()); await key(13, 900);
+    }
+  }
   // Categories screen still reachable
   await p.evaluate(() => document.querySelector('.mtv-bar-item[data-act="categories"]').focus());
   await key(13, 800);
@@ -151,7 +175,7 @@ const SHOTS = process.env.SHOTS !== '0';
   await key(39, 120); await key(39, 120); await key(39, 50);
   await p.waitForFunction(() => { const i = document.querySelector('.mtv-po-tip img'); return i && i.style.display !== 'none' && i.complete && i.naturalWidth > 0; }, { timeout: 700, polling: 20 }).catch(() => {});
   const tipSrc = await p.evaluate(() => { const i = document.querySelector('.mtv-po-tip img'); return i && i.style.display !== 'none' && i.complete ? i.src.slice(0, 70) : ''; });
-  if (SHOTS) await p.screenshot({ path: path.join(OUT, 'v1.3.0_5b-controls-seek-preview.png') });
+  if (SHOTS) await p.screenshot({ path: path.join(OUT, 'v' + VER + '_5b-controls-seek-preview.png') });
   console.log('engine thumbs:', (await st()).eng.thumbs);
   check('seek preview thumbnail shown while seeking', !!tipSrc, tipSrc);
   await sleep(900);

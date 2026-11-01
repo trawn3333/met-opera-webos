@@ -16,20 +16,22 @@
   "kind": "concert"
  },
  "A Midsummer Night's Dream": {
-  "how": "designed",
-  "code": "Ta-midsummer-night-s-dream",
-  "file": "a-midsummer-night-s-dream.jpg",
+  "how": "ai",
+  "code": "Ta-midsummer-night-s-dream-ai",
+  "file": "a-midsummer-night-s-dream-ai.jpg",
   "era": "c20",
   "mood": "comic",
-  "kind": "opera"
+  "kind": "opera",
+  "fallback": "a-midsummer-night-s-dream.jpg"
  },
  "Ainadamar": {
-  "how": "designed",
-  "code": "Tainadamar",
-  "file": "ainadamar.jpg",
+  "how": "ai",
+  "code": "Tainadamar-ai",
+  "file": "ainadamar-ai.jpg",
   "era": "contemp",
   "mood": "tragic",
-  "kind": "opera"
+  "kind": "opera",
+  "fallback": "ainadamar.jpg"
  },
  "American Opera at the Met, Volume II": {
   "how": "alias",
@@ -37,12 +39,13 @@
   "note": "image from \"American Opera at the Met\""
  },
  "An American Tragedy": {
-  "how": "designed",
-  "code": "Tan-american-tragedy",
-  "file": "an-american-tragedy.jpg",
+  "how": "ai",
+  "code": "Tan-american-tragedy-ai",
+  "file": "an-american-tragedy-ai.jpg",
   "era": "contemp",
   "mood": "tragic",
-  "kind": "opera"
+  "kind": "opera",
+  "fallback": "an-american-tragedy.jpg"
  },
  "Antony and Cleopatra": {
   "how": "composed",
@@ -69,20 +72,22 @@
   "kind": "playlist"
  },
  "Attila": {
-  "how": "designed",
-  "code": "Tattila",
-  "file": "attila.jpg",
+  "how": "ai",
+  "code": "Tattila-ai",
+  "file": "attila-ai.jpg",
   "era": "romantic",
   "mood": "epic",
-  "kind": "opera"
+  "kind": "opera",
+  "fallback": "attila.jpg"
  },
  "Benvenuto Cellini": {
-  "how": "designed",
-  "code": "Tbenvenuto-cellini",
-  "file": "benvenuto-cellini.jpg",
+  "how": "ai",
+  "code": "Tbenvenuto-cellini-ai",
+  "file": "benvenuto-cellini-ai.jpg",
   "era": "romantic",
   "mood": "comic",
-  "kind": "opera"
+  "kind": "opera",
+  "fallback": "benvenuto-cellini.jpg"
  },
  "Black Voices Rise, Volume II": {
   "how": "designed",
@@ -127,36 +132,40 @@
   "kind": "concert"
  },
  "Cyrano de Bergerac": {
-  "how": "designed",
-  "code": "Tcyrano-de-bergerac",
-  "file": "cyrano-de-bergerac.jpg",
+  "how": "ai",
+  "code": "Tcyrano-de-bergerac-ai",
+  "file": "cyrano-de-bergerac-ai.jpg",
   "era": "c20",
   "mood": "romance",
-  "kind": "opera"
+  "kind": "opera",
+  "fallback": "cyrano-de-bergerac.jpg"
  },
  "Death in Venice": {
-  "how": "designed",
-  "code": "Tdeath-in-venice",
-  "file": "death-in-venice.jpg",
+  "how": "ai",
+  "code": "Tdeath-in-venice-ai",
+  "file": "death-in-venice-ai.jpg",
   "era": "c20",
   "mood": "dark",
-  "kind": "opera"
+  "kind": "opera",
+  "fallback": "death-in-venice.jpg"
  },
  "Der Freischütz": {
-  "how": "designed",
-  "code": "Tder-freischutz",
-  "file": "der-freischutz.jpg",
+  "how": "ai",
+  "code": "Tder-freischutz-ai",
+  "file": "der-freischutz-ai.jpg",
   "era": "romantic",
   "mood": "dark",
-  "kind": "opera"
+  "kind": "opera",
+  "fallback": "der-freischutz.jpg"
  },
  "Die Entführung aus dem Serail": {
-  "how": "designed",
-  "code": "Tdie-entfuhrung-aus-dem-serail",
-  "file": "die-entfuhrung-aus-dem-serail.jpg",
+  "how": "ai",
+  "code": "Tdie-entfuhrung-aus-dem-serail-ai",
+  "file": "die-entfuhrung-aus-dem-serail-ai.jpg",
   "era": "classical",
   "mood": "comic",
-  "kind": "opera"
+  "kind": "opera",
+  "fallback": "die-entfuhrung-aus-dem-serail.jpg"
  },
  "Die Frau ohne Schatten": {
   "how": "slide",
@@ -164,12 +173,13 @@
   "note": "performance slide image"
  },
  "Die Ägyptische Helena": {
-  "how": "designed",
-  "code": "Tdie-agyptische-helena",
-  "file": "die-agyptische-helena.jpg",
+  "how": "ai",
+  "code": "Tdie-agyptische-helena-ai",
+  "file": "die-agyptische-helena-ai.jpg",
   "era": "c20",
   "mood": "mythic",
-  "kind": "opera"
+  "kind": "opera",
+  "fallback": "die-agyptische-helena.jpg"
  },
  "Dmitri Hvorostovsky at the Met": {
   "how": "designed",
@@ -180,11 +190,12 @@
   "kind": "concert"
  },
  "El Niño": {
-  "how": "designed",
-  "code": "Tel-nino",
-  "file": "el-nino.jpg",
+  "how": "ai",
+  "code": "Tel-nino-ai",
+  "file": "el-nino-ai.jpg",
   "era": "contemp",
-  "kind": "opera"
+  "kind": "opera",
+  "fallback": "el-nino.jpg"
  },
  "Elīna Garanča Playlist": {
   "how": "designed",
@@ -195,12 +206,13 @@
   "kind": "playlist"
  },
  "Esclarmonde": {
-  "how": "designed",
-  "code": "Tesclarmonde",
-  "file": "esclarmonde.jpg",
+  "how": "ai",
+  "code": "Tesclarmonde-ai",
+  "file": "esclarmonde-ai.jpg",
   "era": "romantic",
   "mood": "mythic",
-  "kind": "opera"
+  "kind": "opera",
+  "fallback": "esclarmonde.jpg"
  },
  "Fall Playlist 2014": {
   "how": "designed",
@@ -227,20 +239,22 @@
   "kind": "concert"
  },
  "From the House of the Dead": {
-  "how": "designed",
-  "code": "Tfrom-the-house-of-the-dead",
-  "file": "from-the-house-of-the-dead.jpg",
+  "how": "ai",
+  "code": "Tfrom-the-house-of-the-dead-ai",
+  "file": "from-the-house-of-the-dead-ai.jpg",
   "era": "c20",
   "mood": "dark",
-  "kind": "opera"
+  "kind": "opera",
+  "fallback": "from-the-house-of-the-dead.jpg"
  },
  "Guillaume Tell": {
-  "how": "designed",
-  "code": "Tguillaume-tell",
-  "file": "guillaume-tell.jpg",
+  "how": "ai",
+  "code": "Tguillaume-tell-ai",
+  "file": "guillaume-tell-ai.jpg",
   "era": "romantic",
   "mood": "epic",
-  "kind": "opera"
+  "kind": "opera",
+  "fallback": "guillaume-tell.jpg"
  },
  "Handel at the Met": {
   "how": "designed",
@@ -264,28 +278,31 @@
   "note": "image from \"Hansel and Gretel\""
  },
  "I Vespri Siciliani": {
-  "how": "designed",
-  "code": "Ti-vespri-siciliani",
-  "file": "i-vespri-siciliani.jpg",
+  "how": "ai",
+  "code": "Ti-vespri-siciliani-ai",
+  "file": "i-vespri-siciliani-ai.jpg",
   "era": "romantic",
   "mood": "epic",
-  "kind": "opera"
+  "kind": "opera",
+  "fallback": "i-vespri-siciliani.jpg"
  },
  "Il Pirata": {
-  "how": "designed",
-  "code": "Til-pirata",
-  "file": "il-pirata.jpg",
+  "how": "ai",
+  "code": "Til-pirata-ai",
+  "file": "il-pirata-ai.jpg",
   "era": "belcanto",
   "mood": "tragic",
-  "kind": "opera"
+  "kind": "opera",
+  "fallback": "il-pirata.jpg"
  },
  "Jenůfa": {
-  "how": "designed",
-  "code": "Tjenufa",
-  "file": "jenufa.jpg",
+  "how": "ai",
+  "code": "Tjenufa-ai",
+  "file": "jenufa-ai.jpg",
   "era": "c20",
   "mood": "tragic",
-  "kind": "opera"
+  "kind": "opera",
+  "fallback": "jenufa.jpg"
  },
  "Jon Vickers Playlist 2015": {
   "how": "designed",
@@ -304,60 +321,67 @@
   "kind": "playlist"
  },
  "Káťa Kabanová": {
-  "how": "designed",
-  "code": "Tkata-kabanova",
-  "file": "kata-kabanova.jpg",
+  "how": "ai",
+  "code": "Tkata-kabanova-ai",
+  "file": "kata-kabanova-ai.jpg",
   "era": "c20",
   "mood": "tragic",
-  "kind": "opera"
+  "kind": "opera",
+  "fallback": "kata-kabanova.jpg"
  },
  "L'Assedio di Corinto": {
-  "how": "designed",
-  "code": "Tl-assedio-di-corinto",
-  "file": "l-assedio-di-corinto.jpg",
+  "how": "ai",
+  "code": "Tl-assedio-di-corinto-ai",
+  "file": "l-assedio-di-corinto-ai.jpg",
   "era": "belcanto",
   "mood": "epic",
-  "kind": "opera"
+  "kind": "opera",
+  "fallback": "l-assedio-di-corinto.jpg"
  },
  "La Favorita": {
-  "how": "designed",
-  "code": "Tla-favorita",
-  "file": "la-favorita.jpg",
+  "how": "ai",
+  "code": "Tla-favorita-ai",
+  "file": "la-favorita-ai.jpg",
   "era": "belcanto",
   "mood": "tragic",
-  "kind": "opera"
+  "kind": "opera",
+  "fallback": "la-favorita.jpg"
  },
  "La Gioconda": {
-  "how": "designed",
-  "code": "Tla-gioconda",
-  "file": "la-gioconda.jpg",
+  "how": "ai",
+  "code": "Tla-gioconda-ai",
+  "file": "la-gioconda-ai.jpg",
   "era": "romantic",
   "mood": "tragic",
-  "kind": "opera"
+  "kind": "opera",
+  "fallback": "la-gioconda.jpg"
  },
  "La Juive": {
-  "how": "designed",
-  "code": "Tla-juive",
-  "file": "la-juive.jpg",
+  "how": "ai",
+  "code": "Tla-juive-ai",
+  "file": "la-juive-ai.jpg",
   "era": "romantic",
   "mood": "tragic",
-  "kind": "opera"
+  "kind": "opera",
+  "fallback": "la-juive.jpg"
  },
  "Lady Macbeth of Mtsensk": {
-  "how": "designed",
-  "code": "Tlady-macbeth-of-mtsensk",
-  "file": "lady-macbeth-of-mtsensk.jpg",
+  "how": "ai",
+  "code": "Tlady-macbeth-of-mtsensk-ai",
+  "file": "lady-macbeth-of-mtsensk-ai.jpg",
   "era": "c20",
   "mood": "dark",
-  "kind": "opera"
+  "kind": "opera",
+  "fallback": "lady-macbeth-of-mtsensk.jpg"
  },
  "Le Prophète": {
-  "how": "designed",
-  "code": "Tle-prophete",
-  "file": "le-prophete.jpg",
+  "how": "ai",
+  "code": "Tle-prophete-ai",
+  "file": "le-prophete-ai.jpg",
   "era": "romantic",
   "mood": "epic",
-  "kind": "opera"
+  "kind": "opera",
+  "fallback": "le-prophete.jpg"
  },
  "Le Sacre du Printemps | Le Rossignol | Oedipus Rex": {
   "how": "composed",
@@ -408,12 +432,13 @@
   "kind": "playlist"
  },
  "Mefistofele": {
-  "how": "designed",
-  "code": "Tmefistofele",
-  "file": "mefistofele.jpg",
+  "how": "ai",
+  "code": "Tmefistofele-ai",
+  "file": "mefistofele-ai.jpg",
   "era": "romantic",
   "mood": "mythic",
-  "kind": "opera"
+  "kind": "opera",
+  "fallback": "mefistofele.jpg"
  },
  "Messa da Requiem": {
   "how": "alias",
@@ -421,20 +446,22 @@
   "note": "image from \"Verdi's Requiem\""
  },
  "Mignon": {
-  "how": "designed",
-  "code": "Tmignon",
-  "file": "mignon.jpg",
+  "how": "ai",
+  "code": "Tmignon-ai",
+  "file": "mignon-ai.jpg",
   "era": "romantic",
   "mood": "romance",
-  "kind": "opera"
+  "kind": "opera",
+  "fallback": "mignon.jpg"
  },
  "Moby-Dick": {
-  "how": "designed",
-  "code": "Tmoby-dick",
-  "file": "moby-dick.jpg",
+  "how": "ai",
+  "code": "Tmoby-dick-ai",
+  "file": "moby-dick-ai.jpg",
   "era": "contemp",
   "mood": "epic",
-  "kind": "opera"
+  "kind": "opera",
+  "fallback": "moby-dick.jpg"
  },
  "Moses und Aron": {
   "how": "composed",
@@ -445,12 +472,13 @@
   "kind": "opera"
  },
  "Mourning Becomes Electra": {
-  "how": "designed",
-  "code": "Tmourning-becomes-electra",
-  "file": "mourning-becomes-electra.jpg",
+  "how": "ai",
+  "code": "Tmourning-becomes-electra-ai",
+  "file": "mourning-becomes-electra-ai.jpg",
   "era": "c20",
   "mood": "dark",
-  "kind": "opera"
+  "kind": "opera",
+  "fallback": "mourning-becomes-electra.jpg"
  },
  "National Council Alumni Playlist": {
   "how": "designed",
@@ -578,12 +606,13 @@
   "kind": "playlist"
  },
  "Susannah": {
-  "how": "designed",
-  "code": "Tsusannah",
-  "file": "susannah.jpg",
+  "how": "ai",
+  "code": "Tsusannah-ai",
+  "file": "susannah-ai.jpg",
   "era": "c20",
   "mood": "tragic",
-  "kind": "opera"
+  "kind": "opera",
+  "fallback": "susannah.jpg"
  },
  "Teresa Stratas Playlist": {
   "how": "designed",
@@ -599,12 +628,13 @@
   "note": "image from \"Il Barbiere di Siviglia\""
  },
  "The Gambler": {
-  "how": "designed",
-  "code": "Tthe-gambler",
-  "file": "the-gambler.jpg",
+  "how": "ai",
+  "code": "Tthe-gambler-ai",
+  "file": "the-gambler-ai.jpg",
   "era": "c20",
   "mood": "comic",
-  "kind": "opera"
+  "kind": "opera",
+  "fallback": "the-gambler.jpg"
  },
  "The Great Gatsby": {
   "how": "composed",
@@ -615,36 +645,40 @@
   "kind": "opera"
  },
  "The Makropulos Case": {
-  "how": "designed",
-  "code": "Tthe-makropulos-case",
-  "file": "the-makropulos-case.jpg",
+  "how": "ai",
+  "code": "Tthe-makropulos-case-ai",
+  "file": "the-makropulos-case-ai.jpg",
   "era": "c20",
   "mood": "dark",
-  "kind": "opera"
+  "kind": "opera",
+  "fallback": "the-makropulos-case.jpg"
  },
  "The Rake's Progress": {
-  "how": "designed",
-  "code": "Tthe-rake-s-progress",
-  "file": "the-rake-s-progress.jpg",
+  "how": "ai",
+  "code": "Tthe-rake-s-progress-ai",
+  "file": "the-rake-s-progress-ai.jpg",
   "era": "c20",
   "mood": "comic",
-  "kind": "opera"
+  "kind": "opera",
+  "fallback": "the-rake-s-progress.jpg"
  },
  "Two Boys": {
-  "how": "designed",
-  "code": "Ttwo-boys",
-  "file": "two-boys.jpg",
+  "how": "ai",
+  "code": "Ttwo-boys-ai",
+  "file": "two-boys-ai.jpg",
   "era": "contemp",
   "mood": "dark",
-  "kind": "opera"
+  "kind": "opera",
+  "fallback": "two-boys.jpg"
  },
  "Vanessa": {
-  "how": "designed",
-  "code": "Tvanessa",
-  "file": "vanessa.jpg",
+  "how": "ai",
+  "code": "Tvanessa-ai",
+  "file": "vanessa-ai.jpg",
   "era": "c20",
   "mood": "romance",
-  "kind": "opera"
+  "kind": "opera",
+  "fallback": "vanessa.jpg"
  },
  "Winter Playlist 2014": {
   "how": "designed",

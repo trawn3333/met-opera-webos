@@ -9,6 +9,7 @@ const SCRIPT = fs.readFileSync(path.join(__dirname, '../dist/webOSUserScripts/us
 const CHROME = process.env.CHROME || '/tmp/oldchrome/stable/c53/opt/google/chrome/chrome';
 const OUT = process.argv[2] || '/tmp/c53-130'; const TAG = process.argv[3] || 'c53';
 const UA = 'Mozilla/5.0 (Web0S; Linux/SmartTV) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.34 Safari/537.36 WebAppManager';
+const VER = require('../package.json').version;
 const results = [];
 const check = (n, ok, info) => { results.push(!!ok); console.log((ok ? 'PASS ' : 'FAIL ') + n + (info !== undefined ? '  ' + JSON.stringify(info).slice(0, 400) : '')); };
 (async () => {
@@ -32,11 +33,28 @@ const check = (n, ok, info) => { results.push(!!ok); console.log((ok ? 'PASS ' :
     rows:[].map.call(document.querySelectorAll('.mtv-cat .mtv-crow h2'),function(x){return x.firstChild.textContent}),ver:(document.querySelector('.mtv-bar-ver')||{}).textContent,
     active:document.activeElement?String(document.activeElement.className).slice(0,50):''})`));
   let s = await S();
-  check('browse mode, app takeover, version', s.mode === 'browse' && /mtv-app/.test(s.cls) && s.ver === 'v1.3.0', { cls: s.cls, ver: s.ver });
+  check('browse mode, app takeover, version', s.mode === 'browse' && /mtv-app/.test(s.cls) && s.ver === 'v' + VER, { cls: s.cls, ver: s.ver });
   check('hero incl. Met featured (progressive XHR)', s.hero.length >= 3 && /Featured by the Met/i.test(s.heroLab || ''), { hero: s.hero, lab: s.heroLab });
   check('rows with Hidden gems', s.rows.some((r) => /Hidden gems/.test(r)), s.rows);
   check('no Met chrome visible', s.metChrome === 0, s.metChrome);
   await c.shot(OUT + '/1-browse.png');
+  // 1.3.1 AI artwork on the old engine: find a browse row with AI art, focus it, check the images decoded
+  let found = null;
+  for (let v = 0; v < 12 && !found; v++) {
+    found = JSON.parse(await c.ev("JSON.stringify((__mtv.categories.genThumbRows('-ai')||[]).filter(function(x){return x[0]>=1&&x[0]<=6})[0]||null)"));
+    if (!found) { await c.ev("document.querySelector('.mtv-bar-item[data-act=\"home\"]').focus()"); await c.key(13, 900); }
+  }
+  check('browse has AI artwork rows', !!found, found);
+  if (found) {
+    await c.ev('__mtv.categories.focusCurrent()');
+    for (let i = 0; i < found[0]; i++) await c.key(40, 250);
+    for (let i = 0; i < Math.max(0, found[1][0] - 1); i++) await c.key(39, 200);
+    await sleep(2500);
+    const imgs = JSON.parse(await c.ev("JSON.stringify([].map.call(document.querySelectorAll('.mtv-cat .mtv-crow')[" + found[0] + "].querySelectorAll('img'),function(i){return {ai:/-ai\\.jpg/.test(i.src),ok:i.complete&&i.naturalWidth===960}}).filter(function(x){return x.ai}))"));
+    check('AI artwork cards decode on this engine', imgs.length > 0 && imgs.every((x) => x.ok), imgs);
+    await c.shot(OUT + '/1b-browse-ai-art.png');
+    await c.ev("document.querySelector('.mtv-bar-item[data-act=\"home\"]').focus()"); await c.key(13, 900);
+  }
   await c.key(405, 600);
   s = await S();
   check('YELLOW -> search', s.mode === 'search', s.mode);

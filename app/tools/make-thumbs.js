@@ -74,24 +74,27 @@ function motif(mood, accent) {
 }
 function titleSize(name) { const n = name.length; return n <= 10 ? 92 : n <= 16 ? 80 : n <= 24 ? 66 : n <= 34 ? 56 : n <= 48 ? 46 : 40; }
 function esc(s) { return String(s).replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c])); }
-function html(m, photo) {
+function html(m, photo, ai) {
   const key = m.kind === 'opera' ? (m.era || 'romantic') : m.kind;
   const [c1, c2, acc] = PAL[key] || PAL.concert;
   const mood = m.kind === 'playlist' ? 'vinyl' : m.kind === 'opera' ? (m.mood || 'tragic') : 'deco';
   const fs = titleSize(m.name);
-  const bg = photo
+  const bg = ai
+    ? `<div style="position:absolute;inset:0;background:url(${ai}) center/cover"></div>
+       <div style="position:absolute;inset:0;background:linear-gradient(90deg,rgba(0,0,0,.84) 0%,rgba(0,0,0,.6) 45%,rgba(0,0,0,0) 76%),linear-gradient(0deg,rgba(0,0,0,.35),rgba(0,0,0,0) 30%)"></div>`
+    : photo
     ? `<div style="position:absolute;inset:-40px;background:url(${photo}) center/cover;filter:blur(28px) brightness(.45) saturate(1.1)"></div>
        <div style="position:absolute;inset:0;background:linear-gradient(90deg,rgba(0,0,0,.82) 0%,rgba(0,0,0,.55) 48%,rgba(0,0,0,.1) 100%)"></div>
        <img src="${photo}" style="position:absolute;right:56px;top:50px;width:440px;height:440px;object-fit:cover;border-radius:10px;box-shadow:0 20px 60px rgba(0,0,0,.7),0 0 0 1px rgba(255,255,255,.08)">`
     : `<div style="position:absolute;inset:0;background:radial-gradient(ellipse at 15% 10%, ${c1} 0%, ${c2} 70%)"></div>
        <svg width="960" height="540" style="position:absolute;left:0;top:0">${motif(mood, acc)}</svg>
        <div style="position:absolute;inset:0;background:linear-gradient(90deg,rgba(0,0,0,.35),rgba(0,0,0,0) 60%)"></div>`;
-  const textW = photo ? 400 : 560;
+  const textW = photo ? 400 : ai ? 520 : 560;
   return `<!doctype html><html><head><meta charset="utf-8"><style>
     html,body{margin:0;width:960px;height:540px;overflow:hidden;background:#000}
     .t{position:absolute;left:64px;top:0;bottom:0;width:${textW}px;display:flex;flex-direction:column;justify-content:center}
     .lab{font:600 19px Montserrat;letter-spacing:.28em;text-transform:uppercase;color:${acc};margin-bottom:22px}
-    .name{font:400 ${photo ? Math.min(fs, 60) : fs}px/1.04 'Playfair Display';color:#fff;letter-spacing:-.005em;text-wrap:balance}
+    .name{font:400 ${photo ? Math.min(fs, 60) : ai ? Math.min(fs, 72) : fs}px/1.04 'Playfair Display';color:#fff;letter-spacing:-.005em;text-wrap:balance;text-shadow:0 2px 18px rgba(0,0,0,.6)}
     .rule{width:72px;height:2px;background:${acc};margin:26px 0 18px}
     .comp{font:500 24px Montserrat;letter-spacing:.16em;text-transform:uppercase;color:#efe9e1}
     .yr{font:italic 400 28px 'Cormorant Garamond';color:${acc};margin-top:8px}
@@ -99,14 +102,14 @@ function html(m, photo) {
   </style></head><body>${bg}
   <div class="t"><div class="lab">${esc(m.label)}</div><div class="name">${esc(m.name)}</div><div class="rule"></div>
   ${m.comp ? `<div class="comp">${esc(m.comp)}</div>` : ''}${m.year ? `<div class="yr">${esc(m.year)}</div>` : ''}</div>
-  ${photo ? '' : '<div class="brand">MET OPERA ON DEMAND</div>'}</body></html>`;
+  ${photo || ai ? '' : '<div class="brand">MET OPERA ON DEMAND</div>'}</body></html>`;
 }
 
 function cardTop(f) {
   const r = require('child_process').execFileSync('python3', ['-c', "import sys\nfrom PIL import Image,ImageStat\nim=Image.open(sys.argv[1]).convert('RGB');w,h=im.size\nprint(min(ImageStat.Stat(im.crop((int(w*.05),int(h*.03),int(w*.95),int(h*.22)))).mean))", f]).toString();
   return +r > 225;
 }
-(async () => {
+if (require.main === module) (async () => {
   const need = Object.keys(titleImgs).filter((n) => ['card', 'square'].includes(titleImgs[n].cls)).sort();
   const manifest = {};
   const jobs = [];
@@ -141,3 +144,4 @@ function cardTop(f) {
   let bytes = 0; for (const j of jobs) bytes += fs.statSync(path.join(OUT, j.s + '.jpg')).size;
   console.log('rendered', jobs.length, 'files,', Math.round(bytes / 1024), 'KB total');
 })().catch((e) => { console.error(e); process.exit(1); });
+module.exports = { html, meta, slug, OUT, T };
