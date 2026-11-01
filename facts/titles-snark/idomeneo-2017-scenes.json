@@ -1,0 +1,458 @@
+{
+ "performance": "Idomeneo, Met Live in HD, 2017-03-25 (Met Opera on Demand id 19a5ae2a-7d68-5175-bc14-3a295ab3f618)",
+ "source": "Met Opera on Demand cue points",
+ "scenes": [
+  {
+   "t": 1,
+   "title": "Opening Credits",
+   "artists": []
+  },
+  {
+   "t": 39,
+   "title": "Introduction by Eric Owens",
+   "artists": [
+    "Eric Owens"
+   ]
+  },
+  {
+   "t": 116,
+   "title": "Overture",
+   "artists": [
+    "James Levine",
+    "Metropolitan Opera Orchestra"
+   ]
+  },
+  {
+   "t": 428,
+   "title": "Act I: Quando avran fine omai",
+   "artists": [
+    "Nadine Sierra"
+   ]
+  },
+  {
+   "t": 677,
+   "title": "Act I: Padre, germani, addio!",
+   "artists": [
+    "Nadine Sierra"
+   ]
+  },
+  {
+   "t": 904,
+   "title": "Act I: Ecco, Idamante, ahimé! — Radunate I troiani",
+   "artists": [
+    "Nadine Sierra",
+    "Alice Coote"
+   ]
+  },
+  {
+   "t": 1063,
+   "title": "Act I: Non ho colpa",
+   "artists": [
+    "Alice Coote"
+   ]
+  },
+  {
+   "t": 1504,
+   "title": "Act I: Ecco il misero resto de' Troiani",
+   "artists": [
+    "Nadine Sierra",
+    "Alice Coote"
+   ]
+  },
+  {
+   "t": 1582,
+   "title": "Act I: Godiam la pace",
+   "artists": [
+    "Michelle Bradley",
+    "Rihab Chaieb",
+    "Rolando Sanz",
+    "David Crawford",
+    "Metropolitan Opera Chorus"
+   ]
+  },
+  {
+   "t": 1729,
+   "title": "Act I: Prence, signor, tutta la Grecia oltraggi",
+   "artists": [
+    "Elza van den Heever",
+    "Alice Coote",
+    "Alan Opie",
+    "Nadine Sierra"
+   ]
+  },
+  {
+   "t": 2013,
+   "title": "Act I: Tutte nel cor vi sento",
+   "artists": [
+    "Elza van den Heever"
+   ]
+  },
+  {
+   "t": 2226,
+   "title": "Act I: Pietà! Numi, pietà!",
+   "artists": [
+    "James Levine",
+    "Metropolitan Opera Orchestra and Chorus"
+   ]
+  },
+  {
+   "t": 2314,
+   "title": "Act I: Eccoci salvi alfin",
+   "artists": [
+    "Matthew Polenzani"
+   ]
+  },
+  {
+   "t": 2498,
+   "title": "Act I: Vedrommi intorno",
+   "artists": [
+    "Matthew Polenzani"
+   ]
+  },
+  {
+   "t": 2731,
+   "title": "Act I: Cieli! che veggo?",
+   "artists": [
+    "Matthew Polenzani",
+    "Alice Coote"
+   ]
+  },
+  {
+   "t": 3138,
+   "title": "Act I: Il padre adorato",
+   "artists": [
+    "Alice Coote"
+   ]
+  },
+  {
+   "t": 3342,
+   "title": "Act I: Intermezzo: Marcia",
+   "artists": [
+    "James Levine",
+    "Metropolitan Opera Orchestra"
+   ]
+  },
+  {
+   "t": 3468,
+   "title": "Act I: Intermezzo: Nettuno s'onori",
+   "artists": [
+    "Michelle Bradley",
+    "Rihab Chaieb",
+    "Rolando Sanz",
+    "David Crawford",
+    "Metropolitan Opera Chorus"
+   ]
+  },
+  {
+   "t": 3832,
+   "title": "Introduction to Act II by Eric Owens",
+   "artists": [
+    "Eric Owens"
+   ]
+  },
+  {
+   "t": 3843,
+   "title": "Act II: Siam soli.  Odimi, Arbace",
+   "artists": [
+    "Matthew Polenzani",
+    "Alan Opie"
+   ]
+  },
+  {
+   "t": 3984,
+   "title": "Act II: Se il tuo duol",
+   "artists": [
+    "Alan Opie"
+   ]
+  },
+  {
+   "t": 4308,
+   "title": "Act II: Se mai pomposo apparse",
+   "artists": [
+    "Nadine Sierra",
+    "Matthew Polenzani"
+   ]
+  },
+  {
+   "t": 4374,
+   "title": "Act II: Se il padre perdei",
+   "artists": [
+    "Nadine Sierra"
+   ]
+  },
+  {
+   "t": 4743,
+   "title": "Act II: Qual mi conturba i sensi",
+   "artists": [
+    "Matthew Polenzani"
+   ]
+  },
+  {
+   "t": 4872,
+   "title": "Act II: Fuor del mar",
+   "artists": [
+    "Matthew Polenzani"
+   ]
+  },
+  {
+   "t": 5309,
+   "title": "Act II: Sire, da Arbace intesi — Chi mai del mio provò",
+   "artists": [
+    "Elza van den Heever",
+    "Matthew Polenzani"
+   ]
+  },
+  {
+   "t": 5450,
+   "title": "Act II: Idol mio, se ritroso",
+   "artists": [
+    "Elza van den Heever"
+   ]
+  },
+  {
+   "t": 5778,
+   "title": "Act II: Odo da lunge armonioso suono ... Sidonie sponde!",
+   "artists": [
+    "Elza van den Heever"
+   ]
+  },
+  {
+   "t": 5921,
+   "title": "Act II: Placido è il mar — Vattene, Idamante",
+   "artists": [
+    "Elza van den Heever",
+    "Matthew Polenzani",
+    "Alice Coote",
+    "Metropolitan Opera Chorus"
+   ]
+  },
+  {
+   "t": 6214,
+   "title": "Act II: Pria di partir, oh Dio!",
+   "artists": [
+    "Alice Coote",
+    "Elza van den Heever",
+    "Matthew Polenzani"
+   ]
+  },
+  {
+   "t": 6499,
+   "title": "Act II: Qual nuovo terrore!",
+   "artists": [
+    "Metropolitan Opera Orchestra and Chorus"
+   ]
+  },
+  {
+   "t": 6596,
+   "title": "Act II: Eccoti in me, barbaro Nume, il reo!",
+   "artists": [
+    "Matthew Polenzani"
+   ]
+  },
+  {
+   "t": 6713,
+   "title": "Act II: Corriamo, fuggiamo",
+   "artists": [
+    "Metropolitan Opera Orchestra and Chorus"
+   ]
+  },
+  {
+   "t": 6826,
+   "title": "Introduction to Act III by Eric Owens",
+   "artists": [
+    "Eric Owens"
+   ]
+  },
+  {
+   "t": 6858,
+   "title": "Act III: Solitudini amiche",
+   "artists": [
+    "Nadine Sierra"
+   ]
+  },
+  {
+   "t": 6963,
+   "title": "Act III: Zeffiretti lusinghieri...Ei stesso vien",
+   "artists": [
+    "Nadine Sierra"
+   ]
+  },
+  {
+   "t": 7370,
+   "title": "Act III: Principessa, a' tuoi sguardi",
+   "artists": [
+    "Alice Coote",
+    "Nadine Sierra"
+   ]
+  },
+  {
+   "t": 7578,
+   "title": "Act III: S'io non moro a questi accenti",
+   "artists": [
+    "Alice Coote",
+    "Nadine Sierra"
+   ]
+  },
+  {
+   "t": 7788,
+   "title": "Act III: Cieli! che vedo?",
+   "artists": [
+    "Matthew Polenzani",
+    "Nadine Sierra",
+    "Alice Coote",
+    "Elza van den Heever"
+   ]
+  },
+  {
+   "t": 7920,
+   "title": "Act III: Andrò ramingo e solo",
+   "artists": [
+    "Alice Coote",
+    "Nadine Sierra",
+    "Matthew Polenzani",
+    "Elza van den Heever"
+   ]
+  },
+  {
+   "t": 8339,
+   "title": "Act III: Sire, alla reggia tua — Sventurata Sidon!",
+   "artists": [
+    "Alan Opie",
+    "Nadine Sierra",
+    "Matthew Polenzani",
+    "Elza van den Heever"
+   ]
+  },
+  {
+   "t": 8579,
+   "title": "Act III: Volgi intorno lo sguardo",
+   "artists": [
+    "Noah Baetge",
+    "Matthew Polenzani"
+   ]
+  },
+  {
+   "t": 8895,
+   "title": "Act III: Oh voto tremendo!",
+   "artists": [
+    "Noah Baetge",
+    "Metropolitan Opera Chorus"
+   ]
+  },
+  {
+   "t": 9257,
+   "title": "Act III: Marcia",
+   "artists": [
+    "James Levine",
+    "Metropolitan Opera Orchestra"
+   ]
+  },
+  {
+   "t": 9362,
+   "title": "Act III: Accogli, o re del mar",
+   "artists": [
+    "Matthew Polenzani",
+    "Metropolitan Opera Chorus"
+   ]
+  },
+  {
+   "t": 9607,
+   "title": "Act III: Stupenda! — Qual risuona qui intorno",
+   "artists": [
+    "Matthew Polenzani",
+    "Alan Opie",
+    "Metropolitan Opera Chorus"
+   ]
+  },
+  {
+   "t": 9652,
+   "title": "Act III: Padre, mio caro padre",
+   "artists": [
+    "Alice Coote",
+    "Matthew Polenzani",
+    "Nadine Sierra",
+    "Noah Baetge"
+   ]
+  },
+  {
+   "t": 10076,
+   "title": "Act III: Ha vinto Amore",
+   "artists": [
+    "Eric Owens"
+   ]
+  },
+  {
+   "t": 10230,
+   "title": "Act III: Oh ciel pietoso!",
+   "artists": [
+    "Matthew Polenzani",
+    "Alice Coote",
+    "Nadine Sierra",
+    "Alan Opie",
+    "Elza van den Heever"
+   ]
+  },
+  {
+   "t": 10441,
+   "title": "Act III: D'Oreste, d'Ajace",
+   "artists": [
+    "Elza van den Heever"
+   ]
+  },
+  {
+   "t": 10680,
+   "title": "Act III: Popoli, a voi l'ultima legge",
+   "artists": [
+    "Matthew Polenzani"
+   ]
+  },
+  {
+   "t": 11073,
+   "title": "Act III: Scenda Amor, scenda Imeneo",
+   "artists": [
+    "James Levine",
+    "Metropolitan Opera Orchestra and Chorus"
+   ]
+  },
+  {
+   "t": 11277,
+   "title": "Bows and Closing Credits",
+   "artists": []
+  },
+  {
+   "t": 11495,
+   "title": "Act III: Backstage at the Met with host Eric Owens: Interview with Alice Coote and Matthew Polenzani",
+   "artists": [
+    "Eric Owens",
+    "Alice Coote",
+    "Matthew Polenzani"
+   ]
+  },
+  {
+   "t": 11645,
+   "title": "Act III: Backstage at the Met with host Eric Owens: Interview with Elza van den Heever, Nadine Sierra",
+   "artists": [
+    "Eric Owens",
+    "Elza van den Heever",
+    "Nadine Sierra"
+   ]
+  },
+  {
+   "t": 11832,
+   "title": "Act III: Backstage at the Met with host Eric Owens: Interview with Met Musicians Nancy Wu and Laura Hamilton",
+   "artists": [
+    "Eric Owens",
+    "Nancy Wu",
+    "Laura Hamilton"
+   ]
+  },
+  {
+   "t": 11982,
+   "title": "Act III: Backstage at the Met with host Eric Owens: Interview with First Assistant Electrician Tim Guscott",
+   "artists": [
+    "Eric Owens",
+    "Tim Guscott"
+   ]
+  }
+ ]
+}
