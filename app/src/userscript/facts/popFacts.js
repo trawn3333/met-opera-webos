@@ -168,6 +168,7 @@ export function tick(t, ctx) {
   }
 }
 
+// f = [id, type letter, sceneMatch, scope, text, attribution, sourceUrl, kicker?]; kicker (optional) replaces the type label.
 export function pop(f, root) {
   dismiss(true);
   var ty = TYPE[f[1]] || TYPE.h;
@@ -176,8 +177,8 @@ export function pop(f, root) {
   el.setAttribute('aria-live', 'polite');
   var src = srcLabel(f[6]);
   el.innerHTML = '<div class="mtv-pop-bub"><i class="mtv-pop-ic"><svg viewBox="0 0 24 24" width="30" height="30" fill="currentColor" aria-hidden="true">' + ty.icon + '</svg></i>' +
-    '<div class="mtv-pop-tx"><small>' + esc(ty.label) + '</small><p>' + esc(f[4]) + '</p>' +
-    '<em>' + esc(f[5] || '') + (src && (f[5] || '').indexOf(src) < 0 ? ' \u00b7 ' + esc(src) : '') + '</em></div></div>';
+    '<div class="mtv-pop-tx"><small>' + esc(f[7] || ty.label) + '</small><p>' + esc(f[4]) + '</p>' +
+    '<em>' + esc(f[5] || '') + (src && (f[5] || '').indexOf(src) < 0 ? (f[5] ? ' \u00b7 ' : '') + esc(src) : '') + '</em></div></div>';
   (root || document.body).appendChild(el);
   cur = el;
   // force layout, then animate in
