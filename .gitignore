@@ -1,7 +1,57 @@
+# dependencies / build output
 node_modules/
-*.png
-*.ipk
-telemetry/.secrets
-telemetry/reports/
 app/out/
 app/dist/
+*.ipk
+*.png
+__pycache__/
+
+# ---- secrets & local config: NEVER commit ----
+.env
+.env.*
+!.env.example
+.dev.vars
+telemetry/.secrets
+telemetry/deploy/deploy_with_secrets.js
+telemetry/deploy/deploy_code_only.js
+telemetry/deploy/set_secret_code.js
+telemetry/reports/
+# cookie jars / session dumps
+cj
+*.cookies
+cookies*.txt
+
+# ---- raw research dumps (Met site/API captures, archive crawl cache) ----
+/index.html
+/index2.html
+/idx_now.html
+/h.txt
+/plug.js
+/main.*.js
+/now_*.js
+/now_*.css
+catalog/raw/
+catalog/t*.json
+catalog/f_*.json
+catalog/filter.json
+catalog/screen.json
+archive/
+facts/sources/
+thumbs/src/
+thumbs/det/
+thumbs/out/
+thumbs/ai/
+thumbs/img_index.json
+thumbs/title_imgs.json
+thumbs/step1.json
+thumbs/*.jpg
+/resp.txt
+/screen.json
+/tos.html
+/ui.txt
+/v.json
+!app/assets/*.png
+# test/preview/promo outputs
+preview/
+promo/
+facts/__pycache__/

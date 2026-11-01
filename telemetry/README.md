@@ -2,11 +2,11 @@
 
 Logging/analytics API for the Met Opera webOS app (com.peasanttech.metopera).
 
-* URL: https://YOUR-WORKER.YOUR-SUBDOMAIN.workers.dev
-* Cloudflare account: <account e-mail> (<CF_ACCOUNT_ID>), free tier
-* Worker `met-tv-telemetry` (module, compat date 2026-10-01), workers.dev subdomain `peasanttech`
-* D1 `met-tv-telemetry` (<CF_D1_DATABASE_ID>, ENAM), binding `DB`; schema in worker/schema.sql
-* Secrets: `INGEST_KEY` (X-Met-Key header or ?k=), `READ_TOKEN` (Authorization: Bearer). Values in `.secrets` (600).
+* URL: `MTV_WORKER_URL` in the repo-root `.env` (a workers.dev URL)
+* Cloudflare account: `CF_ACCOUNT_ID` in `.env`, free tier
+* Worker `CF_WORKER_NAME` (module, compat date 2026-10-01) on workers.dev
+* D1 `CF_D1_DATABASE_NAME` (`CF_D1_DATABASE_ID`), binding `DB`; schema in worker/schema.sql
+* Worker secrets: `INGEST_KEY` (X-Met-Key header or ?k=; = `MTV_TELEMETRY_INGEST_KEY`), `READ_TOKEN` (Authorization: Bearer; = `MTV_TELEMETRY_READ_TOKEN`). Values live only in the git-ignored `.env` and in Cloudflare. Rotate a secret: edit `.env`, `node deploy/set_secret.js INGEST_KEY`, run the generated `deploy/set_secret_code.js` with the Cloudflare MCP `execute` tool via `$file:` (then delete it), rebuild the app. Apps built with the old ingest key stop reporting (401).
 * Cron `17 9 * * *` (UTC, daily) deletes events older than 30 days and stale rate-limit rows.
 
 ## Endpoints

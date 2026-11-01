@@ -10,6 +10,7 @@ import SEED from './seed.json';
 import { info, kindOf } from './catalogData';
 import { MIDDLEWARE, lsGet, lsSet, lsDel } from '../util';
 import { dbg } from '../debugLog';
+import { WORKER_URL } from '../config';
 
 var LIST_KEY = 'mtv.cat.lists';
 var OP_PREFIX = 'mtv.cat.op.';
@@ -41,7 +42,7 @@ export function xhrJSON(path, cb) {
 
 // ---------- images ----------
 // size: true/'small' = card (384x216), false = 640x360, 'large' = hero (1280x720)
-export var THUMBS_BASE = 'https://YOUR-WORKER.YOUR-SUBDOMAIN.workers.dev/v1/thumbs/';
+export var THUMBS_BASE = WORKER_URL ? WORKER_URL + '/v1/thumbs/' : '';
 export function imgUrl(code, size) {
   if (!code) return '';
   var c0 = code.charAt(0);
@@ -49,7 +50,7 @@ export function imgUrl(code, size) {
     return 'https://cf-images.us-east-1.prod.boltdns.net/v1/static/76009399001/' + code.slice(1) + '/' + (size === 'large' ? '1280x720' : size ? '384x216' : '640x360') + '/match/image.jpg';
   }
   if (c0 === 'M') return 'https://www.metopera.org/ondemand/imagelinks/' + code.slice(1);
-  if (c0 === 'T') return THUMBS_BASE + code.slice(1) + '.jpg';      // 1.3.0 generated poster (960x540)
+  if (c0 === 'T') return THUMBS_BASE ? THUMBS_BASE + code.slice(1) + '.jpg' : '';      // 1.3.0 generated poster (960x540)
   return code;
 }
 function imgCode(u) {

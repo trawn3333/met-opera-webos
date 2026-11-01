@@ -1,0 +1,7 @@
+async () => {
+  const c = await cloudflare.request({method:"POST", path:`/accounts/${accountId}/d1/database`, body:{name:"met-tv-telemetry"}});
+  const uuid = c.result.uuid;
+  const q = await cloudflare.request({method:"POST", path:`/accounts/${accountId}/d1/database/${uuid}/query`, body:{sql:"CREATE TABLE IF NOT EXISTS events (\n  id INTEGER PRIMARY KEY AUTOINCREMENT,\n  received_at INTEGER NOT NULL,\n  ts INTEGER,\n  device_id TEXT NOT NULL,\n  session_id TEXT,\n  app_version TEXT,\n  engine TEXT,\n  ua TEXT,\n  country TEXT,\n  type TEXT NOT NULL,\n  message TEXT,\n  source TEXT,\n  line INTEGER,\n  col INTEGER,\n  stack TEXT,\n  url TEXT,\n  data TEXT\n);\nCREATE INDEX IF NOT EXISTS idx_events_received ON events(received_at);\nCREATE INDEX IF NOT EXISTS idx_events_type_received ON events(type, received_at);\nCREATE INDEX IF NOT EXISTS idx_events_session ON events(session_id);\nCREATE TABLE IF NOT EXISTS rate (\n  device_id TEXT NOT NULL,\n  win INTEGER NOT NULL,\n  reqs INTEGER NOT NULL DEFAULT 0,\n  evts INTEGER NOT NULL DEFAULT 0,\n  PRIMARY KEY (device_id, win)\n);\n"}});
+  const t = await cloudflare.request({method:"POST", path:`/accounts/${accountId}/d1/database/${uuid}/query`, body:{sql:"SELECT name FROM sqlite_master WHERE type IN ('table','index') ORDER BY name"}});
+  return {uuid, name:c.result.name, region:c.result.created_in_region, schemaOk:q.success, objects:t.result[0].results.map(r=>r.name)};
+}

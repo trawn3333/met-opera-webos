@@ -1,11 +1,11 @@
 // On-screen settings: Met credentials for auto re-login, text size, optional speed-ups (off by default).
 // Opened with the RED remote button (or automatically on first run when signed out).
-import { tlm, tlmEnabled, tlmSetEnabled } from './tlm';
+import { tlm, tlmEnabled, tlmSetEnabled, tlmBuilt } from './tlm';
 import { lsGet, lsSet } from './util';
 import { focusFirst } from './spatialNav';
 import { saveCreds, getCreds, clearCreds, reloginNow, getStatusText } from './relogin';
 import { applyTextSize } from './tvStyle';
-import { reportProblem } from './report';
+import { reportProblem, reportNeedsConsent } from './report';
 
 var panel = null;
 var lastFocus = null;
@@ -29,11 +29,14 @@ function build() {
     '<div class="mtv-row">' +
     '<button type="button" data-act="text">Text size: <span class="mtv-text-val"></span></button>' +
     '<button type="button" data-act="perf">Speed-ups: <span class="mtv-perf-val"></span></button>' +
-    '<button type="button" data-act="tlm">Send diagnostics: <span class="mtv-tlm-val"></span></button>' +
     '</div>' +
+    '<div class="mtv-row">' +
+    '<button type="button" data-act="tlm">Send diagnostics &amp; usage data: <span class="mtv-tlm-val"></span></button>' +
+    '</div>' +
+    '<p class="mtv-small">Diagnostics are anonymous app errors and usage events (no account, e-mail or password) sent to the developer\u2019s server to fix problems. When off, nothing is sent.</p>' +
     '<p class="mtv-status" aria-live="polite"></p>' +
     '<div class="mtv-row"><button type="button" data-act="close">Close</button><button type="button" data-act="report">Report a problem</button></div>' +
-    '<p class="mtv-small">RED settings &middot; GREEN debug log (hold 1&nbsp;s: report a problem) &middot; YELLOW menu &middot; BACK back / hide player controls &middot; in the player: OK play/pause, \u25C0\u25B6 seek</p>' +
+    '<p class="mtv-small">RED settings &middot; GREEN debug log (hold 1&nbsp;s: report a problem) &middot; YELLOW menu &middot; BACK back / hide player controls &middot; in the player: OK play/pause, \u25C0\u25B6 previous/next scene</p>' +
     '</div>';
   document.body.appendChild(panel);
   panel.addEventListener('click', onClick);
@@ -49,7 +52,7 @@ function refresh() {
   if (c && !u.value) u.value = c.u;
   panel.querySelector('.mtv-text-val').textContent = lsGet('mtv.textSize', 115) + '%';
   panel.querySelector('.mtv-perf-val').textContent = lsGet('mtv.lite', false) ? 'on' : 'off';
-  panel.querySelector('.mtv-tlm-val').textContent = tlmEnabled() ? 'on' : 'off';
+  panel.querySelector('.mtv-tlm-val').textContent = !tlmBuilt() ? 'not in this build' : tlmEnabled() ? 'on' : 'off';
   setStatus(getStatusText());
 }
 
@@ -75,7 +78,10 @@ function onClick(e) {
   if (act === 'save') save();
   else if (act === 'clear') { clearCreds(); panel.querySelector('input[name="mtv-user"]').value = ''; setStatus('Saved account removed from this TV.'); }
   else if (act === 'close') close();
-  else if (act === 'report') { close(); setTimeout(function () { reportProblem('settings'); }, 100); }
+  else if (act === 'report') {
+    if (reportNeedsConsent()) { reportProblem('settings'); setStatus('Diagnostics are off. Press \u201cReport a problem\u201d again within 15 s to send this one report anyway.'); }
+    else { close(); setTimeout(function () { reportProblem('settings'); }, 100); }
+  }
   else if (act === 'text') {
     var sizes = [100, 115, 130];
     var cur = lsGet('mtv.textSize', 115);
@@ -84,12 +90,13 @@ function onClick(e) {
     applyTextSize(next);
     refresh();
   } else if (act === 'tlm') {
+    if (!tlmBuilt()) { setStatus('This build was made without telemetry: nothing is ever sent.'); return; }
     var on = !tlmEnabled();
     if (!on) tlm('telemetry-off', {});
     tlmSetEnabled(on);
     if (on) tlm('telemetry-on', {});
     refresh();
-    setStatus(on ? 'Diagnostics (errors, app events, no account data) will be sent to help fix problems.' : 'Diagnostics sending is off.');
+    setStatus(on ? 'Diagnostics & usage data (errors, app events, no account data) will be sent to help fix problems.' : 'Diagnostics & usage data are off: nothing is sent, including automatic problem reports.');
   } else if (act === 'perf') {
     lsSet('mtv.lite', !lsGet('mtv.lite', false));
     refresh();

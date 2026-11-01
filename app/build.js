@@ -9,8 +9,17 @@ const acorn = require('acorn');
 const root = __dirname;
 const dist = path.join(root, 'dist');
 const pkg = require('./package.json');
+// Config comes from the repo-root .env (never from source). Validates and exits on errors; telemetry is optional.
+const { loadEnv } = require('../scripts/env.js');
 
 async function main() {
+  const { env, features } = loadEnv('build');
+  const define = {
+    __MTV_VERSION__: JSON.stringify(pkg.version),
+    __MTV_WORKER_URL__: JSON.stringify(env.MTV_WORKER_URL.replace(/\/+$/, '')),
+    __MTV_TLM_ON__: JSON.stringify(!!features.telemetry),
+    __MTV_TLM_KEY__: JSON.stringify(features.telemetry ? env.MTV_TELEMETRY_INGEST_KEY : '')
+  };
   fs.rmSync(dist, { recursive: true, force: true });
   fs.mkdirSync(path.join(dist, 'webOSUserScripts'), { recursive: true });
 
@@ -20,7 +29,7 @@ async function main() {
     format: 'iife',
     target: 'es2015',
     loader: { '.css': 'text', '.idx': 'text' },
-    define: { __MTV_VERSION__: JSON.stringify(pkg.version) },
+    define,
     write: false,
     legalComments: 'none'
   });
@@ -54,7 +63,7 @@ async function main() {
   for (const f of ['icon.png', 'largeIcon.png', 'splash.png']) {
     fs.copyFileSync(path.join(root, 'assets', f), path.join(dist, f));
   }
-  console.log(`built dist/ (userScript.js ${(code.length / 1024).toFixed(1)} KB, ES5 verified)`);
+  console.log(`built dist/ (userScript.js ${(code.length / 1024).toFixed(1)} KB, ES5 verified, telemetry ${features.telemetry ? 'ON' : 'OFF (compiled out)'})`);
 }
 
 main().catch((e) => { console.error(e); process.exit(1); });

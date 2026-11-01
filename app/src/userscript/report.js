@@ -12,7 +12,7 @@ import { VERSION, getErrors, getLog, getConsole, getNet, dbg } from './debugLog'
 import { envInfo } from './envInfo';
 import { getCreds } from './relogin';
 import { lsGet, lsSet } from './util';
-import { tlm, tlmEnabled } from './tlm';
+import { tlm, tlmEnabled, tlmBuilt } from './tlm';
 import { toast } from './toast';
 
 var W = window;
@@ -261,10 +261,25 @@ export function sendReport(kind, extra, cb) {
 }
 
 // Manual report with on-screen feedback.
+// Opt-out: when "Send diagnostics & usage data" is off, nothing is sent unless the user explicitly confirms THIS
+// report by repeating the same action within CONSENT_MS (hold GREEN again / press "Report a problem" again).
+// The one-off consent does not turn diagnostics back on.
+var CONSENT_MS = 15000, consentUntil = 0;
+export function reportNeedsConsent() { return tlmBuilt() && !tlmEnabled() && Date.now() > consentUntil; }
 export function reportProblem(source) {
+  if (!tlmBuilt()) { toast('Problem reports are not included in this build \u2014 nothing was sent.', 5000); return; }
+  if (!tlmEnabled()) {
+    if (Date.now() > consentUntil) {
+      consentUntil = Date.now() + CONSENT_MS;
+      var again = /green/.test(source || 'green') ? 'hold GREEN again' : 'press \u201cReport a problem\u201d again';
+      toast('Diagnostics & usage data are off. To send this one problem report anyway (anonymous page snapshot, no account data), ' + again + ' within 15 s. Otherwise nothing is sent.', CONSENT_MS);
+      return;
+    }
+    consentUntil = 0; // consent used up: this report only
+  }
   toast('Sending problem report\u2026', 8000);
   tlm('report-problem', { source: source || 'key' });
-  sendReport('manual', { trigger: source || 'key' }, function (ok, msg) {
+  sendReport('manual', { trigger: source || 'key', consent: tlmEnabled() ? 'diagnostics-on' : 'one-off' }, function (ok, msg) {
     toast(ok ? '\u2713 ' + msg + ' \u2014 thank you' : '\u2717 Report not sent: ' + msg, 4000);
   });
 }

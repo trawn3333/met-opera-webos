@@ -80,7 +80,7 @@ const SHOTS = process.env.SHOTS !== '0';
   await shot('2-browse-second-visit-shuffled');
 
   // ---- 1.3.1: AI stage artwork thumbnails (served by the Worker/D1 thumbnail routes) ----
-  const AI = Object.values(JSON.parse(fs.readFileSync('/workspace/met/thumbs/manifest.json', 'utf8'))).filter((v) => v.how === 'ai').map((v) => 'https://YOUR-WORKER.YOUR-SUBDOMAIN.workers.dev/v1/thumbs/' + v.file);
+  const AI = Object.values(JSON.parse(fs.readFileSync('/workspace/met/thumbs/manifest.json', 'utf8'))).filter((v) => v.how === 'ai').map((v) => require('../../scripts/env.js').loadEnv('build', { log: { warn() {}, error: console.error } }).env.MTV_WORKER_URL.replace(/\/+$/, '') + '/v1/thumbs/' + v.file);
   if (AI.length) {
     const loaded = await p.evaluate((urls) => Promise.all(urls.map((u) => new Promise((res) => { const i = new Image(); i.onload = () => res(i.naturalWidth + 'x' + i.naturalHeight); i.onerror = () => res('ERR'); i.src = u; }))), AI);
     check('all AI artwork thumbnails load from the Worker (960x540)', loaded.every((x) => x === '960x540'), { n: AI.length, bad: AI.filter((u, i) => loaded[i] !== '960x540').slice(0, 5) });

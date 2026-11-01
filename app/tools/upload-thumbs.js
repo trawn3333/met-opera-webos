@@ -1,8 +1,9 @@
 // Uploads thumbs/out/*.jpg listed in thumbs/manifest.json to the telemetry Worker (PUT /v1/thumbs/<slug>.jpg).
-// The bearer token is read from telemetry/.secrets and never printed.
+// The Worker URL and bearer token are read from the repo-root .env and never printed.
 const fs = require('fs'), path = require('path');
-const BASE = 'https://YOUR-WORKER.YOUR-SUBDOMAIN.workers.dev';
-const sec = Object.fromEntries(fs.readFileSync('/workspace/met/telemetry/.secrets', 'utf8').trim().split('\n').map((l) => l.split('=')));
+const { env } = require('../../scripts/env.js').loadEnv('ops', { require: ['MTV_WORKER_URL', 'MTV_TELEMETRY_READ_TOKEN'], quietOps: true });
+const BASE = env.MTV_WORKER_URL.replace(/\/+$/, '');
+const sec = { READ_TOKEN: env.MTV_TELEMETRY_READ_TOKEN };
 const m = JSON.parse(fs.readFileSync('/workspace/met/thumbs/manifest.json', 'utf8'));
 (async () => {
   let ok = 0, fail = 0;

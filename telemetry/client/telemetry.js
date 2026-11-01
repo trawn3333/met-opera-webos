@@ -9,8 +9,13 @@
  */
 (function (root) {
   'use strict';
-  var ENDPOINT = 'https://YOUR-WORKER.YOUR-SUBDOMAIN.workers.dev/v1/events';
-  var INGEST_KEY = '__INGEST_KEY_REMOVED__'; // low-security static key, only deters noise
+  // Endpoint + ingest key come from the build (esbuild define, from the repo-root .env) or from init({endpoint, ingestKey}).
+  // With neither, telemetry is compiled into a no-op: nothing is queued or sent.
+  /* global __MTV_WORKER_URL__, __MTV_TLM_ON__, __MTV_TLM_KEY__ */
+  var BUILD_ON = typeof __MTV_TLM_ON__ !== 'undefined' ? !!__MTV_TLM_ON__ : true;
+  var ENDPOINT = BUILD_ON && typeof __MTV_WORKER_URL__ !== 'undefined' && __MTV_WORKER_URL__ ? __MTV_WORKER_URL__ + '/v1/events' : '';
+  var INGEST_KEY = BUILD_ON && typeof __MTV_TLM_KEY__ !== 'undefined' ? __MTV_TLM_KEY__ : ''; // low-security static key, only deters noise
+  function built() { return !!(BUILD_ON && ENDPOINT && INGEST_KEY); }
   var LS_QUEUE = 'mtv.tlm.queue', LS_DEVICE = 'mtv.tlm.device', LS_OFF = 'mtv.tlm.off';
   var MAX_QUEUE = 300, MAX_BATCH = 100, MAX_BYTES = 60000;
   var TYPES = { error: 1, warn: 1, console: 1, lifecycle: 1, usage: 1 };
@@ -137,7 +142,10 @@
     if (inited) return api;
     opts = opts || {};
     for (var k in opts) if (Object.prototype.hasOwnProperty.call(opts, k)) cfg[k] = opts[k];
+    if (opts.endpoint) ENDPOINT = String(opts.endpoint);
+    if (opts.ingestKey) INGEST_KEY = String(opts.ingestKey);
     if (lsGet(LS_OFF) === '1') cfg.enabled = false;
+    if (!built()) { cfg.enabled = false; inited = true; queue = []; return api; } // telemetry not in this build: no-op
     deviceId = lsGet(LS_DEVICE);
     if (!deviceId || !/^[A-Za-z0-9._:-]{4,64}$/.test(deviceId)) { deviceId = 'tv-' + rnd(16); lsSet(LS_DEVICE, deviceId); }
     sessionId = W.__mtvTlmSession || (W.__mtvTlmSession = 's-' + now().toString(36) + '-' + rnd(6)); // survives in-place restarts
@@ -165,9 +173,10 @@
     console: function (m, x) { track('console', m, x); },
     lifecycle: function (name, data) { track('lifecycle', name, { data: data }); },
     usage: function (name, data) { track('usage', name, { data: data }); },
-    setEnabled: function (on) { cfg.enabled = !!on; if (on) lsDel(LS_OFF); else { lsSet(LS_OFF, '1'); queue = []; persist(); } },
+    setEnabled: function (on) { cfg.enabled = !!on && built(); if (on) lsDel(LS_OFF); else { lsSet(LS_OFF, '1'); queue = []; persist(); } },
     // Problem report (DOM/player snapshot): body is a JSON string or gzip bytes (Uint8Array). cb(ok, status, responseText)
     postReport: function (body, gz, cb) {
+      if (!built()) { if (cb) cb(false, 0, 'problem reports are not included in this build'); return; }
       if (!inited || typeof XMLHttpRequest === 'undefined') { if (cb) cb(false, 0, 'telemetry not ready'); return; }
       var x = new XMLHttpRequest();
       try {
@@ -180,7 +189,7 @@
       try { x.send(body); } catch (e2) { if (cb) cb(false, 0, String(e2)); }
     },
     ids: function () { return { deviceId: deviceId, sessionId: sessionId, appVersion: cfg.appVersion }; },
-    info: function () { return { deviceId: deviceId, sessionId: sessionId, queued: queue.length, enabled: cfg.enabled, endpoint: ENDPOINT }; }
+    info: function () { return { deviceId: deviceId, sessionId: sessionId, queued: queue.length, enabled: cfg.enabled && built(), built: built(), optedOut: lsGet(LS_OFF) === '1', endpoint: ENDPOINT }; }
   };
 
   W.MetTelemetry = api;

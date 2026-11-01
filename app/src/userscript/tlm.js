@@ -1,5 +1,6 @@
 // Telemetry glue: forwards captured errors/console + lifecycle events to the Met TV logging API
-// (telemetry.js, see /workspace/met/telemetry/client/INTEGRATION.md). On by default; RED panel toggle.
+// (telemetry.js, see telemetry/client/INTEGRATION.md). On by default when the build includes telemetry
+// (MTV_TELEMETRY_INGEST_KEY in .env); the RED settings switch "Send diagnostics & usage data" turns it off (remembered).
 // PRIVACY: never pass credentials, mtv.creds, cookies, login request bodies or localStorage dumps here.
 import T from './telemetry';
 
@@ -21,6 +22,7 @@ export function tlmInit(version) {
   } catch (e) { /* telemetry must never break the app */ }
 }
 
+export function tlmBuilt() { try { return !!T.info().built; } catch (e) { return false; } }
 export function tlmEnabled() { try { return !!T.info().enabled; } catch (e) { return false; } }
 export function tlmSetEnabled(on) { try { T.setEnabled(!!on); } catch (e) { /* ignore */ } }
 export function tlmInfo() { try { return T.info(); } catch (e) { return {}; } }

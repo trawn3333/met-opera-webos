@@ -4,9 +4,10 @@
 #        ./query.sh reports ['since=7d&limit=20']   list problem reports (metadata + summary)
 #        ./query.sh report <id> [out.json]          fetch one report (decompressed JSON; default ./reports/report-<id>.json)
 #        ./query.sh report-dom <id> [out.html]      extract the sanitized DOM snapshot of a report as HTML
-# Reads READ_TOKEN from .secrets (never printed). Pipe to `python3 -m json.tool` or `jq` for pretty output.
-set -eu; cd "$(dirname "$0")"; . ./.secrets
-U=https://YOUR-WORKER.YOUR-SUBDOMAIN.workers.dev
+# Reads MTV_WORKER_URL + MTV_TELEMETRY_READ_TOKEN from the repo-root .env (never printed). Pipe to `python3 -m json.tool` or `jq` for pretty output.
+set -eu; cd "$(dirname "$0")"
+cfg="$(node ../scripts/env.js --sh MTV_WORKER_URL MTV_TELEMETRY_READ_TOKEN)" || exit 2; eval "$cfg"
+U="${MTV_WORKER_URL%/}"; READ_TOKEN="$MTV_TELEMETRY_READ_TOKEN"
 case "${1:-summary}" in
   summary) curl -s "$U/v1/summary?since=${2:-7d}" -H "Authorization: Bearer $READ_TOKEN" ;;
   events)  curl -s "$U/v1/events?${2:-since=24h}" -H "Authorization: Bearer $READ_TOKEN" ;;

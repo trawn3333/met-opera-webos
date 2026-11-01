@@ -32,6 +32,8 @@ It never fetches or plays streams itself; all playback goes through the Met's ow
 
 Requirements: Node 18+ and Python 3 with Pillow (only for regenerating icons).
 
+Configuration comes from the repo-root `.env` (copy `.env.example`); see **Configuration** and **Telemetry & privacy** in the [root README](../README.md). No URLs, ids or keys live in source.
+
 ```sh
 npm install
 npm install -g @webos-tools/cli   # provides ares-package / ares-install / ...
@@ -108,7 +110,7 @@ Useful extras:
   - Removed: the saved Met account (`mtv.creds` username and password, plain, encoded, URL-, JSON- and HTML-escaped). A final scan of the serialized payload refuses to send if any of these strings survive.
   - Never read: cookies and localStorage.
 
-  The worker applies the same filters again as a second safety net. The payload is gzip-compressed on the TV with fflate, which works on Chromium 53 where CompressionStream doesn't exist. It is capped at 500 KB compressed: the DOM is truncated first, then halved until it fits. Reports go out even when diagnostics are switched off, because you asked for them. Automatic reports only go out when diagnostics are on, and are limited to 1 per failure kind per title per 30 min, 3 per hour and 8 per day (`mtv.autoReports`). The worker also limits each device to 12 reports per hour.
+  The worker applies the same filters again as a second safety net. The payload is gzip-compressed on the TV with fflate, which works on Chromium 53 where CompressionStream doesn't exist. It is capped at 500 KB compressed: the DOM is truncated first, then halved until it fits. Since 1.3.3, when diagnostics are switched off, a manual report asks for explicit consent first (repeat the action within 15 s to send that one report). Automatic reports only go out when diagnostics are on, and are limited to 1 per failure kind per title per 30 min, 3 per hour and 8 per day (`mtv.autoReports`). The worker also limits each device to 12 reports per hour.
 - **Worker + D1.** `POST /v1/reports` (X-Met-Key; body is gzip or JSON, at most 1.5 MB on the wire and 6 MB decompressed) stores rows in the D1 table `reports`, gzip-compressed in a BLOB, with summary columns. It also writes a `problem-report` lifecycle event into the normal event stream. `GET /v1/reports` and `GET /v1/reports/<id>` (Bearer) list reports and fetch one; add `?raw=gz` to download it compressed. Reports are kept 30 days. Use `query.sh reports`, `query.sh report <id>` and `query.sh report-dom <id>`.
 - **Telemetry events.** New events: `video-fit`, `player-overlay` (first open, with fit info), `player-controls` (counts of opens, seeks, seconds seeked and buttons used; sent when you leave the player and every 5 min), `track-change` (subtitles/audio language), `picture-mode`, `resume`, `playback-failure` (always sent; a snapshot follows if the rate limit allows), `report-problem` and `report-blocked`.
 

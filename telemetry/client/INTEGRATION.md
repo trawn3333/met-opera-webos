@@ -1,9 +1,10 @@
 # Telemetry client – integration note for the app (v1.0.2+)
 
-File: `/workspace/met/telemetry/client/telemetry.js` (ES5, no fetch/Promise, ~9 KB). Endpoint URL and
-ingest key are constants at the top (`ENDPOINT`, `INGEST_KEY`). The ingest key is low-security by design.
-`telemetry.template.js` is the same file with a placeholder key (safe to commit); regenerate with:
-`sed "s/__INGEST_KEY__/$(grep ^INGEST_KEY= ../.secrets | cut -d= -f2)/" telemetry.template.js > telemetry.js`
+File: `telemetry/client/telemetry.js` (ES5, no fetch/Promise, ~9 KB; identical to `app/src/userscript/telemetry.js`).
+No endpoint or key is stored in source. They come from the repo-root `.env` at build time
+(`MTV_WORKER_URL`, `MTV_TELEMETRY_INGEST_KEY`, injected by `app/build.js` through esbuild `define`) or from
+`init({ endpoint, ingestKey })`. Without them the client is a no-op (nothing queued or sent).
+The ingest key is low-security by design (it ships inside the app); it only deters noise.
 
 ## Wire-up (userscript, esbuild bundle)
 1. Copy `telemetry.js` to `src/userscript/telemetry.js`.

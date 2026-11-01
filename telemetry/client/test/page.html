@@ -1,5 +1,6 @@
 <!doctype html><html><body><script src="../telemetry.js"></script><script>
-MetTelemetry.init({ appVersion: '1.0.2-clienttest', captureErrors: true, flushMs: 2000 });
+var q = {}; location.hash.slice(1).split('&').forEach(function (kv) { var i = kv.indexOf('='); if (i > 0) q[kv.slice(0, i)] = decodeURIComponent(kv.slice(i + 1)); });
+MetTelemetry.init({ appVersion: '1.0.2-clienttest', captureErrors: true, flushMs: 2000, endpoint: q.endpoint, ingestKey: q.k });
 MetTelemetry.lifecycle('launch', { test: true });
 MetTelemetry.usage('play', { title: 'Aida', password: 'shouldnotleave' });
 MetTelemetry.warn('warn with pwd=abc123');
