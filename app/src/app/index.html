@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Met Opera</title>
+<style>
+  html,body{margin:0;height:100%;background:#14100c;color:#e9dcc3;font-family:Georgia,"Times New Roman",serif}
+  .wrap{height:100%;display:-webkit-box;display:flex;-webkit-box-align:center;align-items:center;-webkit-box-pack:center;justify-content:center;text-align:center}
+  h1{font-weight:normal;font-size:64px;letter-spacing:6px;margin:0 0 24px}
+  p{font-size:28px;opacity:.75;margin:8px}
+  #retry{display:none;margin-top:32px;font-size:28px;padding:14px 40px;background:#5a1a1f;color:#fff;border:3px solid #c9a227;border-radius:8px}
+  #retry:focus{outline:4px solid #f2c14e}
+</style>
+</head>
+<body>
+<div class="wrap"><div>
+  <h1>MET OPERA</h1>
+  <p id="msg">Loading Met Opera on Demand&hellip;</p>
+  <button id="retry" type="button">Retry</button>
+</div></div>
+<script>
+(function () {
+  var TARGET = 'https://ondemand.metopera.org/';
+  var msg = document.getElementById('msg');
+  var retry = document.getElementById('retry');
+  function go() {
+    if (navigator.onLine === false) {
+      msg.innerHTML = 'No network connection. Check the TV&rsquo;s internet and try again.';
+      retry.style.display = 'inline-block';
+      retry.focus();
+      return;
+    }
+    // replace() so Back never returns to this launcher page
+    window.location.replace(TARGET);
+  }
+  retry.onclick = go;
+  document.addEventListener('keydown', function (e) {
+    if (e.keyCode === 13 && retry.style.display !== 'none') { go(); }
+    if (e.keyCode === 461) { if (window.webOS && webOS.platformBack) { webOS.platformBack(); } else { window.close(); } }
+  });
+  go();
+})();
+</script>
+</body>
+</html>

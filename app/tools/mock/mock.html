@@ -1,0 +1,61 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><title>Tristan und Isolde (mock) | Met Opera on Demand</title>
+<style>
+ body{margin:0;background:#000;color:#fff;font-family:Lato,Arial,sans-serif}
+ #app-header{position:sticky;top:0;height:80px;background:#111;display:flex;align-items:center;padding:0 40px;font-size:22px;z-index:60}
+ .Player{position:relative;width:100%;height:100%;z-index:50}
+ /* the Met/video.js fluid layout: height 0 + padding-top ratio */
+ .video-js{display:block;position:relative;background:#000;box-sizing:border-box;font-size:10px}
+ .video-js.vjs-fluid{width:100%;max-width:100%;height:0;padding-top:56.25%}
+ .video-js .vjs-tech{position:absolute;top:0;left:0;width:100%;height:100%}
+ .vjs-big-play-button{position:absolute;left:50%;top:50%;width:120px;height:80px;margin:-40px 0 0 -60px;font-size:30px;z-index:5}
+ #bcc-tracklist-panel{position:absolute;right:0;top:0;width:390px;height:100%;background:rgba(0,0,0,.6);font-size:18px;padding:20px;box-sizing:border-box}
+ #bcc-controls{position:absolute;bottom:0;left:0;right:0;height:80px;background:#000;font-size:20px;line-height:80px;padding-left:20px}
+ .PerformanceInfo{padding:40px 80px} .PerformanceInfo h1{font-family:Georgia,serif;font-style:italic;font-size:48px;margin:0}
+ .PerformanceInfo button{font-size:22px;padding:12px 30px;margin-top:20px}
+</style></head><body>
+<div id="root"><div class="app-layout"><div id="app-header">Met Opera on Demand (mock)</div>
+<main class="app-body"><div class="PerformancePage video"><div>
+ <div class="Player">
+  <video-js id="player" class="video-js vjs-fluid vjs-paused bc-player-mock">
+   <video class="vjs-tech" id="player_html5_api" preload="auto" crossorigin="anonymous">
+     <source src="/__CLIP__" type="video/webm">
+     <track kind="subtitles" srclang="en" label="English" src="/en.vtt">
+     <track kind="subtitles" srclang="de" label="Deutsch" src="/de.vtt">
+   </video>
+   <button class="vjs-big-play-button" type="button">Play</button>
+   <div id="bcc-tracklist-panel">TRACK LIST<br>1. Opening Credits<br>2. Prelude<br>3. Act I</div>
+   <div id="bcc-controls">Met controls (hidden in TV full screen)</div>
+  </video-js>
+ </div>
+ <div class="PerformanceInfo"><h1>Tristan und Isolde</h1><p>Wagner · 2026 · mock watch page</p><button type="button" class="mock-fav">Add to favorites</button>
+   <form><input type="email" name="email" value="mock.user@example.com"><input type="password" value="hunter2-mock"></form>
+   <script>window.__INITIAL_STATE__={"session":"eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJtb2NrIiwiZW1haWwiOiJtb2NrQGV4YW1wbGUuY29tIn0.c2lnbmF0dXJlc2lnbg","user":"mock.user@example.com"};</script>
+   <img src="https://example.invalid/poster.jpg?token=SECRETTOKEN123&w=200" alt="">
+ </div>
+</div></div></main></div></div>
+<script>
+(function () {
+  var v = document.getElementById('player_html5_api'), host = document.getElementById('player');
+  var CUES = __CUES__;
+  var audio = [{ id: 'en', kind: 'main', label: 'English (Main)', language: 'en', enabled: true }, { id: 'ad', kind: 'description', label: 'Audio description', language: 'en', enabled: false }];
+  var started = false;
+  v.addEventListener('playing', function () { started = true; host.classList.remove('vjs-paused'); host.classList.add('vjs-playing', 'vjs-has-started'); });
+  v.addEventListener('pause', function () { host.classList.add('vjs-paused'); });
+  var p = {
+    techName_: 'Html5', paused: function () { return v.paused; }, play: function () { return v.play(); }, pause: function () { v.pause(); },
+    currentTime: function (t) { if (typeof t === 'number') v.currentTime = t; return v.currentTime; }, duration: function () { return v.duration; },
+    buffered: function () { return v.buffered; }, bufferedPercent: function () { return v.buffered.length ? v.buffered.end(v.buffered.length - 1) / (v.duration || 1) : 0; },
+    hasStarted: function () { return started; }, ended: function () { return v.ended; }, readyState: function () { return v.readyState; },
+    error: function () { return v.error; }, currentType: function () { return 'video/webm'; }, currentSrc: function () { return v.currentSrc; },
+    currentSources: function () { return [{ src: v.currentSrc, type: 'video/webm' }]; }, isFullscreen: function () { return false; },
+    userActive: function () { return true; }, currentWidth: function () { return host.offsetWidth; }, currentHeight: function () { return host.offsetHeight; },
+    el: function () { return host; }, textTracks: function () { return v.textTracks; }, audioTracks: function () { return audio; },
+    mediainfo: { id: 'mock1', name: 'Tristan und Isolde', duration: 2400, cuePoints: CUES }
+  };
+  host.player = p;
+  window.videojs = { VERSION: '7.mock', getPlayer: function () { return p; }, getPlayers: function () { return { player: p }; } };
+  document.querySelector('.vjs-big-play-button').onclick = function () { v.play(); };
+})();
+</script>
+</body></html>

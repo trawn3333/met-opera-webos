@@ -1,0 +1,27 @@
+{
+  "name": "met-opera-webos",
+  "version": "1.2.0",
+  "description": "Personal-use LG webOS wrapper for Met Opera on Demand",
+  "scripts": {
+    "build": "node build.js",
+    "build:debug": "node build.js --debug",
+    "package": "node build.js && mkdir -p out && ares-package dist -o out",
+    "test": "node build.js --debug && node tools/test-userscript.js",
+    "icons": "python3 tools/make-icons.py"
+  },
+  "license": "UNLICENSED",
+  "type": "commonjs",
+  "devDependencies": {
+    "@babel/cli": "^7.29.7",
+    "@babel/core": "^7.29.7",
+    "@babel/preset-env": "^7.29.7",
+    "acorn": "^8.19.0",
+    "core-js": "^3.51.0",
+    "esbuild": "^0.28.2",
+    "puppeteer-core": "^24.43.1"
+  },
+  "private": true,
+  "dependencies": {
+    "fflate": "^0.8.3"
+  }
+}

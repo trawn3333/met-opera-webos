@@ -1,0 +1,19 @@
+{
+  "id": "com.peasanttech.metopera",
+  "version": "1.0.0",
+  "vendor": "Peasant Tech",
+  "type": "web",
+  "main": "index.html",
+  "title": "Met Opera",
+  "appDescription": "Personal TV wrapper for Met Opera on Demand",
+  "icon": "icon.png",
+  "largeIcon": "largeIcon.png",
+  "splashBackground": "splash.png",
+  "bgColor": "#14100c",
+  "iconColor": "#5a1a1f",
+  "resolution": "1920x1080",
+  "disableBackHistoryAPI": true,
+  "handlesRelaunch": false,
+  "requiredMemory": 400,
+  "requiredACG": []
+}

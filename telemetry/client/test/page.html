@@ -1,0 +1,7 @@
+<!doctype html><html><body><script src="../telemetry.js"></script><script>
+MetTelemetry.init({ appVersion: '1.0.2-clienttest', captureErrors: true, flushMs: 2000 });
+MetTelemetry.lifecycle('launch', { test: true });
+MetTelemetry.usage('play', { title: 'Aida', password: 'shouldnotleave' });
+MetTelemetry.warn('warn with pwd=abc123');
+setTimeout(function () { throw new Error('client-test uncaught'); }, 100);
+</script></body></html>

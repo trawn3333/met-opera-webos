@@ -1,0 +1,15 @@
+/* ---- Lite mode: cheaper rendering on old TV CPUs/GPUs (scoped under html.mtv-lite) ----
+   Conservative on purpose: transitions are shortened (not removed) so 'transitionend'
+   still fires for site code that waits on it; CSS animations are left alone. */
+html.mtv-lite *,
+html.mtv-lite *::before,
+html.mtv-lite *::after {
+  -webkit-transition-duration: 0.01s !important;
+  transition-duration: 0.01s !important;
+  -webkit-transition-delay: 0s !important;
+  transition-delay: 0s !important;
+}
+html.mtv-lite, html.mtv-lite body { scroll-behavior: auto !important; }
+
+/* Expensive paint effects on tiles */
+html.mtv-lite .Tile, html.mtv-lite .Tile * { box-shadow: none !important; text-shadow: none !important; }
