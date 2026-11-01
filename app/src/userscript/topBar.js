@@ -1,11 +1,11 @@
-// Persistent TV top bar: always visible (except in the full-screen player), the page is pushed down
-// below it. Reachable with UP from the top of any page (and YELLOW from anywhere).
-// Items navigate inside the Met's own single-page app (no reloads) or open our Categories screen.
+// Persistent TV top bar: visible in Browse / Search / Categories (hidden in playback). Reachable with UP
+// from the top of any screen (and YELLOW from anywhere). Shows the app version at the right.
 import { KEY } from './keys';
 import { closest, lsGet } from './util';
 import { tlm } from './tlm';
 import { dbg } from './debugLog';
 import { toast } from './toast';
+import { VERSION } from './debugLog';
 
 var bar = null;
 var lastPageFocus = null;
@@ -15,13 +15,14 @@ export var BAR_H = 64;
 
 var ITEMS = [
   ['home', 'Home'],
+  ['search', '\u2315 Search'],
   ['categories', 'Categories'],
-  ['archive', 'Archive A\u2013Z'],
-  ['search', 'Search'],
+  ['archive', 'A\u2013Z'],
   ['continue', 'Continue watching'],
   ['favorites', 'My favorites'],
   ['settings', 'Settings']
 ];
+var curAct = 'home';
 
 export function setActions(a) { actions = a; }
 
@@ -34,7 +35,7 @@ export function initBar() {
   for (var i = 0; i < ITEMS.length; i++) {
     html += '<button type="button" class="mtv-bar-item" data-act="' + ITEMS[i][0] + '" data-i="' + i + '">' + ITEMS[i][1] + '</button>';
   }
-  html += '<span class="mtv-bar-hint">\u25B2 menu</span>';
+  html += '<span class="mtv-bar-ver">v' + VERSION + '</span>';
   bar.innerHTML = html;
   document.body.appendChild(bar);
   document.documentElement.classList.add('mtv-has-bar');
@@ -70,14 +71,14 @@ export function focusBar() {
 
 export function highlightRoute(act) {
   if (!bar) return;
-  var p = window.location.pathname;
-  var cur = act || (p === '/search' ? 'search' : (p === '/' || p.indexOf('/screen/') === 0) ? 'home' : '');
+  if (act !== undefined) curAct = act;
+  var cur = curAct;
   var items = bar.querySelectorAll('.mtv-bar-item');
   for (var i = 0; i < items.length; i++) items[i].classList.toggle('mtv-cur', items[i].getAttribute('data-act') === cur);
 }
 
 function run(act) {
-  tlm('menu', { item: act, from: routeKind() });
+  tlm('menu', { item: act, from: curAct });
   dbg('info', 'menu: ' + act);
   var items = bar.querySelectorAll('.mtv-bar-item');
   for (var i = 0; i < items.length; i++) if (items[i].getAttribute('data-act') === act) lastItem = i;

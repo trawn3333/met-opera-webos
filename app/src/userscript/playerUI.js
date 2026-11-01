@@ -1,13 +1,13 @@
-// Remote-first playback controls (1.2.0): our own large overlay over the Met's Brightcove/video.js
-// player in full screen. Drives the player's own API (play/pause/currentTime/textTracks/audioTracks);
-// never touches the stream. Key model:
+// Remote-first playback controls: our own large overlay over OUR OWN <video> (player.js, 1.3.0).
+// Key model:
 //   hidden : OK = play/pause · LEFT/RIGHT = seek (hold to accelerate) · UP/DOWN/any = show controls
 //            BACK = leave the player (handled by index.js)
 //   shown  : UP/DOWN move between the scrub bar and the button row · LEFT/RIGHT seek on the scrub
 //            bar or move along the buttons · OK activates · BACK hides (closes a popup first)
 //   media keys (play/pause/ff/rw/stop) work in both states. Auto-hides after 4 s without keys.
 import { KEY } from './keys';
-import { getPlayer, getVjs, setFullscreen, isFullscreen, fmt, pictureMode, cyclePictureMode, MODE_LABEL, fitInfo } from './player';
+import { getPlayer, isFullscreen, fmt, pictureMode, setPictureMode, MODE_LABEL, STREAM_LABEL, streamPref, setStreamPref, fitInfo,
+  chapters as engChapters, title as engTitle, subtitle as engSub, textTracks, setTextTrack, getVideoEl, close as closePlayer, thumbAt, playerRoot } from './player';
 import { tlm } from './tlm';
 import { toast } from './toast';
 import { lsGet, lsSet } from './util';
@@ -40,7 +40,7 @@ var ICON = {
   report: svg('<path d="M1 21h22L12 2 1 21zm12-3h-2v-2h2v2zm0-4h-2v-4h2v4z"/>')
 };
 var BTNS = [
-  { id: 'exit', label: 'Title' },
+  { id: 'exit', label: 'Back' },
   { id: 'prev', label: 'Prev scene' },
   { id: 'rw', label: '\u221210 s' },
   { id: 'play', label: 'Play' },
@@ -49,7 +49,7 @@ var BTNS = [
   { id: 'chapters', label: 'Scenes' },
   { id: 'cc', label: 'Subtitles' },
   { id: 'audio', label: 'Audio' },
-  { id: 'pic', label: 'Picture' },
+  { id: 'pic', label: 'Picture & stream' },
   { id: 'report', label: 'Report problem' }
 ];
 var PLAY_IDX = 3;
@@ -57,7 +57,7 @@ var PLAY_IDX = 3;
 function esc(s) { return String(s === undefined || s === null ? '' : s).replace(/[&<>"]/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]; }); }
 
 function ensure() {
-  var host = document.querySelector('.Player') || document.body;
+  var host = playerRoot();
   if (root && host.contains(root)) return;
   if (!root) {
     root = document.createElement('div');
@@ -69,7 +69,7 @@ function ensure() {
       '<div class="mtv-po-badge"></div>' +
       '<div class="mtv-po-bot">' +
         '<div class="mtv-po-times"><span class="mtv-po-cur"></span><span class="mtv-po-ch"></span><span class="mtv-po-dur"></span></div>' +
-        '<div class="mtv-po-scrub"><div class="mtv-po-buf"></div><div class="mtv-po-prog"></div><div class="mtv-po-ticks"></div><div class="mtv-po-knob"></div><div class="mtv-po-tip"></div></div>' +
+        '<div class="mtv-po-scrub"><div class="mtv-po-buf"></div><div class="mtv-po-prog"></div><div class="mtv-po-ticks"></div><div class="mtv-po-knob"></div><div class="mtv-po-tip"><img alt=""><span></span></div></div>' +
         '<div class="mtv-po-btns">' + b + '</div>' +
         '<div class="mtv-po-hint">OK play/pause \u00b7 \u25C0 \u25B6 seek (hold = faster) \u00b7 \u25B2 \u25BC move \u00b7 BACK hide</div>' +
       '</div>' +
@@ -79,6 +79,7 @@ function ensure() {
       cur: root.querySelector('.mtv-po-cur'), dur: root.querySelector('.mtv-po-dur'), ch: root.querySelector('.mtv-po-ch'),
       scrub: root.querySelector('.mtv-po-scrub'), buf: root.querySelector('.mtv-po-buf'), prog: root.querySelector('.mtv-po-prog'),
       ticks: root.querySelector('.mtv-po-ticks'), knob: root.querySelector('.mtv-po-knob'), tip: root.querySelector('.mtv-po-tip'),
+      tipImg: root.querySelector('.mtv-po-tip img'), tipTxt: root.querySelector('.mtv-po-tip span'),
       btns: root.querySelectorAll('.mtv-po-btn'), menu: root.querySelector('.mtv-po-menu')
     };
     root.addEventListener('click', function (e) {
@@ -122,19 +123,7 @@ function bump() {
 }
 
 // ---- chapters (Brightcove cue points: {startTime, endTime, title, act}) ----
-function chapters() {
-  var vjs = getVjs();
-  var cps = vjs && vjs.mediainfo && vjs.mediainfo.cuePoints || [];
-  var out = [];
-  for (var i = 0; i < cps.length; i++) {
-    var c = cps[i];
-    var st = +(c.startTime !== undefined ? c.startTime : c.time);
-    if (!isFinite(st)) continue;
-    out.push({ t: st, end: +c.endTime || 0, title: c.title || c.name || ('Scene ' + (i + 1)), act: c.act || '' });
-  }
-  out.sort(function (a, b) { return a.t - b.t; });
-  return out;
-}
+function chapters() { return engChapters(); }
 function chapterAt(chs, t) { var cur = -1; for (var i = 0; i < chs.length; i++) if (chs[i].t <= t + 0.5) cur = i; return cur; }
 
 var ticksFor = -1;
@@ -150,12 +139,7 @@ function drawTicks(chs, d) {
   els.ticks.innerHTML = h;
 }
 
-function title() {
-  var vjs = getVjs();
-  var t = vjs && vjs.mediainfo && vjs.mediainfo.name;
-  if (!t) { var h = document.querySelector('.PerformanceInfo h1, .PerformanceInfo h2, h1'); t = h ? h.textContent : document.title; }
-  return String(t || '').replace(/\s+/g, ' ').trim();
-}
+function title() { return engTitle(); }
 
 function update() {
   if (!root) return;
@@ -169,7 +153,7 @@ function update() {
   var chs = chapters();
   var ci = chapterAt(chs, t);
   els.title.textContent = title();
-  els.sub.textContent = ci >= 0 ? (chs[ci].act ? 'Act ' + chs[ci].act + ' \u00b7 ' : '') + chs[ci].title : '';
+  els.sub.textContent = (ci >= 0 ? (chs[ci].act ? 'Act ' + chs[ci].act + ' \u00b7 ' : '') + chs[ci].title + '   \u2014   ' : '') + engSub();
   els.cur.textContent = fmt(t);
   els.dur.textContent = d ? '\u2212' + fmt(Math.max(0, d - t)) + '  /  ' + fmt(d) : '';
   els.ch.textContent = chs.length ? 'Scene ' + (ci + 1) + ' of ' + chs.length : '';
@@ -178,8 +162,14 @@ function update() {
   els.knob.style.left = pct + '%';
   els.buf.style.width = (d ? Math.min(100, p.buffered() / d * 100) : 0) + '%';
   els.tip.style.left = pct + '%';
-  els.tip.textContent = pending !== null ? fmt(pending) + '  (' + (pending >= seekStartT ? '+' : '\u2212') + fmt(Math.abs(pending - seekStartT)) + ')' : '';
+  els.tipTxt.textContent = pending !== null ? fmt(pending) + '  (' + (pending >= seekStartT ? '+' : '\u2212') + fmt(Math.abs(pending - seekStartT)) + ')' : '';
+  var th = pending !== null ? thumbAt(pending) : '';
+  if (th) { if (els.tipImg.getAttribute('src') !== th) els.tipImg.setAttribute('src', th); els.tipImg.style.display = 'block'; } else els.tipImg.style.display = 'none';
   els.tip.style.display = pending !== null ? 'block' : 'none';
+  if (pending !== null) {   // keep the preview inside the bar near the ends (it is centred on the knob)
+    var bw = els.tip.parentNode.offsetWidth, tw = els.tip.offsetWidth;
+    if (bw && tw) els.tip.style.left = Math.max(tw / 2, Math.min(bw - tw / 2, bw * pct / 100)) + 'px';
+  }
   drawTicks(chs, d);
   var pb = els.btns[PLAY_IDX];
   if (pb.getAttribute('data-p') !== String(paused)) {
@@ -187,7 +177,6 @@ function update() {
     pb.querySelector('i').innerHTML = paused ? ICON.play : ICON.pause;
     pb.querySelector('span').textContent = paused ? 'Play' : 'Pause';
   }
-  els.btns[9].querySelector('span').textContent = 'Picture: ' + (MODE_LABEL[pictureMode()] || '');
 }
 
 function paint() {
@@ -208,7 +197,7 @@ function paint() {
   } else els.menu.style.display = 'none';
 }
 
-// ---- seeking (accumulates while LEFT/RIGHT are pressed/held, commits 600 ms after the last press) ----
+// ---- seeking (accumulates while LEFT/RIGHT are pressed/held, commits 800 ms after the last press) ----
 function seekStep(dir) {
   var p = getPlayer();
   if (!p) return;
@@ -221,7 +210,7 @@ function seekStep(dir) {
   pending = Math.max(0, Math.min(d ? d - 2 : 1e9, pending + dir * step));
   update();
   clearTimeout(commitTimer);
-  commitTimer = setTimeout(commitSeek, 600);
+  commitTimer = setTimeout(commitSeek, 800);
 }
 function commitSeek() {
   clearTimeout(commitTimer);
@@ -262,7 +251,7 @@ function activate() {
   else if (id === 'chapters') openChapters();
   else if (id === 'cc') openCaptions();
   else if (id === 'audio') openAudio();
-  else if (id === 'pic') { var m = cyclePictureMode(); toast('Picture: ' + MODE_LABEL[m], 2500); update(); }
+  else if (id === 'pic') openPicture();
   else if (id === 'report') { if (hooks.onReport) hooks.onReport(); }
   else if (id === 'exit') { exitPlayer(); return; }
   paint();
@@ -279,8 +268,8 @@ export function exitPlayer() {
   var p = getPlayer();
   if (p && !p.paused()) p.pause();
   hide();
-  setFullscreen(false);
   sendStats();
+  closePlayer('back');
   if (hooks.onExit) hooks.onExit();
 }
 
@@ -304,15 +293,10 @@ function openChapters() {
 }
 
 function trackList(kind) {
-  var vjs = getVjs(), out = [];
-  var tl = vjs ? (kind === 'text' ? vjs.textTracks() : vjs.audioTracks()) : null;
-  if (!tl) { var v = document.querySelector('.Player video'); tl = v ? (kind === 'text' ? v.textTracks : v.audioTracks) : null; }
-  for (var i = 0; tl && i < tl.length; i++) {
-    var t = tl[i];
-    if (kind === 'text' && t.kind !== 'captions' && t.kind !== 'subtitles') continue;
-    out.push(t);
-  }
-  return out;
+  if (kind === 'text') return textTracks().slice();
+  var v = getVideoEl(), out = [], tl = v && v.audioTracks;
+  for (var i = 0; tl && i < tl.length; i++) out.push(tl[i]);
+  return out.length > 1 ? out : [];
 }
 var LANG = { en: 'English', de: 'German', fr: 'French', it: 'Italian', es: 'Spanish', ru: 'Russian', cs: 'Czech', pl: 'Polish', sv: 'Swedish', se: 'Swedish',
   ja: 'Japanese', zh: 'Chinese', ko: 'Korean', pt: 'Portuguese', nl: 'Dutch', hu: 'Hungarian', fi: 'Finnish', no: 'Norwegian', nb: 'Norwegian', da: 'Danish', he: 'Hebrew', uk: 'Ukrainian' };
@@ -355,10 +339,15 @@ function menuActivate() {
   var it = menu.items[menu.sel];
   var kind = menu.kind;
   if (kind === 'chapters') { jumpTo(it.act, 'chapter-list'); closeMenu(); return; }
-  if (kind === 'resume') { if (it.act !== null) jumpTo(it.act, 'resume'); tlm('resume', { choice: it.act !== null ? 'resume' : 'start-over' }); menu = null; hide(); return; }
+  if (kind === 'resume') { jumpTo(it.act, 'resume'); tlm('resume', { choice: it.act > 0 ? 'resume' : 'start-over' }); menu = null; hide(); return; }
+  if (kind === 'pic') {
+    if (it.act.pic) { setPictureMode(it.act.pic); toast('Picture: ' + MODE_LABEL[it.act.pic], 2000); }
+    if (it.act.stream) { setStreamPref(it.act.stream); toast('Stream: ' + STREAM_LABEL[it.act.stream], 2500); }
+    closeMenu(); return;
+  }
   if (kind === 'cc') {
     var tracks = trackList('text');
-    for (var i = 0; i < tracks.length; i++) tracks[i].mode = tracks[i] === it.act ? 'showing' : 'disabled';
+    setTextTrack(it.act);
     tlm('track-change', { type: 'subtitles', to: it.act ? (it.act.language || it.act.label || '?') : 'off', available: tracks.length });
     toast('Subtitles: ' + (it.act ? langName(it.act) : 'off'), 2000);
   } else if (kind === 'audio') {
@@ -370,34 +359,25 @@ function menuActivate() {
   closeMenu();
 }
 
-// ---- resume (local, per title; only when the Met did not already resume) ----
-var LS_RESUME = 'mtv.resume';
-var resumeChecked = '', saveTick = 0;
-function resumeKey() { return window.location.pathname; }
-export function trackResume() {
-  var p = getPlayer();
-  if (!p || !isFullscreen()) return;
-  var key = resumeKey(), t = p.time(), d = p.duration();
-  if (resumeChecked !== key && !p.paused() && t > 0.5) {
-    resumeChecked = key;
-    var all = lsGet(LS_RESUME, {}) || {};
-    var s = all[key];
-    if (s && t < 30 && s.t > 60 && (!d || s.t < d - 180)) {
-      show('menu');
-      openMenu('resume', 'Continue where you left off?', [
-        { label: 'Resume from ' + fmt(s.t), act: s.t, on: true },
-        { label: 'Start from the beginning', act: null }
-      ], 0);
-    }
-  }
-  if (++saveTick % 15 === 0 && !p.paused() && d) {
-    var store = lsGet(LS_RESUME, {}) || {};
-    if (t > 60 && t < d - 120) store[key] = { t: Math.round(t), d: Math.round(d), at: Date.now() };
-    else if (t >= d - 120) delete store[key];
-    var keys = Object.keys(store);
-    if (keys.length > 60) { keys.sort(function (a, b) { return store[a].at - store[b].at; }); for (var i = 0; i < keys.length - 60; i++) delete store[keys[i]]; }
-    lsSet(LS_RESUME, store);
-  }
+// ---- resume prompt (playback already continued from the saved point; offer to start over) ----
+export function showResume(t) {
+  if (!t || !isFullscreen()) return;
+  show('menu');
+  openMenu('resume', 'Continued where you left off', [
+    { label: 'Continue from ' + fmt(t), act: t, on: true },
+    { label: 'Start from the beginning', act: 0 }
+  ], 0);
+}
+
+function openPicture() {
+  var pm = pictureMode(), sp = streamPref(), items = [];
+  items.push({ head: 'Picture', label: MODE_LABEL.fit, sub: 'Whole picture, letterboxed to the video\u2019s real shape (recommended)', on: pm === 'fit', act: { pic: 'fit' } });
+  items.push({ label: MODE_LABEL.full, sub: 'Video box fills the screen; the TV scales the picture', on: pm === 'full', act: { pic: 'full' } });
+  var first = true;
+  for (var k in STREAM_LABEL) { items.push({ head: first ? 'Stream' : '', label: STREAM_LABEL[k], on: sp === k, act: { stream: k } }); first = false; }
+  var cur = 0; for (var i = 0; i < items.length; i++) if (items[i].on) { cur = i; break; }
+  var fi = fitInfo();
+  openMenu('pic', 'Picture & stream  \u00b7  ' + fi.video + ' via ' + fi.src, items, cur);
 }
 
 function sendStats() {
@@ -408,7 +388,6 @@ function sendStats() {
 
 export function initPlayerUI() {
   setInterval(function () {
-    try { trackResume(); } catch (e) { /* ignore */ }
     try { if (!isFullscreen() && visible) hide(); else update(); } catch (e2) { /* ignore */ }
   }, 1000);
   setInterval(sendStats, 5 * 60 * 1000);

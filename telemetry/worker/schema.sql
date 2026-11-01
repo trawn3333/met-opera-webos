@@ -43,3 +43,12 @@ CREATE TABLE IF NOT EXISTS reports (
   payload BLOB
 );
 CREATE INDEX IF NOT EXISTS idx_reports_received ON reports(received_at);
+
+-- Generated thumbnails (1.3.0): JPEG bytes served at GET /v1/thumbs/<slug>.jpg
+CREATE TABLE IF NOT EXISTS thumbs (
+  slug TEXT PRIMARY KEY,
+  bytes BLOB NOT NULL,
+  etag TEXT NOT NULL,
+  size INTEGER NOT NULL,
+  updated_at INTEGER NOT NULL
+);

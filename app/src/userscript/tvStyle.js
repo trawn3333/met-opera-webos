@@ -1,6 +1,7 @@
 import css from './tv.css';
 import liteCss from './lite.css';
 import navCss from './nav.css';
+import appCss from './app.css';
 import { addStyle } from './util';
 
 var textStyle = null;
@@ -20,6 +21,7 @@ export function injectStyles(lite) {
   document.documentElement.classList.add('mtv');
   injected.push(addStyle(css, 'mtv-style'));
   injected.push(addStyle(navCss, 'mtv-nav-style'));
+  injected.push(addStyle(appCss, 'mtv-app-style'));
   if (lite) {
     document.documentElement.classList.add('mtv-lite');
     var extra = '';
@@ -35,7 +37,7 @@ export function removeStyles() {
   injected = [];
   textStyle = null;
   var h = document.documentElement;
-  ['mtv', 'mtv-lite', 'mtv-fs'].forEach(function (c) { h.classList.remove(c); });
+  ['mtv', 'mtv-lite', 'mtv-fs', 'mtv-app', 'mtv-ready'].forEach(function (c) { h.classList.remove(c); });
   ['mtv-has-bar', 'mtv-cat-open'].forEach(function (c) { h.classList.remove(c); });
   var ov = document.querySelectorAll('.mtv-panel, .mtv-exit, .mtv-toast, .mtv-bar, .mtv-cat');
   for (var i = 0; i < ov.length; i++) ov[i].parentNode.removeChild(ov[i]);

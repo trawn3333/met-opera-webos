@@ -9,7 +9,7 @@
 //    Fallback if the page cannot be fetched: re-run the Met bundles in place.
 // 2) Watchdog: keeps checking; only if the page has shown nothing for 45 s after load does it show
 //    a "did not start" screen, and it removes that screen the moment the page renders.
-import { dbg, saveSession } from './debugLog';
+import { dbg, saveSession, VERSION } from './debugLog';
 import { isMetOnDemand } from './util';
 
 var W = window;
@@ -42,6 +42,8 @@ export function appAlive() {
 
 function bodyHasVisibleContent() {
   if (appAlive()) {
+    // 1.3.0: our app shell hides the Met page on purpose (display:none) - rendered children are enough.
+    if (document.documentElement.classList.contains('mtv-app')) return true;
     var r = rootEl().getBoundingClientRect();
     if (r.height > 50) return true;
   }
@@ -163,7 +165,8 @@ function showFailure(onFail) {
   failEl.innerHTML = '<div style="font-size:48px;color:#f2c14e;margin-bottom:24px">The Met Opera page did not start</div>' +
     '<div>OK: reload &nbsp;\u00b7&nbsp; GREEN: show debug log &nbsp;\u00b7&nbsp; BLUE: safe mode &nbsp;\u00b7&nbsp; BACK: exit</div>' +
     '<div style="font-size:24px;opacity:.75;margin-top:24px">This screen disappears by itself if the page finishes loading.</div>' +
-    '<div style="font-size:22px;opacity:.6;margin-top:30px">' + navigator.userAgent.replace(/[<>&]/g, '') + '</div>';
+    '<div style="font-size:22px;opacity:.6;margin-top:30px">' + navigator.userAgent.replace(/[<>&]/g, '') + '</div>' +
+    '<div style="position:absolute;right:56px;top:28px;font-size:22px;color:#e3b65b;letter-spacing:.06em">Met Opera TV v' + VERSION + '</div>';
   (document.body || document.documentElement).appendChild(failEl);
   dbg('error', 'watchdog: page has shown nothing ' + (WATCHDOG_MS / 1000) + 's after load');
   emit('watchdog-shown', { afterLoadMs: WATCHDOG_MS, restarted: recoverState.rebooted, method: recoverState.method });

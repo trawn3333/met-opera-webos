@@ -316,6 +316,32 @@ async function cleanup(env) {
   return { deletedEvents: r[0].meta.changes, deletedRate: r[1].meta.changes + r[3].meta.changes, deletedReports: r[2].meta.changes };
 }
 
+// ---- Thumbnails (generated posters for catalog titles without proper Met artwork) ----
+// D1 table `thumbs`; public GET (edge-cached via the Cache API), PUT/list with the READ_TOKEN bearer.
+const THUMB_RE = /^\/v1\/thumbs\/([a-z0-9-]{1,120})\.jpg$/;
+async function getThumb(request, env, ctx, slug) {
+  const cache = caches.default;
+  const key = new Request(new URL(request.url).origin + '/v1/thumbs/' + slug + '.jpg', { method: 'GET' });
+  let hit = await cache.match(key);
+  if (hit) return hit;
+  const row = await env.DB.prepare('SELECT bytes, etag FROM thumbs WHERE slug = ?').bind(slug).first();
+  if (!row) return new Response('not found', { status: 404, headers: { 'Cache-Control': 'public, max-age=300', ...CORS } });
+  const res = new Response(new Uint8Array(row.bytes), { headers: { 'Content-Type': 'image/jpeg', 'Cache-Control': 'public, max-age=604800', ETag: '"' + row.etag + '"', ...CORS } });
+  ctx.waitUntil(cache.put(key, res.clone()));
+  return res;
+}
+async function putThumb(request, env, ctx, slug) {
+  const buf = await request.arrayBuffer();
+  const b = new Uint8Array(buf);
+  if (b.length < 1000 || b.length > 400000 || b[0] !== 0xff || b[1] !== 0xd8) return json({ ok: false, error: 'expected a JPEG 1-400 KB' }, 400);
+  const d = await crypto.subtle.digest('SHA-1', buf);
+  const etag = [...new Uint8Array(d)].slice(0, 10).map((x) => x.toString(16).padStart(2, '0')).join('');
+  await env.DB.prepare('INSERT INTO thumbs (slug, bytes, etag, size, updated_at) VALUES (?, ?, ?, ?, ?) ON CONFLICT(slug) DO UPDATE SET bytes = excluded.bytes, etag = excluded.etag, size = excluded.size, updated_at = excluded.updated_at')
+    .bind(slug, buf, etag, b.length, Date.now()).run();
+  ctx.waitUntil(caches.default.delete(new Request(new URL(request.url).origin + '/v1/thumbs/' + slug + '.jpg')));
+  return json({ ok: true, slug, size: b.length, etag });
+}
+
 export default {
   async fetch(request, env, ctx) {
     const url = new URL(request.url);
@@ -327,6 +353,17 @@ export default {
       if (rm && request.method === 'GET') {
         if (!authRead(request, env)) return json({ ok: false, error: 'unauthorized' }, 401, { 'WWW-Authenticate': 'Bearer' });
         return rm[1] ? await getReport(env, Number(rm[1]), url) : await listReports(env, url);
+      }
+      const tm = THUMB_RE.exec(url.pathname);
+      if (tm && (request.method === 'GET' || request.method === 'HEAD')) return await getThumb(request, env, ctx, tm[1]);
+      if (tm && request.method === 'PUT') {
+        if (!authRead(request, env)) return json({ ok: false, error: 'unauthorized' }, 401, { 'WWW-Authenticate': 'Bearer' });
+        return await putThumb(request, env, ctx, tm[1]);
+      }
+      if (url.pathname === '/v1/thumbs' && request.method === 'GET') {
+        if (!authRead(request, env)) return json({ ok: false, error: 'unauthorized' }, 401, { 'WWW-Authenticate': 'Bearer' });
+        const r = await env.DB.prepare('SELECT slug, size, etag, updated_at FROM thumbs ORDER BY slug').all();
+        return json({ ok: true, count: r.results.length, thumbs: r.results });
       }
       if (url.pathname === '/' || url.pathname === '/v1/health') return json({ ok: true, service: 'met-tv-telemetry' });
       if (url.pathname === '/v1/events' || url.pathname === '/v1/summary' || url.pathname === '/v1/cleanup') {

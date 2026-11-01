@@ -27,4 +27,13 @@ async function metSignedIn(page) {
 }
 // CSS that hides personal account details (name/email) in screenshots.
 const MASK_CSS = '.nav-utility-link-account, .nav-utility-item .user-name, [class*="Account"] [class*="name"], [class*="greeting"] { visibility: hidden !important; }';
-module.exports = { metLogin, metSignedIn, MASK_CSS };
+// Same calls as plain function sources for raw-CDP drivers (args passed in memory only).
+const metLoginSrc = {
+  login: `function (a, b) { return new Promise(function (res) { var x = new XMLHttpRequest(); x.open('POST', 'https://middleware.ondemand.metopera.org/client/login', true); x.withCredentials = true;
+    x.setRequestHeader('user-platform', 'Web'); x.setRequestHeader('origin-hostname', location.hostname); x.setRequestHeader('Content-Type', 'application/json');
+    x.onload = function () { res(x.status); }; x.onerror = function () { res(0); }; x.send(JSON.stringify({ username: a, password: b })); }); }`,
+  signedIn: `function () { return new Promise(function (res) { var x = new XMLHttpRequest(); x.open('GET', 'https://middleware.ondemand.metopera.org/client/user_info', true); x.withCredentials = true;
+    x.setRequestHeader('user-platform', 'Web'); x.setRequestHeader('origin-hostname', location.hostname);
+    x.onload = function () { var j = null; try { j = JSON.parse(x.responseText); } catch (e) {} res(!!(j && j.extId)); }; x.onerror = function () { res(false); }; x.send(); }); }`
+};
+module.exports = { metLogin, metSignedIn, MASK_CSS, metLoginSrc };

@@ -49,6 +49,14 @@ for x in lst:
     # [name, sort, hd, sd, audio, typicalRuntimeMin, decades, image, audioDescribed, newestDate]
     out.append([x['name'], x['sort'], hd, sd, au, int(statistics.median(rts)) if rts else 0, dec, im, ad,
                 max(p['performanceDate'][:10] for p in ps) if ps else ''])
+# 1.3.0: titles without proper Met artwork get a better image (thumbs/manifest.json from tools/make-thumbs.js):
+# a real Met image found elsewhere ('B'/'M' code) or a generated poster ('T<slug>', served by the telemetry Worker).
+# Field 10 = 1 means "use the title image for this title's performances too" (their own art is the same card).
+TI = '/workspace/met/thumbs/title_imgs.json'; MF = '/workspace/met/thumbs/manifest.json'
+if os.path.exists(MF):
+    man = json.load(open(MF)); ti = json.load(open(TI)) if os.path.exists(TI) else {}
+    for r in out:
+        if r[0] in man: r[7] = man[r[0]]['code']; r.append(1)
 seed = {'built': datetime.datetime.utcnow().strftime('%Y-%m-%dT%H:%MZ'), 'titles': out}
 json.dump(seed, open(OUT, 'w'), ensure_ascii=False, separators=(',', ':'))
 print('titles', len(out), 'performances', tot, 'bytes', os.path.getsize(OUT))

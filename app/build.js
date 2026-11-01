@@ -19,7 +19,7 @@ async function main() {
     bundle: true,
     format: 'iife',
     target: 'es2015',
-    loader: { '.css': 'text' },
+    loader: { '.css': 'text', '.idx': 'text' },
     define: { __MTV_VERSION__: JSON.stringify(pkg.version) },
     write: false,
     legalComments: 'none'
@@ -50,7 +50,7 @@ async function main() {
   const appinfo = JSON.parse(fs.readFileSync(path.join(root, 'src/app/appinfo.json'), 'utf8'));
   appinfo.version = pkg.version;
   fs.writeFileSync(path.join(dist, 'appinfo.json'), JSON.stringify(appinfo, null, 2));
-  fs.copyFileSync(path.join(root, 'src/app/index.html'), path.join(dist, 'index.html'));
+  fs.writeFileSync(path.join(dist, 'index.html'), fs.readFileSync(path.join(root, 'src/app/index.html'), 'utf8').replace(/__MTV_VERSION__/g, pkg.version));
   for (const f of ['icon.png', 'largeIcon.png', 'splash.png']) {
     fs.copyFileSync(path.join(root, 'assets', f), path.join(dist, f));
   }

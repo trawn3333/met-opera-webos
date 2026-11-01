@@ -237,11 +237,11 @@ async function gotoAndInject(page, url) {
       mtv: !!window.__mtv
     }));
     check('mock login: exactly one login POST', loginPosts.length === 1, loginPosts.length);
-    check('mock login: reloaded exactly once, to https://ondemand.metopera.org/', navs.filter((u) => u === HOME).length === 1 && st.url === HOME, navs);
+    check('mock login: reloaded exactly once, to https://ondemand.metopera.org/', navs.filter((u) => u === HOME).length === 1 && /^https:\/\/ondemand\.metopera\.org\/(search)?$/.test(st.url), navs);   // 1.3.0: the hidden Met app is moved to /search in-app (pushState, not a reload)
     check('mock login: page rendered after reload (not black), no overlay left', st.root > 0 && st.overlays === 0 && !st.fs && st.text.length > 10, st);
     check('mock login: userscript active after reload', st.mtv);
     await sleep(3000);
-    check('mock login: no further navigations (no reload loop)', navs.length === 2, navs);
+    check('mock login: no further navigations (no reload loop)', navs.filter((u) => !/\/search$/.test(u)).length === 1, navs);
     check('mock login: no userscript errors', errors.filter((e) => !/status of 40[13]/.test(e)).length === 0, errors.slice(0, 5));
     await page.close();
   }

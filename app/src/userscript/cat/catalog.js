@@ -4,8 +4,7 @@
 //   GET /client/filter/<title, lower-case>        -> every performance of one title
 // A small build-time snapshot (seed.json, made from those endpoints) makes the screen instant on first
 // open; the live lists refresh in the background (12 h) and per-title performance lists are fetched on
-// demand and cached in localStorage (3 days, at most 40 titles). We only read catalog metadata:
-// playback always happens on the Met's own title page / player.
+// demand and cached in localStorage (3 days, at most 40 titles). We only read catalog metadata.
 import SEED from './seed.json';
 import { info, kindOf } from './catalogData';
 import { MIDDLEWARE, lsGet, lsSet, lsDel } from '../util';
@@ -40,12 +39,16 @@ export function xhrJSON(path, cb) {
 }
 
 // ---------- images ----------
-export function imgUrl(code, small) {
+// size: true/'small' = card (384x216), false = 640x360, 'large' = hero (1280x720)
+export var THUMBS_BASE = 'https://YOUR-WORKER.YOUR-SUBDOMAIN.workers.dev/v1/thumbs/';
+export function imgUrl(code, size) {
   if (!code) return '';
-  if (code.charAt(0) === 'B') {
-    return 'https://cf-images.us-east-1.prod.boltdns.net/v1/static/76009399001/' + code.slice(1) + '/' + (small ? '384x216' : '640x360') + '/match/image.jpg';
+  var c0 = code.charAt(0);
+  if (c0 === 'B') {
+    return 'https://cf-images.us-east-1.prod.boltdns.net/v1/static/76009399001/' + code.slice(1) + '/' + (size === 'large' ? '1280x720' : size ? '384x216' : '640x360') + '/match/image.jpg';
   }
-  if (code.charAt(0) === 'M') return 'https://www.metopera.org/ondemand/imagelinks/' + code.slice(1);
+  if (c0 === 'M') return 'https://www.metopera.org/ondemand/imagelinks/' + code.slice(1);
+  if (c0 === 'T') return THUMBS_BASE + code.slice(1) + '.jpg';      // 1.3.0 generated poster (960x540)
   return code;
 }
 function imgCode(u) {
@@ -64,7 +67,8 @@ var listsState = { source: 'snapshot ' + SEED.built, updated: 0, refreshing: fal
 
 function fromSeed(r) {
   // [name, sort, hd, sd, audio, typicalRuntimeMin, decades, image, audioDescribed, newestDate]
-  return { name: r[0], sort: r[1], hd: r[2], sd: r[3], audio: r[4], rt: r[5], dec: r[6], img: r[7], ad: r[8], newest: r[9], kind: kindOf(r[0]), cur: info(r[0]) };
+  // r[10] = 1: the title image replaces the performances' own art (generic cards / squares, see tools/make-thumbs.js)
+  return { name: r[0], sort: r[1], hd: r[2], sd: r[3], audio: r[4], rt: r[5], dec: r[6], img: r[7], ad: r[8], newest: r[9], fx: r[10] || 0, kind: kindOf(r[0]), cur: info(r[0]) };
 }
 
 function build() {
@@ -217,6 +221,7 @@ export function getPerformances(name, cb) {
         for (var j = 0; j < list.length; j++) { var k = list[j].d.slice(0, 3) + '0'; dec[k] = (dec[k] || 0) + 1; }
         t.dec = dec;
         if (!t.img) { for (j = 0; j < list.length; j++) if (list[j].img) { t.img = list[j].img; break; } }
+        if (t.fx) for (j = 0; j < list.length; j++) list[j].img = t.img;
       }
     } else if (c && c.p) {
       list = c.p;  // stale cache is better than nothing

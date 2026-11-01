@@ -16,7 +16,7 @@ var lastTile = null;
 // Set by index.js: called when UP finds nothing above (moves focus to the top bar). Returns true if handled.
 export var navHooks = { upEdge: null };
 // Our own top bar / categories screen handle their own keys; keep them out of page navigation.
-var OWN_UI = '.mtv-bar, .mtv-cat, .mtv-po';
+var OWN_UI = '.mtv-bar, .mtv-cat, .mtv-po, .mtv-search, .mtv-pl';
 
 function visible(el, rect) {
   if (rect.width < 2 || rect.height < 2) return false;

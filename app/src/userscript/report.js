@@ -284,9 +284,10 @@ function autoAllowed(key) {
 }
 export function autoReport(reason, detail) {
   try {
-    tlm('playback-failure', { reason: reason, path: W.location.pathname, detail: detail });
+    var where = detail && detail.perf ? 'perf:' + detail.perf : W.location.pathname;
+    tlm('playback-auto-report', { reason: reason, where: where });
     if (!tlmEnabled()) return;
-    var key = reason + '|' + W.location.pathname;
+    var key = reason + '|' + where;
     if (!autoAllowed(key)) { dbg('info', 'auto report suppressed (rate limit): ' + reason); return; }
     dbg('warn', 'playback problem (' + reason + '): sending automatic report');
     sendReport('auto:' + reason, detail, function (ok, msg) { dbg(ok ? 'info' : 'warn', 'auto report: ' + msg); });

@@ -1,0 +1,657 @@
+{
+ "50 Years at Lincoln Center: A Gala Celebration": {
+  "how": "composed",
+  "code": "T50-years-at-lincoln-center-a-gala-celebration",
+  "file": "50-years-at-lincoln-center-a-gala-celebration.jpg",
+  "era": "",
+  "mood": "",
+  "kind": "concert"
+ },
+ "A Concert for Ukraine Highlights": {
+  "how": "designed",
+  "code": "Ta-concert-for-ukraine-highlights",
+  "file": "a-concert-for-ukraine-highlights.jpg",
+  "era": "",
+  "mood": "",
+  "kind": "concert"
+ },
+ "A Midsummer Night's Dream": {
+  "how": "designed",
+  "code": "Ta-midsummer-night-s-dream",
+  "file": "a-midsummer-night-s-dream.jpg",
+  "era": "c20",
+  "mood": "comic",
+  "kind": "opera"
+ },
+ "Ainadamar": {
+  "how": "designed",
+  "code": "Tainadamar",
+  "file": "ainadamar.jpg",
+  "era": "contemp",
+  "mood": "tragic",
+  "kind": "opera"
+ },
+ "American Opera at the Met, Volume II": {
+  "how": "alias",
+  "code": "https://cdn.ondemand.metopera.org/2f533e3e-230a-47ad-b63e-ec8903fe551e.jpg",
+  "note": "image from \"American Opera at the Met\""
+ },
+ "An American Tragedy": {
+  "how": "designed",
+  "code": "Tan-american-tragedy",
+  "file": "an-american-tragedy.jpg",
+  "era": "contemp",
+  "mood": "tragic",
+  "kind": "opera"
+ },
+ "Antony and Cleopatra": {
+  "how": "composed",
+  "code": "Tantony-and-cleopatra",
+  "file": "antony-and-cleopatra.jpg",
+  "era": "c20",
+  "mood": "tragic",
+  "kind": "opera"
+ },
+ "Aria Code": {
+  "how": "composed",
+  "code": "Taria-code",
+  "file": "aria-code.jpg",
+  "era": "",
+  "mood": "",
+  "kind": "podcast"
+ },
+ "Astrid Varnay Playlist": {
+  "how": "designed",
+  "code": "Tastrid-varnay-playlist",
+  "file": "astrid-varnay-playlist.jpg",
+  "era": "",
+  "mood": "",
+  "kind": "playlist"
+ },
+ "Attila": {
+  "how": "designed",
+  "code": "Tattila",
+  "file": "attila.jpg",
+  "era": "romantic",
+  "mood": "epic",
+  "kind": "opera"
+ },
+ "Benvenuto Cellini": {
+  "how": "designed",
+  "code": "Tbenvenuto-cellini",
+  "file": "benvenuto-cellini.jpg",
+  "era": "romantic",
+  "mood": "comic",
+  "kind": "opera"
+ },
+ "Black Voices Rise, Volume II": {
+  "how": "designed",
+  "code": "Tblack-voices-rise-volume-ii",
+  "file": "black-voices-rise-volume-ii.jpg",
+  "era": "",
+  "mood": "",
+  "kind": "concert"
+ },
+ "Black Voices Rise: African American Artists at the Met, 1955-1985": {
+  "how": "composed",
+  "code": "Tblack-voices-rise-african-american-artists-at-the-met-1955-1985",
+  "file": "black-voices-rise-african-american-artists-at-the-met-1955-1985.jpg",
+  "era": "",
+  "mood": "",
+  "kind": "concert"
+ },
+ "Bryn Terfel Playlist": {
+  "how": "designed",
+  "code": "Tbryn-terfel-playlist",
+  "file": "bryn-terfel-playlist.jpg",
+  "era": "",
+  "mood": "",
+  "kind": "playlist"
+ },
+ "Cavalleria Rusticana": {
+  "how": "alias",
+  "code": "MVideo_ipadstills/811357017821_768x432.jpg",
+  "note": "image from \"Cavalleria Rusticana & Pagliacci\""
+ },
+ "Celebrating Asian and Pacific Islander Artists at the Met": {
+  "how": "slide",
+  "code": "https://cdn.ondemand.metopera.org/53563bef-b218-4aee-a7bd-edb10ed27121.jpg",
+  "note": "performance slide image"
+ },
+ "Celebrating Donald Palumbo: The Glorious Met Chorus": {
+  "how": "designed",
+  "code": "Tcelebrating-donald-palumbo-the-glorious-met-chorus",
+  "file": "celebrating-donald-palumbo-the-glorious-met-chorus.jpg",
+  "era": "",
+  "mood": "",
+  "kind": "concert"
+ },
+ "Cyrano de Bergerac": {
+  "how": "designed",
+  "code": "Tcyrano-de-bergerac",
+  "file": "cyrano-de-bergerac.jpg",
+  "era": "c20",
+  "mood": "romance",
+  "kind": "opera"
+ },
+ "Death in Venice": {
+  "how": "designed",
+  "code": "Tdeath-in-venice",
+  "file": "death-in-venice.jpg",
+  "era": "c20",
+  "mood": "dark",
+  "kind": "opera"
+ },
+ "Der Freischütz": {
+  "how": "designed",
+  "code": "Tder-freischutz",
+  "file": "der-freischutz.jpg",
+  "era": "romantic",
+  "mood": "dark",
+  "kind": "opera"
+ },
+ "Die Entführung aus dem Serail": {
+  "how": "designed",
+  "code": "Tdie-entfuhrung-aus-dem-serail",
+  "file": "die-entfuhrung-aus-dem-serail.jpg",
+  "era": "classical",
+  "mood": "comic",
+  "kind": "opera"
+ },
+ "Die Frau ohne Schatten": {
+  "how": "slide",
+  "code": "https://cdn.ondemand.metopera.org/5144bdaa-71f1-4476-a89a-dd5b76c44168.jpg",
+  "note": "performance slide image"
+ },
+ "Die Ägyptische Helena": {
+  "how": "designed",
+  "code": "Tdie-agyptische-helena",
+  "file": "die-agyptische-helena.jpg",
+  "era": "c20",
+  "mood": "mythic",
+  "kind": "opera"
+ },
+ "Dmitri Hvorostovsky at the Met": {
+  "how": "designed",
+  "code": "Tdmitri-hvorostovsky-at-the-met",
+  "file": "dmitri-hvorostovsky-at-the-met.jpg",
+  "era": "",
+  "mood": "",
+  "kind": "concert"
+ },
+ "El Niño": {
+  "how": "designed",
+  "code": "Tel-nino",
+  "file": "el-nino.jpg",
+  "era": "contemp",
+  "kind": "opera"
+ },
+ "Elīna Garanča Playlist": {
+  "how": "designed",
+  "code": "Telina-garanca-playlist",
+  "file": "elina-garanca-playlist.jpg",
+  "era": "",
+  "mood": "",
+  "kind": "playlist"
+ },
+ "Esclarmonde": {
+  "how": "designed",
+  "code": "Tesclarmonde",
+  "file": "esclarmonde.jpg",
+  "era": "romantic",
+  "mood": "mythic",
+  "kind": "opera"
+ },
+ "Fall Playlist 2014": {
+  "how": "designed",
+  "code": "Tfall-playlist-2014",
+  "file": "fall-playlist-2014.jpg",
+  "era": "",
+  "mood": "",
+  "kind": "playlist"
+ },
+ "For Ukraine: A Concert of Remembrance and Hope": {
+  "how": "designed",
+  "code": "Tfor-ukraine-a-concert-of-remembrance-and-hope",
+  "file": "for-ukraine-a-concert-of-remembrance-and-hope.jpg",
+  "era": "",
+  "mood": "",
+  "kind": "concert"
+ },
+ "Franco Corelli at the Met": {
+  "how": "designed",
+  "code": "Tfranco-corelli-at-the-met",
+  "file": "franco-corelli-at-the-met.jpg",
+  "era": "",
+  "mood": "",
+  "kind": "concert"
+ },
+ "From the House of the Dead": {
+  "how": "designed",
+  "code": "Tfrom-the-house-of-the-dead",
+  "file": "from-the-house-of-the-dead.jpg",
+  "era": "c20",
+  "mood": "dark",
+  "kind": "opera"
+ },
+ "Guillaume Tell": {
+  "how": "designed",
+  "code": "Tguillaume-tell",
+  "file": "guillaume-tell.jpg",
+  "era": "romantic",
+  "mood": "epic",
+  "kind": "opera"
+ },
+ "Handel at the Met": {
+  "how": "designed",
+  "code": "Thandel-at-the-met",
+  "file": "handel-at-the-met.jpg",
+  "era": "",
+  "mood": "",
+  "kind": "concert"
+ },
+ "Highlights of the 1966-67 Season": {
+  "how": "composed",
+  "code": "Thighlights-of-the-1966-67-season",
+  "file": "highlights-of-the-1966-67-season.jpg",
+  "era": "",
+  "mood": "",
+  "kind": "concert"
+ },
+ "Hänsel und Gretel": {
+  "how": "alias",
+  "code": "MVideo_ipadstills/811357011690_768x432.jpg",
+  "note": "image from \"Hansel and Gretel\""
+ },
+ "I Vespri Siciliani": {
+  "how": "designed",
+  "code": "Ti-vespri-siciliani",
+  "file": "i-vespri-siciliani.jpg",
+  "era": "romantic",
+  "mood": "epic",
+  "kind": "opera"
+ },
+ "Il Pirata": {
+  "how": "designed",
+  "code": "Til-pirata",
+  "file": "il-pirata.jpg",
+  "era": "belcanto",
+  "mood": "tragic",
+  "kind": "opera"
+ },
+ "Jenůfa": {
+  "how": "designed",
+  "code": "Tjenufa",
+  "file": "jenufa.jpg",
+  "era": "c20",
+  "mood": "tragic",
+  "kind": "opera"
+ },
+ "Jon Vickers Playlist 2015": {
+  "how": "designed",
+  "code": "Tjon-vickers-playlist-2015",
+  "file": "jon-vickers-playlist-2015.jpg",
+  "era": "",
+  "mood": "",
+  "kind": "playlist"
+ },
+ "Kiri Te Kanawa Playlist": {
+  "how": "designed",
+  "code": "Tkiri-te-kanawa-playlist",
+  "file": "kiri-te-kanawa-playlist.jpg",
+  "era": "",
+  "mood": "",
+  "kind": "playlist"
+ },
+ "Káťa Kabanová": {
+  "how": "designed",
+  "code": "Tkata-kabanova",
+  "file": "kata-kabanova.jpg",
+  "era": "c20",
+  "mood": "tragic",
+  "kind": "opera"
+ },
+ "L'Assedio di Corinto": {
+  "how": "designed",
+  "code": "Tl-assedio-di-corinto",
+  "file": "l-assedio-di-corinto.jpg",
+  "era": "belcanto",
+  "mood": "epic",
+  "kind": "opera"
+ },
+ "La Favorita": {
+  "how": "designed",
+  "code": "Tla-favorita",
+  "file": "la-favorita.jpg",
+  "era": "belcanto",
+  "mood": "tragic",
+  "kind": "opera"
+ },
+ "La Gioconda": {
+  "how": "designed",
+  "code": "Tla-gioconda",
+  "file": "la-gioconda.jpg",
+  "era": "romantic",
+  "mood": "tragic",
+  "kind": "opera"
+ },
+ "La Juive": {
+  "how": "designed",
+  "code": "Tla-juive",
+  "file": "la-juive.jpg",
+  "era": "romantic",
+  "mood": "tragic",
+  "kind": "opera"
+ },
+ "Lady Macbeth of Mtsensk": {
+  "how": "designed",
+  "code": "Tlady-macbeth-of-mtsensk",
+  "file": "lady-macbeth-of-mtsensk.jpg",
+  "era": "c20",
+  "mood": "dark",
+  "kind": "opera"
+ },
+ "Le Prophète": {
+  "how": "designed",
+  "code": "Tle-prophete",
+  "file": "le-prophete.jpg",
+  "era": "romantic",
+  "mood": "epic",
+  "kind": "opera"
+ },
+ "Le Sacre du Printemps | Le Rossignol | Oedipus Rex": {
+  "how": "composed",
+  "code": "Tle-sacre-du-printemps-le-rossignol-oedipus-rex",
+  "file": "le-sacre-du-printemps-le-rossignol-oedipus-rex.jpg",
+  "era": "c20",
+  "mood": "mythic",
+  "kind": "opera"
+ },
+ "Leontyne Price at the Met": {
+  "how": "composed",
+  "code": "Tleontyne-price-at-the-met",
+  "file": "leontyne-price-at-the-met.jpg",
+  "era": "",
+  "mood": "",
+  "kind": "concert"
+ },
+ "Lise Davidsen Playlist": {
+  "how": "designed",
+  "code": "Tlise-davidsen-playlist",
+  "file": "lise-davidsen-playlist.jpg",
+  "era": "",
+  "mood": "",
+  "kind": "playlist"
+ },
+ "Luciano Pavarotti at the Met": {
+  "how": "designed",
+  "code": "Tluciano-pavarotti-at-the-met",
+  "file": "luciano-pavarotti-at-the-met.jpg",
+  "era": "",
+  "mood": "",
+  "kind": "concert"
+ },
+ "Made for the Met: Commissions from 1910 to 2024": {
+  "how": "designed",
+  "code": "Tmade-for-the-met-commissions-from-1910-to-2024",
+  "file": "made-for-the-met-commissions-from-1910-to-2024.jpg",
+  "era": "",
+  "mood": "",
+  "kind": "concert"
+ },
+ "Marilyn Horne Playlist": {
+  "how": "designed",
+  "code": "Tmarilyn-horne-playlist",
+  "file": "marilyn-horne-playlist.jpg",
+  "era": "",
+  "mood": "",
+  "kind": "playlist"
+ },
+ "Mefistofele": {
+  "how": "designed",
+  "code": "Tmefistofele",
+  "file": "mefistofele.jpg",
+  "era": "romantic",
+  "mood": "mythic",
+  "kind": "opera"
+ },
+ "Messa da Requiem": {
+  "how": "alias",
+  "code": "B232fdb96-0ce7-4f9b-a62c-1705cad2c318/458c55fb-e730-4ea7-a646-311a6514a45b",
+  "note": "image from \"Verdi's Requiem\""
+ },
+ "Mignon": {
+  "how": "designed",
+  "code": "Tmignon",
+  "file": "mignon.jpg",
+  "era": "romantic",
+  "mood": "romance",
+  "kind": "opera"
+ },
+ "Moby-Dick": {
+  "how": "designed",
+  "code": "Tmoby-dick",
+  "file": "moby-dick.jpg",
+  "era": "contemp",
+  "mood": "epic",
+  "kind": "opera"
+ },
+ "Moses und Aron": {
+  "how": "composed",
+  "code": "Tmoses-und-aron",
+  "file": "moses-und-aron.jpg",
+  "era": "c20",
+  "mood": "mythic",
+  "kind": "opera"
+ },
+ "Mourning Becomes Electra": {
+  "how": "designed",
+  "code": "Tmourning-becomes-electra",
+  "file": "mourning-becomes-electra.jpg",
+  "era": "c20",
+  "mood": "dark",
+  "kind": "opera"
+ },
+ "National Council Alumni Playlist": {
+  "how": "designed",
+  "code": "Tnational-council-alumni-playlist",
+  "file": "national-council-alumni-playlist.jpg",
+  "era": "",
+  "mood": "",
+  "kind": "playlist"
+ },
+ "New Year's Eve Gala Starring Anna Netrebko": {
+  "how": "designed",
+  "code": "Tnew-year-s-eve-gala-starring-anna-netrebko",
+  "file": "new-year-s-eve-gala-starring-anna-netrebko.jpg",
+  "era": "",
+  "mood": "",
+  "kind": "concert"
+ },
+ "Opera for the Soul": {
+  "how": "designed",
+  "code": "Topera-for-the-soul",
+  "file": "opera-for-the-soul.jpg",
+  "era": "",
+  "mood": "",
+  "kind": "concert"
+ },
+ "Pagliacci": {
+  "how": "alias",
+  "code": "MVideo_ipadstills/811357017821_768x432.jpg",
+  "note": "image from \"Cavalleria Rusticana & Pagliacci\""
+ },
+ "Pelléas et Mélisande": {
+  "how": "composed",
+  "code": "Tpelleas-et-melisande",
+  "file": "pelleas-et-melisande.jpg",
+  "era": "c20",
+  "mood": "romance",
+  "kind": "opera"
+ },
+ "Plácido Domingo Playlist": {
+  "how": "designed",
+  "code": "Tplacido-domingo-playlist",
+  "file": "placido-domingo-playlist.jpg",
+  "era": "",
+  "mood": "",
+  "kind": "playlist"
+ },
+ "Renata Tebaldi Playlist": {
+  "how": "designed",
+  "code": "Trenata-tebaldi-playlist",
+  "file": "renata-tebaldi-playlist.jpg",
+  "era": "",
+  "mood": "",
+  "kind": "playlist"
+ },
+ "Renée Fleming at the Met": {
+  "how": "designed",
+  "code": "Trenee-fleming-at-the-met",
+  "file": "renee-fleming-at-the-met.jpg",
+  "era": "",
+  "mood": "",
+  "kind": "concert"
+ },
+ "Roberto Alagna Playlist": {
+  "how": "designed",
+  "code": "Troberto-alagna-playlist",
+  "file": "roberto-alagna-playlist.jpg",
+  "era": "",
+  "mood": "",
+  "kind": "playlist"
+ },
+ "Romance at the Met": {
+  "how": "designed",
+  "code": "Tromance-at-the-met",
+  "file": "romance-at-the-met.jpg",
+  "era": "",
+  "mood": "",
+  "kind": "concert"
+ },
+ "Season Preview Playlist: 2015-16": {
+  "how": "designed",
+  "code": "Tseason-preview-playlist-2015-16",
+  "file": "season-preview-playlist-2015-16.jpg",
+  "era": "",
+  "mood": "",
+  "kind": "playlist"
+ },
+ "Shirley Verrett at the Met": {
+  "how": "designed",
+  "code": "Tshirley-verrett-at-the-met",
+  "file": "shirley-verrett-at-the-met.jpg",
+  "era": "",
+  "mood": "",
+  "kind": "concert"
+ },
+ "Sondra Radvanovsky at the Met": {
+  "how": "designed",
+  "code": "Tsondra-radvanovsky-at-the-met",
+  "file": "sondra-radvanovsky-at-the-met.jpg",
+  "era": "",
+  "mood": "",
+  "kind": "concert"
+ },
+ "Spring Playlist 2015": {
+  "how": "designed",
+  "code": "Tspring-playlist-2015",
+  "file": "spring-playlist-2015.jpg",
+  "era": "",
+  "mood": "",
+  "kind": "playlist"
+ },
+ "Summer Playlist 2014": {
+  "how": "designed",
+  "code": "Tsummer-playlist-2014",
+  "file": "summer-playlist-2014.jpg",
+  "era": "",
+  "mood": "",
+  "kind": "playlist"
+ },
+ "Summer Playlist 2015": {
+  "how": "designed",
+  "code": "Tsummer-playlist-2015",
+  "file": "summer-playlist-2015.jpg",
+  "era": "",
+  "mood": "",
+  "kind": "playlist"
+ },
+ "Susannah": {
+  "how": "designed",
+  "code": "Tsusannah",
+  "file": "susannah.jpg",
+  "era": "c20",
+  "mood": "tragic",
+  "kind": "opera"
+ },
+ "Teresa Stratas Playlist": {
+  "how": "designed",
+  "code": "Tteresa-stratas-playlist",
+  "file": "teresa-stratas-playlist.jpg",
+  "era": "",
+  "mood": "",
+  "kind": "playlist"
+ },
+ "The Barber of Seville": {
+  "how": "alias",
+  "code": "B8f0bd92b-c188-44a5-a923-13843543222b/623695ed-121f-4bd9-909b-11928ea9f0c7",
+  "note": "image from \"Il Barbiere di Siviglia\""
+ },
+ "The Gambler": {
+  "how": "designed",
+  "code": "Tthe-gambler",
+  "file": "the-gambler.jpg",
+  "era": "c20",
+  "mood": "comic",
+  "kind": "opera"
+ },
+ "The Great Gatsby": {
+  "how": "composed",
+  "code": "Tthe-great-gatsby",
+  "file": "the-great-gatsby.jpg",
+  "era": "contemp",
+  "mood": "tragic",
+  "kind": "opera"
+ },
+ "The Makropulos Case": {
+  "how": "designed",
+  "code": "Tthe-makropulos-case",
+  "file": "the-makropulos-case.jpg",
+  "era": "c20",
+  "mood": "dark",
+  "kind": "opera"
+ },
+ "The Rake's Progress": {
+  "how": "designed",
+  "code": "Tthe-rake-s-progress",
+  "file": "the-rake-s-progress.jpg",
+  "era": "c20",
+  "mood": "comic",
+  "kind": "opera"
+ },
+ "Two Boys": {
+  "how": "designed",
+  "code": "Ttwo-boys",
+  "file": "two-boys.jpg",
+  "era": "contemp",
+  "mood": "dark",
+  "kind": "opera"
+ },
+ "Vanessa": {
+  "how": "designed",
+  "code": "Tvanessa",
+  "file": "vanessa.jpg",
+  "era": "c20",
+  "mood": "romance",
+  "kind": "opera"
+ },
+ "Winter Playlist 2014": {
+  "how": "designed",
+  "code": "Twinter-playlist-2014",
+  "file": "winter-playlist-2014.jpg",
+  "era": "",
+  "mood": "",
+  "kind": "playlist"
+ }
+}

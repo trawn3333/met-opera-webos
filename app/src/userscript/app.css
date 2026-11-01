@@ -1,0 +1,146 @@
+/* ==== Met Opera TV 1.3.0: app shell (browse / search / play). Chromium 53-safe CSS. ==== */
+/* The app takes over: everything the Met page renders is hidden (its scripts keep running). */
+html.mtv-app, html.mtv-app body { background: #0a0a0e !important; overflow: hidden !important; }
+html.mtv-app body > :not([class*="mtv-"]) { display: none !important; }
+html.mtv-app.mtv-has-bar body { padding-top: 0 !important; }
+html.mtv-mode-play, html.mtv-mode-play body { background: #000 !important; }
+html.mtv-mode-play .mtv-bar, html.mtv-mode-play .mtv-cat, html.mtv-mode-play .mtv-search { display: none !important; }
+html.mtv-mode-search .mtv-cat { display: none !important; }
+.mtv-search, .mtv-pl { font-family: 'LG Smart UI', 'LG Display', Roboto, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif !important; -webkit-font-smoothing: antialiased; }
+
+/* Version, always visible outside playback */
+.mtv-bar-ver { margin-left: auto; color: #e3b65b; font-size: 18px; font-weight: 700; letter-spacing: .08em; opacity: .85; white-space: nowrap;
+  padding: 6px 14px; border: 1px solid rgba(227, 182, 91, .35); border-radius: 999px; }
+.mtv-bar-item[data-act="search"] { color: #fff; }
+
+/* ---- Browse: hero ---- */
+.mtv-cat.mtv-cat-browse .mtv-cat-head { display: none; }
+.mtv-cat.mtv-cat-browse .mtv-cat-vp { top: 0; bottom: 0; }
+.mtv-cat.mtv-cat-browse .mtv-cat-hint { display: none; }
+.mtv-crow-hero { padding: 0 !important; height: 452px; position: relative; overflow: hidden; margin-bottom: 8px; }
+.mtv-hero { position: absolute; left: 0; top: 0; right: 0; height: 452px; background: #0a0a0e; overflow: hidden; }
+.mtv-hero-imgw { position: absolute; right: 0; top: 0; width: 1200px; height: 452px; overflow: hidden; }
+.mtv-hero-img { position: absolute; right: 0; top: -110px; width: 1200px; height: 675px; display: block; opacity: 0;
+  -webkit-transition: opacity .4s ease-out; transition: opacity .4s ease-out; }
+.mtv-hero-shade { position: absolute; left: 0; top: 0; right: 0; bottom: 0;
+  background: -webkit-linear-gradient(left, #0a0a0e 0%, #0a0a0e 36%, rgba(10, 10, 14, .78) 52%, rgba(10, 10, 14, .15) 75%, rgba(10, 10, 14, 0) 100%);
+  background: linear-gradient(to right, #0a0a0e 0%, #0a0a0e 36%, rgba(10, 10, 14, .78) 52%, rgba(10, 10, 14, .15) 75%, rgba(10, 10, 14, 0) 100%); }
+.mtv-hero-shade:after { content: ''; position: absolute; left: 0; right: 0; bottom: 0; height: 150px;
+  background: -webkit-linear-gradient(top, rgba(10, 10, 14, 0), #0a0a0e); background: linear-gradient(rgba(10, 10, 14, 0), #0a0a0e); }
+.mtv-hero-txt { position: absolute; left: 96px; top: 34px; width: 860px; }
+.mtv-hero-lab { color: #e3b65b; font-size: 17px; font-weight: 700; letter-spacing: .2em; text-transform: uppercase; }
+.mtv-hero-txt h1 { margin: 10px 0 8px; font-size: 62px; line-height: 1.05; font-weight: 300; letter-spacing: -.015em; color: #fff;
+  white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.mtv-hero-sub { font-size: 21px; color: #c9c5d0; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.mtv-hero-desc { margin: 12px 0 0; font-size: 20px; line-height: 1.4; color: #a5a0ac; max-height: 56px; overflow: hidden; }
+.mtv-hero-prog { display: none; width: 360px; height: 6px; margin-top: 14px; border-radius: 3px; background: rgba(255, 255, 255, .2); overflow: hidden; }
+.mtv-hero-prog i { display: block; height: 6px; background: #e3b65b; }
+.mtv-hero-cta { margin-top: 14px; font-size: 19px; color: #ece8f0; }
+.mtv-hero-cta b { display: inline-block; padding: 4px 12px; margin-right: 8px; border-radius: 8px; background: #e3b65b; color: #121016; font-size: 16px; letter-spacing: .06em; }
+.mtv-hero-strip { position: absolute; left: 88px; bottom: 6px; padding: 10px 0 12px 8px !important; }
+.mtv-hcard { display: inline-block; vertical-align: top; width: 198px; margin: 0 16px 0 0; padding: 0; border: 0; border-radius: 10px; overflow: hidden;
+  background: #17161c; color: #ece8f0; text-align: left; cursor: pointer; opacity: .72; box-shadow: 0 6px 16px rgba(0, 0, 0, .5);
+  -webkit-transition: -webkit-transform .15s ease-out, opacity .15s; transition: transform .15s ease-out, opacity .15s; }
+.mtv-hcard-img { width: 198px; height: 111px; background: #24212b; overflow: hidden; }
+.mtv-hcard-img img { width: 198px; height: 111px; display: block; }
+.mtv-hcard-t { padding: 6px 10px 8px; font-size: 16px; font-weight: 500; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.mtv-hcard.mtv-hcur { opacity: 1; box-shadow: 0 0 0 2px rgba(227, 182, 91, .55), 0 6px 16px rgba(0, 0, 0, .5); }
+.mtv-cat .mtv-hcard.mtv-f, .mtv-cat .mtv-hcard:focus { opacity: 1; outline: none !important;
+  box-shadow: 0 0 0 4px #e3b65b, 0 0 26px rgba(227, 182, 91, .5) !important; -webkit-transform: scale(1.08); transform: scale(1.08); }
+
+/* Browse rows: a little tighter than Categories */
+.mtv-cat-browse .mtv-crow { padding-bottom: 14px; }
+.mtv-cat-browse .mtv-crow h2 { margin: 2px 0 8px; font-size: 27px; }
+
+/* Named performance cards (Continue watching / Favorites / lists) */
+.mtv-perf-named { height: 330px; }
+.mtv-perf-named .mtv-perf-img { height: 190px; position: relative; }
+.mtv-perf-named .mtv-perf-img img { height: 225px; }
+.mtv-perf-n { padding: 10px 18px 0; font-size: 24px; font-weight: 500; color: #fff; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.mtv-perf-d2 { padding: 4px 18px 0; font-size: 17px; color: #e3b65b; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.mtv-perf-prog { height: 6px; background: rgba(255, 255, 255, .15); }
+.mtv-perf-prog i { display: block; height: 6px; background: #e3b65b; }
+
+/* ---- Search ---- */
+.mtv-search { display: none; position: fixed; left: 0; right: 0; top: 64px; bottom: 0; z-index: 2147483300; color: #ece8f0; font-size: 22px; overflow: hidden;
+  background: #0a0a0e; background: -webkit-radial-gradient(85% 0%, ellipse cover, #1d1424 0%, #0f0d13 45%, #0a0a0e 80%);
+  background: radial-gradient(ellipse at 85% 0%, #1d1424 0%, #0f0d13 45%, #0a0a0e 80%); }
+.mtv-search.mtv-open { display: block; }
+.mtv-s-left { position: absolute; left: 80px; top: 34px; width: 660px; }
+.mtv-s-qbox { position: relative; height: 84px; border-radius: 16px; background: #1b1a21; box-shadow: inset 0 0 0 2px #2c2a33; }
+.mtv-s-qbox.mtv-f, .mtv-s-qbox.mtv-typing { box-shadow: inset 0 0 0 3px #e3b65b, 0 0 24px rgba(227, 182, 91, .35); }
+.mtv-s-icon { position: absolute; left: 22px; top: 18px; font-size: 40px; color: #e3b65b; }
+.mtv-s-input { position: absolute; left: 76px; top: 0; right: 16px; height: 84px; border: 0 !important; outline: none !important; background: transparent !important;
+  color: #fff !important; font: 400 40px/84px Roboto, Arial, sans-serif !important; box-shadow: none !important; padding: 0 !important; }
+.mtv-s-input::-webkit-input-placeholder { color: #6f6b78; font-size: 26px; }
+.mtv-s-kb { margin-top: 24px; font-size: 0; white-space: nowrap; }
+.mtv-key { display: inline-block; vertical-align: top; height: 74px; margin: 0 10px 10px 0; padding: 0; border: 0; border-radius: 12px; background: #1b1a21;
+  color: #ece8f0; font: 500 30px/74px Roboto, Arial, sans-serif; text-align: center; cursor: pointer; }
+.mtv-key-w { font-size: 20px; color: #c9c5d0; }
+.mtv-key.mtv-f, .mtv-search .mtv-key:focus { background: #e3b65b !important; color: #121016 !important; outline: none !important;
+  box-shadow: 0 0 0 3px rgba(227, 182, 91, .35), 0 0 22px rgba(227, 182, 91, .5) !important; -webkit-transform: scale(1.06); transform: scale(1.06); }
+.mtv-s-info { margin-top: 12px; font-size: 16px; color: #6f6b78; white-space: normal; width: 640px; }
+.mtv-s-right { position: absolute; left: 800px; right: 72px; top: 34px; bottom: 24px; }
+.mtv-s-chips { white-space: nowrap; overflow: hidden; height: 74px; margin-bottom: 12px; }
+.mtv-s-chip { display: inline-block; vertical-align: top; height: 64px; margin: 4px 12px 0 2px; padding: 8px 20px; box-sizing: border-box; border: 0; border-radius: 12px;
+  background: #1b1a21; color: #ece8f0; text-align: left; cursor: pointer; }
+.mtv-s-chip b { display: block; font-size: 20px; font-weight: 500; max-width: 300px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.mtv-s-chip span { display: block; font-size: 14px; color: #8d8996; text-transform: uppercase; letter-spacing: .08em; }
+.mtv-s-chip-person b:before { content: '\263A  '; color: #e3b65b; }
+.mtv-s-vp { position: absolute; left: 0; right: 0; top: 86px; bottom: 0; overflow: hidden; }
+.mtv-s-list { -webkit-transition: -webkit-transform .12s ease-out; transition: transform .12s ease-out; }
+.mtv-s-row { display: block; width: 100%; height: 118px; margin: 0 0 10px; padding: 0; border: 0; border-radius: 14px; background: #15141a; color: #ece8f0;
+  text-align: left; position: relative; overflow: hidden; cursor: pointer; }
+.mtv-s-img { position: absolute; left: 0; top: 0; width: 210px; height: 118px; background: #24212b; overflow: hidden; }
+.mtv-s-img img { width: 210px; height: 118px; display: block; }
+.mtv-s-img em { position: absolute; right: 8px; bottom: 4px; font-style: normal; font-size: 26px; color: #8fd3c3; }
+.mtv-s-txt { position: absolute; left: 232px; right: 18px; top: 12px; }
+.mtv-s-t { font-size: 27px; font-weight: 400; color: #fff; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.mtv-s-t b, .mtv-s-c b { color: #e3b65b; font-weight: 500; }
+.mtv-s-m { margin-top: 4px; font-size: 18px; color: #c9c5d0; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.mtv-s-m i { font-style: normal; font-weight: 700; font-size: 14px; letter-spacing: .04em; padding: 2px 8px; border-radius: 5px; margin-right: 6px; background: #2a2732; }
+.mtv-s-m i.mtv-b-hd { background: #b3263a; color: #fff; } .mtv-s-m i.mtv-b-sd { background: #3b3550; } .mtv-s-m i.mtv-b-au { background: #1f4a42; }
+.mtv-s-c { margin-top: 6px; font-size: 17px; color: #8d8996; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.mtv-s-row.mtv-f, .mtv-search .mtv-s-row:focus, .mtv-s-chip.mtv-f, .mtv-search .mtv-s-chip:focus, .mtv-s-rec.mtv-f, .mtv-search .mtv-s-rec:focus {
+  outline: none !important; background: #2b2433 !important; box-shadow: inset 0 0 0 3px #e3b65b, 0 0 22px rgba(227, 182, 91, .35) !important; }
+.mtv-s-list h3 { margin: 10px 0 12px; font-size: 16px; font-weight: 700; letter-spacing: .16em; text-transform: uppercase; color: #e3b65b; }
+.mtv-s-rec { display: block; width: 560px; height: 62px; margin: 0 0 10px; padding: 0 22px; border: 0; border-radius: 12px; background: #15141a; color: #ece8f0;
+  font: 400 24px/62px Roboto, Arial, sans-serif; text-align: left; cursor: pointer; }
+.mtv-s-none, .mtv-s-more { padding: 24px 6px; font-size: 22px; color: #8d8996; }
+html.mtv .mtv-search :focus { box-shadow: none; }
+
+/* ---- Our player ---- */
+.mtv-pl { display: none; position: fixed; left: 0; top: 0; width: 100%; height: 100%; z-index: 2147483100; background: transparent; overflow: hidden; }
+.mtv-pl-video { position: fixed; left: 0; top: 0; margin: 0; padding: 0; border: 0; background: #000; outline: none !important; box-shadow: none !important; }
+.mtv-pl-cap { position: absolute; left: 6%; right: 6%; bottom: 72px; text-align: center; pointer-events: none; z-index: 5;
+  -webkit-transition: bottom .2s; transition: bottom .2s; }
+.mtv-pl-cap span { display: inline-block; padding: 4px 18px 6px; border-radius: 8px; background: rgba(0, 0, 0, .62); color: #fff;
+  font: 500 46px/1.28 Roboto, Arial, sans-serif; text-shadow: 0 2px 4px rgba(0, 0, 0, .9); }
+html.mtv-po-open .mtv-pl-cap { bottom: 380px; }
+.mtv-pl-load { display: none; position: absolute; left: 0; right: 0; top: 40%; text-align: center; color: #fff; z-index: 6; }
+.mtv-pl-load-t { margin-top: 30px; font-size: 44px; font-weight: 300; }
+.mtv-pl-load-s { margin-top: 10px; font-size: 22px; color: #e3b65b; }
+.mtv-spin { width: 64px; height: 64px; margin: 0 auto; border-radius: 50%; border: 6px solid rgba(255, 255, 255, .15); border-top-color: #e3b65b;
+  -webkit-animation: mtvspin 1s linear infinite; animation: mtvspin 1s linear infinite; }
+@-webkit-keyframes mtvspin { to { -webkit-transform: rotate(360deg); } }
+@keyframes mtvspin { to { transform: rotate(360deg); } }
+.mtv-pl-err { display: none; position: absolute; left: 50%; top: 50%; width: 1100px; margin: -220px 0 0 -550px; padding: 40px 56px; box-sizing: border-box;
+  border-radius: 20px; background: #17161c; box-shadow: 0 0 0 2px rgba(227, 182, 91, .4), 0 30px 80px rgba(0, 0, 0, .8); color: #ece8f0; z-index: 7; text-align: center; }
+.mtv-pl-err h2 { margin: 0 0 14px; font-size: 40px; font-weight: 300; color: #fff; }
+.mtv-pl-err p { font-size: 24px; color: #c9c5d0; }
+.mtv-pl-err .mtv-pl-err-d { font-size: 15px; color: #6f6b78; word-break: break-all; }
+.mtv-pl-err-btns { margin: 26px 0 10px; }
+.mtv-pl-err-btns button { font: 500 24px Roboto, Arial, sans-serif; padding: 14px 30px; margin: 0 8px; border: 0; border-radius: 12px; background: #2a2732; color: #ece8f0; }
+.mtv-pl-err-btns button.mtv-f, .mtv-pl-err-btns button:focus { background: #e3b65b !important; color: #121016 !important; outline: none !important; box-shadow: 0 0 22px rgba(227, 182, 91, .5) !important; }
+.mtv-pl-aud { display: none; position: absolute; left: 0; top: 0; right: 0; bottom: 0; background: #0a0a0e; z-index: 1; overflow: hidden; }
+.mtv-pl-aud-bg { position: absolute; left: -5%; top: -5%; right: -5%; bottom: -5%; background-size: cover; background-position: center; opacity: .22; }
+.mtv-pl-aud-in { position: absolute; left: 160px; right: 160px; top: 200px; }
+.mtv-pl-aud-in img { float: right; width: 640px; height: 360px; border-radius: 16px; box-shadow: 0 20px 60px rgba(0, 0, 0, .7); margin-left: 60px; }
+.mtv-pl-aud-k { color: #8fd3c3; font-size: 22px; letter-spacing: .14em; text-transform: uppercase; }
+.mtv-pl-aud-in h1 { margin: 14px 0 10px; font-size: 64px; font-weight: 300; color: #fff; }
+.mtv-pl-aud-d { font-size: 24px; color: #e3b65b; }
+.mtv-pl-aud-c { margin-top: 16px; font-size: 22px; color: #a5a0ac; }
+.mtv-pl-aud-s { margin-top: 40px; font-size: 32px; color: #fff; }
+/* seek preview thumbnail */
+.mtv-po-tip img { display: none; width: 288px; height: 162px; margin: 0 auto 8px; border-radius: 6px; background: #000; }
+.mtv-po-tip span { display: block; }
