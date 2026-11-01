@@ -2,6 +2,11 @@
 // https://ondemand.metopera.org via --host-resolver-rules (self-signed cert). Test-only.
 const https = require('https'), fs = require('fs'), path = require('path');
 const D = __dirname;
+// Throwaway self-signed TLS pair for the local mock (git-ignored; generated on first run, never committed).
+if (!fs.existsSync(path.join(D, 'key.pem')) || !fs.existsSync(path.join(D, 'cert.pem'))) {
+  require('child_process').execFileSync('openssl', ['req', '-x509', '-newkey', 'rsa:2048', '-nodes', '-days', '30', '-subj', '/CN=ondemand.metopera.org',
+    '-keyout', path.join(D, 'key.pem'), '-out', path.join(D, 'cert.pem')], { stdio: 'ignore' });
+}
 const CUES = [['Opening Credits', 0, ''], ['Prelude', 46, 'I'], ['Westwärts schweift der Blick', 640, 'I'], ['Weh! Ach wehe!', 1100, 'I'],
   ['O sink hernieder', 1500, 'II'], ['Einsam wachend in der Nacht', 1800, 'II'], ['Mild und leise', 2150, 'III']]
   .map((c, i, a) => ({ id: 'c' + i, name: 'track' + (i + 1), type: 'CODE', time: c[1], startTime: c[1], endTime: (a[i + 1] || [0, 2400])[1], title: c[0], act: c[2] }));
