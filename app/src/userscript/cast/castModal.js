@@ -2,6 +2,7 @@
 // Cast panel (no scene info here: the title page has no position). Keys: UP/DOWN scroll, OK/BACK close.
 import { castItems, fromCompact } from './cast';
 import { KEY } from '../keys';
+import { productionFor, productionItems } from './credits';
 
 var el = null, listEl = null, open = false, sel = 0, items = [], prevFocus = null;
 function esc(s) { return String(s === undefined || s === null ? '' : s).replace(/[&<>"]/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]; }); }
@@ -14,7 +15,7 @@ export function openCast(opera, perf, heading) {
     document.body.appendChild(el);
   }
   var cast = fromCompact(opera, perf.roles || [], perf.cond);
-  items = castItems(cast, null);
+  items = castItems(cast, null).concat(productionItems(productionFor(perf.id)));
   sel = 0;
   var h = '<div class="mtv-castsheet-box"><div class="mtv-castsheet-k">Cast &amp; roles</div><h2>' + esc(opera) + '</h2><div class="mtv-castsheet-s">' + esc(heading || '') + '</div>';
   if (!cast.roles.length) h += '<p class="mtv-castsheet-none">The Met lists no roles for this performance' + (perf.cast ? ' (singers: ' + esc(perf.cast) + ')' : '') + '.</p>';
@@ -24,7 +25,7 @@ export function openCast(opera, perf, heading) {
     h += (it.head ? '<h4>' + esc(it.head) + '</h4>' : '') + '<div class="mtv-castsheet-i" data-i="' + i + '"><b>' + esc(it.label) +
       (it.trouser ? ' <i class="mtv-trouser">trouser role</i>' : '') + '</b>' + (it.sub ? '<span>' + esc(it.sub) + '</span>' : '') + (it.note ? '<em>' + esc(it.note) + '</em>' : '') + '</div>';
   }
-  h += '</div><div class="mtv-castsheet-f">Roles and singers from the Met\u2019s performance data \u00b7 voice types and trouser-role notes from a curated list \u00b7 \u25B2\u25BC scroll \u00b7 OK / BACK close</div></div>';
+  h += '</div><div class="mtv-castsheet-f">Roles and singers from the Met\u2019s performance data \u00b7 production credits as listed in the Met Opera Archives \u00b7 voice types and trouser-role notes from a curated list \u00b7 \u25B2\u25BC scroll \u00b7 OK / BACK close</div></div>';
   el.innerHTML = h;
   listEl = el.querySelector('.mtv-castsheet-list');
   el.className = 'mtv-castsheet mtv-open';

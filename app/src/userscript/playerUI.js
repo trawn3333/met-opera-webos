@@ -9,8 +9,9 @@
 //   Auto-hides after 4 s without keys.
 import { KEY } from './keys';
 import { getPlayer, isFullscreen, fmt, pictureMode, setPictureMode, MODE_LABEL, STREAM_LABEL, streamPref, setStreamPref, fitInfo,
-  chapters as engChapters, title as engTitle, subtitle as engSub, textTracks, setTextTrack, getVideoEl, close as closePlayer, thumbAt, playerRoot, castInfo, setEngineHooks } from './player';
+  chapters as engChapters, title as engTitle, subtitle as engSub, textTracks, setTextTrack, getVideoEl, close as closePlayer, thumbAt, playerRoot, castInfo, setEngineHooks, current } from './player';
 import { castItems } from './cast/cast';
+import { productionFor, productionItems } from './cast/credits';
 import { tlm } from './tlm';
 import { toast } from './toast';
 import { lsGet, lsSet } from './util';
@@ -327,12 +328,13 @@ function openChapters() {
 
 // ---- Cast (1.3.2): Met cast + roles, scene-aware from the cue point "artists" ----
 function castTitle(chs, ci) { return 'Cast' + (ci >= 0 ? '  \u00b7  ' + (chs[ci].act ? 'Act ' + chs[ci].act + ': ' : '') + chs[ci].title : ''); }
+function prodItems() { var c = current(); return productionItems(productionFor(c && c.id)); }
 function openCast() {
   var cast = castInfo();
   if (!cast || (!cast.roles.length && !cast.conductor)) { toast('The Met lists no cast for this video', 2200); return; }
   var chs = chapters(), p = getPlayer(), ci = chapterAt(chs, p ? p.time() : 0);
   castScene = ci;
-  openMenu('cast', castTitle(chs, ci), castItems(cast, ci >= 0 ? chs[ci] : null), 0);
+  openMenu('cast', castTitle(chs, ci), castItems(cast, ci >= 0 ? chs[ci] : null).concat(prodItems()), 0);
   tlm('cast', { action: 'open', roles: cast.roles.length, scene: ci, sceneArtists: ci >= 0 && chs[ci].artists ? chs[ci].artists.length : 0 });
 }
 function refreshCast(ci) {
@@ -340,7 +342,7 @@ function refreshCast(ci) {
   castScene = ci;
   if (!cast || !menu) return;
   menu.title = castTitle(chs, ci);
-  menu.items = castItems(cast, ci >= 0 ? chs[ci] : null);
+  menu.items = castItems(cast, ci >= 0 ? chs[ci] : null).concat(prodItems());
   if (menu.sel >= menu.items.length) menu.sel = 0;
   paint();
 }

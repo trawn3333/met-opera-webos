@@ -4,6 +4,7 @@
 // Views: 'browse' (home: hero + shuffled rows), 'home' (= Categories), 'cat', 'composers', 'title'.
 // Selecting a performance starts OUR player directly (hooks.play).
 import { fromCompact } from '../cast/cast';
+import { productionFor } from '../cast/credits';
 import { openCast } from '../cast/castModal';
 import { homeRows, category, composerRows, FORMATS } from './model';
 import { getTitle, getPerformances, refreshLists, listsStale, catalogStatus, imgUrl } from './catalog';
@@ -236,15 +237,15 @@ function buildTitle(v) {
   });
   if (!rows.length) rows.push({ type: 'msg', title: 'No performances available.', items: [] });
   // 1.3.2: who sings what in each performance (Met cast data), opens the Cast sheet.
-  var withRoles = v.perfs.filter(function (p) { return p.roles && p.roles.length; });
+  var withRoles = v.perfs.filter(function (p) { return (p.roles && p.roles.length) || productionFor(p.id); });
   if (withRoles.length) {
     var castChips = withRoles.map(function (p) {
-      var c = fromCompact(v.name, p.roles, p.cond), tr = '';
+      var c = fromCompact(v.name, p.roles || [], p.cond), tr = '', pr = productionFor(p.id);
       for (var i = 0; i < c.roles.length; i++) if (c.roles[i].trouser) { tr = c.roles[i].role + ': ' + c.roles[i].singer + ' (trouser role)'; break; }
       return { n: -1, act: 'cast', perf: p, label: 'Cast · ' + dateStr(p.d) + ' · ' + fmtLabel(p.f),
-        sub: tr || c.roles.slice(0, 2).map(function (r) { return (r.role ? r.role + ': ' : '') + r.singer; }).join(' · ') };
+        sub: tr || (pr && pr.credits.length ? pr.credits[0][0] + ': ' + pr.credits[0][1] : '') || c.roles.slice(0, 2).map(function (r) { return (r.role ? r.role + ': ' : '') + r.singer; }).join(' · ') };
     });
-    rows.push.apply(rows, chunk(castChips, CHIP_COLS, { type: 'chips', title: 'Cast & roles  (' + castChips.length + ')' }));
+    rows.push.apply(rows, chunk(castChips, CHIP_COLS, { type: 'chips', title: 'Cast, roles & production  (' + castChips.length + ')' }));
   }
   v.rows = rows;
 }
@@ -486,7 +487,7 @@ function activate() {
   }
   if (row.type === 'chips') {
     if (it.act === 'refresh') { doRefresh(); return; }
-    if (it.act === 'cast') { tlm('cast', { action: 'title', title: view.name, roles: it.perf.roles.length }); openCast(view.name, it.perf, dateStr(it.perf.d) + ' \u00b7 ' + fmtLabel(it.perf.f) + (it.perf.cond ? ' \u00b7 conducted by ' + it.perf.cond : '')); return; }
+    if (it.act === 'cast') { tlm('cast', { action: 'title', title: view.name, roles: (it.perf.roles || []).length }); openCast(view.name, it.perf, dateStr(it.perf.d) + ' \u00b7 ' + fmtLabel(it.perf.f) + (it.perf.cond ? ' \u00b7 conducted by ' + it.perf.cond : '')); return; }
     if (it.cat === 'categories') { tlm('categories', { action: 'open', from: 'browse' }); show({ kind: 'home' }, true); return; }
     if (it.cat === 'composers') { tlm('categories', { action: 'view', cat: 'composers' }); show({ kind: 'composers' }, true); return; }
     tlm('categories', { action: 'view', cat: it.cat });

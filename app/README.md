@@ -91,6 +91,13 @@ Useful extras:
 3. Later, if the Met session expires (the observed cookie lifetime is about 24 h), the app signs back in by itself on launch.
 4. Tip: keep the TV's **QuickStart+** ON. With it off, webOS can drop recently written cookies at power-off.
 
+## What changed in 1.3.3
+
+- **Production credits** in the Cast panel (player) and the title-page Cast sheet: Production / director, set, costume and lighting designers, choreographer and the production's Met premiere, **as listed in the Met Opera Archives** (archives.metopera.org). Nothing is invented: when the archive lists no credit (e.g. Ponnelle's Idomeneo lists only "Production" and lighting), it is left out; unmatched performances show no Production section.
+- Data: `tools/archive-crawl.js` matches every on-demand performance to the archive by date + title (polite: one request every 1.6 s or more, every response cached on disk), then links it to the latest *New Production* of that title on or before the performance date and reads that premiere's credits. Productions that premiered before Sept 1966 are only linked within 10 seasons (older archive records rarely mark new productions). `tools/build-credits.js` writes the bundled `src/userscript/cast/creditsData.js` (about 65 KB, 303 productions).
+- Match rate: 869 of 1007 catalog performances matched to an archive performance; 758 (75%) carry credits. Galas, concerts, documentaries and some double bills don't match.
+- Configuration moved to `.env`, build-time validation, and the **Send diagnostics & usage data** switch with one-off consent for manual reports (see the root README).
+
 ## What changed in 1.2.0
 
 - **Video fit.** On Matt's OLED55B8 (webOS 4, Chromium 53), telemetry shows a 1920×1080 layout at devicePixelRatio 2 on a 3840×2160 panel. In 1.1.0 the `<video>` was absolutely positioned inside the Met's `video-js` box, which sits inside a fixed `.Player`. LG documents that the video plane ignores `object-fit`. It also says the video element itself should be fixed at 0,0 with the app's px size and no transform, border or opacity. 1.2.0 does exactly that (see the feature table) and adds the Picture modes as fallbacks. A `video-fit` telemetry event records the video size against the element, viewport, DPR, screen and video-plane size (`deviceInfo.screenWidth/Height`) for each title, so we can see what the TV does.
