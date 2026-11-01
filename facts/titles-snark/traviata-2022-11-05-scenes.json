@@ -1,0 +1,475 @@
+{
+ "performance": "null, Met Live in HD, 2022-11-05 (Met Opera on Demand id 5af22f91-43ce-59a6-a9c4-e80a56a76196)",
+ "source": "Met Opera on Demand cue points",
+ "duration": 8583,
+ "scenes": [
+  {
+   "t": 1,
+   "title": "Opening Credits",
+   "appTitle": "Opening Credits",
+   "act": null,
+   "artists": []
+  },
+  {
+   "t": 33,
+   "title": "Introduction by host Renée Fleming",
+   "appTitle": "Introduction by host Renée Fleming",
+   "act": null,
+   "artists": [
+    "Renée Fleming"
+   ]
+  },
+  {
+   "t": 120,
+   "title": "Act I: Preludio",
+   "appTitle": "Preludio",
+   "act": "I",
+   "artists": [
+    "Daniele Callegari",
+    "Metropolitan Opera Orchestra"
+   ]
+  },
+  {
+   "t": 356,
+   "title": "Act I: Dell'invito trascorsa è già l'ora...",
+   "appTitle": "Dell'invito trascorsa è già l'ora...",
+   "act": "I",
+   "artists": [
+    "Nadine Sierra",
+    "Siphokazi Molteno",
+    "Jeongcheol Cha",
+    "Brian Major",
+    "Paul Corona",
+    "Jonah Hoskins",
+    "Stephen Costello",
+    "Metropolitan Opera Chorus"
+   ]
+  },
+  {
+   "t": 647,
+   "title": "Act I: Libiamo, libiamo ne' lieti calici (Brindisi)",
+   "appTitle": "Libiamo, libiamo ne' lieti calici (Brindisi)",
+   "act": "I",
+   "artists": [
+    "Stephen Costello",
+    "Nadine Sierra",
+    "Metropolitan Opera Chorus"
+   ]
+  },
+  {
+   "t": 837,
+   "title": "Act I: Che è ciò?",
+   "appTitle": "Che è ciò?",
+   "act": "I",
+   "artists": [
+    "Nadine Sierra",
+    "Stephen Costello",
+    "Metropolitan Opera Chorus"
+   ]
+  },
+  {
+   "t": 969,
+   "title": "Act I: Un dì felice, eterea",
+   "appTitle": "Un dì felice, eterea",
+   "act": "I",
+   "artists": [
+    "Stephen Costello",
+    "Nadine Sierra"
+   ]
+  },
+  {
+   "t": 1184,
+   "title": "Act I: Ebben? Che diavol fate?",
+   "appTitle": "Ebben? Che diavol fate?",
+   "act": "I",
+   "artists": [
+    "Jonah Hoskins",
+    "Nadine Sierra",
+    "Stephen Costello"
+   ]
+  },
+  {
+   "t": 1257,
+   "title": "Act I: Si ridesta in ciel l'aurora",
+   "appTitle": "Si ridesta in ciel l'aurora",
+   "act": "I",
+   "artists": [
+    "Metropolitan Opera Chorus"
+   ]
+  },
+  {
+   "t": 1360,
+   "title": "Act I: È strano!—Ah, fors'è lui che l'anima",
+   "appTitle": "È strano!—Ah, fors'è lui che l'anima",
+   "act": "I",
+   "artists": [
+    "Nadine Sierra"
+   ]
+  },
+  {
+   "t": 1704,
+   "title": "Act I: Follie! follie!—Sempre libera",
+   "appTitle": "Follie! follie!—Sempre libera",
+   "act": "I",
+   "artists": [
+    "Nadine Sierra",
+    "Stephen Costello"
+   ]
+  },
+  {
+   "t": 2031,
+   "title": "Introduction to Act II by Renée Fleming",
+   "appTitle": "Introduction to Act II by Renée Fleming",
+   "act": null,
+   "artists": [
+    "Renée Fleming"
+   ]
+  },
+  {
+   "t": 2056,
+   "title": "Act II: Lunge da lei—De' miei bollenti spiriti",
+   "appTitle": "Lunge da lei—De' miei bollenti spiriti",
+   "act": "II",
+   "artists": [
+    "Stephen Costello"
+   ]
+  },
+  {
+   "t": 2327,
+   "title": "Act II: Annina, donde vieni?—Oh mio rimorso!",
+   "appTitle": "Annina, donde vieni?—Oh mio rimorso!",
+   "act": "II",
+   "artists": [
+    "Stephen Costello",
+    "Eve Gigliotti"
+   ]
+  },
+  {
+   "t": 2472,
+   "title": "Act II: Alfredo? Per Parigi on partiva",
+   "appTitle": "Alfredo? Per Parigi on partiva",
+   "act": "II",
+   "artists": [
+    "Nadine Sierra",
+    "Eve Gigliotti",
+    "Patrick Miller",
+    "Luca Salsi"
+   ]
+  },
+  {
+   "t": 2728,
+   "title": "Act II: Pura siccome un angelo",
+   "appTitle": "Pura siccome un angelo",
+   "act": "II",
+   "artists": [
+    "Luca Salsi",
+    "Nadine Sierra"
+   ]
+  },
+  {
+   "t": 2838,
+   "title": "Act II: Non sapete quale affetto",
+   "appTitle": "Non sapete quale affetto",
+   "act": "II",
+   "artists": [
+    "Nadine Sierra",
+    "Luca Salsi"
+   ]
+  },
+  {
+   "t": 2985,
+   "title": "Act II: Un dì, quando le veneri",
+   "appTitle": "Un dì, quando le veneri",
+   "act": "II",
+   "artists": [
+    "Luca Salsi",
+    "Nadine Sierra"
+   ]
+  },
+  {
+   "t": 3161,
+   "title": "Act II: Ah! Dite alla giovine",
+   "appTitle": "Ah! Dite alla giovine",
+   "act": "II",
+   "artists": [
+    "Nadine Sierra",
+    "Luca Salsi"
+   ]
+  },
+  {
+   "t": 3427,
+   "title": "Act II: Imponete",
+   "appTitle": "Imponete",
+   "act": "II",
+   "artists": [
+    "Nadine Sierra",
+    "Luca Salsi"
+   ]
+  },
+  {
+   "t": 3742,
+   "title": "Act II: Dammi tu forza, o cielo",
+   "appTitle": "Dammi tu forza, o cielo",
+   "act": "II",
+   "artists": [
+    "Nadine Sierra",
+    "Eve Gigliotti",
+    "Stephen Costello"
+   ]
+  },
+  {
+   "t": 4006,
+   "title": "Act II: Ah, vive sol quel core all'amor mio!",
+   "appTitle": "Ah, vive sol quel core all'amor mio!",
+   "act": "II",
+   "artists": [
+    "Stephen Costello",
+    "Patrick Miller",
+    "Jonathan Scott",
+    "Luca Salsi"
+   ]
+  },
+  {
+   "t": 4151,
+   "title": "Act II: Di Provenza il mar, il suol",
+   "appTitle": "Di Provenza il mar, il suol",
+   "act": "II",
+   "artists": [
+    "Luca Salsi"
+   ]
+  },
+  {
+   "t": 4428,
+   "title": "Act II: Nè rispondi d'un padre all'affetto?",
+   "appTitle": "Nè rispondi d'un padre all'affetto?",
+   "act": "II",
+   "artists": [
+    "Luca Salsi",
+    "Stephen Costello"
+   ]
+  },
+  {
+   "t": 4605,
+   "title": "Act II: Avrem lieta di maschere la notte",
+   "appTitle": "Avrem lieta di maschere la notte",
+   "act": "II",
+   "artists": [
+    "Siphokazi Molteno",
+    "Jeongcheol Cha",
+    "Paul Corona"
+   ]
+  },
+  {
+   "t": 4661,
+   "title": "Act II: Noi siamo Zingarelle",
+   "appTitle": "Noi siamo Zingarelle",
+   "act": "II",
+   "artists": [
+    "Siphokazi Molteno",
+    "Jeongcheol Cha",
+    "Metropolitan Opera Chorus and Ballet"
+   ]
+  },
+  {
+   "t": 4848,
+   "title": "Act II: Di Madride noi siam mattadori",
+   "appTitle": "Di Madride noi siam mattadori",
+   "act": "II",
+   "artists": [
+    "Barton Cowperthwaite",
+    "Cara Seymour",
+    "Metropolitan Opera Chorus and Ballet"
+   ]
+  },
+  {
+   "t": 5032,
+   "title": "Act II: Alfredo! Voi!",
+   "appTitle": "Alfredo! Voi!",
+   "act": "II",
+   "artists": [
+    "Stephen Costello",
+    "Siphokazi Molteno",
+    "Nadine Sierra",
+    "Brian Major",
+    "Jonah Hoskins",
+    "Metropolitan Opera Chorus"
+   ]
+  },
+  {
+   "t": 5236,
+   "title": "Act II: Invitato a qui seguirmi",
+   "appTitle": "Invitato a qui seguirmi",
+   "act": "II",
+   "artists": [
+    "Nadine Sierra",
+    "Stephen Costello",
+    "Metropolitan Opera Chorus"
+   ]
+  },
+  {
+   "t": 5380,
+   "title": "Act II: Ogni suo aver tal femmina",
+   "appTitle": "Ogni suo aver tal femmina",
+   "act": "II",
+   "artists": [
+    "Stephen Costello",
+    "Metropolitan Opera Chorus"
+   ]
+  },
+  {
+   "t": 5475,
+   "title": "Act II: Di sprezzo degno se stesso rende",
+   "appTitle": "Di sprezzo degno se stesso rende",
+   "act": "II",
+   "artists": [
+    "Luca Salsi",
+    "Stephen Costello",
+    "Metropolitan Opera Chorus"
+   ]
+  },
+  {
+   "t": 5597,
+   "title": "Act II: Alfredo, Alfredo, di questo core",
+   "appTitle": "Alfredo, Alfredo, di questo core",
+   "act": "II",
+   "artists": [
+    "Nadine Sierra",
+    "Stephen Costello",
+    "Luca Salsi",
+    "Metropolitan Opera Chorus"
+   ]
+  },
+  {
+   "t": 5844,
+   "title": "Act III: Preludio",
+   "appTitle": "Preludio",
+   "act": "III",
+   "artists": [
+    "Daniele Callegari",
+    "Metropolitan Opera Orchestra"
+   ]
+  },
+  {
+   "t": 6063,
+   "title": "Act III: Annina?",
+   "appTitle": "Annina?",
+   "act": "III",
+   "artists": [
+    "Nadine Sierra",
+    "Eve Gigliotti",
+    "Paul Corona"
+   ]
+  },
+  {
+   "t": 6356,
+   "title": "Act III: Teneste la promessa ... Addio del passato",
+   "appTitle": "Teneste la promessa ... Addio del passato",
+   "act": "III",
+   "artists": [
+    "Nadine Sierra"
+   ]
+  },
+  {
+   "t": 6854,
+   "title": "Act III: Largo al quadrupede",
+   "appTitle": "Largo al quadrupede",
+   "act": "III",
+   "artists": [
+    "Metropolitan Opera Orchestra and Chorus"
+   ]
+  },
+  {
+   "t": 6900,
+   "title": "Act III: Signora",
+   "appTitle": "Signora",
+   "act": "III",
+   "artists": [
+    "Eve Gigliotti",
+    "Nadine Sierra",
+    "Stephen Costello"
+   ]
+  },
+  {
+   "t": 7002,
+   "title": "Act III: Parigi, o cara",
+   "appTitle": "Parigi, o cara",
+   "act": "III",
+   "artists": [
+    "Stephen Costello",
+    "Nadine Sierra"
+   ]
+  },
+  {
+   "t": 7231,
+   "title": "Act III: Ah non più—Ah! gran Dio! Morir sì giovine",
+   "appTitle": "Ah non più—Ah! gran Dio! Morir sì giovine",
+   "act": "III",
+   "artists": [
+    "Nadine Sierra",
+    "Stephen Costello"
+   ]
+  },
+  {
+   "t": 7459,
+   "title": "Act III: Ah, Violetta?",
+   "appTitle": "Ah, Violetta?",
+   "act": "III",
+   "artists": [
+    "Luca Salsi",
+    "Nadine Sierra",
+    "Stephen Costello"
+   ]
+  },
+  {
+   "t": 7565,
+   "title": "Act III: Prendi, quest'è l'immagine",
+   "appTitle": "Prendi, quest'è l'immagine",
+   "act": "III",
+   "artists": [
+    "Nadine Sierra",
+    "Stephen Costello",
+    "Luca Salsi",
+    "Eve Gigliotti",
+    "Paul Corona"
+   ]
+  },
+  {
+   "t": 7834,
+   "title": "Bows and Closing Credits",
+   "appTitle": "Bows and Closing Credits",
+   "act": null,
+   "artists": []
+  },
+  {
+   "t": 8032,
+   "title": "Act III: Backstage at the Met with host Renée Fleming: Interview with Nadine Sierra",
+   "appTitle": "Backstage at the Met with host Renée Fleming: Interview with Nadine Sierra",
+   "act": "III",
+   "artists": [
+    "Renée Fleming",
+    "Nadine Sierra"
+   ]
+  },
+  {
+   "t": 8143,
+   "title": "Act III: Backstage at the Met with host Renée Fleming: William Berger discusses the role of Violetta at the Met",
+   "appTitle": "Backstage at the Met with host Renée Fleming: William Berger discusses the role of Violetta at the Met",
+   "act": "III",
+   "artists": [
+    "Renée Fleming",
+    "William Berger"
+   ]
+  },
+  {
+   "t": 8507,
+   "title": "Act III: Backstage at the Met with host Renée Fleming: Interview with Stephen Costello and Luca Salsi",
+   "appTitle": "Backstage at the Met with host Renée Fleming: Interview with Stephen Costello and Luca Salsi",
+   "act": "III",
+   "artists": [
+    "Renée Fleming",
+    "Stephen Costello",
+    "Luca Salsi"
+   ]
+  }
+ ]
+}

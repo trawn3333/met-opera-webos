@@ -1,0 +1,13 @@
+{"step":"start","at":"2026-11-01T17:17:37-06:00"}
+{"step":"setup-done","at":"2026-11-01T17:19:22-06:00","fetched":{"archive_records":5,"scene_dumps":5}}
+{"step":"tosca-start","at":"2026-11-01T17:19:22-06:00"}
+{"step":"tosca-end","at":"2026-11-01T17:22:15-06:00","fetched":{"wiki":9,"archive":1},"rework":"1 pass of 7 wording/evidence fixes before the first build (2 unsupported words, 1 truncated evidence, 1 paraphrase too far from source)"}
+{"step":"boheme-start","at":"2026-11-01T17:22:23-06:00"}
+{"step":"boheme-end","at":"2026-11-01T17:24:50-06:00","fetched":{"wiki_ok":11,"wiki_missing_or_redirect":6,"rate_limited":1,"archive":1},"rework":"Wikipedia rate limit at 1 s spacing (added retry/back-off, refetched 3); 5 aria titles missing on en.wikipedia; 3 wording fixes; 1 spec syntax typo"}
+{"step":"traviata-start","at":"2026-11-01T17:24:57-06:00"}
+{"step":"traviata-end","at":"2026-11-01T17:26:52-06:00","fetched":{"wiki_ok":6,"wiki_missing_or_redirect":4,"archive":1},"rework":"2 bubbles over 20 words (one needed 2 tries); fetch-wiki now skips redirects to cached pages (2 duplicate files deleted)"}
+{"step":"traviata-addendum","at":"2026-11-01T17:27:02-06:00","rework":"2 bubbles added to reach 20"}
+{"step":"carmen-start","at":"2026-11-01T17:27:11-06:00"}
+{"step":"carmen-end","at":"2026-11-01T17:29:17-06:00","fetched":{"wiki_ok":9,"wiki_missing":1,"archive":1},"rework":"3 bubbles over 20 words (one needed 3 tries); 2 spec syntax typos"}
+{"step":"figaro-start","at":"2026-11-01T17:29:17-06:00"}
+{"step":"figaro-end","at":"2026-11-01T17:32:01-06:00","fetched":{"wiki_ok":10,"wiki_missing":4,"wiki_redirect":1,"rate_limited":1,"archive":1},"rework":"1 bubble over 20 words; 1 wording tightened (scholars); 1 spec syntax typo; reused 9 existing facts (rewritten/scene-timed)"}

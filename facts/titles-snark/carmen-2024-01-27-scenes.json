@@ -1,0 +1,510 @@
+{
+ "performance": "null, Met Live in HD, 2024-01-27 (Met Opera on Demand id f6b88373-cbaa-5831-bee9-2152d5c72aed)",
+ "source": "Met Opera on Demand cue points",
+ "duration": 10379,
+ "scenes": [
+  {
+   "t": 0,
+   "title": "Opening Credits",
+   "appTitle": "Opening Credits",
+   "act": null,
+   "artists": []
+  },
+  {
+   "t": 54,
+   "title": "Introduction by Matthew Polenzani",
+   "appTitle": "Introduction by Matthew Polenzani",
+   "act": null,
+   "artists": [
+    "Matthew Polenzani"
+   ]
+  },
+  {
+   "t": 140,
+   "title": "Act I: Prelude",
+   "appTitle": "Prelude",
+   "act": "I",
+   "artists": [
+    "Daniele Rustioni",
+    "Metropolitan Opera Orchestra"
+   ]
+  },
+  {
+   "t": 369,
+   "title": "Act I: Sur la place, chacun passe",
+   "appTitle": "Sur la place, chacun passe",
+   "act": "I",
+   "artists": [
+    "Benjamin Taylor",
+    "Angel Blue",
+    "Metropolitan Opera Chorus"
+   ]
+  },
+  {
+   "t": 742,
+   "title": "Act I: Avec la garde montante",
+   "appTitle": "Avec la garde montante",
+   "act": "I",
+   "artists": [
+    "Benjamin Taylor",
+    "Piotr Beczała",
+    "Metropolitan Opera Children's Chorus"
+   ]
+  },
+  {
+   "t": 984,
+   "title": "Act I: La cloche a sonne; nous, des ouvrieres",
+   "appTitle": "La cloche a sonne; nous, des ouvrieres",
+   "act": "I",
+   "artists": [
+    "Metropolitan Opera Chorus"
+   ]
+  },
+  {
+   "t": 1214,
+   "title": "Act I: Mais nous ne voyons pas—Quand je vous aimerai?",
+   "appTitle": "Mais nous ne voyons pas—Quand je vous aimerai?",
+   "act": "I",
+   "artists": [
+    "Aigul Akhmetshina",
+    "Metropolitan Opera Chorus"
+   ]
+  },
+  {
+   "t": 1289,
+   "title": "Act I: L'amour est un oiseau rebelle (Habanera)",
+   "appTitle": "L'amour est un oiseau rebelle (Habanera)",
+   "act": "I",
+   "artists": [
+    "Aigul Akhmetshina",
+    "Metropolitan Opera Chorus"
+   ]
+  },
+  {
+   "t": 1581,
+   "title": "Act I: Carmen! Sur tes pas nous nous pressons tous!",
+   "appTitle": "Carmen! Sur tes pas nous nous pressons tous!",
+   "act": "I",
+   "artists": [
+    "Metropolitan Opera Chorus"
+   ]
+  },
+  {
+   "t": 1671,
+   "title": "Act I: Jose! Micaela!—Ma mere je la vois!",
+   "appTitle": "Jose! Micaela!—Ma mere je la vois!",
+   "act": "I",
+   "artists": [
+    "Angel Blue",
+    "Piotr Beczała"
+   ]
+  },
+  {
+   "t": 2276,
+   "title": "Act I: Que se passe-t-il donc là-bas?",
+   "appTitle": "Que se passe-t-il donc là-bas?",
+   "act": "I",
+   "artists": [
+    "Wei Wu",
+    "Metropolitan Opera Chorus"
+   ]
+  },
+  {
+   "t": 2458,
+   "title": "Act I: Mon officier c'était une querelle",
+   "appTitle": "Mon officier c'était une querelle",
+   "act": "I",
+   "artists": [
+    "Piotr Beczała",
+    "Wei Wu",
+    "Aigul Akhmetshina",
+    "Metropolitan Opera Chorus"
+   ]
+  },
+  {
+   "t": 2718,
+   "title": "Act I: Près des remparts de Séville (Seguidilla)",
+   "appTitle": "Près des remparts de Séville (Seguidilla)",
+   "act": "I",
+   "artists": [
+    "Aigul Akhmetshina",
+    "Piotr Beczała"
+   ]
+  },
+  {
+   "t": 3001,
+   "title": "Act I: Voici l'ordre; partez",
+   "appTitle": "Voici l'ordre; partez",
+   "act": "I",
+   "artists": [
+    "Wei Wu",
+    "Aigul Akhmetshina"
+   ]
+  },
+  {
+   "t": 3139,
+   "title": "Act II: Entracte",
+   "appTitle": "Entracte",
+   "act": "II",
+   "artists": [
+    "Daniele Rustioni",
+    "Metropolitan Opera Orchestra"
+   ]
+  },
+  {
+   "t": 3242,
+   "title": "Act II: Les tringles des sistres tintaient (Gypsy Song)",
+   "appTitle": "Les tringles des sistres tintaient (Gypsy Song)",
+   "act": "II",
+   "artists": [
+    "Aigul Akhmetshina",
+    "Sydney Mancasola",
+    "Briana Hunter"
+   ]
+  },
+  {
+   "t": 3564,
+   "title": "Act II: Ce soldat l’autre jour emprisonne pour toi…",
+   "appTitle": "Ce soldat l’autre jour emprisonne pour toi…",
+   "act": "II",
+   "artists": [
+    "Briana Hunter",
+    "Aigul Akhmetshina",
+    "Sydney Mancasola"
+   ]
+  },
+  {
+   "t": 3589,
+   "title": "Act II: Vivat! vivat le Torero!",
+   "appTitle": "Vivat! vivat le Torero!",
+   "act": "II",
+   "artists": [
+    "Wei Wu",
+    "Sydney Mancasola",
+    "Aigul Akhmetshina",
+    "Morales",
+    "Metropolitan Opera Chorus"
+   ]
+  },
+  {
+   "t": 3641,
+   "title": "Act II: Votre toast, je peux vous le rendre … Toréador, engarde! (Toreador Song)",
+   "appTitle": "Votre toast, je peux vous le rendre … Toréador, engarde! (Toreador Song)",
+   "act": "II",
+   "artists": [
+    "Kyle Ketelsen",
+    "Sydney Mancasola",
+    "Briana Hunter",
+    "Aigul Akhmetshina",
+    "Benjamin Taylor",
+    "Wei Wu",
+    "Metropolitan Opera Chorus"
+   ]
+  },
+  {
+   "t": 3958,
+   "title": "Act II: La belle, un mot",
+   "appTitle": "La belle, un mot",
+   "act": "II",
+   "artists": [
+    "Kyle Ketelsen",
+    "Aigul Akhmetshina",
+    "Wei Wu"
+   ]
+  },
+  {
+   "t": 4045,
+   "title": "Act II: Nous avons en tête une affaire",
+   "appTitle": "Nous avons en tête une affaire",
+   "act": "II",
+   "artists": [
+    "Michael Adams",
+    "Sydney Mancasola",
+    "Briana Hunter",
+    "Frederick Ballentine",
+    "Aigul Akhmetshina"
+   ]
+  },
+  {
+   "t": 4351,
+   "title": "Act II: Halte-là! Qui va là?—Enfin c'est toi!",
+   "appTitle": "Halte-là! Qui va là?—Enfin c'est toi!",
+   "act": "II",
+   "artists": [
+    "Piotr Beczała",
+    "Aigul Akhmetshina"
+   ]
+  },
+  {
+   "t": 4447,
+   "title": "Act II: Je vais danser en votre honneur",
+   "appTitle": "Je vais danser en votre honneur",
+   "act": "II",
+   "artists": [
+    "Aigul Akhmetshina",
+    "Piotr Beczała"
+   ]
+  },
+  {
+   "t": 4818,
+   "title": "Act II: La fleur que tu m'avais jetée",
+   "appTitle": "La fleur que tu m'avais jetée",
+   "act": "II",
+   "artists": [
+    "Piotr Beczała"
+   ]
+  },
+  {
+   "t": 5058,
+   "title": "Act II: Non, tu ne m'aimes pas",
+   "appTitle": "Non, tu ne m'aimes pas",
+   "act": "II",
+   "artists": [
+    "Aigul Akhmetshina",
+    "Piotr Beczała"
+   ]
+  },
+  {
+   "t": 5281,
+   "title": "Act II: Holà! Carmen! Holà! Holà!",
+   "appTitle": "Holà! Carmen! Holà! Holà!",
+   "act": "II",
+   "artists": [
+    "Wei Wu",
+    "Piotr Beczała",
+    "Aigul Akhmetshina",
+    "Frederick Ballentine",
+    "Michael Adams",
+    "Briana Hunter",
+    "Metropolitan Opera Chorus"
+   ]
+  },
+  {
+   "t": 5576,
+   "title": "Introduction to Acts III & IV by Matthew Polenzani",
+   "appTitle": "Introduction to Acts III & IV by Matthew Polenzani",
+   "act": null,
+   "artists": [
+    "Matthew Polenzani"
+   ]
+  },
+  {
+   "t": 5599,
+   "title": "Act III: Entracte",
+   "appTitle": "Entracte",
+   "act": "III",
+   "artists": [
+    "Daniele Rustioni",
+    "Metropolitan Opera Orchestra"
+   ]
+  },
+  {
+   "t": 5817,
+   "title": "Act III: Écoute, compagnon, écoute!",
+   "appTitle": "Écoute, compagnon, écoute!",
+   "act": "III",
+   "artists": [
+    "Sydney Mancasola",
+    "Briana Hunter",
+    "Aigul Akhmetshina",
+    "Piotr Beczała",
+    "Frederick Ballentine",
+    "Michael Adams",
+    "Metropolitan Opera Chorus"
+   ]
+  },
+  {
+   "t": 6071,
+   "title": "Act III: Reposons-nous une heure ici",
+   "appTitle": "Reposons-nous une heure ici",
+   "act": "III",
+   "artists": [
+    "Michael Adams",
+    "Aigul Akhmetshina",
+    "Piotr Beczała"
+   ]
+  },
+  {
+   "t": 6217,
+   "title": "Act III: Mêlons! Coupons! (Card Trio)",
+   "appTitle": "Mêlons! Coupons! (Card Trio)",
+   "act": "III",
+   "artists": [
+    "Sydney Mancasola",
+    "Briana Hunter",
+    "Aigul Akhmetshina"
+   ]
+  },
+  {
+   "t": 6649,
+   "title": "Act III: Eh bien?—Quant au douanier, c'est notre affaire!",
+   "appTitle": "Eh bien?—Quant au douanier, c'est notre affaire!",
+   "act": "III",
+   "artists": [
+    "Aigul Akhmetshina",
+    "Michael Adams",
+    "Sydney Mancasola",
+    "Briana Hunter",
+    "Frederick Ballentine",
+    "Metropolitan Opera Chorus"
+   ]
+  },
+  {
+   "t": 6883,
+   "title": "Act III: C'est des contrebandiers le refuge ordinaire",
+   "appTitle": "C'est des contrebandiers le refuge ordinaire",
+   "act": "III",
+   "artists": [
+    "Angel Blue"
+   ]
+  },
+  {
+   "t": 7271,
+   "title": "Act III: Quelques lignes plus bas et tout etait fini",
+   "appTitle": "Quelques lignes plus bas et tout etait fini",
+   "act": "III",
+   "artists": [
+    "Kyle Ketelsen",
+    "Piotr Beczała"
+   ]
+  },
+  {
+   "t": 7480,
+   "title": "Act III: Holà! José!",
+   "appTitle": "Holà! José!",
+   "act": "III",
+   "artists": [
+    "Aigul Akhmetshina",
+    "Kyle Ketelsen",
+    "Michael Adams",
+    "Piotr Beczała",
+    "Frederick Ballentine",
+    "Angel Blue",
+    "Sydney Mancasola",
+    "Briana Hunter",
+    "Metropolitan Opera Chorus"
+   ]
+  },
+  {
+   "t": 7970,
+   "title": "Act IV: Entracte",
+   "appTitle": "Entracte",
+   "act": "IV",
+   "artists": [
+    "Daniele Rustioni",
+    "Metropolitan Opera Orchestra"
+   ]
+  },
+  {
+   "t": 8111,
+   "title": "Act IV: A deux cuartos! A deux cuartos!",
+   "appTitle": "A deux cuartos! A deux cuartos!",
+   "act": "IV",
+   "artists": [
+    "Wei Wu",
+    "Metropolitan Opera Chorus"
+   ]
+  },
+  {
+   "t": 8242,
+   "title": "Act IV: Les voici! Voici la quadrille!",
+   "appTitle": "Les voici! Voici la quadrille!",
+   "act": "IV",
+   "artists": [
+    "Metropolitan Opera Chorus and Children's Chorus"
+   ]
+  },
+  {
+   "t": 8477,
+   "title": "Act IV: Si tu m'aimes, Carmen",
+   "appTitle": "Si tu m'aimes, Carmen",
+   "act": "IV",
+   "artists": [
+    "Kyle Ketelsen",
+    "Aigul Akhmetshina",
+    "Sydney Mancasola",
+    "Briana Hunter"
+   ]
+  },
+  {
+   "t": 8665,
+   "title": "Act IV: C'est toi!—C'est moi!",
+   "appTitle": "C'est toi!—C'est moi!",
+   "act": "IV",
+   "artists": [
+    "Aigul Akhmetshina",
+    "Piotr Beczała"
+   ]
+  },
+  {
+   "t": 8900,
+   "title": "Act IV: Tu ne m'aimes donc plus!",
+   "appTitle": "Tu ne m'aimes donc plus!",
+   "act": "IV",
+   "artists": [
+    "Piotr Beczała",
+    "Aigul Akhmetshina",
+    "Metropolitan Opera Chorus"
+   ]
+  },
+  {
+   "t": 9245,
+   "title": "Bows and Closing Credits",
+   "appTitle": "Bows and Closing Credits",
+   "act": null,
+   "artists": []
+  },
+  {
+   "t": 9467,
+   "title": "Act IV: Backstage at the Met with host Matthew Polenzani: Interview with Aigul Akhmetshina",
+   "appTitle": "Backstage at the Met with host Matthew Polenzani: Interview with Aigul Akhmetshina",
+   "act": "IV",
+   "artists": [
+    "Matthew Polenzani",
+    "Aigul Akhmetshina"
+   ]
+  },
+  {
+   "t": 9584,
+   "title": "Act IV: Backstage at the Met with host Matthew Polenzani: Interview with Piotr Beczała",
+   "appTitle": "Backstage at the Met with host Matthew Polenzani: Interview with Piotr Beczała",
+   "act": "IV",
+   "artists": [
+    "Matthew Polenzani",
+    "Piotr Beczała"
+   ]
+  },
+  {
+   "t": 9678,
+   "title": "Act IV: Backstage at the Met with host Matthew Polenzani: Carrie Cracknell and Michael Levine discuss the new production of Carmen",
+   "appTitle": "Backstage at the Met with host Matthew Polenzani: Carrie Cracknell and Michael Levine discuss the new production of Carmen",
+   "act": "IV",
+   "artists": [
+    "Matthew Polenzani",
+    "Carrie Cracknell",
+    "Michael Levine"
+   ]
+  },
+  {
+   "t": 9967,
+   "title": "Act IV: Backstage at the Met with host Matthew Polenzani: Daniele Rustioni discusses conducting Carmen",
+   "appTitle": "Backstage at the Met with host Matthew Polenzani: Daniele Rustioni discusses conducting Carmen",
+   "act": "IV",
+   "artists": [
+    "Matthew Polenzani",
+    "Daniele Rustioni"
+   ]
+  },
+  {
+   "t": 10263,
+   "title": "Act IV: Backstage at the Met with host Matthew Polenzani: Angel Blue and Kyle Ketelsen",
+   "appTitle": "Backstage at the Met with host Matthew Polenzani: Angel Blue and Kyle Ketelsen",
+   "act": "IV",
+   "artists": [
+    "Matthew Polenzani",
+    "Angel Blue",
+    "Kyle Ketelsen"
+   ]
+  }
+ ]
+}

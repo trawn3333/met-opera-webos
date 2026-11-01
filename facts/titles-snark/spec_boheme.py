@@ -1,0 +1,58 @@
+# 1.4.2 La Bohème: Met Live in HD, Sat 8 Nov 2025 (Met OD 982c4ee8-…; archive 0387831, La Bohème No. 1415), Keri-Lynn Wilson;
+# Zeffirelli production (Met premiere 14 Dec 1981, archive 0377459, with two press reviews).
+TITLE = 'La Bohème'; MATCH = ['La Bohème', 'La Boheme']
+PERF = {'id': '982c4ee8-173a-53da-ae61-f575b27e9c42', 'date': '2025-11-08', 'dockey': '0387831', 'prodPremiere': '1981-12-14'}
+SCENES = 'boheme-2025-11-08-scenes.json'
+P, R, W = 'met-archive-0387831.txt', 'met-archive-0377459.txt', 'wiki-La_boh_me.txt'
+ECK = 'Thor Eckert Jr., The Christian Science Monitor, on this production’s Met premiere, 14 Dec 1981'
+MICH = 'Charles Michener, Newsweek, 28 Dec 1981, on this production’s Met premiere'
+B = [
+ dict(k='Met milestone', t='Today’s matinee is the Met’s 1,415th Bohème. The first was on 26 December 1900, with Nellie Melba as Mimì.', at='Opening Credits', sc='perf', ty='history',
+      src=P, ev=['La Bohème (1415)'], extra=[(W, ['The Metropolitan Opera staged the work for the first time on 26 December 1900 with Nellie Melba as Mimì'])], keep='boheme-13'),
+ dict(k='Your host', t='Host Matthew Polenzani knows this garret: the tenor has sung La Bohème at the Gran Teatre del Liceu.', at='Introduction by Matthew', sc='perf', ty='artist',
+      src='wiki-Matthew_Polenzani.txt', ev=['"La Bohème" at Gran Teatre del Liceu']),
+ dict(k='Set piece', t='Zeffirelli’s garret: a cutaway attic perched on the Paris rooftops, complete with tiles and smoking chimney pots.', at='Questo Mar Rosso', sc='prod', ty='staging', attr=ECK,
+      src=R, ev=["The Bohemians' garret is a cutaway attic, quite literally set on the stage rooftops of Paris, complete with tiles, smoking chimney pots"]),
+ dict(k='Did you know?', t='Our Marcello, Lucas Meachem, got his big break in 2006, discovered by Susan Graham at a karaoke bar. In Paris.', at='Questo Mar Rosso', sc='perf', ty='artist',
+      src='wiki-Lucas_Meachem.txt', ev=['He had his big break soon after that in 2006, when he was discovered at a karaoke bar in Paris by acclaimed mezzo-soprano Susan Graham'], off=150),
+ dict(k='Meanwhile, in 1896…', t='Bohème’s premiere, Turin, 1 February 1896, was conducted by a 28-year-old Arturo Toscanini.', at="Abbasso, abbasso", sc='all', ty='history',
+      src=W, ev=['The world premiere of La bohème was on 1 February 1896 at the Teatro Regio in Turin, conducted by the 28-year-old Arturo Toscanini.'], keep='boheme-01'),
+ dict(k='Composer’s verdict', t='Puccini on this opera: “I lived that Bohème”, as a poor student, short of food, clothes and rent.', at='Si sente meglio', sc='all', ty='composer',
+      src='wiki-Giacomo_Puccini.txt', ev=['Puccini himself commented: "I lived that Bohème', 'he experienced poverty similar to that of the bohemians in La bohème, including a chronic shortage of necessities like food, clothing and money to pay rent']),
+ dict(k='Rising star', t='Juliana Grigoryan, our Mimì, won first and audience prizes at Operalia 2022. Her Met debut: Liù, in 2024.', at='Non sono in vena', sc='perf', ty='artist',
+      src='wiki-Juliana_Grigoryan.txt', ev=['the First and Audience prizes at the 2022 Operalia competition', 'She made her debut with the Metropolitan Opera in 2024 as Liù']),
+ dict(k='Listen for it', t='“Che gelida manina” comes in three paragraphs: tender, then bolder at “Chi son? Sono un poeta”, then the love motif.', at='Che gelida manina', sc='all', ty='music',
+      src='wiki-Che_gelida_manina.txt', ev=['it has three distinct musical paragraphs', 'The initial part is tender, the second part (starting with Chi son? Sono un poeta) is distinctly different in tone, bolder', "The third part starts with Talor dal mio forziere, the beginning of the 'love' motif used in the opera."]),
+ dict(k='Fun fact', t='Listen for the climactic high C on “speranza”: it’s unwritten, not in Puccini’s score.', at='Che gelida manina', sc='all', ty='music',
+      src='wiki-Che_gelida_manina.txt', ev=['the unwritten climactic high C (on speranza)']),
+ dict(k='Voice change', t='Our Rodolfo, Freddie De Tommaso, entered London’s Royal Academy of Music as a baritone, then became a tenor.', at='Mi chiamano Mimì', sc='perf', ty='artist',
+      src='wiki-Freddie_De_Tommaso.txt', ev=['studying at the Royal Academy of Music in London, where he entered in 2013 as a baritone and later changed to tenor']),
+ dict(k='Listen for it', t='As they realize they’re in love, the love motif from “Che gelida manina” returns.', at='O soave fanciulla', sc='all', ty='music',
+      src='wiki-O_soave_fanciulla.txt', ev=['the music returns to the opera\'s love leitmotif from Rodolfo\'s aria "Che gelida manina"']),
+ dict(k='Listen for it', t='The ending: Mimì’s high C, marked “fading away”, over descending harp harmonics. A major has become C major.', at='O soave fanciulla', sc='all', ty='music',
+      src='wiki-O_soave_fanciulla.txt', ev=["Mimì's last note is a high C, marked perdendosi (fading away)", 'The last bar in the orchestra is characterized by descending harp harmonics through the final C major chord', 'the key of A major, but ending in C major'], off=130),
+ dict(k='Showstopper', t='When this Act II set was unveiled in 1981, the audience roared for nearly a minute.', at='Aranci, datteri', sc='prod', ty='staging', attr=ECK,
+      src=R, ev=['When the curtain rose on the second act', 'the audience erupted in a roar of acclaim, amazement, and even disbelief - a roar that went on for nearly a minute']),
+ dict(k='Critics: big fans', t='A stilt walker, a dancing bear, Musetta’s horse-drawn cab: “a Delacroix riot of reds and golds.”', at='Chi guardi', sc='prod', ty='critic', attr=MICH,
+      src=R, ev=["The carnival atmosphere of Act II, complete with a stilt walker, dancing bear and Musetta's horse-drawn hansom cab, is a Delacroix riot of reds and golds."]),
+ dict(k='On the podium', t='Conductor Keri-Lynn Wilson made her Met debut in 2022–23. She also founded the Ukrainian Freedom Orchestra.', at='Viva Parpignol', sc='perf', ty='artist',
+      src='wiki-Keri_Lynn_Wilson.txt', ev=['To commence her 2022/23 season, Wilson made her Metropolitan Opera debut', 'She is the founder and music director of the Ukrainian Freedom Orchestra.'], extra=[(P, ['Conductor Keri-Lynn Wilson'])]),
+ dict(k='Listen for it', t='Musetta’s Waltz is aimed at the people in the café as much as at us in the theater.', at='Quando me', sc='all', ty='music',
+      src='wiki-Quando_m_en_vo_.txt', ev=['It is a song directed at the people in the café as much as at the audience in the theater.']),
+ dict(k='Musetta, today', t='Heidi Stober began as a pianist and first planned to teach choral music. Then came opera.', at='Quando me', sc='perf', ty='artist',
+      src='wiki-Heidi_Stober.txt', ev=['She began her musical training as a pianist and initially was interested in pursuing a career as a choral music educator.', 'At Lawrence University she developed an interest in opera'], off=150),
+ dict(k='Crowd count', t='The act ends in a parade. At the 1981 premiere it brought some 240 people onto the Met stage.', at="Chi l'ha richiesto", sc='prod', ty='staging', attr=ECK,
+      src=R, ev=['which culminated in a huge parade, bringing some 240 people on the Met stage']),
+ dict(k='Director’s touch', t='Watch the tavern door: a man in black rushes out, opens a black umbrella, and vanishes into the snow.', at='le guardie', sc='prod', ty='staging', attr=MICH + ', calling it a “ghostly bit of stage business”',
+      src=R, ev=['A man bundled up in black rushes out of the tavern', 'puts up a black umbrella and disappears into the wintry chill', 'this ghostly bit of stage business']),
+ dict(k='Listen for it', t='Two couples, two moods: Mimì and Rodolfo part tenderly while Marcello and Musetta quarrel fiercely.', at='Dunque è proprio finita', sc='all', ty='music',
+      src=W, ev=['Meanwhile, Marcello has found Musetta, and the couple quarrel fiercely about Musetta\'s flirtatiousness (quartet: Mimì, Rodolfo, Musetta, Marcello'], keep='boheme-10', off=120),
+ dict(k='Set piece', t='Check the sky behind the garret: silver-gray in Act I, rosy-peach now in Act IV.', at='In un coupé', sc='prod', ty='staging', attr=MICH,
+      src=R, ev=['The vast, subtly changing sky behind the garret - silver-gray in Act I, rosy-peach in Act IV']),
+ dict(k='Director’s touch', t='Zeffirelli turns Colline and Schaunard’s mock duel into a mad scamper along the rooftops.', at='Gavotta', sc='prod', ty='staging', attr=MICH,
+      src=R, ev=['Zeffirelli stages the mock duel between Colline and Schaunard in Act IV as a mad scamper along the rooftops'], off=10),
+ dict(k='Colline, today', t='Jongmin Park bids farewell to Colline’s coat. He made his Covent Garden debut in this very role, in 2014.', at='Vecchia zimarra', sc='perf', ty='artist',
+      src='wiki-Jongmin_Park.txt', ev=['He made his Royal Opera House debut in 2014 as Colline in La bohème']),
+ dict(k='Met history', t='Bohème closed the old Met house in April 1966. Zeffirelli then staged the new house’s very first production.', at='Schaunard, ognuno', sc='prod', ty='history',
+      src=W, ev=["La bohème was the last opera performed at New York's Metropolitan Opera's original 1883 building on 16 April 1966"], extra=[('wiki-Franco_Zeffirelli.txt', ['When the new Metropolitan Opera opened at Lincoln Center, he directed its first production'])], keep='boheme-14'),
+]

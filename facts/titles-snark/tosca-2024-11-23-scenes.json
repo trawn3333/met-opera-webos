@@ -1,0 +1,386 @@
+{
+ "performance": "null, Met Live in HD, 2024-11-23 (Met Opera on Demand id ab9ce405-bcb2-5ba4-9195-8c7a5f9ca4f7)",
+ "source": "Met Opera on Demand cue points",
+ "duration": 7952,
+ "scenes": [
+  {
+   "t": 0,
+   "title": "Opening Credits",
+   "appTitle": "Opening Credits",
+   "act": null,
+   "artists": []
+  },
+  {
+   "t": 53,
+   "title": "Introduction by Ailyn Pérez",
+   "appTitle": "Introduction by Ailyn Pérez",
+   "act": null,
+   "artists": [
+    "Ailyn Pérez"
+   ]
+  },
+  {
+   "t": 132,
+   "title": "Act I: Ah!...Finalmente!",
+   "appTitle": "Ah!...Finalmente!",
+   "act": "I",
+   "artists": [
+    "Kevin Short",
+    "Patrick Carfizzi",
+    "Freddie De Tommaso"
+   ]
+  },
+  {
+   "t": 487,
+   "title": "Act I: Dammi i colori! … Recondita armonia",
+   "appTitle": "Dammi i colori! … Recondita armonia",
+   "act": "I",
+   "artists": [
+    "Freddie De Tommaso",
+    "Patrick Carfizzi"
+   ]
+  },
+  {
+   "t": 668,
+   "title": "Act I: Ma con quei cani … Eccellenza",
+   "appTitle": "Ma con quei cani … Eccellenza",
+   "act": "I",
+   "artists": [
+    "Patrick Carfizzi",
+    "Freddie De Tommaso",
+    "Kevin Short",
+    "Lise Davidsen"
+   ]
+  },
+  {
+   "t": 840,
+   "title": "Act I: Mario! Mario! Mario!",
+   "appTitle": "Mario! Mario! Mario!",
+   "act": "I",
+   "artists": [
+    "Lise Davidsen",
+    "Freddie De Tommaso"
+   ]
+  },
+  {
+   "t": 1174,
+   "title": "Act I: Or lasciami al lavoro—Qua l'occhio al mondo",
+   "appTitle": "Or lasciami al lavoro—Qua l'occhio al mondo",
+   "act": "I",
+   "artists": [
+    "Freddie De Tommaso",
+    "Lise Davidsen"
+   ]
+  },
+  {
+   "t": 1636,
+   "title": "Act I: È buona la mia Tosca",
+   "appTitle": "È buona la mia Tosca",
+   "act": "I",
+   "artists": [
+    "Freddie De Tommaso",
+    "Kevin Short"
+   ]
+  },
+  {
+   "t": 1867,
+   "title": "Act I: Sommo giubilo, Eccellenza!",
+   "appTitle": "Sommo giubilo, Eccellenza!",
+   "act": "I",
+   "artists": [
+    "Patrick Carfizzi",
+    "Metropolitan Opera Chorus and Children's Chorus"
+   ]
+  },
+  {
+   "t": 1960,
+   "title": "Act I: Un tal baccano in chiesa!",
+   "appTitle": "Un tal baccano in chiesa!",
+   "act": "I",
+   "artists": [
+    "Quinn Kelsey",
+    "Patrick Carfizzi",
+    "Tony Stevenson"
+   ]
+  },
+  {
+   "t": 2194,
+   "title": "Act I: Or tutto è chiaro",
+   "appTitle": "Or tutto è chiaro",
+   "act": "I",
+   "artists": [
+    "Quinn Kelsey",
+    "Lise Davidsen",
+    "Patrick Carfizzi"
+   ]
+  },
+  {
+   "t": 2402,
+   "title": "Act I: Ed io venivo a lui tutta dogliosa",
+   "appTitle": "Ed io venivo a lui tutta dogliosa",
+   "act": "I",
+   "artists": [
+    "Lise Davidsen",
+    "Quinn Kelsey"
+   ]
+  },
+  {
+   "t": 2673,
+   "title": "Act I: Tre sbirri… Va, Tosca!",
+   "appTitle": "Tre sbirri… Va, Tosca!",
+   "act": "I",
+   "artists": [
+    "Quinn Kelsey",
+    "Tony Stevenson",
+    "Metropolitan Opera Chorus"
+   ]
+  },
+  {
+   "t": 2966,
+   "title": "Introduction to Act II by Ailyn Pérez",
+   "appTitle": "Introduction to Act II by Ailyn Pérez",
+   "act": null,
+   "artists": [
+    "Ailyn Pérez"
+   ]
+  },
+  {
+   "t": 2987,
+   "title": "Act II: Tosca è un buon falco!",
+   "appTitle": "Tosca è un buon falco!",
+   "act": "II",
+   "artists": [
+    "Quinn Kelsey",
+    "Christopher Job"
+   ]
+  },
+  {
+   "t": 3202,
+   "title": "Act II: Ha più forte sapore—Meno Male!",
+   "appTitle": "Ha più forte sapore—Meno Male!",
+   "act": "II",
+   "artists": [
+    "Quinn Kelsey",
+    "Christopher Job",
+    "Tony Stevenson",
+    "Freddie De Tommaso",
+    "Lise Davidsen",
+    "Metropolitan Opera Chorus"
+   ]
+  },
+  {
+   "t": 3528,
+   "title": "Act II: Ov'è Angelotti?",
+   "appTitle": "Ov'è Angelotti?",
+   "act": "II",
+   "artists": [
+    "Quinn Kelsey",
+    "Freddie De Tommaso",
+    "Tony Stevenson",
+    "Lise Davidsen"
+   ]
+  },
+  {
+   "t": 3708,
+   "title": "Act II: Ed or fra noi parliam da buoni amici",
+   "appTitle": "Ed or fra noi parliam da buoni amici",
+   "act": "II",
+   "artists": [
+    "Quinn Kelsey",
+    "Lise Davidsen",
+    "Christopher Job",
+    "Freddie De Tommaso"
+   ]
+  },
+  {
+   "t": 3965,
+   "title": "Act II: Orsù, Tosca, parlate",
+   "appTitle": "Orsù, Tosca, parlate",
+   "act": "II",
+   "artists": [
+    "Quinn Kelsey",
+    "Lise Davidsen",
+    "Freddie De Tommaso",
+    "Tony Stevenson"
+   ]
+  },
+  {
+   "t": 4193,
+   "title": "Act II: Floria!.. Amore",
+   "appTitle": "Floria!.. Amore",
+   "act": "II",
+   "artists": [
+    "Freddie De Tommaso",
+    "Lise Davidsen",
+    "Quinn Kelsey",
+    "Christopher Job"
+   ]
+  },
+  {
+   "t": 4449,
+   "title": "Act II: Quanto?—Quanto?—Il prezzo!",
+   "appTitle": "Quanto?—Quanto?—Il prezzo!",
+   "act": "II",
+   "artists": [
+    "Lise Davidsen",
+    "Quinn Kelsey"
+   ]
+  },
+  {
+   "t": 4738,
+   "title": "Act II: Vissi d'arte",
+   "appTitle": "Vissi d'arte",
+   "act": "II",
+   "artists": [
+    "Lise Davidsen"
+   ]
+  },
+  {
+   "t": 4999,
+   "title": "Act II: Vedi, le man giunte io stendo a te!",
+   "appTitle": "Vedi, le man giunte io stendo a te!",
+   "act": "II",
+   "artists": [
+    "Lise Davidsen",
+    "Quinn Kelsey",
+    "Tony Stevenson"
+   ]
+  },
+  {
+   "t": 5218,
+   "title": "Act II: Io tenni la promessa",
+   "appTitle": "Io tenni la promessa",
+   "act": "II",
+   "artists": [
+    "Quinn Kelsey",
+    "Lise Davidsen"
+   ]
+  },
+  {
+   "t": 5421,
+   "title": "Act II: Or gli perdono!",
+   "appTitle": "Or gli perdono!",
+   "act": "II",
+   "artists": [
+    "Lise Davidsen"
+   ]
+  },
+  {
+   "t": 5619,
+   "title": "Introduction to Act III by Ailyn Pérez",
+   "appTitle": "Introduction to Act III by Ailyn Pérez",
+   "act": null,
+   "artists": [
+    "Ailyn Pérez"
+   ]
+  },
+  {
+   "t": 5635,
+   "title": "Act III: Io de'sospiri",
+   "appTitle": "Io de'sospiri",
+   "act": "III",
+   "artists": [
+    "Luka Zylik"
+   ]
+  },
+  {
+   "t": 5953,
+   "title": "Act III: Mario Cavaradossi? A voi",
+   "appTitle": "Mario Cavaradossi? A voi",
+   "act": "III",
+   "artists": [
+    "William Guanbo Su",
+    "Freddie De Tommaso"
+   ]
+  },
+  {
+   "t": 6205,
+   "title": "Act III: E lucevan le stelle",
+   "appTitle": "E lucevan le stelle",
+   "act": "III",
+   "artists": [
+    "Freddie De Tommaso"
+   ]
+  },
+  {
+   "t": 6405,
+   "title": "Act III: Ah! Franchigia a Floria Tosca",
+   "appTitle": "Ah! Franchigia a Floria Tosca",
+   "act": "III",
+   "artists": [
+    "Freddie De Tommaso",
+    "Lise Davidsen"
+   ]
+  },
+  {
+   "t": 6592,
+   "title": "Act III: O dolci mani mansuete e pure",
+   "appTitle": "O dolci mani mansuete e pure",
+   "act": "III",
+   "artists": [
+    "Freddie De Tommaso",
+    "Lise Davidsen"
+   ]
+  },
+  {
+   "t": 6927,
+   "title": "Act III: E non giungono",
+   "appTitle": "E non giungono",
+   "act": "III",
+   "artists": [
+    "Lise Davidsen",
+    "Freddie De Tommaso",
+    "William Guanbo Su"
+   ]
+  },
+  {
+   "t": 7084,
+   "title": "Act III: Come è lunge l'attesa!",
+   "appTitle": "Come è lunge l'attesa!",
+   "act": "III",
+   "artists": [
+    "Lise Davidsen",
+    "Tony Stevenson",
+    "Christopher Job",
+    "Metropolitan Opera Chorus"
+   ]
+  },
+  {
+   "t": 7316,
+   "title": "Bows and Closing Credits",
+   "appTitle": "Bows and Closing Credits",
+   "act": null,
+   "artists": []
+  },
+  {
+   "t": 7546,
+   "title": "Act III: Backstage at the Met with host Ailyn Pérez: Interview with Lise Davidsen",
+   "appTitle": "Backstage at the Met with host Ailyn Pérez: Interview with Lise Davidsen",
+   "act": "III",
+   "artists": [
+    "Ailyn Pérez",
+    "Lise Davidsen"
+   ]
+  },
+  {
+   "t": 7715,
+   "title": "Act III: Backstage at the Met with host Ailyn Pérez: Interview with Quinn Kelsey",
+   "appTitle": "Backstage at the Met with host Ailyn Pérez: Interview with Quinn Kelsey",
+   "act": "III",
+   "artists": [
+    "Ailyn Pérez",
+    "Quinn Kelsey"
+   ]
+  },
+  {
+   "t": 7848,
+   "title": "Act III: Backstage at the Met with host Ailyn Pérez: Interview with Freddie De Tommaso",
+   "appTitle": "Backstage at the Met with host Ailyn Pérez: Interview with Freddie De Tommaso",
+   "act": "III",
+   "artists": [
+    "Ailyn Pérez",
+    "Freddie De Tommaso"
+   ]
+  }
+ ]
+}

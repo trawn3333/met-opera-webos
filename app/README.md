@@ -91,6 +91,12 @@ Useful extras:
 3. Later, if the Met session expires (the observed cookie lifetime is about 24 h), the app signs back in by itself on launch.
 4. Tip: keep the TV's **QuickStart+** ON. With it off, webOS can drop recently written cookies at power-off.
 
+## What changed in 1.4.2
+
+- **Five more titles get the Idomeneo-style Pop-Up Video treatment**, each built from its most recent Met Live in HD performance in the catalog and pinned to that recording's scene markers (at least 60 s apart): **Tosca** (HD 23 Nov 2024, Nézet-Séguin; 27 bubbles), **La Bohème** (HD 8 Nov 2025, Keri-Lynn Wilson; 24), **La Traviata** (HD 5 Nov 2022, Callegari; 20), **Carmen** (HD 27 Jan 2024, Rustioni; 26) and **Le Nozze di Figaro** (HD 26 Apr 2025, Mallwitz; 24). Cast, host and conductor bubbles only show for that performance; staging bubbles for that production; music and history bubbles show on matching scenes of any recording and never float.
+- New generic builder `facts/titles-snark/mk_title.py <slug>` (reads `spec_<slug>.py`; checks the 20-word limit, unique scene match, verbatim evidence and 60 s spacing), scene dumper `app/tools/dump-scenes.js`, and per-title tests `app/tools/test-142.js` / `c53-142.js`.
+- App code is unchanged from 1.4.1 apart from the bundled facts.
+
 ## What changed in 1.4.1
 
 - **Idomeneo (Met HD, 25 Mar 2017)** now uses Matt's 27 good-rated bubbles in the Pop-Up Video voice (22 from the first batch plus 8 music bubbles, with 3 same-topic pairs merged). Each bubble is pinned to its 2017 Met scene marker at an explicit offset, at least 60 s apart. Bubbles about the 2017 cast, host and conductor only show for that performance. Bubbles about the Ponnelle staging show for that production. Bubbles about the piece only show on a matching scene and never float.

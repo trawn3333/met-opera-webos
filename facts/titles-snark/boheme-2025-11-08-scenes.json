@@ -1,0 +1,478 @@
+{
+ "performance": "null, Met Live in HD, 2025-11-08 (Met Opera on Demand id 982c4ee8-173a-53da-ae61-f575b27e9c42)",
+ "source": "Met Opera on Demand cue points",
+ "duration": 8900,
+ "scenes": [
+  {
+   "t": 0,
+   "title": "Opening Credits",
+   "appTitle": "Opening Credits",
+   "act": null,
+   "artists": []
+  },
+  {
+   "t": 61,
+   "title": "Introduction by Matthew Polenzani",
+   "appTitle": "Introduction by Matthew Polenzani",
+   "act": null,
+   "artists": [
+    "Matthew Polenzani"
+   ]
+  },
+  {
+   "t": 162,
+   "title": "Act I: Questo Mar Rosso",
+   "appTitle": "Questo Mar Rosso",
+   "act": "I",
+   "artists": [
+    "Lucas Meachem",
+    "Freddie De Tommaso",
+    "Jongmin Park"
+   ]
+  },
+  {
+   "t": 446,
+   "title": "Act I: Pensier profondo! ",
+   "appTitle": "Pensier profondo! ",
+   "act": "I",
+   "artists": [
+    "Jongmin Park",
+    "Lucas Meachem",
+    "Freddie De Tommaso"
+   ]
+  },
+  {
+   "t": 520,
+   "title": "Act I: Abbasso, abbasso l'autor!",
+   "appTitle": "Abbasso, abbasso l'autor!",
+   "act": "I",
+   "artists": [
+    "Lucas Meachem",
+    "Jongmin Park",
+    "Freddie De Tommaso",
+    "Sean Michael Plumb"
+   ]
+  },
+  {
+   "t": 764,
+   "title": "Act I: Si può?—Chi è là? ",
+   "appTitle": "Si può?—Chi è là? ",
+   "act": "I",
+   "artists": [
+    "Donald Maxwell",
+    "Lucas Meachem",
+    "Sean Michael Plumb",
+    "Jongmin Park",
+    "Freddie De Tommaso"
+   ]
+  },
+  {
+   "t": 1161,
+   "title": "Act I: Non sono in vena ",
+   "appTitle": "Non sono in vena ",
+   "act": "I",
+   "artists": [
+    "Freddie De Tommaso",
+    "Juliana Grigoryan"
+   ]
+  },
+  {
+   "t": 1274,
+   "title": "Act I: Si sente meglio? ",
+   "appTitle": "Si sente meglio? ",
+   "act": "I",
+   "artists": [
+    "Freddie De Tommaso",
+    "Juliana Grigoryan"
+   ]
+  },
+  {
+   "t": 1441,
+   "title": "Act I: Che gelida manina! ",
+   "appTitle": "Che gelida manina! ",
+   "act": "I",
+   "artists": [
+    "Freddie De Tommaso"
+   ]
+  },
+  {
+   "t": 1756,
+   "title": "Act I: Sì. Mi chiamano Mimì",
+   "appTitle": "Sì. Mi chiamano Mimì",
+   "act": "I",
+   "artists": [
+    "Juliana Grigoryan",
+    "Freddie De Tommaso"
+   ]
+  },
+  {
+   "t": 2126,
+   "title": "Act I: Ehi! Rodolfo! Rodolfo! ",
+   "appTitle": "Ehi! Rodolfo! Rodolfo! ",
+   "act": "I",
+   "artists": [
+    "Sean Michael Plumb",
+    "Jongmin Park",
+    "Lucas Meachem",
+    "Freddie De Tommaso",
+    "Juliana Grigoryan"
+   ]
+  },
+  {
+   "t": 2170,
+   "title": "Act I: O soave fanciulla",
+   "appTitle": "O soave fanciulla",
+   "act": "I",
+   "artists": [
+    "Freddie De Tommaso",
+    "Lucas Meachem",
+    "Juliana Grigoryan"
+   ]
+  },
+  {
+   "t": 2429,
+   "title": "Act I: Scene Change",
+   "appTitle": "Scene Change",
+   "act": "I",
+   "artists": []
+  },
+  {
+   "t": 2476,
+   "title": "Act II: Aranci, datteri!",
+   "appTitle": "Aranci, datteri!",
+   "act": "II",
+   "artists": [
+    "Sean Michael Plumb",
+    "Jongmin Park",
+    "Freddie De Tommaso",
+    "Juliana Grigoryan",
+    "Lucas Meachem",
+    "Metropolitan Opera Chorus"
+   ]
+  },
+  {
+   "t": 2645,
+   "title": "Act II: Chi guardi? ",
+   "appTitle": "Chi guardi? ",
+   "act": "II",
+   "artists": [
+    "Freddie De Tommaso",
+    "Jongmin Park",
+    "Juliana Grigoryan",
+    "Sean Michael Plumb",
+    "Lucas Meachem",
+    "Gregory Warren",
+    "Metropolitan Opera Chorus and Children's Chorus"
+   ]
+  },
+  {
+   "t": 2828,
+   "title": "Act II: Viva Parpignol! ",
+   "appTitle": "Viva Parpignol! ",
+   "act": "II",
+   "artists": [
+    "Lucas Meachem",
+    "Juliana Grigoryan",
+    "Sean Michael Plumb",
+    "Jongmin Park",
+    "Freddie De Tommaso",
+    "Donald Maxwell",
+    "Heidi Stober",
+    "Metropolitan Opera Chorus and Children's Chorus"
+   ]
+  },
+  {
+   "t": 3189,
+   "title": "Act II: Quando me'n vo' (Musetta's Waltz)",
+   "appTitle": "Quando me'n vo' (Musetta's Waltz)",
+   "act": "II",
+   "artists": [
+    "Heidi Stober",
+    "Lucas Meachem",
+    "Donald Maxwell",
+    "Juliana Grigoryan",
+    "Freddie De Tommaso",
+    "Sean Michael Plumb",
+    "Jongmin Park"
+   ]
+  },
+  {
+   "t": 3513,
+   "title": "Act II: Chi l'ha richiesto?",
+   "appTitle": "Chi l'ha richiesto?",
+   "act": "II",
+   "artists": [
+    "Freddie De Tommaso",
+    "Jongmin Park",
+    "Sean Michael Plumb",
+    "Lucas Meachem",
+    "Heidi Stober",
+    "Juliana Grigoryan",
+    "Metropolitan Opera Chorus and Children's Chorus"
+   ]
+  },
+  {
+   "t": 3662,
+   "title": "Introduction to Act III by Matthew Polenzani",
+   "appTitle": "Introduction to Act III by Matthew Polenzani",
+   "act": null,
+   "artists": [
+    "Matthew Polenzani"
+   ]
+  },
+  {
+   "t": 3680,
+   "title": "Act III: Ohè, là, le guardie... Aprite! ",
+   "appTitle": "Ohè, là, le guardie... Aprite! ",
+   "act": "III",
+   "artists": [
+    "Ned Hanlon",
+    "Heidi Stober",
+    "Metropolitan Opera Chorus"
+   ]
+  },
+  {
+   "t": 3953,
+   "title": "Act III: Sa dirmi, scusi, qual è l’osteria ",
+   "appTitle": "Sa dirmi, scusi, qual è l’osteria ",
+   "act": "III",
+   "artists": [
+    "Juliana Grigoryan",
+    "Jonathan Scott",
+    "Ned Hanlon"
+   ]
+  },
+  {
+   "t": 4022,
+   "title": "Act III: Mimì—Speravo di trovarvi qui ",
+   "appTitle": "Mimì—Speravo di trovarvi qui ",
+   "act": "III",
+   "artists": [
+    "Lucas Meachem",
+    "Juliana Grigoryan"
+   ]
+  },
+  {
+   "t": 4317,
+   "title": "Act III: Marcello, Finalmente!—Mimì è una civetta",
+   "appTitle": "Marcello, Finalmente!—Mimì è una civetta",
+   "act": "III",
+   "artists": [
+    "Freddie De Tommaso",
+    "Lucas Meachem",
+    "Juliana Grigoryan"
+   ]
+  },
+  {
+   "t": 4514,
+   "title": "Act III: Mimì è tanto malata! ",
+   "appTitle": "Mimì è tanto malata! ",
+   "act": "III",
+   "artists": [
+    "Freddie De Tommaso",
+    "Lucas Meachem",
+    "Juliana Grigoryan"
+   ]
+  },
+  {
+   "t": 4714,
+   "title": "Act III: D’onde lieta uscì ",
+   "appTitle": "D’onde lieta uscì ",
+   "act": "III",
+   "artists": [
+    "Juliana Grigoryan"
+   ]
+  },
+  {
+   "t": 4950,
+   "title": "Act III: Dunque è proprio finita? ",
+   "appTitle": "Dunque è proprio finita? ",
+   "act": "III",
+   "artists": [
+    "Freddie De Tommaso",
+    "Juliana Grigoryan",
+    "Lucas Meachem",
+    "Heidi Stober"
+   ]
+  },
+  {
+   "t": 5316,
+   "title": "Introduction to Act IV by Matthew Polenzani",
+   "appTitle": "Introduction to Act IV by Matthew Polenzani",
+   "act": null,
+   "artists": []
+  },
+  {
+   "t": 5324,
+   "title": "Act IV: In un coupé? ",
+   "appTitle": "In un coupé? ",
+   "act": "IV",
+   "artists": [
+    "Lucas Meachem",
+    "Freddie De Tommaso"
+   ]
+  },
+  {
+   "t": 5462,
+   "title": "Act IV: O Mimì, tu più non torni ",
+   "appTitle": "O Mimì, tu più non torni ",
+   "act": "IV",
+   "artists": [
+    "Freddie De Tommaso",
+    "Lucas Meachem"
+   ]
+  },
+  {
+   "t": 5659,
+   "title": "Act IV: Che ora sia? ",
+   "appTitle": "Che ora sia? ",
+   "act": "IV",
+   "artists": [
+    "Freddie De Tommaso",
+    "Lucas Meachem",
+    "Sean Michael Plumb",
+    "Jongmin Park"
+   ]
+  },
+  {
+   "t": 5802,
+   "title": "Act IV: Gavotta—Minuetto—Pavanella—Fandango ",
+   "appTitle": "Gavotta—Minuetto—Pavanella—Fandango ",
+   "act": "IV",
+   "artists": [
+    "Jongmin Park",
+    "Lucas Meachem",
+    "Freddie De Tommaso",
+    "Sean Michael Plumb"
+   ]
+  },
+  {
+   "t": 5908,
+   "title": "Act IV: C'è Mimì",
+   "appTitle": "C'è Mimì",
+   "act": "IV",
+   "artists": [
+    "Heidi Stober",
+    "Freddie De Tommaso",
+    "Sean Michael Plumb",
+    "Juliana Grigoryan",
+    "Lucas Meachem"
+   ]
+  },
+  {
+   "t": 6290,
+   "title": "Act IV: Vecchia zimarra",
+   "appTitle": "Vecchia zimarra",
+   "act": "IV",
+   "artists": [
+    "Jongmin Park",
+    "Sean Michael Plumb"
+   ]
+  },
+  {
+   "t": 6418,
+   "title": "Act IV: Schaunard, ognuno per diversa via",
+   "appTitle": "Schaunard, ognuno per diversa via",
+   "act": "IV",
+   "artists": [
+    "Jongmin Park",
+    "Sean Michael Plumb",
+    "Juliana Grigoryan",
+    "Freddie De Tommaso"
+   ]
+  },
+  {
+   "t": 6901,
+   "title": "Act IV: Dorme? Riposa.",
+   "appTitle": "Dorme? Riposa.",
+   "act": "IV",
+   "artists": [
+    "Heidi Stober",
+    "Freddie De Tommaso",
+    "Lucas Meachem",
+    "Juliana Grigoryan"
+   ]
+  },
+  {
+   "t": 7060,
+   "title": "Act IV: Che ha detto il medico? ",
+   "appTitle": "Che ha detto il medico? ",
+   "act": "IV",
+   "artists": [
+    "Freddie De Tommaso",
+    "Lucas Meachem",
+    "Heidi Stober",
+    "Sean Michael Plumb",
+    "Jongmin Park"
+   ]
+  },
+  {
+   "t": 7249,
+   "title": "Bows and Closing Credits ",
+   "appTitle": "Bows and Closing Credits ",
+   "act": null,
+   "artists": []
+  },
+  {
+   "t": 7472,
+   "title": "Act IV: Backstage at the Met with host Matthew Polenzani: Interview with Juliana Grigoryan",
+   "appTitle": "Backstage at the Met with host Matthew Polenzani: Interview with Juliana Grigoryan",
+   "act": "IV",
+   "artists": [
+    "Matthew Polenzani",
+    "Juliana Grigoryan"
+   ]
+  },
+  {
+   "t": 7630,
+   "title": "Act IV: Backstage at the Met with host Matthew Polenzani: Interview with Freddie De Tommaso",
+   "appTitle": "Backstage at the Met with host Matthew Polenzani: Interview with Freddie De Tommaso",
+   "act": "IV",
+   "artists": [
+    "Matthew Polenzani",
+    "Freddie De Tommaso"
+   ]
+  },
+  {
+   "t": 7840,
+   "title": "Act IV: Backstage at the Met with host Matthew Polenzani: Interview with Heidi Stober and Lucas Meachem",
+   "appTitle": "Backstage at the Met with host Matthew Polenzani: Interview with Heidi Stober and Lucas Meachem",
+   "act": "IV",
+   "artists": [
+    "Matthew Polenzani",
+    "Heidi Stober",
+    "Lucas Meachem"
+   ]
+  },
+  {
+   "t": 8023,
+   "title": "Act IV: Backstage at the Met with host Matthew Polenzani: Tilman Michael on the Met Chorus in La Bohème",
+   "appTitle": "Backstage at the Met with host Matthew Polenzani: Tilman Michael on the Met Chorus in La Bohème",
+   "act": "IV",
+   "artists": [
+    "Matthew Polenzani",
+    "Tilman Michael"
+   ]
+  },
+  {
+   "t": 8281,
+   "title": "Act IV: Backstage at the Met with host Matthew Polenzani: Maestro Keri-Lynn Wilson on the musical moods of La Bohème",
+   "appTitle": "Backstage at the Met with host Matthew Polenzani: Maestro Keri-Lynn Wilson on the musical moods of La Bohème",
+   "act": "IV",
+   "artists": [
+    "Matthew Polenzani",
+    "Keri-Lynn Wilson"
+   ]
+  },
+  {
+   "t": 8570,
+   "title": "Act IV: Backstage at the Met with host Matthew Polenzani: Franco Zeffirelli: Directing La Bohème",
+   "appTitle": "Backstage at the Met with host Matthew Polenzani: Franco Zeffirelli: Directing La Bohème",
+   "act": "IV",
+   "artists": [
+    "Matthew Polenzani",
+    "Franco Zeffirelli"
+   ]
+  }
+ ]
+}

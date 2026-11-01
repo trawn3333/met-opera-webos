@@ -1,0 +1,860 @@
+{
+ "performance": "null, Met Live in HD, 2025-04-26 (Met Opera on Demand id 697a3182-2158-59af-aff1-6f8e9f0c9a40)",
+ "source": "Met Opera on Demand cue points",
+ "duration": 11648,
+ "scenes": [
+  {
+   "t": 0,
+   "title": "Opening Credits",
+   "appTitle": "Opening Credits",
+   "act": null,
+   "artists": []
+  },
+  {
+   "t": 75,
+   "title": "Introduction by Julia Bullock",
+   "appTitle": "Introduction by Julia Bullock",
+   "act": null,
+   "artists": [
+    "Julia Bullock"
+   ]
+  },
+  {
+   "t": 191,
+   "title": "Overture",
+   "appTitle": "Overture",
+   "act": null,
+   "artists": [
+    "Joana Mallwitz",
+    "Metropolitan Opera Orchestra"
+   ]
+  },
+  {
+   "t": 474,
+   "title": "Act I: Cinque… dieci",
+   "appTitle": "Cinque… dieci",
+   "act": "I",
+   "artists": [
+    "Michael Sumuel",
+    "Olga Kulchynska"
+   ]
+  },
+  {
+   "t": 640,
+   "title": "Act I: Cosa stai misurando",
+   "appTitle": "Cosa stai misurando",
+   "act": "I",
+   "artists": [
+    "Olga Kulchynska",
+    "Michael Sumuel"
+   ]
+  },
+  {
+   "t": 688,
+   "title": "Act I: Se a caso madama la notte ti chiama",
+   "appTitle": "Se a caso madama la notte ti chiama",
+   "act": "I",
+   "artists": [
+    "Michael Sumuel",
+    "Olga Kulchynska"
+   ]
+  },
+  {
+   "t": 845,
+   "title": "Act I: Or bene; ascolta, e taci!—Bravo, signor padrone!",
+   "appTitle": "Or bene; ascolta, e taci!—Bravo, signor padrone!",
+   "act": "I",
+   "artists": [
+    "Olga Kulchynska",
+    "Michael Sumuel"
+   ]
+  },
+  {
+   "t": 1004,
+   "title": "Act I: Se vuol ballare signor Contino",
+   "appTitle": "Se vuol ballare signor Contino",
+   "act": "I",
+   "artists": [
+    "Michael Sumuel"
+   ]
+  },
+  {
+   "t": 1156,
+   "title": "Act I: Ed aspettaste il giorno fissato per le nozze",
+   "appTitle": "Ed aspettaste il giorno fissato per le nozze",
+   "act": "I",
+   "artists": [
+    "Maurizio Muraro",
+    "Elizabeth Bishop"
+   ]
+  },
+  {
+   "t": 1217,
+   "title": "Act I: La vendetta",
+   "appTitle": "La vendetta",
+   "act": "I",
+   "artists": [
+    "Maurizio Muraro"
+   ]
+  },
+  {
+   "t": 1409,
+   "title": "Act I: Tutto ancor non ho perso",
+   "appTitle": "Tutto ancor non ho perso",
+   "act": "I",
+   "artists": [
+    "Elizabeth Bishop",
+    "Olga Kulchynska"
+   ]
+  },
+  {
+   "t": 1462,
+   "title": "Act I: Via resti servita",
+   "appTitle": "Via resti servita",
+   "act": "I",
+   "artists": [
+    "Elizabeth Bishop",
+    "Olga Kulchynska"
+   ]
+  },
+  {
+   "t": 1600,
+   "title": "Act I: Va là, vecchia pedante",
+   "appTitle": "Va là, vecchia pedante",
+   "act": "I",
+   "artists": [
+    "Olga Kulchynska",
+    "Sun-Ly Pierce"
+   ]
+  },
+  {
+   "t": 1710,
+   "title": "Act I: Non so più cosa son, cosa faccio",
+   "appTitle": "Non so più cosa son, cosa faccio",
+   "act": "I",
+   "artists": [
+    "Sun-Ly Pierce"
+   ]
+  },
+  {
+   "t": 1894,
+   "title": "Act I: Ah, son perduto!",
+   "appTitle": "Ah, son perduto!",
+   "act": "I",
+   "artists": [
+    "Sun-Ly Pierce",
+    "Olga Kulchynska",
+    "Joshua Hopkins",
+    "Brenton Ryan"
+   ]
+  },
+  {
+   "t": 2141,
+   "title": "Act I: Cosa sento! Tosto andate ",
+   "appTitle": "Cosa sento! Tosto andate ",
+   "act": "I",
+   "artists": [
+    "Joshua Hopkins",
+    "Brenton Ryan",
+    "Olga Kulchynska"
+   ]
+  },
+  {
+   "t": 2404,
+   "title": "Act I: Basilio, in traccia tosto",
+   "appTitle": "Basilio, in traccia tosto",
+   "act": "I",
+   "artists": [
+    "Joshua Hopkins",
+    "Olga Kulchynska",
+    "Sun-Ly Pierce",
+    "Brenton Ryan"
+   ]
+  },
+  {
+   "t": 2463,
+   "title": "Act I: Giovani liete",
+   "appTitle": "Giovani liete",
+   "act": "I",
+   "artists": [
+    "Metropolitan Opera Chorus"
+   ]
+  },
+  {
+   "t": 2532,
+   "title": "Act I: Cos'è questa commedia?",
+   "appTitle": "Cos'è questa commedia?",
+   "act": "I",
+   "artists": [
+    "Joshua Hopkins",
+    "Michael Sumuel",
+    "Olga Kulchynska",
+    "Metropolitan Opera Chorus"
+   ]
+  },
+  {
+   "t": 2622,
+   "title": "Act I: Giovani liete fiori spargete",
+   "appTitle": "Giovani liete fiori spargete",
+   "act": "I",
+   "artists": [
+    "Metropolitan Opera"
+   ]
+  },
+  {
+   "t": 2679,
+   "title": "Act I: Evviva!",
+   "appTitle": "Evviva!",
+   "act": "I",
+   "artists": [
+    "Michael Sumuel",
+    "Olga Kulchynska",
+    "Brenton Ryan",
+    "Sun-Ly Pierce",
+    "Joshua Hopkins"
+   ]
+  },
+  {
+   "t": 2756,
+   "title": "Act I: Non più andrai",
+   "appTitle": "Non più andrai",
+   "act": "I",
+   "artists": [
+    "Michael Sumuel"
+   ]
+  },
+  {
+   "t": 2997,
+   "title": "Act II: Porgi amor qualche ristoro",
+   "appTitle": "Porgi amor qualche ristoro",
+   "act": "II",
+   "artists": [
+    "Federica Lombardi"
+   ]
+  },
+  {
+   "t": 3257,
+   "title": "Act II: Vieni, cara Susanna",
+   "appTitle": "Vieni, cara Susanna",
+   "act": "II",
+   "artists": [
+    "Federica Lombardi",
+    "Olga Kulchynska",
+    "Michael Sumuel"
+   ]
+  },
+  {
+   "t": 3492,
+   "title": "Act II: Quanto duolmi, Susanna",
+   "appTitle": "Quanto duolmi, Susanna",
+   "act": "II",
+   "artists": [
+    "Federica Lombardi",
+    "Olga Kulchynska",
+    "Sun-Ly Pierce"
+   ]
+  },
+  {
+   "t": 3575,
+   "title": "Act II: Voi che sapete che cosa è amor",
+   "appTitle": "Voi che sapete che cosa è amor",
+   "act": "II",
+   "artists": [
+    "Sun-Ly Pierce"
+   ]
+  },
+  {
+   "t": 3748,
+   "title": "Act II: Bravo! che bella voce!",
+   "appTitle": "Bravo! che bella voce!",
+   "act": "II",
+   "artists": [
+    "Federica Lombardi",
+    "Olga Kulchynska",
+    "Sun-Ly Pierce "
+   ]
+  },
+  {
+   "t": 3824,
+   "title": "Act II: Venite, inginocchiatevi",
+   "appTitle": "Venite, inginocchiatevi",
+   "act": "II",
+   "artists": [
+    "Olga Kulchynska"
+   ]
+  },
+  {
+   "t": 3989,
+   "title": "Act II: Quante buffonerie!",
+   "appTitle": "Quante buffonerie!",
+   "act": "II",
+   "artists": [
+    "Federica Lombardi",
+    "Olga Kulchynska",
+    "Sun-Ly Pierce",
+    "Joshua Hopkins"
+   ]
+  },
+  {
+   "t": 4167,
+   "title": "Act II: Che novità!",
+   "appTitle": "Che novità!",
+   "act": "II",
+   "artists": [
+    "Joshua Hopkins",
+    "Federica Lombardi"
+   ]
+  },
+  {
+   "t": 4260,
+   "title": "Act II: Olga Kulchynska or via, sortite",
+   "appTitle": "Olga Kulchynska or via, sortite",
+   "act": "II",
+   "artists": [
+    "Joshua Hopkins",
+    "Federica Lombardi",
+    "Olga Kulchynska"
+   ]
+  },
+  {
+   "t": 4456,
+   "title": "Act II: Dunque voi non aprite",
+   "appTitle": "Dunque voi non aprite",
+   "act": "II",
+   "artists": [
+    "Joshua Hopkins",
+    "Federica Lombardi"
+   ]
+  },
+  {
+   "t": 4521,
+   "title": "Act II: Aprite, presto",
+   "appTitle": "Aprite, presto",
+   "act": "II",
+   "artists": [
+    "Olga Kulchynska",
+    "Sun-Ly Pierce"
+   ]
+  },
+  {
+   "t": 4593,
+   "title": "Act II: O guarda il demonietto!",
+   "appTitle": "O guarda il demonietto!",
+   "act": "II",
+   "artists": [
+    "Olga Kulchynska",
+    "Joshua Hopkins",
+    "Federica Lombardi"
+   ]
+  },
+  {
+   "t": 4712,
+   "title": "Act II: Esci omai garzon malnato",
+   "appTitle": "Esci omai garzon malnato",
+   "act": "II",
+   "artists": [
+    "Joshua Hopkins",
+    "Federica Lombardi"
+   ]
+  },
+  {
+   "t": 4882,
+   "title": "Act II: Susanna!",
+   "appTitle": "Susanna!",
+   "act": "II",
+   "artists": [
+    "Joshua Hopkins",
+    "Federica Lombardi",
+    "Olga Kulchynska"
+   ]
+  },
+  {
+   "t": 5177,
+   "title": "Act II: Signori di fuori son già i suonatori",
+   "appTitle": "Signori di fuori son già i suonatori",
+   "act": "II",
+   "artists": [
+    "Michael Sumuel",
+    "Joshua Hopkins",
+    "Olga Kulchynska",
+    "Federica Lombardi"
+   ]
+  },
+  {
+   "t": 5228,
+   "title": "Act II: Conoscete signor Figaro",
+   "appTitle": "Conoscete signor Figaro",
+   "act": "II",
+   "artists": [
+    "Joshua Hopkins",
+    "Michael Sumuel",
+    "Olga Kulchynska",
+    "Federica Lombardi"
+   ]
+  },
+  {
+   "t": 5360,
+   "title": "Act II: Ah! signor! signor!",
+   "appTitle": "Ah! signor! signor!",
+   "act": "II",
+   "artists": [
+    "Paul Corona",
+    "Joshua Hopkins",
+    "Olga Kulchynska",
+    "Federica Lombardi",
+    "Michael Sumuel"
+   ]
+  },
+  {
+   "t": 5697,
+   "title": "Act II: Voi signor, che giusto siete",
+   "appTitle": "Voi signor, che giusto siete",
+   "act": "II",
+   "artists": [
+    "Elizabeth Bishop",
+    "Brenton Ryan",
+    "Maurizio Muraro",
+    "Joshua Hopkins",
+    "Federica Lombardi",
+    "Michael Sumuel",
+    "Olga Kulchynska"
+   ]
+  },
+  {
+   "t": 5942,
+   "title": "Introduction to Acts III and IV by Julia Bullock",
+   "appTitle": "Introduction to Acts III and IV by Julia Bullock",
+   "act": null,
+   "artists": [
+    "Julia Bullock"
+   ]
+  },
+  {
+   "t": 5970,
+   "title": "Act III: Che imbarazzo è mai questo— Via, fatti core",
+   "appTitle": "Che imbarazzo è mai questo— Via, fatti core",
+   "act": "III",
+   "artists": [
+    "Joshua Hopkins",
+    "Federica Lombardi",
+    "Olga Kulchynska"
+   ]
+  },
+  {
+   "t": 6176,
+   "title": "Act III: Crudel! perché finora",
+   "appTitle": "Crudel! perché finora",
+   "act": "III",
+   "artists": [
+    "Joshua Hopkins",
+    "Olga Kulchynska"
+   ]
+  },
+  {
+   "t": 6323,
+   "title": "Act III: E perché fosti meco",
+   "appTitle": "E perché fosti meco",
+   "act": "III",
+   "artists": [
+    "Joshua Hopkins",
+    "Olga Kulchynska",
+    "Michael Sumuel"
+   ]
+  },
+  {
+   "t": 6374,
+   "title": "Act III: Hai già vinta la causa … Vedrò mentr'io sospiro",
+   "appTitle": "Hai già vinta la causa … Vedrò mentr'io sospiro",
+   "act": "III",
+   "artists": [
+    "Joshua Hopkins"
+   ]
+  },
+  {
+   "t": 6671,
+   "title": "Act III: Andiam, andiam, bel paggio",
+   "appTitle": "Andiam, andiam, bel paggio",
+   "act": "III",
+   "artists": [
+    "Mei Gui Zhang",
+    "Sun-Ly Pierce"
+   ]
+  },
+  {
+   "t": 6717,
+   "title": "Act III: E Susanna non vien!",
+   "appTitle": "E Susanna non vien!",
+   "act": "III",
+   "artists": [
+    "Federica Lombardi"
+   ]
+  },
+  {
+   "t": 6836,
+   "title": "Act III: Dove sono",
+   "appTitle": "Dove sono",
+   "act": "III",
+   "artists": [
+    "Federica Lombardi"
+   ]
+  },
+  {
+   "t": 7141,
+   "title": "Act III: È decisa la lite",
+   "appTitle": "È decisa la lite",
+   "act": "III",
+   "artists": [
+    "Tony Stevenson",
+    "Elizabeth Bishop",
+    "Michael Sumuel",
+    "Joshua Hopkins",
+    "Maurizio Muraro"
+   ]
+  },
+  {
+   "t": 7286,
+   "title": "Act III: Riconosci in questo amplesso",
+   "appTitle": "Riconosci in questo amplesso",
+   "act": "III",
+   "artists": [
+    "Elizabeth Bishop",
+    "Michael Sumuel",
+    "Maurizio Muraro",
+    "Tony Stevenson",
+    "Joshua Hopkins",
+    "Olga Kulchynska"
+   ]
+  },
+  {
+   "t": 7577,
+   "title": "Act III: Eccovi",
+   "appTitle": "Eccovi",
+   "act": "III",
+   "artists": [
+    "Elizabeth Bishop",
+    "Maurizio Muraro",
+    "Olga Kulchynska",
+    "Michael Sumuel"
+   ]
+  },
+  {
+   "t": 7656,
+   "title": "Act III: Io vi dico signor",
+   "appTitle": "Io vi dico signor",
+   "act": "III",
+   "artists": [
+    "Paul Corona",
+    "Joshua Hopkins"
+   ]
+  },
+  {
+   "t": 7686,
+   "title": "Act III: Cosa mi narri!",
+   "appTitle": "Cosa mi narri!",
+   "act": "III",
+   "artists": [
+    "Federica Lombardi",
+    "Olga Kulchynska"
+   ]
+  },
+  {
+   "t": 7724,
+   "title": "Act III: Sull'aria",
+   "appTitle": "Sull'aria",
+   "act": "III",
+   "artists": [
+    "Olga Kulchynska",
+    "Federica Lombardi"
+   ]
+  },
+  {
+   "t": 7888,
+   "title": "Act III: Piegato è il foglio",
+   "appTitle": "Piegato è il foglio",
+   "act": "III",
+   "artists": [
+    "Olga Kulchynska",
+    "Federica Lombardi"
+   ]
+  },
+  {
+   "t": 7911,
+   "title": "Act III: Ricevete, o padroncina",
+   "appTitle": "Ricevete, o padroncina",
+   "act": "III",
+   "artists": [
+    "Metropolitan Opera Chorus"
+   ]
+  },
+  {
+   "t": 7980,
+   "title": "Act III: Queste sono, Madama",
+   "appTitle": "Queste sono, Madama",
+   "act": "III",
+   "artists": [
+    "Mei Gui Zhang",
+    "Federica Lombardi",
+    "Olga Kulchynska",
+    "Paul Corona",
+    "Joshua Hopkins",
+    "Sun-Ly Pierce",
+    "Michael Sumuel"
+   ]
+  },
+  {
+   "t": 8181,
+   "title": "Act III: Ecco la marcia",
+   "appTitle": "Ecco la marcia",
+   "act": "III",
+   "artists": [
+    "Michael Sumuel",
+    "Olga Kulchynska",
+    "Joshua Hopkins",
+    "Federica Lombardi"
+   ]
+  },
+  {
+   "t": 8289,
+   "title": "Act III: Amanti costanti",
+   "appTitle": "Amanti costanti",
+   "act": "III",
+   "artists": [
+    "Sun-Ly Pierce",
+    "Mei Gui Zhang",
+    "Metropolitan Opera Chorus"
+   ]
+  },
+  {
+   "t": 8360,
+   "title": "Act III: Eh già, solita usanza",
+   "appTitle": "Eh già, solita usanza",
+   "act": "III",
+   "artists": [
+    "Joshua Hopkins",
+    "Michael Sumuel",
+    "Metropolitan Opera Chorus"
+   ]
+  },
+  {
+   "t": 8461,
+   "title": "Act III: Andate amici!",
+   "appTitle": "Andate amici!",
+   "act": "III",
+   "artists": [
+    "Joshua Hopkins"
+   ]
+  },
+  {
+   "t": 8549,
+   "title": "Act IV: L'ho perduta, me meschina!",
+   "appTitle": "L'ho perduta, me meschina!",
+   "act": "IV",
+   "artists": [
+    "Mei Gui Zhang"
+   ]
+  },
+  {
+   "t": 8663,
+   "title": "Act IV: Barbarina, cos'hai?",
+   "appTitle": "Barbarina, cos'hai?",
+   "act": "IV",
+   "artists": [
+    "Michael Sumuel",
+    "Mei Gui Zhang",
+    "Elizabeth Bishop"
+   ]
+  },
+  {
+   "t": 8755,
+   "title": "Act IV: Madre!—Figlio!",
+   "appTitle": "Madre!—Figlio!",
+   "act": "IV",
+   "artists": [
+    "Michael Sumuel",
+    "Elizabeth Bishop"
+   ]
+  },
+  {
+   "t": 8806,
+   "title": "Act IV: Nel padiglione a manca",
+   "appTitle": "Nel padiglione a manca",
+   "act": "IV",
+   "artists": [
+    "Mei Gui Zhang",
+    "Michael Sumuel",
+    "Brenton Ryan",
+    "Maurizio Muraro"
+   ]
+  },
+  {
+   "t": 8869,
+   "title": "Act IV: Tutto è disposto",
+   "appTitle": "Tutto è disposto",
+   "act": "IV",
+   "artists": [
+    "Michael Sumuel"
+   ]
+  },
+  {
+   "t": 8955,
+   "title": "Act IV: Aprite un po' quegl' occhi",
+   "appTitle": "Aprite un po' quegl' occhi",
+   "act": "IV",
+   "artists": [
+    "Michael Sumuel"
+   ]
+  },
+  {
+   "t": 9123,
+   "title": "Act IV: Signora, ella mi disse",
+   "appTitle": "Signora, ella mi disse",
+   "act": "IV",
+   "artists": [
+    "Olga Kulchynska",
+    "Elizabeth Bishop",
+    "Federica Lombardi",
+    "Michael Sumuel"
+   ]
+  },
+  {
+   "t": 9181,
+   "title": "Act IV: Giunse alfin il momento",
+   "appTitle": "Giunse alfin il momento",
+   "act": "IV",
+   "artists": [
+    "Olga Kulchynska"
+   ]
+  },
+  {
+   "t": 9261,
+   "title": "Act IV: Deh vieni non tardar",
+   "appTitle": "Deh vieni non tardar",
+   "act": "IV",
+   "artists": [
+    "Olga Kulchynska"
+   ]
+  },
+  {
+   "t": 9452,
+   "title": "Act IV: Perfida! e in quella forma",
+   "appTitle": "Perfida! e in quella forma",
+   "act": "IV",
+   "artists": [
+    "Michael Sumuel",
+    "Sun-Ly Pierce",
+    "Federica Lombardi"
+   ]
+  },
+  {
+   "t": 9490,
+   "title": "Act IV: Pian pianin le andrò più presso",
+   "appTitle": "Pian pianin le andrò più presso",
+   "act": "IV",
+   "artists": [
+    "Sun-Ly Pierce",
+    "Federica Lombardi"
+   ]
+  },
+  {
+   "t": 9558,
+   "title": "Act IV: Ecco qui la mia Susanna!",
+   "appTitle": "Ecco qui la mia Susanna!",
+   "act": "IV",
+   "artists": [
+    "Joshua Hopkins",
+    "Olga Kulchynska",
+    "Michael Sumuel",
+    "Sun-Ly Pierce",
+    "Federica Lombardi"
+   ]
+  },
+  {
+   "t": 9808,
+   "title": "Act IV: Tutto è tranquillo e placido",
+   "appTitle": "Tutto è tranquillo e placido",
+   "act": "IV",
+   "artists": [
+    "Michael Sumuel",
+    "Olga Kulchynska"
+   ]
+  },
+  {
+   "t": 10028,
+   "title": "Act IV: Pace, pace mio dolce tesoro",
+   "appTitle": "Pace, pace mio dolce tesoro",
+   "act": "IV",
+   "artists": [
+    "Michael Sumuel",
+    "Olga Kulchynska",
+    "Joshua Hopkins"
+   ]
+  },
+  {
+   "t": 10137,
+   "title": "Act IV: Gente, gente, all'armi",
+   "appTitle": "Gente, gente, all'armi",
+   "act": "IV",
+   "artists": [
+    "Joshua Hopkins",
+    "Michael Sumuel",
+    "Brenton Ryan",
+    "Paul Corona",
+    "Maurizio Muraro",
+    "Olga Kulchynska",
+    "Mei Gui Zhang",
+    "Elizabeth Bishop",
+    "Sun-Ly Pierce",
+    "Federica Lombardi"
+   ]
+  },
+  {
+   "t": 10454,
+   "title": "Bows and Closing Credits",
+   "appTitle": "Bows and Closing Credits",
+   "act": null,
+   "artists": []
+  },
+  {
+   "t": 10708,
+   "title": "Act IV: Backstage at the Met with host Julia Bullock: Maestro Joana Mallwitz discusses the music of Le Nozze di Figaro",
+   "appTitle": "Backstage at the Met with host Julia Bullock: Maestro Joana Mallwitz discusses the music of Le Nozze di Figaro",
+   "act": "IV",
+   "artists": [
+    "Julia Bullock",
+    "Joana Mallwitz"
+   ]
+  },
+  {
+   "t": 11061,
+   "title": "Act IV: Backstage at the Met with Julia Bullock: Interview with Federica Lombardi and Joshua Hopkins",
+   "appTitle": "Backstage at the Met with Julia Bullock: Interview with Federica Lombardi and Joshua Hopkins",
+   "act": "IV",
+   "artists": [
+    "Julia Bullock",
+    "Federica Lombardi",
+    "Joshua Hopkins"
+   ]
+  },
+  {
+   "t": 11260,
+   "title": "Act IV: Backstage at the Met with Julia Bullock: Interview with Sun-Ly Pierce",
+   "appTitle": "Backstage at the Met with Julia Bullock: Interview with Sun-Ly Pierce",
+   "act": "IV",
+   "artists": [
+    "Julia Bullock",
+    "Sun-Ly Pierce"
+   ]
+  },
+  {
+   "t": 11465,
+   "title": "Act IV: Backstage at the Met with Julia Bullock: Interview with Michael Sumuel and Olga Kulchynska ",
+   "appTitle": "Backstage at the Met with Julia Bullock: Interview with Michael Sumuel and Olga Kulchynska ",
+   "act": "IV",
+   "artists": [
+    "Julia Bullock",
+    "Michael Sumuel",
+    "Olga Kulchynska "
+   ]
+  }
+ ]
+}
