@@ -22,10 +22,22 @@ function verifyTitle(file) {
       if (!ev.length) why.push('no evidence');
       for (const e of ev) if (src(f.source).indexOf(norm(e)) < 0) why.push('evidence not in source: "' + e.slice(0, 60) + '"');
     }
+    // optional extra sources: every one must exist, carry a URL and contain its evidence verbatim
+    for (const x of [].concat(f.extraSources || [])) {
+      if (!x.source || !fs.existsSync(path.join(__dirname, 'sources', x.source))) { why.push('extra source file ' + x.source); continue; }
+      if (!urlOf(x.source)) why.push('extra sourceUrl ' + x.source);
+      const xe = [].concat(x.evidence || []);
+      if (!xe.length) why.push('no evidence in ' + x.source);
+      for (const e of xe) if (src(x.source).indexOf(norm(e)) < 0) why.push('evidence not in ' + x.source + ': "' + e.slice(0, 60) + '"');
+    }
+    if (f.kicker !== undefined && (typeof f.kicker !== 'string' || f.kicker.length > 32)) why.push('kicker');
+    if (f.offset !== undefined && !(typeof f.offset === 'number' && f.offset >= 0)) why.push('offset');
+    if (f.sceneOnly && !f.sceneMatch) why.push('sceneOnly without sceneMatch');
+    if (f.scope && f.scope !== 'all' && !/^(production:\d{4}-\d{2}-\d{2}|perf:[0-9a-f]{8,32})$/.test(f.scope)) why.push('scope');
     if (f.sceneMatch) try { new RegExp(f.sceneMatch, 'i'); } catch (e) { why.push('regex'); }
     (why.length ? bad : ok).push(why.length ? { id: f.id, why } : f);
   }
-  return { title: t.title, match: t.match, ok, bad };
+  return { title: t.title, match: t.match, gap: t.gap, ok, bad };
 }
 module.exports = { verifyTitle };
 if (require.main === module) {

@@ -447,7 +447,7 @@ function sendStats() {
   stats = { opened: 0, seeks: 0, seekSecs: 0, buttons: {}, keysHidden: 0 };
 }
 
-// ---- 1.4.0 pop-up facts ----
+// ---- 1.4.0 pop-up facts (1.4.1: per-performance scope via session id) ----
 function factsLabel() {
   if (!root) return;
   var i = btnIdx('facts');

@@ -2,7 +2,7 @@
  "title": "Idomeneo",
  "topic": "the music",
  "performance": "Met Live in HD, Sat March 25, 2017 matinee (Ponnelle production; cond. James Levine)",
- "note": "Music candidates for rating. Mozart letters: Lady Wallace translation (Project Gutenberg #5307; it misdates the January 1781 letters as 1780) and the Mozarteum DME English translation. `attribution` = small second line.",
+ "note": "Music candidates for rating. Mozart letters: Lady Wallace translation (Project Gutenberg #5307; it misdates the January 1781 letters as 1780) and the Mozarteum DME English translation. `attribution` = small second line. Ratings by Matt (2026-11-01): GOOD M2, M3, M5, M8, M10, M11, M12, M14; BAD M1, M4, M6, M7, M9, M13.",
  "candidates": [
   {
    "n": "M1",
@@ -39,7 +39,9 @@
      ]
     }
    ],
-   "rating": null
+   "rating": "bad",
+   "ratingNote": "Orchestra reputation: an anecdote that doesn’t change what you hear.",
+   "ratedBy": "Matt"
   },
   {
    "n": "M2",
@@ -70,7 +72,9 @@
      ]
     }
    ],
-   "rating": null
+   "rating": "good",
+   "ratingNote": null,
+   "ratedBy": "Matt"
   },
   {
    "n": "M3",
@@ -91,7 +95,9 @@
      ]
     }
    ],
-   "rating": null
+   "rating": "good",
+   "ratingNote": null,
+   "ratedBy": "Matt"
   },
   {
    "n": "M4",
@@ -120,7 +126,9 @@
      ]
     }
    ],
-   "rating": null
+   "rating": "bad",
+   "ratingNote": "“Very French” is a label, not something to listen for.",
+   "ratedBy": "Matt"
   },
   {
    "n": "M5",
@@ -150,7 +158,9 @@
      ]
     }
    ],
-   "rating": null
+   "rating": "good",
+   "ratingNote": null,
+   "ratedBy": "Matt"
   },
   {
    "n": "M6",
@@ -172,7 +182,9 @@
      ]
     }
    ],
-   "rating": null
+   "rating": "bad",
+   "ratingNote": "Raaff singing at bedtime: singer anecdote, not the music.",
+   "ratedBy": "Matt"
   },
   {
    "n": "M7",
@@ -195,7 +207,9 @@
      ]
     }
    ],
-   "rating": null
+   "rating": "bad",
+   "ratingNote": "Wendling satisfied: rehearsal logistics.",
+   "ratedBy": "Matt"
   },
   {
    "n": "M8",
@@ -223,7 +237,9 @@
      ]
     }
    ],
-   "rating": null
+   "rating": "good",
+   "ratingNote": "Good, but duplicates #19 (piccolo): merged into #19 for 1.4.1.",
+   "ratedBy": "Matt"
   },
   {
    "n": "M9",
@@ -253,7 +269,9 @@
      ]
     }
    ],
-   "rating": null
+   "rating": "bad",
+   "ratingNote": "Storm logistics: letter trivia that doesn’t point the ear.",
+   "ratedBy": "Matt"
   },
   {
    "n": "M10",
@@ -275,7 +293,9 @@
      ]
     }
    ],
-   "rating": null
+   "rating": "good",
+   "ratingNote": null,
+   "ratedBy": "Matt"
   },
   {
    "n": "M11",
@@ -296,7 +316,9 @@
      ]
     }
    ],
-   "rating": null
+   "rating": "good",
+   "ratingNote": null,
+   "ratedBy": "Matt"
   },
   {
    "n": "M12",
@@ -317,7 +339,9 @@
      ]
     }
    ],
-   "rating": null
+   "rating": "good",
+   "ratingNote": "Good, but duplicates #22 (trombones): merged with #22 for 1.4.1 (music version kept as the base).",
+   "ratedBy": "Matt"
   },
   {
    "n": "M13",
@@ -341,7 +365,9 @@
      ]
     }
    ],
-   "rating": null
+   "rating": "bad",
+   "ratingNote": "Oracle edits: letter trivia that doesn’t change what you hear.",
+   "ratedBy": "Matt"
   },
   {
    "n": "M14",
@@ -369,7 +395,9 @@
      ]
     }
    ],
-   "rating": null
+   "rating": "good",
+   "ratingNote": "Good, but duplicates #24 (overture key): the music version replaces #24 in 1.4.1.",
+   "ratedBy": "Matt"
   }
  ]
 }

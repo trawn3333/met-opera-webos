@@ -1,4 +1,4 @@
-// 1.4.0 Pop-up facts: "Pop-Up Video" style trivia bubbles during playback.
+// 1.4.0 Pop-up facts (1.4.1: kicker labels, attribution line, per-performance scope, explicit scene offsets): "Pop-Up Video" style trivia bubbles during playback.
 // Data: facts/titles/*.json in the repo (every fact sourced + verified by facts/build.js). The top titles are bundled
 // (factsData.js); the rest are fetched lazily from the Worker (GET <MTV_WORKER_URL>/v1/facts/<slug>.json) and cached
 // in localStorage for 7 days. Without a Worker URL only the bundled titles have facts.
@@ -70,10 +70,20 @@ export function loadFacts(name, cb) {
   } catch (e) { fin((c && c.doc) || null); }
 }
 
-// Plan: [{at (s), f (row)}] sorted. chs = [{t, title, act}], prodPremiere = 'YYYY-MM-DD' or ''.
-export function plan(doc, chs, duration, prodPremiere) {
+// Plan: [{at (s), f (row)}] sorted. chs = [{t, title, act}], prodPremiere = 'YYYY-MM-DD' or '', perfId = Met OD performance id.
+// Row fields (1.4.1): [7] kicker label, [8] offset (s) into the matched scene, [9] scene-only (1 = never floats to a
+// random time; skipped when no scene matches). Scope: '' (all), 'production:<premiere>' or 'perf:<id prefix, no dashes>'.
+// doc.gap overrides the minimum spacing between bubbles.
+function inScope(scope, prodPremiere, perfId) {
+  if (!scope) return true;
+  if (scope.indexOf('production:') === 0) return scope === 'production:' + prodPremiere;
+  if (scope.indexOf('perf:') === 0) return !!perfId && String(perfId).replace(/-/g, '').toLowerCase().indexOf(scope.slice(5)) === 0;
+  return false;
+}
+export function plan(doc, chs, duration, prodPremiere, perfId) {
   if (!doc || !doc.facts || !duration) return [];
-  var rows = doc.facts.filter(function (f) { return !f[3] || f[3] === 'production:' + prodPremiere; });
+  var GAP = doc.gap > 0 ? doc.gap : MIN_GAP;
+  var rows = doc.facts.filter(function (f) { return inScope(f[3], prodPremiere, perfId); });
   var out = [], general = [], used = {};
   var ends = [];
   for (var i = 0; i < chs.length; i++) ends.push(i + 1 < chs.length ? chs[i + 1].t : duration);
@@ -86,22 +96,23 @@ export function plan(doc, chs, duration, prodPremiere) {
         var full = (chs[j].act ? 'Act ' + chs[j].act + ': ' : '') + chs[j].title;
         if (!re.test(chs[j].title) && !re.test(full)) continue;
         var n = used[j] || 0, len = ends[j] - chs[j].t;
-        var at = chs[j].t + LEAD + n * MIN_GAP;
-        if (at + 12 > ends[j] && n > 0) break;            // scene too short for another one
-        if (len < 25) at = chs[j].t + 3;
+        var at = chs[j].t + LEAD + n * GAP;
+        if (typeof f[8] === 'number' && f[8] + 12 <= len) at = chs[j].t + f[8];   // explicit offset into the scene
+        else if (at + 12 > ends[j] && n > 0) break;      // scene too short for another one
+        else if (len < 25) at = chs[j].t + 3;
         used[j] = n + 1; out.push({ at: at, f: f, scene: j }); placed = true;
       }
     }
-    if (!placed) general.push(f);
+    if (!placed && !f[9]) general.push(f);
   }
   // keep scene-tied pop-ups MIN_GAP apart: slide a crowded one later inside its scene, else let it float as a general fact
   out.sort(function (a, b) { return a.at - b.at; });
   var kept = [];
   for (var q = 0; q < out.length; q++) {
     var o = out[q], prev = kept.length ? kept[kept.length - 1].at : -1e9;
-    if (o.at < prev + MIN_GAP) {
-      var moved = prev + MIN_GAP;
-      if (moved + 12 <= ends[o.scene]) o.at = moved; else { general.push(o.f); continue; }
+    if (o.at < prev + GAP) {
+      var moved = prev + GAP;
+      if (moved + 12 <= ends[o.scene]) o.at = moved; else { if (!o.f[9]) general.push(o.f); continue; }
     }
     kept.push(o);
   }
@@ -113,9 +124,9 @@ export function plan(doc, chs, duration, prodPremiere) {
     for (var g = 0; g < general.length; g++) {
       var want = start + step * (g + 1), best = -1;
       for (var tries = 0; tries < 12; tries++) {
-        var cand = want + (tries % 2 ? 1 : -1) * Math.ceil(tries / 2) * (MIN_GAP / 2);
+        var cand = want + (tries % 2 ? 1 : -1) * Math.ceil(tries / 2) * (GAP / 2);
         if (cand < start || cand > end) continue;
-        if (!out.some(function (o) { return Math.abs(o.at - cand) < MIN_GAP; })) { best = cand; break; }
+        if (!out.some(function (o) { return Math.abs(o.at - cand) < GAP; })) { best = cand; break; }
       }
       if (best >= 0) out.push({ at: best, f: general[g] });
     }
@@ -153,7 +164,7 @@ export function plannedSchedule() { return schedule.slice(); }
 export function tick(t, ctx) {
   if (!session || !session.doc) return;
   if (!session.planned && ctx.duration) {
-    schedule = plan(session.doc, ctx.chapters || [], ctx.duration, ctx.prodPremiere || '');
+    schedule = plan(session.doc, ctx.chapters || [], ctx.duration, ctx.prodPremiere || '', session.id);
     session.planned = true;
     dbg('info', 'pop-up facts planned: ' + schedule.length);
   }

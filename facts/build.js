@@ -15,9 +15,16 @@ for (const f of fs.readdirSync(path.join(__dirname, 'titles')).filter((x) => /\.
   const slug = f.replace(/\.json$/, '');
   const r = verifyTitle(path.join(__dirname, 'titles', f));
   for (const b of r.bad) { console.error('REJECT', b.id, b.why.join('; ')); bad++; }
-  // compact rows: [id, type, sceneMatch|'', scope, text, attribution, sourceUrl]
-  const rows = r.ok.map((x) => [x.id, T[x.type], x.sceneMatch || '', x.scope === 'all' ? '' : x.scope, x.text, x.attribution, encodeURI(decodeURI(x.sourceUrl))]);
+  // compact rows: [id, type, sceneMatch|'', scope, text, attribution, sourceUrl, kicker?, offset?, sceneOnly?]
+  // (1.4.1 fields 7-9 are optional: trailing ones are omitted, so older titles' rows are unchanged; 1.4.0 apps ignore them)
+  const rows = r.ok.map((x) => {
+    const row = [x.id, T[x.type], x.sceneMatch || '', x.scope === 'all' ? '' : x.scope, x.text, x.attribution, encodeURI(decodeURI(x.sourceUrl)),
+      x.kicker || '', typeof x.offset === 'number' ? x.offset : null, x.sceneOnly ? 1 : 0];
+    while (row.length > 7 && (row[row.length - 1] === '' || row[row.length - 1] === null || row[row.length - 1] === 0)) row.pop();
+    return row;
+  });
   const doc = { v: 1, slug, title: r.title, match: r.match, facts: rows };
+  if (r.gap) doc.gap = r.gap;
   fs.writeFileSync(path.join(dist, slug + '.json'), JSON.stringify(doc));
   index[slug] = r.match;
   if (BUNDLE.indexOf(slug) >= 0) bundled[slug] = doc;

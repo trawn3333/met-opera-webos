@@ -91,6 +91,12 @@ Useful extras:
 3. Later, if the Met session expires (the observed cookie lifetime is about 24 h), the app signs back in by itself on launch.
 4. Tip: keep the TV's **QuickStart+** ON. With it off, webOS can drop recently written cookies at power-off.
 
+## What changed in 1.4.1
+
+- **Idomeneo (Met HD, 25 Mar 2017)** now uses Matt's 27 good-rated bubbles in the Pop-Up Video voice (22 from the first batch plus 8 music bubbles, with 3 same-topic pairs merged). Each bubble is pinned to its 2017 Met scene marker at an explicit offset, at least 60 s apart. Bubbles about the 2017 cast, host and conductor only show for that performance. Bubbles about the Ponnelle staging show for that production. Bubbles about the piece only show on a matching scene and never float.
+- **Kicker labels** (e.g. "Listen for it", "Diva moment") replace the type label when a fact has one. The **attribution line** (who, where, when for quotes; otherwise the source site) renders as a smaller second line for all titles.
+- Facts rows gain optional fields `[7] kicker, [8] offset, [9] scene-only`, plus a per-title `gap`. Other titles' data is unchanged. 1.4.0 apps ignore the new fields and skip the new `perf:` scope.
+
 ## What changed in 1.4.0
 
 - **Pop-up facts**: small rounded speech bubbles with a bounce-in, an icon per type (composer, artists, premiere, critics, history, staging, bloopers, music) and auto-dismiss after 10 s. Facts tied to a Met scene marker pop ~20 s into that scene; general facts are spread through the evening (at least 75 s apart). They sit top-right, above the subtitles (lower while the controls are up), and never take focus.
