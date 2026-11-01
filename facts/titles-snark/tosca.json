@@ -1,0 +1,563 @@
+{
+ "title": "Tosca",
+ "match": [
+  "Tosca"
+ ],
+ "style": "popup-snark",
+ "sample": true,
+ "facts": [
+  {
+   "id": "tosca-01",
+   "type": "premiere",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "Premiere: Rome, 14 January 1900. Postponed a day for fear of unrest. Rome being Rome.",
+   "attribution": "Wikipedia, “Tosca”",
+   "source": "wiki-Tosca.txt",
+   "anchor": null,
+   "evidence": [
+    "It premiered at the Teatro Costanzi in Rome on 14 January 1900.",
+    "its first performance was delayed for a day for fear of disturbances"
+   ],
+   "plain": "Tosca premiered at the Teatro Costanzi in Rome on 14 January 1900, a day late, because of fears of unrest.",
+   "kicker": "Meanwhile, in 1900…",
+   "icon": "schedule",
+   "emoji": "⏳"
+  },
+  {
+   "id": "tosca-02",
+   "type": "premiere",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "Opening night came with an anarchist bomb warning. The conductor’s emergency plan: play the royal march.",
+   "attribution": "Wikipedia, “Tosca”",
+   "source": "wiki-Tosca.txt",
+   "anchor": "Premiere",
+   "evidence": "Police received warnings of an anarchist bombing of the theatre, and instructed Mugnone",
+   "plain": "Police had warnings of an anarchist bomb at the premiere. The conductor, Mugnone, was told to strike up the royal march in an emergency.",
+   "kicker": "Did you know?",
+   "icon": "lightbulb",
+   "emoji": "💡"
+  },
+  {
+   "id": "tosca-03",
+   "type": "premiere",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "Critics: lukewarm. Audiences: twenty straight performances to packed houses. Guess who won.",
+   "attribution": "Wikipedia, “Tosca”",
+   "source": "wiki-Tosca.txt",
+   "anchor": "Premiere",
+   "evidence": [
+    "Much of the critical and press reaction was lukewarm",
+    "the premiere was followed by twenty performances, all given to packed houses"
+   ],
+   "plain": "The critics were lukewarm, but the public loved it: the premiere was followed by twenty performances, all to packed houses.",
+   "kicker": "Critics: not fans",
+   "icon": "thumb_down",
+   "emoji": "🍅"
+  },
+  {
+   "id": "tosca-04",
+   "type": "composer",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "Puccini, 1889, on why Tosca: “no overblown proportions, no elaborate spectacle.” Stay for the Te Deum.",
+   "attribution": "Puccini, letter to Giulio Ricordi, 7 May 1889 (via Wikipedia)",
+   "source": "wiki-Tosca.txt",
+   "anchor": "Background",
+   "evidence": "I see in this Tosca the opera I need, with no overblown proportions, no elaborate spectacle",
+   "plain": "Puccini begged his publisher in 1889 to get Sardou’s permission: “I see in this Tosca the opera I need, with no overblown proportions, no elaborate spectacle.”",
+   "kicker": "Did you know?",
+   "icon": "lightbulb",
+   "emoji": "💡"
+  },
+  {
+   "id": "tosca-05",
+   "type": "artist",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "Young Enrico Caruso hoped to create Cavaradossi. They picked someone “more experienced”.",
+   "attribution": "Wikipedia, “Tosca”",
+   "source": "wiki-Tosca.txt",
+   "anchor": "Premiere",
+   "evidence": "The young Enrico Caruso had hoped to create the role of Cavaradossi, but was passed over in favour of the more experienced Emilio De Marchi.",
+   "plain": "The young Enrico Caruso hoped to create Cavaradossi but was passed over for the more experienced Emilio De Marchi.",
+   "kicker": "Ouch.",
+   "icon": "healing",
+   "emoji": "🩹"
+  },
+  {
+   "id": "tosca-06",
+   "type": "music",
+   "sceneMatch": "^Act I$|Ah! Finalmente|Angelotti",
+   "scope": "all",
+   "text": "No overture. Three chords (Scarpia’s theme) and a fugitive bursts in. Puccini skips the small talk.",
+   "attribution": "Wikipedia, “Tosca”",
+   "source": "wiki-Tosca.txt",
+   "anchor": "Act_1",
+   "evidence": "The opera begins without any prelude; the opening chords of the Scarpia motif lead immediately to the agitated appearance of Angelotti",
+   "plain": "There is no prelude: the opening chords are Scarpia’s motif, and Angelotti bursts straight in.",
+   "kicker": "Listen for it",
+   "icon": "hearing",
+   "emoji": "👂"
+  },
+  {
+   "id": "tosca-07",
+   "type": "music",
+   "sceneMatch": "Te Deum|Tre sbirri",
+   "scope": "all",
+   "text": "Mid-Te Deum, in church, Scarpia sings: “Tosca, you make me forget even God!” Read the room.",
+   "attribution": "Wikipedia, “Tosca”",
+   "source": "wiki-Tosca.txt",
+   "anchor": "Act_1",
+   "evidence": "Tosca, you make me forget even God!",
+   "plain": "As the Te Deum procession fills the church, Scarpia joins the prayer: “Tosca, you make me forget even God!”",
+   "kicker": "Villain moment",
+   "icon": "skull",
+   "emoji": "😈"
+  },
+  {
+   "id": "tosca-08",
+   "type": "artist",
+   "sceneMatch": "Vissi d.arte",
+   "scope": "all",
+   "text": "Maria Jeritza fell escaping Scarpia and sang “Vissi d’arte” from the floor. It worked, so she kept doing it.",
+   "attribution": "Wikipedia, “Tosca”",
+   "source": "wiki-Tosca.txt",
+   "anchor": "Subsequent_productions",
+   "evidence": [
+    "was said to be Puccini's favorite Tosca",
+    "Jeritza was the first to deliver \"Vissi d'arte\" from a prone position, having fallen to the stage while eluding the grasp of Scarpia.",
+    "Jeritza sang the aria while on the floor thereafter"
+   ],
+   "plain": "Maria Jeritza, said to be Puccini’s favorite Tosca, once fell while escaping Scarpia and sang “Vissi d’arte” lying on the floor. It was such a success that she kept doing it.",
+   "kicker": "Blooper",
+   "icon": "sentiment_very_dissatisfied",
+   "emoji": "🙈"
+  },
+  {
+   "id": "tosca-09",
+   "type": "music",
+   "sceneMatch": "Io de. sospiri|^Act III$",
+   "scope": "all",
+   "text": "Puccini went to Castel Sant’Angelo to hear the real matins bells, then had bells cast by four foundries.",
+   "attribution": "Wikipedia, “Tosca”",
+   "source": "wiki-Tosca.txt",
+   "anchor": null,
+   "evidence": [
+    "went to the Castel Sant'Angelo to measure the sound of matins bells there",
+    "Puccini had bells for the Roman dawn cast to order by four different foundries."
+   ],
+   "plain": "For the Roman dawn, Puccini went to Castel Sant’Angelo to hear the matins bells, and had bells cast by four different foundries.",
+   "kicker": "Behind the music",
+   "icon": "piano",
+   "emoji": "🎼"
+  },
+  {
+   "id": "tosca-10",
+   "type": "critic",
+   "sceneMatch": "Io de. sospiri|^Act III$",
+   "scope": "all",
+   "text": "Librettist Illica, after the premiere: all that fuss and money on the bells “passes completely unnoticed”. Listen anyway.",
+   "attribution": "Luigi Illica, letter to Ricordi (via Wikipedia)",
+   "source": "wiki-Tosca.txt",
+   "anchor": null,
+   "evidence": "the great fuss and the large amount of money for the bells have constituted an additional folly, because it passes completely unnoticed",
+   "plain": "Librettist Illica grumbled after the premiere that all the fuss and money spent on the bells “passes completely unnoticed”.",
+   "kicker": "Critics: not fans",
+   "icon": "thumb_down",
+   "emoji": "🍅"
+  },
+  {
+   "id": "tosca-11",
+   "type": "history",
+   "sceneMatch": "Io de. sospiri",
+   "scope": "all",
+   "text": "The shepherd boy sings in Roman dialect. Puccini asked for a “good romanesco poet” and got folklorist Giggi Zanazzo.",
+   "attribution": "Wikipedia, “Tosca”",
+   "source": "wiki-Tosca.txt",
+   "anchor": "Adaptation_and_writing",
+   "evidence": [
+    "The composer asked a friend to have a \"good romanesco poet\" write some words",
+    "Luigi \"Giggi\" Zanazzo wrote the verse"
+   ],
+   "plain": "The shepherd boy’s song is in Roman dialect. Puccini asked for a “good romanesco poet”, and folklorist Giggi Zanazzo wrote the verse.",
+   "kicker": "Translation",
+   "icon": "translate",
+   "emoji": "💬"
+  },
+  {
+   "id": "tosca-12",
+   "type": "history",
+   "sceneMatch": "O dolci mani",
+   "scope": "all",
+   "text": "Part of this duet is recycled from music Puccini cut from his opera Edgar. His publisher noticed. Too late.",
+   "attribution": "Wikipedia, “Tosca”",
+   "source": "wiki-Tosca.txt",
+   "anchor": "Adaptation_and_writing",
+   "evidence": [
+    "some of the music for Cavaradossi's act 3 aria, \"O dolci mani\" was borrowed from music Puccini had cut from his early opera, Edgar",
+    "time was too short before the scheduled January 1900 premiere to make any further changes"
+   ],
+   "plain": "Ricordi noticed that part of “O dolci mani” was borrowed from music Puccini had cut from his early opera Edgar, and demanded changes. There wasn’t time.",
+   "kicker": "Borrowed!",
+   "icon": "content_copy",
+   "emoji": "♻️"
+  },
+  {
+   "id": "tosca-13",
+   "type": "critic",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "Joseph Kerman: a “shabby little shocker”. Thomas Beecham: anything Kerman says about Puccini “can safely be ignored”.",
+   "attribution": "Wikipedia, “Tosca”",
+   "source": "wiki-Tosca.txt",
+   "anchor": "Critical_reception",
+   "evidence": [
+    "described Tosca as a \"shabby little shocker.\"",
+    "can safely be ignored"
+   ],
+   "plain": "In the 1950s musicologist Joseph Kerman called Tosca a “shabby little shocker”. Conductor Thomas Beecham replied that anything Kerman says about Puccini “can safely be ignored”.",
+   "kicker": "Burn.",
+   "icon": "local_fire_department",
+   "emoji": "🔥"
+  },
+  {
+   "id": "tosca-14",
+   "type": "history",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "Met premiere: 4 February 1901, barely a year after Rome. New York didn’t wait.",
+   "attribution": "Wikipedia, “Tosca”",
+   "source": "wiki-Tosca.txt",
+   "anchor": null,
+   "evidence": "The premiere at the Metropolitan Opera was on 4 February 1901",
+   "plain": "The Met premiere was on 4 February 1901, only a year after the world premiere.",
+   "kicker": "Did you know?",
+   "icon": "lightbulb",
+   "emoji": "💡"
+  },
+  {
+   "id": "tosca-15",
+   "type": "artist",
+   "sceneMatch": "E lucevan",
+   "scope": "all",
+   "text": "Pavarotti’s final stage performance: Cavaradossi, at the Met, 13 March 2004.",
+   "attribution": "Wikipedia, “Tosca”",
+   "source": "wiki-Tosca.txt",
+   "anchor": "Subsequent_productions",
+   "evidence": "Pavarotti's last stage performance was as Cavaradossi at the Met, on 13 March 2004.",
+   "plain": "Luciano Pavarotti’s last stage performance was as Cavaradossi at the Met, on 13 March 2004.",
+   "kicker": "Diva moment",
+   "icon": "crown",
+   "emoji": "👑"
+  },
+  {
+   "id": "tosca-16",
+   "type": "history",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "Sardou wrote La Tosca for Sarah Bernhardt. Over 3,000 performances in France alone. Big shoes.",
+   "attribution": "Wikipedia, “Tosca”",
+   "source": "wiki-Tosca.txt",
+   "anchor": "Background",
+   "evidence": "with more than 3,000 performances in France alone",
+   "plain": "Sardou’s play La Tosca, written for Sarah Bernhardt, had more than 3,000 performances in France alone.",
+   "kicker": "Box office",
+   "icon": "confirmation_number",
+   "emoji": "🎟️"
+  },
+  {
+   "id": "tosca-17",
+   "type": "composer",
+   "sceneMatch": null,
+   "scope": "all",
+   "text": "A biographer’s summary: “three strong characters trapped in an airless, violent, tightly wound melodrama.” Enjoy!",
+   "attribution": "Mary Jane Phillips-Matz, Puccini biography (via Wikipedia)",
+   "source": "wiki-Tosca.txt",
+   "anchor": "Adaptation_and_writing",
+   "evidence": "leaving three strong characters trapped in an airless, violent, tightly wound melodrama",
+   "plain": "By cutting several numbers, Puccini left “three strong characters trapped in an airless, violent, tightly wound melodrama”, as his biographer put it.",
+   "kicker": "Critics: not fans",
+   "icon": "thumb_down",
+   "emoji": "🍅"
+  },
+  {
+   "id": "tosca-n-queen",
+   "type": "premiere",
+   "sceneMatch": null,
+   "scope": "all",
+   "plain": null,
+   "text": "Queen Margherita attended the premiere. She arrived after Act I.",
+   "attribution": "Wikipedia, “Tosca”",
+   "source": "wiki-Tosca.txt",
+   "anchor": "Premiere",
+   "evidence": [
+    "as did Queen Margherita, though she arrived late, after the first act"
+   ],
+   "new": true,
+   "kicker": "Diva moment",
+   "icon": "crown",
+   "emoji": "👑"
+  },
+  {
+   "id": "tosca-n-latecomers",
+   "type": "blooper",
+   "sceneMatch": "^Act I$|Ah! Finalmente|Angelotti",
+   "scope": "all",
+   "plain": null,
+   "text": "Premiere night, moments in: latecomers caused a commotion, someone yelled “Bring down the curtain!”, and the orchestra stopped.",
+   "attribution": "Wikipedia, “Tosca”",
+   "source": "wiki-Tosca.txt",
+   "anchor": "Premiere",
+   "evidence": [
+    "caused by latecomers attempting to enter the auditorium, and a shout of \"Bring down the curtain!\", at which Mugnone stopped the orchestra"
+   ],
+   "new": true,
+   "kicker": "Blooper",
+   "icon": "sentiment_very_dissatisfied",
+   "emoji": "🙈"
+  },
+  {
+   "id": "tosca-n-barcelona",
+   "type": "artist",
+   "sceneMatch": null,
+   "scope": "all",
+   "plain": null,
+   "text": "Why trust the conductor with the bomb plan? Mugnone had already survived a theatre bombing in Barcelona.",
+   "attribution": "Wikipedia, “Tosca”",
+   "source": "wiki-Tosca.txt",
+   "anchor": "Premiere",
+   "evidence": [
+    "(who had survived a theatre bombing in Barcelona)"
+   ],
+   "new": true,
+   "kicker": "Did you know?",
+   "icon": "lightbulb",
+   "emoji": "💡"
+  },
+  {
+   "id": "tosca-n-franchetti",
+   "type": "history",
+   "sceneMatch": null,
+   "scope": "all",
+   "plain": null,
+   "text": "Tosca was first assigned to Alberto Franchetti. One story: Ricordi talked him out of it as too violent to stage.",
+   "attribution": "Wikipedia, “Tosca”",
+   "source": "wiki-Tosca.txt",
+   "anchor": "Background",
+   "evidence": [
+    "which Ricordi then assigned to the composer Alberto Franchetti",
+    "One story relates that Ricordi convinced Franchetti that the work was too violent to be successfully staged."
+   ],
+   "new": true,
+   "kicker": "Plot twist",
+   "icon": "cyclone",
+   "emoji": "🌀"
+  },
+  {
+   "id": "tosca-n-escape",
+   "type": "history",
+   "sceneMatch": "Dammi i colori|Recondita|Quale occhio",
+   "scope": "all",
+   "plain": null,
+   "text": "Angelotti’s escape plan: disguise himself as a woman, in clothes his sister left in the chapel.",
+   "attribution": "Wikipedia, “Tosca”",
+   "source": "wiki-Tosca.txt",
+   "anchor": "Act_1",
+   "evidence": [
+    "his plan to flee disguised as a woman, using clothes left in the chapel by his sister"
+   ],
+   "new": true,
+   "kicker": "Plot hole alert",
+   "icon": "report",
+   "emoji": "🕳️"
+  },
+  {
+   "id": "tosca-n-michele",
+   "type": "music",
+   "sceneMatch": "^Act II$|Tosca è un buon falco|Ha più forte",
+   "scope": "all",
+   "plain": null,
+   "text": "That distant gavotte? Puccini adapted a student exercise by his late brother Michele, so he could “live again”.",
+   "attribution": "Wikipedia, “Tosca”",
+   "source": "wiki-Tosca.txt",
+   "anchor": "Act_2_2",
+   "evidence": [
+    "For this music Puccini adapted a fifteen-year-old student exercise by his late brother, Michele, stating that in this way his brother could live again through him."
+   ],
+   "new": true,
+   "kicker": "Behind the music",
+   "icon": "piano",
+   "emoji": "🎼"
+  },
+  {
+   "id": "tosca-n-darclee",
+   "type": "artist",
+   "sceneMatch": null,
+   "scope": "all",
+   "plain": null,
+   "text": "The first Tosca, Hariclea Darclée, came billed as “accomplished (but temperamental)”. Typecasting.",
+   "attribution": "Wikipedia, “Tosca”",
+   "source": "wiki-Tosca.txt",
+   "anchor": "Premiere",
+   "evidence": [
+    "The accomplished (but temperamental) soprano Hariclea Darclée was selected for the title role"
+   ],
+   "new": true,
+   "kicker": "Diva moment",
+   "icon": "crown",
+   "emoji": "👑"
+  },
+  {
+   "id": "tosca-n-wastebasket",
+   "type": "composer",
+   "sceneMatch": "E lucevan",
+   "scope": "all",
+   "plain": null,
+   "text": "Puccini said fans of this aria owe him thrice, partly for refusing advice to throw it “in the waste-paper basket”.",
+   "attribution": "Wikipedia, “Tosca”",
+   "source": "wiki-Tosca.txt",
+   "anchor": "Act_3_2",
+   "evidence": [
+    "for declining expert advice to throw the result in the waste-paper basket"
+   ],
+   "new": true,
+   "kicker": "Diva moment",
+   "icon": "crown",
+   "emoji": "👑"
+  },
+  {
+   "id": "tosca-n-blanks",
+   "type": "history",
+   "sceneMatch": "Come è lunga|Trionfal|Amaro sol",
+   "scope": "all",
+   "plain": null,
+   "text": "Tosca coaches Mario on how to play dead, because the firing squad will use blanks. What could go wrong?",
+   "attribution": "Wikipedia, “Tosca”",
+   "source": "wiki-Tosca.txt",
+   "anchor": "Act_3",
+   "evidence": [
+    "Tosca then anxiously coaches Cavaradossi on how to play dead when the firing squad shoots at him with blanks."
+   ],
+   "new": true,
+   "kicker": "Plot hole alert",
+   "icon": "report",
+   "emoji": "🕳️"
+  },
+  {
+   "id": "tosca-n-gondola",
+   "type": "history",
+   "sceneMatch": null,
+   "scope": "all",
+   "plain": null,
+   "text": "An 1896 draft ended with Tosca going mad, imagining she and Mario are on a gondola. Sardou said no.",
+   "attribution": "Wikipedia, “Tosca”",
+   "source": "wiki-Tosca.txt",
+   "anchor": "Adaptation_and_writing",
+   "evidence": [
+    "The 1896 libretto also offers a different ending, in which Tosca does not die but instead goes mad.",
+    "she and her Mario are on a gondola",
+    "Sardou refused to consider this change"
+   ],
+   "new": true,
+   "kicker": "Plot twist",
+   "icon": "cyclone",
+   "emoji": "🌀"
+  },
+  {
+   "id": "tosca-n-kerman-leap",
+   "type": "critic",
+   "sceneMatch": "avanti a Dio|Presto|Finale",
+   "scope": "all",
+   "plain": null,
+   "text": "Kerman on the final bars: “Tosca leaps, and the orchestra screams the first thing that comes into its head.”",
+   "attribution": "Wikipedia, “Tosca”",
+   "source": "wiki-Tosca.txt",
+   "anchor": "Act_3_2",
+   "evidence": [
+    "Tosca leaps, and the orchestra screams the first thing that comes into its head."
+   ],
+   "new": true,
+   "kicker": "Burn.",
+   "icon": "local_fire_department",
+   "emoji": "🔥"
+  },
+  {
+   "id": "tosca-n-trampoline",
+   "type": "blooper",
+   "sceneMatch": "avanti a Dio|Presto|Finale",
+   "scope": "all",
+   "plain": null,
+   "text": "Opera legend: a crew swapped Tosca’s landing mattress for a trampoline. She reportedly came up 15 times.",
+   "attribution": "Los Angeles Times, 9 Jan 1990 (citing Hugh Vickers, “Great Opera Disasters”)",
+   "source": "lat-1990-opera-comedy.txt",
+   "anchor": null,
+   "evidence": [
+    "But the crew had replaced the mattress with a trampoline.",
+    "she came up 15 times before the curtain fell"
+   ],
+   "new": true,
+   "legend": true,
+   "kicker": "Legend has it",
+   "icon": "history_edu",
+   "emoji": "📜"
+  },
+  {
+   "id": "tosca-n-callas18",
+   "type": "artist",
+   "sceneMatch": null,
+   "scope": "all",
+   "plain": null,
+   "text": "Maria Callas first sang Tosca at 18, in Greek, in Athens, 1942.",
+   "attribution": "Wikipedia, “Tosca”",
+   "source": "wiki-Tosca.txt",
+   "anchor": "Subsequent_productions",
+   "evidence": [
+    "Callas had first sung Tosca at age 18 in a performance given in Greek, in the Greek National Opera in Athens on 27 August 1942."
+   ],
+   "new": true,
+   "kicker": "Did you know?",
+   "icon": "lightbulb",
+   "emoji": "💡"
+  },
+  {
+   "id": "tosca-n-zeffirelli",
+   "type": "staging",
+   "sceneMatch": null,
+   "scope": "all",
+   "plain": null,
+   "text": "Zeffirelli’s 1964 Covent Garden Tosca (Callas and Gobbi) stayed in use for more than 40 years. Durable sets.",
+   "attribution": "Wikipedia, “Tosca”",
+   "source": "wiki-Tosca.txt",
+   "anchor": "Subsequent_productions",
+   "evidence": [
+    "her performances at the Royal Opera House in 1964, with Tito Gobbi as Scarpia",
+    "This production, by Franco Zeffirelli, remained in continuous use at Covent Garden for more than 40 years"
+   ],
+   "new": true,
+   "kicker": "Set piece",
+   "icon": "castle",
+   "emoji": "🏛️"
+  },
+  {
+   "id": "tosca-n-faure",
+   "type": "critic",
+   "sceneMatch": null,
+   "scope": "all",
+   "plain": null,
+   "text": "Paris, 1903: Gabriel Fauré was offended by Tosca’s “disconcerting vulgarities”. You’ve been warned.",
+   "attribution": "Wikipedia, “Tosca”",
+   "source": "wiki-Tosca.txt",
+   "anchor": "Critical_reception",
+   "evidence": [
+    "Gabriel Fauré was offended by \"disconcerting vulgarities\""
+   ],
+   "new": true,
+   "kicker": "Critics: not fans",
+   "icon": "thumb_down",
+   "emoji": "🍅"
+  }
+ ]
+}
